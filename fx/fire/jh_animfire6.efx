@@ -1,0 +1,451 @@
+Particle
+{
+	name				flames1
+
+	spawnFlags			evenDistribution
+
+	nonUniformScale		1
+
+	life				500 1000
+
+	delay				20 0
+
+	origin				12 -16 -16 12 16 16
+
+	radius				0
+
+	height				0
+
+	velocity			96 -12 0 96 12 0
+
+	rgb
+	{
+		end				0 0 0
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0
+		end				0
+		parm			1 -1
+		flags			wave
+	}
+
+	size
+	{
+		start			32 48
+		end				56 64
+		flags			linear
+	}
+
+	size2
+	{
+		start			64 96
+		end				112 128
+		flags			linear
+	}
+
+	length
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/animated/jh_animfire
+	]
+}
+
+Particle
+{
+	name				sparks
+
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder
+
+	count				0 2
+
+	life				1000 2000
+
+	delay				3000 8000
+
+	radius				12 48
+
+	height				24 48
+
+	velocity			100 -24 -24 250 24 24
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			0.25
+		end				0.25
+	}
+
+	shaders
+	[
+		gfx/effects/animated/firespark
+	]
+}
+
+Particle
+{
+	name				Copy of flames1
+
+	flags				setShaderTime
+
+	spawnFlags			evenDistribution
+
+	nonUniformScale		1
+
+	life				500 1000
+
+	delay				20 5
+
+	origin				12 -24 -24 12 24 24
+
+	radius				0
+
+	velocity			96 -12 0 96 12 0
+
+	rgb
+	{
+		start			0 0 0
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.5 1
+		flags			linear clamp
+	}
+
+	size
+	{
+		start			32 48
+		end				56 64
+		flags			linear
+	}
+
+	size2
+	{
+		start			64 96
+		end				112 128
+		flags			linear
+	}
+
+	length
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/animated/jh_animfire2
+	]
+}
+
+Particle
+{
+	name				Copy of Copy of flames1
+
+	flags				setShaderTime
+
+	spawnFlags			evenDistribution
+
+	nonUniformScale		1
+
+	life				500 1000
+
+	delay				25 8
+
+	origin				12 -48 -48 12 -24 -24
+
+	radius				0
+
+	velocity			80 -12 0 128 12 0
+
+	rgb
+	{
+		start			0 0 0
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.5 1
+		flags			linear clamp
+	}
+
+	size
+	{
+		start			32 48
+		end				56 64
+		flags			linear
+	}
+
+	size2
+	{
+		start			32 64
+		end				96 128
+		flags			linear
+	}
+
+	length
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/animated/jh_animfire2
+	]
+}
+
+Particle
+{
+	name				Copy of flames1
+
+	spawnFlags			evenDistribution
+
+	nonUniformScale		1
+
+	life				500 1000
+
+	delay				18 16
+
+	origin				12 -50 -56 12 -32 -28
+
+	radius				0
+
+	velocity			32 -12 0 112 12 0
+
+	rgb
+	{
+		start			0 0 0
+		flags			linear wave
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.5 1
+		flags			linear clamp
+	}
+
+	size
+	{
+		start			32 60
+		end				16 64
+		flags			linear
+	}
+
+	size2
+	{
+		start			32 64
+		end				96 112
+		flags			linear
+	}
+
+	length
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/animated/jh_animfire
+	]
+}
+
+Particle
+{
+	name				Copy of flames1
+
+	spawnFlags			evenDistribution
+
+	nonUniformScale		1
+
+	life				500 1000
+
+	delay				22 12
+
+	origin				12 32 24 12 48 40
+
+	radius				0
+
+	velocity			72 -12 0 112 12 0
+
+	rgb
+	{
+		start			0 0 0
+		flags			linear wave
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.5 1
+		flags			linear clamp
+	}
+
+	size
+	{
+		start			16 24
+		end				56 64
+		flags			linear
+	}
+
+	size2
+	{
+		start			48 72
+		end				128 112
+		flags			linear
+	}
+
+	length
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/animated/jh_animfire
+	]
+}
+
+Particle
+{
+	name				Copy of flames1
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	nonUniformScale		1
+
+	life				500 1000
+
+	delay				30 16
+
+	origin				12 -32 -32 12 32 32
+
+	radius				0
+
+	velocity			48 -12 0 128 12 0
+
+	rgb
+	{
+		start			0 0 0
+		flags			wave
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear wave
+	}
+
+	size
+	{
+		start			32 48
+		end				56 64
+		flags			linear
+	}
+
+	size2
+	{
+		start			32 48
+		end				112 128
+		flags			linear
+	}
+
+	length
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/animated/jh_animfire
+	]
+}
+
+Particle
+{
+	name				Copy of Copy of flames1
+
+	spawnFlags			evenDistribution
+
+	nonUniformScale		1
+
+	life				500 1000
+
+	delay				26 14
+
+	origin				12 -32 -32 12 32 32
+
+	radius				0
+
+	velocity			96 -12 0 128 12 0
+
+	rgb
+	{
+		start			0 0 0
+		flags			linear wave
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.5 1
+		flags			linear clamp
+	}
+
+	size
+	{
+		start			32 48
+		end				56 64
+		flags			linear
+	}
+
+	size2
+	{
+		start			64 96
+		end				64 128
+		flags			linear
+	}
+
+	length
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/animated/jh_animfire
+	]
+}

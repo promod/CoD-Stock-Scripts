@@ -1,0 +1,71 @@
+Particle
+{
+	flags				usePhysics impactKills
+
+	count				1 2
+
+	life				3000
+
+	cullrange			100
+
+	rotation			-360 360
+
+	rotationDelta		132 -132
+
+	velocity			143 123 123 143 -123 -123
+
+	gravity				-600
+
+	alpha
+	{
+		end				0
+	}
+
+	size
+	{
+		end				2
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/impact/stone_piece1
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				usePhysics impactKills
+
+	count				1 2
+
+	life				3000
+
+	cullrange			400
+
+	rotation			-360 360
+
+	rotationDelta		332 -332
+
+	velocity			143 123 123 143 -123 -123
+
+	gravity				-600
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/impact/stone_piece2
+	]
+}

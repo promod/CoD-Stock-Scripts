@@ -1,0 +1,49 @@
+Emitter
+{
+	flags				useModel emitFx
+
+	life				4000
+
+	delay				100
+
+	radius				1 300
+
+	velocity			5000 45 45 5000 -45 -45
+
+	density				4
+
+	variance			145 54
+
+	size
+	{
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/shellcasing
+	]
+
+	emitfx
+	[
+		fx/smoke/whitesmoke_straight
+	]
+}
+
+FxRunner
+{
+	spawnFlags			axisFromSphere
+
+	playfx
+	[
+		fx/muzzleflashes/russian_rocket
+	]
+}
+
+FxRunner
+{
+	playfx
+	[
+		fx/atmosphere/stalin_skyflash
+	]
+}

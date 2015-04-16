@@ -1,0 +1,12 @@
+{
+	surfaceparm metal
+	cull disable
+	{
+		map $texturename
+		rgbGen exactVertex
+	}
+	{
+		map $lightmap
+		blendFunc filter
+	}
+}

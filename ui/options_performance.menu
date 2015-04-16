@@ -1,0 +1,423 @@
+#include "ui/menudef.h"
+{
+menuDef 
+{
+	name options_performance
+	fullScreen 0				
+	rect OPTIONS_WINDOW_POS OPTIONS_WINDOW_SIZE				// Size and position of the menu
+	focusColor UI_FOCUS_COLOR			// Menu focus color for text and items
+	soundloop ""
+	onOpen
+	{
+		uiScript loadControls
+//execOnCvarStringValue
+//execOnCvarIntValue
+//execOnCvarFloatValue
+		// Get proper setting for the LOD control
+		exec "set ui_lod -1\n";
+		execOnCvarFloatValue r_lodscale 4 "set ui_lod 4";	// aggressive
+		execOnCvarFloatValue r_lodscale 2 "set ui_lod 3";	// low
+		execOnCvarFloatValue r_lodscale 1 "set ui_lod 2";	// normal
+		execOnCvarFloatValue r_lodscale 0.5 "set ui_lod 1";	// high
+		execOnCvarFloatValue r_lodscale 0 "set ui_lod 0";	// off
+	}
+	onClose
+	{
+			// Put appropriate settings back into the lod cvars
+		execOnCvarIntValue ui_lod 4 "set r_lodscale 4;set r_lodbias -200";	// aggressive
+		execOnCvarIntValue ui_lod 3 "set r_lodscale 2;set r_lodbias -100";	// low
+		execOnCvarIntValue ui_lod 2 "set r_lodscale 1;set r_lodbias 0";		// normal
+		execOnCvarIntValue ui_lod 1 "set r_lodscale 0.5;set r_lodbias 0";	// high
+		execOnCvarIntValue ui_lod 0 "set r_lodscale 0;set r_lodbias 0";		// off
+
+	}
+	onESC 
+	{ 
+		open main;
+		close options_menu;		
+	}
+/*
+	itemDef 
+	{
+		name keyBindStatus
+		rect 0 322 640 30 
+		ownerdraw UI_KEYBINDSTATUS
+		text "-"      
+		forecolor 1 .75 0 1
+		textscale .23
+		textalignx 221
+		textalign 1
+		textaligny 20
+		visible 1
+		decoration 
+	}
+*/
+	itemDef 
+	{
+		name look_back
+		rect 0 0 OPTIONS_WINDOW_SIZE	
+		style WINDOW_STYLE_FILLED
+		border 1
+		bordercolor .5 .5 .5 .5
+		forecolor 1 1 1 1
+		backcolor OPTIONS_WINDOW_BACKCOLOR
+		visible 1
+		decoration
+	}
+	itemDef 
+	{
+		name header_back
+		rect 80 2 190 32	
+		style WINDOW_STYLE_FILLED
+		border 0
+		backcolor OPTIONS_CONTROL_BACKCOLOR
+		visible 1
+		decoration
+	}
+	itemDef 
+	{
+		name ctr_look
+		text "@MENU_OPTIONS_SYSTEM"
+		textscale .23
+		group grpControlbutton
+		type ITEM_TYPE_BUTTON
+		style 0
+		rect 112.5 5 120 10
+		textalign 1
+		textalignx 60
+		textaligny 10
+		forecolor 0.75 0.75 0.75 1
+		visible 1
+		decoration 
+	}
+	itemDef 
+	{
+		name look
+		group grpControls
+		text "@MENU_PERFORMANCE"
+		type 1
+		textscale .23
+		group grpControls
+		rect 155 20 35 10
+		textalign 1
+		textalignx 17
+		textaligny 10
+		forecolor 1 1 1 .9
+		visible 1
+		decoration
+	}
+	itemDef 
+	{
+		name performance
+		group grpOptions
+		text "@MENU_WALL_MARKS"
+		type ITEM_TYPE_MULTI	
+		cvar "cg_marks"
+		cvarFloatList { "@MENU_ON" 1 "@MENU_OFF" 0 }
+		rect		5 40 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	185 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		action { play "mouse_click";  }
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+	}
+
+	itemDef 
+	{
+		name performance
+		group grpOptions
+		text "@MENU_EJECTING_BRASS"
+		type ITEM_TYPE_MULTI	
+		cvar "cg_brass"
+		cvarFloatList { "@MENU_ON" 1 "@MENU_OFF" 0 }
+		rect		5 55 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	185 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		action { play "mouse_click";  }
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+	}
+
+	itemDef 
+	{
+		name performance
+		group grpOptions
+		type ITEM_TYPE_MULTI
+		text "@MENU_DYNAMIC_LIGHTS"
+		cvar "r_dynamiclight"
+		cvarFloatList { "@MENU_EVERYTHING" 1 "@MENU_MODELS_ONLY" 2 "@MENU_NONE" 0 }
+		rect		5 70 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	185 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		action { play "mouse_click";  }
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+	}
+	itemDef 
+	{
+		name performance
+		group grpOptions
+		type ITEM_TYPE_MULTI
+		text "@MENU_WORLD_DYNAMIC_LIGHT_QUALITY"
+		cvar "r_dlightQuality"
+		cvarFloatList { "@MENU_NICEST" 1 "@MENU_FASTEST" 0 }
+		rect		5 85 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	185 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		action { play "mouse_click";  }
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+	}
+
+	itemDef 
+	{
+		name graphics
+		group grpSystem
+		type ITEM_TYPE_MULTI
+		text "@MENU_MODEL_DETAIL"
+		cvar "ui_lod"
+		cvarFloatList { "@MENU_MINIMUM" 4 "@MENU_LOW" 3 "@MENU_NORMAL" 2 "@MENU_HIGH" 1 "@MENU_MAXIMUM" 0}
+		rect		5 100 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	185 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+//		mouseenter	{ show keyBindStatus }
+//		mouseexit	{ hide keyBindStatus }
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+		action { play "mouse_click"; show graphicsapply; }
+	}
+/*
+	itemDef 
+	{
+		name performance
+		group grpOptions
+		type ITEM_TYPE_YESNO
+		text "@MENU_LOW_QUALITY_SKY"
+		cvar "r_fastsky"
+		rect		5 100 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	185 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		action { play "mouse_click";  }
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+	}
+*/
+/*
+	itemDef 
+	{
+		name performance
+		group grpOptions
+		type ITEM_TYPE_YESNO
+		text "Draw Portal Skies:  "
+		cvar "cg_skybox"
+		rect		5 100 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+	}
+*/
+	itemDef 
+	{
+		name performance
+		group grpOptions
+		type ITEM_TYPE_YESNO
+		text "@MENU_SYNC_EVERY_FRAME"
+		cvar "r_swapinterval"
+		rect		5 115 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	185 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		action { play "mouse_click";  }
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+	}
+		itemDef 
+	{
+		name performance
+		group grpOptions
+		type ITEM_TYPE_YESNO	
+		text "@MENU_SHOW_BLOOD"
+		cvar "cg_blood"
+		rect		5 130 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	185 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		action { play "mouse_click";  }
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+	}
+	itemDef 
+	{
+		name performance
+		group grpOptions
+		type ITEM_TYPE_MULTI	
+		text "@MENU_NUMBER_OF_CORPSES"
+		cvar "ai_corpsecount"
+		cvarFloatList { "@MENU_TINY" 3 "@MENU_SMALL" 5 "@MENU_MEDIUM" 10 "@MENU_LARGE" 20 "@MENU_INSANE" 64 }
+		rect		5 145 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	185 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		cvartest "ui_multiplayer"
+		showCvar { "0" }
+		action { play "mouse_click";  }
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+	}
+/*
+	itemDef 
+	{
+		name performance
+		type ITEM_TYPE_MULTI	
+		group grpOptions
+		text "Corona Dist:  "
+		rect		5 115 OPTIONS_CONTROL_SIZE
+		cvar "cg_coronafardist"
+		cvarFloatList { "normal" 1536 "far" 4096 "very far" 16000 "off" 0 "near" 800 }
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+	}
+*/
+/*
+	itemDef 
+	{
+		name performance
+		group grpOptions
+		type ITEM_TYPE_YESNO
+		text "Particles:  "
+		cvar "cg_wolfparticles"
+		rect		5 115 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+	}
+*/
+	itemDef 
+	{
+		name performance
+		group grpOptions
+		type ITEM_TYPE_MULTI	
+		text "@MENU_NVIDIA_FOG_TYPE"
+
+		cvarTest "r_ext_NV_fog_dist"
+		showcvar { "1" }
+		cvar "r_nv_fogdist_mode"
+		cvarStrList { "@MENU_NV_RADIAL", "GL_EYE_RADIAL_NV", "@MENU_NV_PLANE", "GL_EYE_PLANE_ABSOLUTE_NV" }
+
+		rect		5 160 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	185 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		action { play "mouse_click";  }
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+	}
+
+
+}
+
+}//

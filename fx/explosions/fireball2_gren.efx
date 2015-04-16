@@ -1,0 +1,59 @@
+Particle
+{
+	spawnFlags			rgbComponentInterpolation
+
+	count				4
+
+	life				300
+
+	origin				0 0 0 33 0 0
+
+	radius				10
+
+	height				100
+
+	rotation			350 -321
+
+	rotationDelta		1 -1
+
+	velocity			223 23 32 23 -46 64
+
+	rgb
+	{
+		start			0.9765 0.949 0.651
+		end				0.6392 0.5176 0.2627 0.6706 0.4157 0.1373
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10
+		end				75 100
+		flags			linear
+	}
+
+	size2
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	length
+	{
+		start			122
+		end				1222
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/hotspot
+	]
+}

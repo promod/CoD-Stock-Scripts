@@ -1,0 +1,28 @@
+Particle
+{
+	flags				useAlpha
+
+	life				4500
+
+	rotation			360 -360
+
+	velocity			6 3 3 9 -3 -3
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				12
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/medium_smoke
+	]
+}

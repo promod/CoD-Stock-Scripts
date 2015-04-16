@@ -1,0 +1,9 @@
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/doorknobcrystal"
+"classname" "misc_model"
+}

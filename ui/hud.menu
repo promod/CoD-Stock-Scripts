@@ -1,0 +1,283 @@
+#include "ui/menudef.h"
+
+{
+	assetGlobalDef 
+	{
+		cursor "ui/assets/3_cursor3"	// cursor	
+		gradientBar "ui/assets/gradientbar2.tga"	// gradient bar
+		fadeClamp 1.0					// sets the fadeup alpha
+		fadeCycle 1						// how often fade happens in milliseconds
+		fadeAmount 0.1					// amount to adjust alpha per cycle
+
+		shadowX  5						// x amount for shadow offset
+		shadowY  5						// y amount for shadow offset
+		shadowColor 0.1 0.1 0.1 0.25	// shadow color
+
+		consoleFont "fonts/consoleFont" 18		// font
+		smallFont "fonts/smallFont" 12			// font
+		font "fonts/normalFont" 16				// font
+		bigFont "fonts/bigFont" 24				// font
+		extraBigFont "fonts/extraBigFont" 32	// font
+		boldFont "fonts/boldFont" 30			// font
+	}
+
+	//	CURSOR HINTS
+	menuDef 
+	{
+    	name "Cursorhints"
+    	fullScreen MENU_FALSE
+    	visible MENU_TRUE
+    	rect 300 325 40 40 // 480,520,64x64
+
+		itemDef 
+		{
+			name "chRect"
+			decoration
+			visible MENU_TRUE
+			rect 0 0 40 40 // 64x64
+			textscale .21
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			ownerdraw CG_CURSORHINT
+		}
+	}
+
+	//	STANCE
+	menuDef 
+	{
+    	name "stance"
+    	fullScreen MENU_FALSE
+    	visible MENU_TRUE
+		rect 100 434.375 40 40 // 160,695,64x64
+
+		itemDef 
+		{
+			name "chRect"
+			decoration
+			visible MENU_TRUE
+			rect 0 0 40 40 // 64x64
+			forecolor 1.0 1.0 1.0 1.0
+			textscale .21
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			ownerdraw CG_PLAYER_STANCE
+		}
+	}
+	
+	//	TANK STATUS
+	menuDef 
+	{
+    	name "tankstatus"
+    	fullScreen MENU_FALSE
+    	visible MENU_TRUE
+		rect 100 434.375 40 40 // 160,695,64x64
+
+		itemDef 
+		{
+			name "tankbody"
+			rect 0 0 40 40 // 64x64
+			forecolor 1.0 1.0 1.0 1.0
+			background "gfx/hud/hud@tankbody.tga"
+			ownerdraw CG_TANK_BODY_DIR
+			visible MENU_TRUE
+			decoration
+		}
+		
+		itemDef 
+		{
+			name "tankbarrel"
+			rect 20 20 40 40 // 64x64
+			forecolor 1.0 1.0 1.0 1.0
+			background "gfx/hud/hud@tankbarrel.tga"
+			ownerdraw CG_TANK_BARREL_DIR
+			visible MENU_TRUE
+			decoration
+		}
+	}
+
+	// WEAPON INFO
+	menuDef
+	{
+		name "weaponinfo"
+		fullScreen MENU_FALSE
+		visible MENU_TRUE
+		rect 0 420.375 640 40 // 0,695,1024x64
+		
+		// weapon name back
+		itemDef
+		{
+			name "weaponnameback"
+			rect 242.5 10.625 320 20 // 388,17,512x32
+			textscale .3 // needs to match the weapon name display
+			forecolor 1.0 1.0 1.0 1.0
+			background "gfx/hud/hud@weaponnameback.tga"
+			ownerdraw CG_PLAYER_WEAPON_NAME_BACK
+			visible MENU_TRUE
+			decoration
+		}
+
+		// weapon ammo counter back
+		itemDef
+		{
+			name "ammocounterback"
+			rect 557.5 1.25 80 40 // 892,2,128x64
+			forecolor 1.0 1.0 1.0 1.0
+			background "gfx/hud/hud@ammocounterback.tga"
+			ownerdraw CG_PLAYER_AMMO_BACKDROP
+			visible MENU_TRUE
+			decoration
+		}
+
+		// weapon mode
+		itemDef
+		{
+			name "weaponfiremode"
+			rect 537.5 10 20 20 // 860,16,32x32
+			forecolor 1.0 1.0 1.0 1.0
+			ownerdraw CG_PLAYER_WEAPON_MODE_ICON
+			visible MENU_TRUE
+			decoration
+		}
+		
+		// weapon name
+		itemDef
+		{
+			name "weapname"
+			rect 242.5 25.625 320 30 // 388,41,512x32
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textscale .3
+			forecolor 1.0 1.0 1.0 1.0
+			ownerdraw CG_PLAYER_WEAPON_NAME
+			visible MENU_TRUE
+			decoration
+		}
+		
+		// ammo text
+		itemDef 
+		{
+ 			name "ammotex"
+			rect 570 24.25 55 40 // 912,2,88x64
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textscale .21
+			forecolor 1.0 1.0 1.0 1.0
+			ownerdraw CG_PLAYER_AMMO_VALUE
+			visible MENU_TRUE
+			decoration
+		}
+	}
+
+	// HEALTH BAR
+	menuDef
+	{
+		name "Health"
+		fullScreen MENU_FALSE
+		visible MENU_TRUE
+		rect 488 460 0 0 // Lower right corner
+		
+		itemDef
+		{
+			name "healthbarback"
+			rect 13 0 130 12
+			forecolor 1.0 1.0 1.0 1.0
+			background "gfx/hud/hud@health_back.tga"
+			ownerdraw CG_PLAYER_BAR_HEALTH_BACK
+			visible MENU_TRUE
+			decoration
+		}
+		itemDef
+		{
+			name "healthbar"
+			rect 14 1 128 10
+			forecolor 0.7 0.4 0.0 1.0
+			background "gfx/hud/hud@health_bar.tga"
+			ownerdraw CG_PLAYER_BAR_HEALTH
+			visible MENU_TRUE
+			decoration
+		}
+		itemDef
+		{
+			name "healthbarcross"
+			rect 0 0 12 12
+			forecolor 1.0 1.0 1.0 1.0
+			background "gfx/hud/hud@health_cross.tga"
+			ownerdraw CG_PLAYER_BAR_HEALTH_BACK
+			visible MENU_TRUE
+			decoration
+		}
+	}
+
+	//	COMPASS
+	menuDef
+	{
+		name "Compass"
+    	fullScreen MENU_FALSE
+    	visible MENU_TRUE
+    	rect COMPASS_X COMPASS_Y COMPASS_SIZE COMPASS_SIZE
+
+		itemDef
+    	{
+			name "compassback"
+			rect 0 0 COMPASS_SIZE COMPASS_SIZE
+			forecolor 1.0 1.0 1.0 1.0
+			background "gfx/hud/hud@compassback.tga"
+			ownerdraw CG_PLAYER_COMPASS
+			visible MENU_TRUE
+			decoration
+    	}
+		itemDef
+		{
+			name "compasshighlight"
+			rect 0 0 COMPASS_SIZE COMPASS_SIZE
+			forecolor 1.0 1.0 1.0 1.0
+			background "gfx/hud/hud@compasshighlight.tga"
+			ownerdraw CG_PLAYER_COMPASS_BACK
+			visible MENU_TRUE
+			decoration
+		}
+		itemDef
+		{
+			name "compassface"
+			rect 0 0 COMPASS_SIZE COMPASS_SIZE
+			forecolor 1.0 1.0 1.0 1.0
+			background "gfx/hud/hud@compassface.tga"
+			ownerdraw CG_PLAYER_COMPASS
+			visible MENU_TRUE
+			decoration
+		}
+		itemDef
+		{
+			name "compassneedle"
+			rect COMPASS_NEEDLE_XOFF COMPASS_NEEDLE_YOFF COMPASS_NEEDLE_WIDTH COMPASS_NEEDLE_HEIGHT
+			forecolor 1.0 1.0 1.0 1.0
+			background "gfx/hud/hud@compass_arrow.tga"
+			ownerdraw CG_PLAYER_COMPASS_BACK
+			visible MENU_TRUE
+			decoration
+		}
+		itemDef // Friendlies pointers
+		{
+			name "compassfrieldlies"
+			visible MENU_TRUE
+			rect 0 0 COMPASS_SIZE COMPASS_SIZE
+			forecolor 1.0 1.0 1.0 1.0
+			background "gfx/hud/hud@objective_friendly.tga"
+			ownerdraw CG_PLAYER_COMPASS_FRIENDS
+		}
+		itemDef // tank pointers
+		{
+			name "compasstanks"
+			visible MENU_TRUE
+			rect 0 0 COMPASS_SIZE COMPASS_SIZE
+			forecolor 1.0 1.0 1.0 1.0
+			background "gfx/hud/hud@objective_tank.tga"
+			ownerdraw CG_PLAYER_COMPASS_TANKS
+		}
+    	itemDef // Objective pointers
+    	{
+			name "compasspointers"
+			decoration
+			visible MENU_TRUE
+			rect 0 0 COMPASS_SIZE COMPASS_SIZE
+			forecolor 1.0 1.0 1.0 1.0
+			ownerdraw CG_PLAYER_COMPASS_POINTERS
+    	}
+	}
+}

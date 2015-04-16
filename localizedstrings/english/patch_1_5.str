@@ -1,0 +1,142 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\trees\mk\source_data\string_resources\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           SQUADALPHA
+LANG_ENGLISH        "Alpha"
+
+REFERENCE           SQUADBRAVO
+LANG_ENGLISH        "Bravo"
+
+REFERENCE           ALLOW_VOTE_FRIENDLYFIRE
+LANG_ENGLISH        "Allow Vote Friendly Fire:  "
+
+REFERENCE           ALLOW_VOTE_DRAWFRIEND
+LANG_ENGLISH        "Allow Vote Friendly Indicators:  "
+
+REFERENCE           ALLOW_VOTE_KILLCAM
+LANG_ENGLISH        "Allow Vote Kill Cam:  "
+
+REFERENCE           TIMEOUT_NONEINPROGRESS
+LANG_ENGLISH        "No timeout in progress."
+
+REFERENCE           TIMEOUT_CALLED
+LANG_ENGLISH        "The %s have called a timeout."
+
+REFERENCE           TIMEIN_WRONGTEAM
+LANG_ENGLISH        "Your team did not call the timeout."
+
+REFERENCE           TIMEOUT_CALLED_PLAYERNAME
+LANG_ENGLISH        "%s has called a timeout."
+
+REFERENCE           TIMEOUT_NOTENABLED
+LANG_ENGLISH        "Timeouts are not enabled on this server."
+
+REFERENCE           TIMEOUT_ALREADYINPROGRESS
+LANG_ENGLISH        "A timeout is already in progress."
+
+REFERENCE           TIMEOUT_MAXCALLED
+LANG_ENGLISH        "The %s have used the maximum number of timeouts."
+
+REFERENCE           TIMEOUT_INVALIDGAMETYPE
+LANG_ENGLISH        "Timeouts are not allowed for this game type."
+
+REFERENCE           TIMEOUT_ENDING
+LANG_ENGLISH        "The timeout is ending.  Resuming play."
+
+REFERENCE           TIMEOUT_EXPIRED
+LANG_ENGLISH        "The timeout has expired."
+
+REFERENCE           DRAWFRIEND_NOCHANGE
+LANG_ENGLISH        "Vote would not change Friendly Indicators."
+
+REFERENCE           VOTE_DRAWFRIEND
+LANG_ENGLISH        "Friendly Indicators: %s"
+
+REFERENCE           VOTE_KILLCAM
+LANG_ENGLISH        "Killcam: %s"
+
+REFERENCE           KILLCAM_NOCHANGE
+LANG_ENGLISH        "Vote would not change Killcam."
+
+REFERENCE           VOTE_FRIENDLYFIRE
+LANG_ENGLISH        "Friendly Fire: %s"
+
+REFERENCE           FRIENDLYFIRE_NOCHANGE
+LANG_ENGLISH        "Vote would not change Friendly Fire."
+
+REFERENCE           VOTE_ARG_NOTVALID
+LANG_ENGLISH        "Not a valid argument for vote: %s"
+
+REFERENCE           TIMEOUT_MUSTBEPLAYING
+LANG_ENGLISH        "You must be playing to call a timeout."
+
+REFERENCE           TIMEIN_MUSTBEPLAYING
+LANG_ENGLISH        "You must be playing to call a time in."
+
+REFERENCE           KILLCAM
+LANG_ENGLISH        "Change Killcam "
+
+REFERENCE           GAMETYPE
+LANG_ENGLISH        "Game Type"
+
+REFERENCE           FRIENDLYFIRE
+LANG_ENGLISH        "Change Friendly Fire"
+
+REFERENCE           DRAWFRIEND
+LANG_ENGLISH        "Change Friendly Indicators"
+
+REFERENCE           TIMEIN_CALLED_PLAYERNAME
+LANG_ENGLISH        "%s has called time in."
+
+REFERENCE           TIMEOUT_MAXTIMEUSED
+LANG_ENGLISH        "The %s have exhausted their timeout bank."
+
+REFERENCE           GENERAL_SETTINGS
+LANG_ENGLISH        "General"
+
+REFERENCE           ADVANCED_SETTINGS
+LANG_ENGLISH        "Advanced"
+
+REFERENCE           ALLOW_VOTE_MAP_RESTART
+LANG_ENGLISH        "Allow Vote Map Restart:  "
+
+REFERENCE           ALLOW_VOTE_MAP_ROTATE
+LANG_ENGLISH        "Allow Vote Map Rotate:  "
+
+REFERENCE           ALLOW_VOTE_GAMETYPE
+LANG_ENGLISH        "Allow Vote Game Type:  "
+
+REFERENCE           ALLOW_VOTE_MAP
+LANG_ENGLISH        "Allow Vote Map:  "
+
+REFERENCE           ALLOW_VOTE_KICK
+LANG_ENGLISH        "Allow Vote Kick:  "
+
+REFERENCE           ALLOW_VOTE_BAN
+LANG_ENGLISH        "Allow Vote Ban:  "
+
+REFERENCE           WWW_UNEXPECTEDDOWNLOADMESSAGE
+LANG_ENGLISH        "Unexpected www download message."
+
+REFERENCE           WWW_DOWNLOADDISCONNECTED
+LANG_ENGLISH        "Client dropped to download files."
+
+REFERENCE           SAYSQUAD
+LANG_ENGLISH        "say_squad"
+
+REFERENCE           SV_INFO_TIMEOUTSALLOWED
+LANG_ENGLISH        "Timeouts Allowed"
+
+ENDMARKER

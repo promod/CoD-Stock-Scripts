@@ -1,0 +1,25 @@
+Particle
+{
+	flags				useAlpha
+
+	life				500
+
+	rotation			360 -360
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				100
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/impact/dusty
+	]
+}

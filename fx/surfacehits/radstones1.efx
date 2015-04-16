@@ -1,0 +1,45 @@
+Particle
+{
+	flags				usePhysics impactKills
+
+	spawnFlags			orgOnSphere axisFromSphere
+
+	count				20 15
+
+	life				2000
+
+	radius				50 150
+
+	height				50 100
+
+	rotation			180 -360
+
+	rotationDelta		180 -360
+
+	velocity			2000 0 0 2700 0 0
+
+	gravity				-600 -1000
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			18 12
+		end				21 32
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/stonegib1
+	]
+}

@@ -1,0 +1,12 @@
+{
+	//surfaceparm glass
+	surfaceparm nonsolid
+	sort outerBlend
+	nomipmaps
+	nopicmip
+	{
+		map $texturename
+		rgbGen lightingDiffuse
+		blendFunc blend
+	}
+}

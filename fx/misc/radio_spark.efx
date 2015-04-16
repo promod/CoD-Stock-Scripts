@@ -1,0 +1,72 @@
+Tail
+{
+	flags				usePhysics
+
+	spawnFlags			orgOnSphere axisFromSphere
+
+	count				6
+
+	life				722
+
+	bounce				0.2
+
+	velocity			123 133 133 123 -133 -133
+
+	gravity				-322
+
+	size
+	{
+		start			2
+	}
+
+	length
+	{
+		start			7
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/impact/sparktrail
+	]
+}
+
+Tail
+{
+	name				Copy of Unnamed Tail 0
+
+	flags				usePhysics impactKills
+
+	spawnFlags			orgOnSphere axisFromSphere
+
+	count				6
+
+	life				722
+
+	bounce				0.2
+
+	velocity			123 133 133 223 0 0
+
+	gravity				-322
+
+	alpha
+	{
+		end				0
+	}
+
+	size
+	{
+		start			3
+	}
+
+	length
+	{
+		start			12
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/impact/sparktrail
+	]
+}

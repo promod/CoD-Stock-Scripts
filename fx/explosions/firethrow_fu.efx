@@ -1,0 +1,27 @@
+Emitter
+{
+	flags				emitFx
+
+	count				3
+
+	life				900
+
+	velocity			5133 3223 3334 5133 -3233 -3334
+
+	gravity				-1.3e+004
+
+	density				4
+
+	variance			14 33
+
+	size
+	{
+		end				1.333e+004
+		flags			linear
+	}
+
+	emitfx
+	[
+		fx/explosions/fireball4_em
+	]
+}

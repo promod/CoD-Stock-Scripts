@@ -1,0 +1,88 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			orgOnSphere rgbComponentInterpolation
+
+	life				1.2e+004 1.25e+004
+
+	origin				0 1744 0 0 -1844 0
+
+	radius				8 343
+
+	rotation			260 -260
+
+	rotationDelta		0 1
+
+	velocity			100 200 0 100 32 0
+
+	rgb
+	{
+		end				0.6275 0.6275 0.6431 0.7529 0.7529 0.7608
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			1000 1900
+		end				1.005e+004 1e+004
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/dark_smoke
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				useAlpha
+
+	spawnFlags			orgOnSphere rgbComponentInterpolation
+
+	life				1.2e+004 1.25e+004
+
+	origin				0 1744 0 0 -1844 0
+
+	radius				8 343
+
+	rotation			260 -260
+
+	rotationDelta		0 1
+
+	velocity			100 200 0 200 48 0
+
+	rgb
+	{
+		start			0.502 0.502 0.502 0.2745 0.2275 0.2
+		end				0.2745 0.2275 0.2 0.03529 0.02745 0.02353
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			1000 1900
+		end				1.005e+004 1e+004
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/whitesmoke
+	]
+}

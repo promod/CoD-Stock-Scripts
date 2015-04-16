@@ -1,0 +1,41 @@
+Cylinder
+{
+	life				211
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			244
+		end				233
+		flags			linear
+	}
+
+	size2
+	{
+		end				1477
+		flags			linear
+	}
+
+	length
+	{
+		start			133
+		end				33
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion/explosion_1
+	]
+}

@@ -1,0 +1,231 @@
+Particle
+{
+	name				flash
+
+	flags				useAlpha
+
+	spawnFlags			absoluteVel absoluteAccel orgOnSphere axisFromSphere
+
+	count				3
+
+	life				100 123
+
+	origin				32 34 0 0 -68 0
+
+	rotation			34 -68
+
+	rotationDelta		4 2
+
+	velocity			0 0 211
+
+	acceleration		0 0 322
+
+	gravity				300
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.6
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10 1
+		end				100 150
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/groundflash1
+	]
+}
+
+OrientedParticle
+{
+	name				smokeblast
+
+	flags				deathFx useAlpha
+
+	spawnFlags			cheapOrgCalc orgOnCylinder axisFromSphere evenDistribution
+
+	life				100
+
+	height				100
+
+	rotation			13 -26
+
+	rotationDelta		40 -80
+
+	velocity			0 0 400 0 0 200
+
+	acceleration		300 200 700 120 -350 400
+
+	gravity				-300 -400
+
+	rgb
+	{
+		start			0.8392 0.8118 0.6627
+		end				0.03529 0.02745 0.02353
+		flags			linear clamp
+	}
+
+	alpha
+	{
+		start			0.8
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			1 10
+		end				676 976
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/dark_smoke
+	]
+
+	deathfx
+	[
+		fx/smoke/whitesmoke
+	]
+}
+
+Particle
+{
+	name				ground
+
+	flags				useAlpha
+
+	nonUniformScale		1
+
+	life				500
+
+	delay				100
+
+	rotation			3 -3
+
+	velocity			522 0 0
+
+	gravity				400
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				200
+		flags			linear
+	}
+
+	size2
+	{
+		start			100
+		end				400
+		flags			linear
+	}
+
+	length
+	{
+		end				1000
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/groundblast1
+	]
+}
+
+OrientedParticle
+{
+	name				Copy of smokey
+
+	flags				deathFx useAlpha
+
+	spawnFlags			cheapOrgCalc orgOnCylinder axisFromSphere evenDistribution rgbComponentInterpolation
+
+	count				3
+
+	life				200 100
+
+	height				10
+
+	rotation			13 -26
+
+	rotationDelta		40 -80
+
+	velocity			0 0 400 0 0 200
+
+	acceleration		300 200 700 120 -350 400
+
+	gravity				-300 -400
+
+	rgb
+	{
+		start			0.8392 0.8118 0.6627
+		end				0.8392 0.8118 0.6627 0.9765 0.949 0.651
+		flags			linear clamp
+	}
+
+	alpha
+	{
+		start			0.8
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			1 10
+		end				400 453
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/dark_smoke
+	]
+
+	deathfx
+	[
+		fx/smoke/whitesmoke
+	]
+}
+
+Light
+{
+	life				300 200
+
+	rgb
+	{
+		start			0.8392 0.8118 0.6627
+		end				0.8549 0.7098 0.2706
+		flags			random linear
+	}
+
+	size
+	{
+		start			1300 1000
+		end				100 150
+		flags			linear
+	}
+}

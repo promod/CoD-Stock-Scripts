@@ -1,0 +1,43 @@
+Particle
+{
+	flags				useAlpha
+
+	life				2200
+
+	origin				0 22 22 0 -22 -22
+
+	rotation			360 -360
+
+	rotationDelta		6 -6
+
+	velocity			451 42 42 451 -42 -42
+
+	gravity				-800
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0.2
+		flags			linear
+	}
+
+	size
+	{
+		end				50 200
+		flags			linear
+	}
+
+	size2
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion/dirt1_alph
+	]
+}

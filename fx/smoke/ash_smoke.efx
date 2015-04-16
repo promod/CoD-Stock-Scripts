@@ -1,0 +1,75 @@
+Particle
+{
+	flags				useAlpha
+
+	life				3000
+
+	origin				-10 0 0
+
+	rotation			-90 90
+
+	velocity			42 0 0 21 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				60
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smoke/smoke_frnt
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				useAlpha
+
+	life				6000
+
+	origin				-10 0 0
+
+	rotation			-90 90
+
+	rotationDelta		-2 2
+
+	velocity			42 0 0 21 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.3
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			15
+		end				60
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smoke/smoke2
+	]
+}

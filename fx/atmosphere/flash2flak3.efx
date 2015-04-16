@@ -1,0 +1,13 @@
+FxRunner
+{
+	count				7 5
+
+	delay				500 10
+
+	origin				480 -480 1120 -480 300 -1120
+
+	playfx
+	[
+		fx/atmosphere/flash2flak
+	]
+}

@@ -1,0 +1,155 @@
+Particle
+{
+	spawnFlags			orgOnSphere
+
+	count				15
+
+	life				1500
+
+	delay				300
+
+	origin				62 32 0 32 -64 0
+
+	radius				22 93
+
+	height				12 21
+
+	rotation			113 -134
+
+	rotationDelta		1 -1
+
+	velocity			1600 34 12 300 -54 -12
+
+	gravity				-900
+
+	rgb
+	{
+		start			0.502 0.502 0.502
+		end				0.6667 0.7686 0.7451
+		flags			random linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				300 400
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/waterspay
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 3
+
+	spawnFlags			axisFromSphere
+
+	count				10
+
+	life				3500
+
+	delay				745
+
+	origin				1050 123 23 50 -123 23
+
+	height				0
+
+	rotation			130 -340
+
+	velocity			122 89 89 122 -89 -89
+
+	gravity				-320 -400
+
+	rgb
+	{
+		start			0.502 0.502 0.502
+		end				0.6667 0.7686 0.7451
+		flags			random linear
+	}
+
+	alpha
+	{
+		start			0.1
+		end				0.3
+		flags			linear
+	}
+
+	size
+	{
+		start			80 119
+		end				300
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/waterspay
+	]
+}
+
+FxRunner
+{
+	delay				2300 2100
+
+	cullrange			3000
+
+	playfx
+	[
+		fx/surfacehits/aftereffec1
+	]
+}
+
+Particle
+{
+	name				Copy of Copy of Unnamed Particl
+
+	flags				useAlpha
+
+	spawnFlags			axisFromSphere
+
+	count				10
+
+	life				3300
+
+	delay				745
+
+	origin				950 123 0 50 -123 23
+
+	rotation			130 -340
+
+	velocity			122 89 89 122 -89 -89
+
+	rgb
+	{
+		flags			random linear
+	}
+
+	alpha
+	{
+		start			0.2
+		end				0
+		parm			2 5
+		flags			linear
+	}
+
+	size
+	{
+		start			80 119
+		end				300
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/mist
+	]
+}

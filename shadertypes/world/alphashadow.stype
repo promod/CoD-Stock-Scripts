@@ -1,0 +1,15 @@
+{
+	surfaceparm castshadow
+	surfaceparm nomarks
+	surfaceparm nolightmap
+	surfaceparm alphashadow
+	surfaceparm nonsolid
+	{
+		map $texturename
+		rgbGen exactVertex
+		alphaFunc GE128
+		depthWrite
+	nextbundle
+		map $lightmap
+	}
+}

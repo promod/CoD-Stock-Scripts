@@ -1,0 +1,45 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				3 4
+
+	life				2500 2600
+
+	origin				0 0 0 4 0 0
+
+	radius				1 12
+
+	rotation			-360 360
+
+	rotationDelta		4 -4
+
+	velocity			4 7 7 4 -7 -7
+
+	rgb
+	{
+		start			0.6824 0.6431 0.5569
+		end				1 0.9843 0.9412
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			3 2
+		end				15 35
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/medium_smoke
+	]
+}

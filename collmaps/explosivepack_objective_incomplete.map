@@ -1,0 +1,9 @@
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"model" "xmodel/explosivepack_objective_incomplete"
+"origin" "0 0 0"
+"classname" "misc_model"
+}

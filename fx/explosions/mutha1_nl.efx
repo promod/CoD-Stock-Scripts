@@ -1,0 +1,23 @@
+FxRunner
+{
+	radius				35 22
+
+	playfx
+	[
+		fx/impacts/largemortar_dirt4
+	]
+}
+
+FxRunner
+{
+	name				Copy of Unnamed FxRunner 4
+
+	spawnFlags			axisFromSphere
+
+	radius				35 122
+
+	playfx
+	[
+		fx/explosions/emsmoke_fill
+	]
+}

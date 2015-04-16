@@ -1,0 +1,24 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 53 -26 24 ) ( 53 30 24 ) ( 53 30 -24 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( 48 27 24 ) ( -48 27 24 ) ( -48 27 -24 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( -48 31 24 ) ( -48 -25 24 ) ( -48 -25 -24 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( 48 -20 25 ) ( 48 27 18 ) ( 80 -20 25 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( 48 -23 -25 ) ( 48 -21 19 ) ( 80 -21 19 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( 48 -22 19 ) ( 48 -19 25 ) ( 80 -19 25 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( 17 26 0 ) ( 53 22 0 ) ( 17 26 32 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( 53 -21 0 ) ( -48 -23 0 ) ( 53 -21 32 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( 17 -1 25 ) ( -48 -1 -1 ) ( -48 31 -1 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( -48 -1 -25 ) ( 53 -1 -21 ) ( -48 31 -25 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( 53 -1 20 ) ( 16 -1 25 ) ( 16 31 25 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( 53 -1 15 ) ( 48 -1 20 ) ( 48 31 20 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/gib_stonebrick1"
+"classname" "misc_model"
+}

@@ -1,0 +1,15 @@
+{
+	qer_trans .5
+//	q3map_globaltexture
+	surfaceparm trans
+	surfaceparm nonsolid
+	surfaceparm water
+	{
+		map $texturename
+		rgbGen exactVertex
+	}
+	{
+		map $lightmap
+		blendFunc filter
+	}
+}

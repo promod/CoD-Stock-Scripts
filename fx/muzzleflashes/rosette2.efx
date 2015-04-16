@@ -1,0 +1,109 @@
+Line
+{
+	count				2
+
+	life				100
+
+	origin2				0 6 6
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/muzzleflashes/flip_stage1
+		gfx/effects/muzzleflashes/flip_stage2
+	]
+}
+
+Line
+{
+	name				Copy of Unnamed Line 1
+
+	count				2
+
+	life				100
+
+	origin2				0 -6 -6
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/muzzleflashes/flip_stage1
+		gfx/effects/muzzleflashes/flip_stage2
+	]
+}
+
+Line
+{
+	name				Copy of Copy of Unnamed Line 1
+
+	count				2
+
+	life				100
+
+	origin2				0 6 -6
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/muzzleflashes/flip_stage1
+		gfx/effects/muzzleflashes/flip_stage2
+	]
+}
+
+Line
+{
+	name				Copy of Copy of Copy of Unnamed
+
+	count				2
+
+	life				100
+
+	origin2				0 -6 6
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/muzzleflashes/flip_stage1
+		gfx/effects/muzzleflashes/flip_stage2
+	]
+}

@@ -1,0 +1,83 @@
+Tail
+{
+	flags				relative
+
+	spawnFlags			orgOnCylinder
+
+	count				4
+
+	life				100
+
+	origin				63 1 1 73 -1 -1
+
+	radius				2
+
+	velocity			220 0 0
+
+	alpha
+	{
+		end				0.5 0.4
+		flags			linear
+	}
+
+	size
+	{
+		start			3 1
+		end				10
+		flags			linear
+	}
+
+	length
+	{
+		start			12 1
+		end				100
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/mg42a
+	]
+}
+
+Particle
+{
+	flags				relative
+
+	count				2 4
+
+	life				100
+
+	cullrange			1500
+
+	rotation			123 -321
+
+	rotationDelta		4 1
+
+	velocity			500 0 0 300 0 0
+
+	acceleration		1341 0 0 0 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0.2 0
+		flags			linear
+	}
+
+	size
+	{
+		start			32 12
+		end				1 14
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/mg42b
+	]
+}

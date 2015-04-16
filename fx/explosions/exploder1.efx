@@ -1,0 +1,177 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder
+
+	count				4 6
+
+	life				1000
+
+	origin				323 0 0 -45 0 0
+
+	radius				122 12
+
+	rotation			360 -360
+
+	rotationDelta		12 -12
+
+	velocity			1700 0 0 900 0 0
+
+	gravity				-400 -500
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.7
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			56 200
+		end				900 200
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/whitesmoke
+	]
+}
+
+Tail
+{
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder axisFromSphere affectedByWind
+
+	count				3 5
+
+	life				1000
+
+	radius				14 54
+
+	velocity			822 0 1111 422 0 1111
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			64 10
+		end				500
+		flags			linear
+	}
+
+	length
+	{
+		start			440 400
+		end				1200 1100
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/whitesmoke
+	]
+}
+
+Particle
+{
+	count				31 12
+
+	life				700 1000
+
+	origin				232 0 0 0 0 0
+
+	rotation			123 -264
+
+	rotationDelta		12 2
+
+	velocity			1900 21 0 251 -42 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.2 0.6
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			21 32
+		end				123 600
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/firesheetcrescent
+	]
+}
+
+Particle
+{
+	flags				usePhysics impactKills useAlpha
+
+	spawnFlags			axisFromSphere
+
+	count				12 30
+
+	life				1900 1600
+
+	origin				423 0 0 -231 0 0
+
+	rotation			0 360
+
+	rotationDelta		11 54
+
+	velocity			811 323 0 2211 -343 0
+
+	acceleration		0 1000 0 0 -1000 0
+
+	gravity				-1178 360
+
+	rgb
+	{
+		flags			random linear clamp
+	}
+
+	alpha
+	{
+		start			1 0.7
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			34 4
+		end				34 4
+		flags			random linear
+	}
+
+	shaders
+	[
+		gfx/effects/stonegib1
+	]
+}

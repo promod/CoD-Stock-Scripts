@@ -1,0 +1,47 @@
+Particle
+{
+	flags				useAlpha
+
+	nonUniformScale		1
+
+	life				400
+
+	rotation			6 -6
+
+	rgb
+	{
+		end				0.6275 0.6275 0.6431
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			43
+		end				22
+		flags			linear
+	}
+
+	size2
+	{
+		start			22
+		end				52
+		flags			linear
+	}
+
+	length
+	{
+		end				14
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/misc/rocketplume
+	]
+}

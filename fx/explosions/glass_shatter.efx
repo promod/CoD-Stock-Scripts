@@ -1,0 +1,28 @@
+Emitter
+{
+	flags				useModel
+
+	count				12
+
+	life				1122 1422
+
+	origin				22 0 0 55 0 0
+
+	angleDelta			222 22 222 -222 -22 -222
+
+	velocity			933 922 922 1333 -922 -922
+
+	gravity				-4000
+
+	size
+	{
+		start			1 13
+		end				1 13
+	}
+
+	models
+	[
+		xmodel/gib_glass1
+		xmodel/gib_glass2
+	]
+}

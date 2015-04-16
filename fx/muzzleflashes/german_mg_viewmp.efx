@@ -1,0 +1,246 @@
+Particle
+{
+	flags				relative
+
+	life				100
+
+	origin				2 0 0
+
+	rotation			90 -180
+
+	rotationDelta		11 -32
+
+	alpha
+	{
+		start			0.7
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			3
+		end				6
+		flags			linear
+	}
+
+	size2
+	{
+		end				12
+		flags			linear
+	}
+
+	length
+	{
+		start			42
+		end				375
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/muzflash2_sn
+	]
+}
+
+Light
+{
+	flags				depthHack
+
+	life				100
+
+	origin				18 0 0 22 0 0
+
+	rgb
+	{
+		start			0.9804 0.9373 0.8118
+		end				0.9765 0.949 0.651
+		flags			linear
+	}
+
+	size
+	{
+		start			200
+		flags			random linear
+	}
+}
+
+Particle
+{
+	flags				depthHack useAlpha
+
+	life				300 400
+
+	origin				3 0 0 7 0 0
+
+	rotation			-360 360
+
+	rotationDelta		2 -2
+
+	velocity			42 33 33 0 -33 -33
+
+	rgb
+	{
+		end				0.6235 0.5725 0.5176
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.3
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				20
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/whitesmoke
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				relative
+
+	life				100
+
+	origin				5 0 0
+
+	rotation			90 -180
+
+	rotationDelta		11 -32
+
+	alpha
+	{
+		start			0.7
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			3
+		end				6
+		flags			linear
+	}
+
+	size2
+	{
+		end				12
+		flags			linear
+	}
+
+	length
+	{
+		start			42
+		end				375
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/muzflash2_sn
+	]
+}
+
+Particle
+{
+	name				Copy of Copy of Unnamed Particl
+
+	flags				relative
+
+	life				100
+
+	origin				7 0 0
+
+	rotation			90 -180
+
+	rotationDelta		11 -32
+
+	alpha
+	{
+		start			0.7
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			3
+		end				6
+		flags			linear
+	}
+
+	size2
+	{
+		end				12
+		flags			linear
+	}
+
+	length
+	{
+		start			42
+		end				375
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/muzflash2_sn
+	]
+}
+
+Particle
+{
+	name				Copy of Copy of Copy of Unnamed
+
+	flags				relative
+
+	life				100
+
+	origin				9 0 0
+
+	rotation			90 -180
+
+	rotationDelta		11 -32
+
+	alpha
+	{
+		start			0.7
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			3
+		end				3
+		flags			linear
+	}
+
+	size2
+	{
+		end				12
+		flags			linear
+	}
+
+	length
+	{
+		start			42
+		end				375
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/muzflash2_sn
+	]
+}

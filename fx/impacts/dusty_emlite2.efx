@@ -1,0 +1,38 @@
+Particle
+{
+	flags				useAlpha
+
+	life				1500 1400
+
+	rotation			360 -360
+
+	rotationDelta		2 -2
+
+	gravity				-100
+
+	rgb
+	{
+		start			0.6275 0.6275 0.6431
+		end				0.7647 0.7647 0.7647
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			5 10
+		end				150 100
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/pjsmoke
+		gfx/impact/dusty_puff
+	]
+}

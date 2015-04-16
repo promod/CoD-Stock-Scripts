@@ -1,0 +1,28 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation
+
+	life				500
+
+	radius				100 43
+
+	height				33 122
+
+	alpha
+	{
+		end				0
+	}
+
+	size
+	{
+		start			25
+		end				25
+	}
+
+	shaders
+	[
+		gfx/effects/misc/signal_flash
+	]
+}

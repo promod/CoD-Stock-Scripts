@@ -1,0 +1,121 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder
+
+	life				6000
+
+	height				15 55
+
+	rotation			360 -360
+
+	rotationDelta		2 -2
+
+	velocity			2 0 0 7 0 0
+
+	rgb
+	{
+		start			0.6275 0.6275 0.6431
+		end				0.7569 0.7294 0.6667
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			12
+		end				33
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/medium_smoke
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				useAlpha
+
+	life				6000
+
+	origin				0 6 6
+
+	rotation			360 -360
+
+	rotationDelta		2 -2
+
+	velocity			2 0 0 7 0 0
+
+	rgb
+	{
+		start			0.6275 0.6275 0.6431
+		end				0.7569 0.7294 0.6667
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				33
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/medium_smoke
+	]
+}
+
+Particle
+{
+	name				Copy of Copy of Unnamed Particl
+
+	flags				useAlpha
+
+	life				6000
+
+	origin				0 -6 -6
+
+	rotation			360 -360
+
+	rotationDelta		2 -2
+
+	velocity			2 0 0 7 0 0
+
+	rgb
+	{
+		start			0.6275 0.6275 0.6431
+		end				0.7569 0.7294 0.6667
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				33
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/medium_smoke
+	]
+}

@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 8 18 0 ) ( -8 18 0 ) ( -8 -18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -8 -18 72 ) ( -8 18 72 ) ( 8 18 72 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -8 -18 76 ) ( 8 -18 76 ) ( 8 -18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 8 -18 76 ) ( 8 18 76 ) ( 8 18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 8 18 76 ) ( -8 18 76 ) ( -8 18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -6 18 76 ) ( -6 -18 76 ) ( -6 -18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/bookshelveshort_d"
+"classname" "misc_model"
+}

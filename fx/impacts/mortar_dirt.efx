@@ -1,0 +1,207 @@
+Particle
+{
+	flags				useAlpha
+
+	nonUniformScale		1
+
+	life				1700
+
+	velocity			375 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				700
+		flags			linear
+	}
+
+	size2
+	{
+		start			28
+		end				700
+		flags			linear
+	}
+
+	length
+	{
+		start			14 44
+		end				1000
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/groundblast1
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				useAlpha
+
+	nonUniformScale		1
+
+	life				2000
+
+	velocity			875 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				700
+		flags			linear
+	}
+
+	size2
+	{
+		start			0
+		end				2000
+		flags			linear
+	}
+
+	length
+	{
+		start			143 443
+		end				1000
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/groundblast1
+	]
+}
+
+Particle
+{
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	nonUniformScale		1
+
+	count				4 5
+
+	life				100
+
+	velocity			923 0 223 923 0 923
+
+	rgb
+	{
+		end				0.7608 0.4353 0.2392
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				100 50
+		flags			linear
+	}
+
+	size2
+	{
+		start			5
+		end				100
+		flags			linear
+	}
+
+	length
+	{
+		start			100
+		end				100
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/groundflash1
+	]
+}
+
+Emitter
+{
+	flags				emitFx
+
+	spawnFlags			absoluteAccel orgOnCylinder
+
+	life				200 100
+
+	radius				63 62
+
+	height				41
+
+	velocity			2355 733 0 2044 -655 0
+
+	gravity				-500
+
+	density				4
+
+	size
+	{
+		start			344
+		end				400
+		flags			linear
+	}
+
+	emitfx
+	[
+		fx/smoke/blacksmoke2
+	]
+}
+
+Emitter
+{
+	name				Copy of Unnamed Emitter 3
+
+	flags				emitFx
+
+	spawnFlags			absoluteAccel orgOnCylinder
+
+	life				200 100
+
+	radius				63 62
+
+	velocity			2355 733 0 2044 -655 0
+
+	gravity				-500
+
+	density				4
+
+	size
+	{
+		start			344
+		end				400
+		flags			linear
+	}
+
+	emitfx
+	[
+		fx/smoke/whitesmoke2
+	]
+}

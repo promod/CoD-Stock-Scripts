@@ -1,0 +1,39 @@
+Particle
+{
+	flags				useAlpha
+
+	life				6000 7000
+
+	rotation			360 -360
+
+	rotationDelta		4 -4
+
+	velocity			122 23 23 12 -23 -23
+
+	acceleration		0 -32 0 66 -33 0
+
+	rgb
+	{
+		start			0.6275 0.6275 0.6431
+		end				0.7647 0.7647 0.7647
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			52
+		end				400 500
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion/smokeplume1
+	]
+}

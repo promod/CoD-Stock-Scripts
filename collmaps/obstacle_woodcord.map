@@ -1,0 +1,23 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -6 72 -28 ) ( -30 72 -28 ) ( -30 -8 -28 ) common/clip_nosight 68 0 0 0.25 0.25 0 0 0 0
+( -28 2 18 ) ( -28 82 18 ) ( -4 82 18 ) common/clip_nosight 68 0 0 0.25 0.25 0 0 0 0
+( -30 -60 17 ) ( -6 -60 17 ) ( -6 -60 -31 ) common/clip_nosight 68 -112 0 0.25 0.25 0 0 0 0
+( 0 -8 20 ) ( 0 72 20 ) ( 0 72 -28 ) common/clip_nosight 0 -112 0 0.25 0.25 0 0 0 0
+( -6 58 14 ) ( -30 58 14 ) ( -30 58 -34 ) common/clip_nosight 68 -112 0 0.25 0.25 0 0 0 0
+( -29 72 20 ) ( -29 -8 20 ) ( -29 -8 -28 ) common/clip_nosight 0 -112 0 0.25 0.25 0 0 0 0
+( 0 -60 -24 ) ( 0 -55 -1 ) ( 32 -60 -24 ) common/clip_nosight 0 -112 0 0.25 0.25 0 0 0 0
+( 0 -55 -1 ) ( 0 -48 11 ) ( 32 -55 -1 ) common/clip_nosight 0 -112 0 0.25 0.25 0 0 0 0
+( 0 -48 11 ) ( 0 -28 17 ) ( 32 -48 11 ) common/clip_nosight 0 -112 0 0.25 0.25 0 0 0 0
+( 0 12 18 ) ( 0 35 16 ) ( 32 12 18 ) common/clip_nosight 0 -112 0 0.25 0.25 0 0 0 0
+( 0 35 16 ) ( 0 56 -13 ) ( 32 35 16 ) common/clip_nosight 0 -112 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/obstacle_woodcord"
+"classname" "misc_model"
+}

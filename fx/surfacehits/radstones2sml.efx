@@ -1,0 +1,49 @@
+Particle
+{
+	flags				usePhysics impactKills
+
+	spawnFlags			orgOnSphere axisFromSphere rgbComponentInterpolation
+
+	count				10 15
+
+	life				2000
+
+	delay				90 0
+
+	radius				50 150
+
+	height				50 100
+
+	rotation			180 -360
+
+	rotationDelta		180 -360
+
+	velocity			1000 0 0 1700 0 0
+
+	gravity				-600 -1000
+
+	rgb
+	{
+		start			0.8392 0.8118 0.6627 0.502 0.502 0.502
+		end				0.8392 0.8118 0.6627 1 0.9843 0.9412
+		flags			linear wave
+	}
+
+	alpha
+	{
+		end				0.4 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			4 10
+		end				28 22
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/stonegib1
+	]
+}

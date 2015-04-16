@@ -1,0 +1,50 @@
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				useAlpha
+
+	life				1000 1500
+
+	radius				100
+
+	rotation			360 -360
+
+	rotationDelta		2 -2
+
+	velocity			96 -16 -16 128 16 16
+
+	acceleration		-40 0 0 -32 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			8 12
+		end				40 64
+		parm			0.1 80
+		flags			linear
+	}
+
+	size2
+	{
+		start			55 5
+		end				2
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smoke/smoke_frnt
+		gfx/effects/whitesmoke
+	]
+}

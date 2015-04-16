@@ -1,0 +1,95 @@
+Particle
+{
+	name				spray1
+
+	flags				useAlpha
+
+	count				8 6
+
+	life				500
+
+	origin				8 8 8 -8 -8 -8
+
+	height				0
+
+	rotation			360 -360
+
+	velocity			20 20 20 -20 -20 -20
+
+	rgb
+	{
+		start			0.8039 0.8078 0.7569
+		end				0.8039 0.8078 0.7569
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.3
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			5 6
+		end				9 10
+		flags			linear
+	}
+
+	length
+	{
+		start			0
+		end				0
+	}
+
+	shaders
+	[
+		gfx/effects/medium_smoke
+	]
+}
+
+Particle
+{
+	name				solid
+
+	flags				useAlpha
+
+	spawnFlags			axisFromSphere
+
+	count				2 3
+
+	life				500
+
+	origin				8 8 8 -8 -8 -8
+
+	radius				3 1
+
+	rotation			360 -360
+
+	rgb
+	{
+		start			1 0.9843 0.9412
+		end				0.7569 0.7294 0.6667
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.3 0.4
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			5 6
+		end				9 10
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/medium_smoke
+	]
+}

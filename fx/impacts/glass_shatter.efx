@@ -1,0 +1,247 @@
+Emitter
+{
+	flags				useModel relative
+
+	life				1000
+
+	angleDelta			33 33 33 0 0 -3
+
+	velocity			30 0 66
+
+	acceleration		0 0 43
+
+	gravity				-411
+
+	size
+	{
+		start			4
+	}
+
+	models
+	[
+		xmodel/gib_glass1
+		xmodel/gib_glass2
+	]
+}
+
+Emitter
+{
+	name				Copy of Unnamed Emitter 0
+
+	flags				useModel relative
+
+	life				1000
+
+	origin				33 0 0
+
+	angleDelta			33 33 33 0 0 -3
+
+	velocity			30 0 0
+
+	acceleration		0 0 66
+
+	gravity				-411
+
+	size
+	{
+		start			4
+	}
+
+	models
+	[
+		xmodel/gib_glass1
+		xmodel/gib_glass2
+	]
+}
+
+Emitter
+{
+	name				Copy of Copy of Unnamed Emitter
+
+	flags				useModel relative
+
+	life				1000
+
+	origin				33 22 0
+
+	angleDelta			33 33 33 0 0 -3
+
+	velocity			30 0 0
+
+	acceleration		0 0 22 0 0 44
+
+	gravity				-411
+
+	size
+	{
+		start			4
+	}
+
+	models
+	[
+		xmodel/gib_glass1
+		xmodel/gib_glass2
+	]
+}
+
+Emitter
+{
+	name				Copy of Copy of Copy of Unnamed
+
+	flags				useModel relative
+
+	life				1000
+
+	origin				4 -22 0 -34 22 0
+
+	angleDelta			33 33 33 0 0 -3
+
+	velocity			30 0 66
+
+	acceleration		0 0 52
+
+	gravity				-411
+
+	size
+	{
+		start			4
+	}
+
+	models
+	[
+		xmodel/gib_glass1
+		xmodel/gib_glass2
+	]
+}
+
+Emitter
+{
+	name				Copy of Copy of Copy of Copy of
+
+	flags				useModel relative
+
+	life				1000
+
+	origin				22 -13 0
+
+	angleDelta			33 33 33 0 0 -3
+
+	velocity			30 0 66
+
+	acceleration		0 0 33 0 0 55
+
+	gravity				-411
+
+	size
+	{
+		start			4
+	}
+
+	models
+	[
+		xmodel/gib_glass1
+		xmodel/gib_glass2
+	]
+}
+
+Emitter
+{
+	name				Copy of Copy of Copy of Copy of
+
+	flags				useModel relative
+
+	count				2
+
+	life				1000
+
+	origin				22 13 0 -22 -13 0
+
+	angleDelta			33 33 33 0 0 -3
+
+	velocity			30 0 62
+
+	acceleration		0 0 33 0 0 55
+
+	gravity				-411
+
+	size
+	{
+		start			3 2
+		end				2
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/gib_glass1
+		xmodel/gib_glass2
+	]
+}
+
+Emitter
+{
+	name				Copy of Copy of Copy of Copy of
+
+	flags				useModel relative
+
+	life				1000
+
+	origin				12 13 22 22 23 32
+
+	angleDelta			33 33 33 0 0 -3
+
+	velocity			30 0 0
+
+	acceleration		0 0 33 0 0 55
+
+	gravity				-411
+
+	size
+	{
+		start			3
+	}
+
+	models
+	[
+		xmodel/gib_glass1
+		xmodel/gib_glass2
+	]
+}
+
+Emitter
+{
+	name				Copy of Unnamed Emitter 0
+
+	flags				useModel relative
+
+	life				1000
+
+	origin				22 12 12 -12 -12 -12
+
+	angleDelta			33 33 33 0 0 -3
+
+	velocity			30 0 66
+
+	acceleration		0 0 43
+
+	gravity				-411
+
+	size
+	{
+		start			2
+	}
+
+	models
+	[
+		xmodel/gib_glass1
+		xmodel/gib_glass2
+	]
+}
+
+Sound
+{
+	sounds
+	[
+		glass_break
+	]
+}

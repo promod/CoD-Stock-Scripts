@@ -1,0 +1,9 @@
+{
+	surfaceparm flesh
+	nomipmaps
+//nopicmip
+	{
+		map noopt $texturename
+		rgbGen lightingDiffuse
+	}
+}

@@ -1,0 +1,48 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation
+
+	life				2000
+
+	cullrange			750
+
+	rotation			232 -364
+
+	rotationDelta		2 1
+
+	velocity			0 -10 -10 80 10 10
+
+	rgb
+	{
+		start			0 0 0
+		end				0 0 0 0.502 0.502 0.502
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0
+		parm			1
+		flags			wave
+	}
+
+	size
+	{
+		start			13 15
+		end				200 100
+		flags			linear
+	}
+
+	length
+	{
+		start			0.5
+		end				0.5
+	}
+
+	shaders
+	[
+		gfx/effects/smoke/smoke_frnt
+	]
+}

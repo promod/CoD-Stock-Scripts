@@ -1,0 +1,11 @@
+{
+	surfaceparm carpet
+	{
+		map $texturename
+		rgbGen exactVertex
+	}
+	{
+		map $lightmap
+		blendFunc filter
+	}
+}

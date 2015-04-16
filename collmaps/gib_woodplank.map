@@ -1,0 +1,28 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 1 8 -5 ) ( 1 8 2 ) ( 1 -6 2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 1 -6 -5 ) ( 36 -6 -9 ) ( 36 8 -9 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 1 -6 2 ) ( 2 -6 2 ) ( 36 -6 -2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 36 -6 -9 ) ( 36 -6 -2 ) ( 36 8 -2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 36 8 -9 ) ( 36 8 -2 ) ( 2 8 2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 1 8 2 ) ( 2 8 2 ) ( 2 -6 2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 2 -6 2 ) ( 2 8 2 ) ( 36 8 -2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 1 -6 -5 ) ( 1 -6 2 ) ( 1 8 2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -34 8 -9 ) ( -34 -6 -9 ) ( 1 -6 -5 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -34 -6 -9 ) ( -34 -6 -2 ) ( 1 -6 2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 1 8 2 ) ( -34 8 -2 ) ( -34 8 -9 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -34 8 -9 ) ( -34 8 -2 ) ( -34 -6 -2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 1 -6 2 ) ( -34 -6 -2 ) ( -34 8 -2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/gib_woodplank"
+"classname" "misc_model"
+}

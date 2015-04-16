@@ -1,0 +1,88 @@
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	count				6
+
+	life				700
+
+	radius				100
+
+	rotation			120 -321
+
+	rotationDelta		13 -12
+
+	velocity			1323 23 32 223 -46 -64
+
+	gravity				100 -600
+
+	rgb
+	{
+		end				0.8353 0.5176 0.1686 0.7608 0.4353 0.2392
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10
+		end				300 400
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/hotspot
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				useAlpha
+
+	count				5
+
+	life				1700
+
+	origin				0 23 0 20 -36 0
+
+	radius				100
+
+	rotation			360 -360
+
+	rotationDelta		4 -4
+
+	velocity			100 246 32 923 -292 64
+
+	rgb
+	{
+		start			0.03529 0.02745 0.02353
+		end				0.03529 0.02745 0.02353
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10 100
+		end				500
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/dark_smoke
+	]
+}

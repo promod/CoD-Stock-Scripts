@@ -1,0 +1,29 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 4 52 128 ) ( -4 52 128 ) ( -4 -56 128 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 -46 268 ) ( 0 62 268 ) ( 8 62 268 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 6 -54 160 ) ( 6 54 160 ) ( 6 54 32 ) common/clip_nosight 0 16 0 0.25 0.25 0 0 0 0
+( 4 26 266 ) ( -4 26 266 ) ( -4 26 138 ) common/clip_nosight 0 16 0 0.25 0.25 0 0 0 0
+( -12 52 258 ) ( -12 -56 258 ) ( -12 -56 130 ) common/clip_nosight 0 16 0 0.25 0.25 0 0 0 0
+( 0 -8 128 ) ( 0 -26 266 ) ( 32 -8 128 ) common/clip_nosight 0 16 0 0.25 0.25 0 0 0 0
+( 0 26 242 ) ( 0 10 128 ) ( 32 26 242 ) common/clip_nosight 0 16 0 0.25 0.25 0 0 0 0
+( -12 0 158 ) ( -4 0 128 ) ( -4 32 128 ) common/clip_nosight 0 16 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 4 54 -2 ) ( -4 54 -2 ) ( -4 -54 -2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 -46 128 ) ( 0 62 128 ) ( 8 62 128 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -4 -8 122 ) ( 4 -8 122 ) ( 4 -8 -6 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 6 -54 28 ) ( 6 54 28 ) ( 6 54 -100 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 4 10 130 ) ( -4 10 130 ) ( -4 10 2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -6 52 126 ) ( -6 -56 126 ) ( -6 -56 -2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/tallleafytreetall"
+"classname" "misc_model"
+}

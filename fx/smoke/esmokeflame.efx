@@ -1,0 +1,21 @@
+Emitter
+{
+	flags				emitFx
+
+	life				100
+
+	velocity			100 0 0
+
+	density				4
+
+	size
+	{
+		end				100
+		flags			linear
+	}
+
+	emitfx
+	[
+		fx/smoke/firesmoke
+	]
+}

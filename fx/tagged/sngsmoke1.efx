@@ -1,0 +1,34 @@
+Particle
+{
+	flags				useAlpha
+
+	count				2
+
+	life				300
+
+	rotation			0 360
+
+	rotationDelta		12 -12
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				200
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/dark_smoke
+	]
+}

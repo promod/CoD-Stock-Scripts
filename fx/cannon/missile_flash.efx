@@ -1,0 +1,13 @@
+FxRunner
+{
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				2
+
+	origin				23 324 324 0 -324 -324
+
+	playfx
+	[
+		fx/muzzleflashes/russian_rocket
+	]
+}

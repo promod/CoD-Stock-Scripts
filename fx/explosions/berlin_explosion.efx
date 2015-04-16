@@ -1,0 +1,254 @@
+Particle
+{
+	name				smoke
+
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder evenDistribution
+
+	count				10
+
+	life				2900 2700
+
+	origin				5 12 0 35 -24 0
+
+	radius				10 30
+
+	rotation			360 -360
+
+	rotationDelta		4 -4
+
+	velocity			2 22 22 28 -22 -22
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10
+		end				100 50
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/pjsmoke
+		gfx/effects/whitesmoke
+	]
+}
+
+Particle
+{
+	name				Copy of smoke
+
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder axisFromSphere evenDistribution
+
+	count				3 4
+
+	life				2500 2600
+
+	origin				75 60 0 175 -60 0
+
+	radius				10 30
+
+	rotation			360 -145
+
+	rotationDelta		12 -27
+
+	velocity			32 0 0 0 0 0
+
+	acceleration		0 0 53
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10
+		end				100 150
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/whitesmoke
+	]
+}
+
+Particle
+{
+	name				Copy of smoke
+
+	flags				useAlpha
+
+	spawnFlags			absoluteVel orgOnCylinder axisFromSphere evenDistribution
+
+	count				5
+
+	life				3900 3000
+
+	origin				23 0 0 175 0 0
+
+	radius				10 30
+
+	rotation			360 -360
+
+	rotationDelta		7
+
+	velocity			-32 0 0 128 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10 100
+		end				100 500
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/pjsmoke
+	]
+}
+
+Light
+{
+	life				100
+
+	rgb
+	{
+		start			0.9765 0.949 0.651
+		end				0.7373 0.6275 0.4784
+	}
+
+	size
+	{
+		start			800
+		flags			linear
+	}
+}
+
+FxRunner
+{
+	playfx
+	[
+		fx/impacts/blast_flash2
+	]
+}
+
+Decal
+{
+	life				4e+004
+
+	rotation			360 -360
+
+	size
+	{
+		start			76
+	}
+
+	shaders
+	[
+		gfx/impact/cratered
+	]
+}
+
+Emitter
+{
+	flags				emitFx
+
+	count				3
+
+	life				200
+
+	angle				60 2 160 -60 2 -160
+
+	angleDelta			90 62 22 55 62 22
+
+	velocity			1300 1256 1256 1800 -1256 -1256
+
+	gravity				-600
+
+	density				4
+
+	variance			5
+
+	size
+	{
+		start			0.5
+	}
+
+	emitfx
+	[
+		fx/smoke/brickimpact_em2
+	]
+}
+
+Emitter
+{
+	name				Copy of Unnamed Emitter 8
+
+	flags				useModel usePhysics
+
+	count				6 8
+
+	life				2200
+
+	bounce				0.1 0.3
+
+	angle				60 2 160 -60 2 -160
+
+	angleDelta			90 62 22 55 62 22
+
+	velocity			800 1256 1256 1200 -1256 -1256
+
+	gravity				-800
+
+	density				4
+
+	variance			5
+
+	size
+	{
+		start			0.1 0.2
+	}
+
+	models
+	[
+		xmodel/gib_brick
+		xmodel/gib_brick2
+		xmodel/gib_concrete1small
+		xmodel/gib_stonebrick1
+		xmodel/gib_stonebrick2
+	]
+}

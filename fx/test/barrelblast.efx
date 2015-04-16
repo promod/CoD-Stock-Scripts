@@ -1,0 +1,40 @@
+Emitter
+{
+	flags				useModel usePhysics impactKills impactFx emitFx
+
+	spawnFlags			absoluteAccel
+
+	life				3000
+
+	bounce				0.5 0.7
+
+	angleDelta			12 33 0 0 0 0
+
+	velocity			0 0 1300
+
+	gravity				-1100
+
+	density				4
+
+	variance			32
+
+	size
+	{
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/barrel_black2
+	]
+
+	impactfx
+	[
+		fx/explosions/exp_fill1
+	]
+
+	emitfx
+	[
+		fx/tagged/tail_smoke
+	]
+}

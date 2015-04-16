@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 15 26 0 ) ( -15 26 0 ) ( -15 -26 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -15 -26 30 ) ( -15 26 30 ) ( 15 26 30 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -15 -24 29 ) ( 15 -24 29 ) ( 15 -24 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 15 -26 29 ) ( 15 26 29 ) ( 15 26 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 15 24 29 ) ( -15 24 29 ) ( -15 24 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -15 26 29 ) ( -15 -26 29 ) ( -15 -26 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/ship_deckbox2"
+"origin" "0 0 0"
+}

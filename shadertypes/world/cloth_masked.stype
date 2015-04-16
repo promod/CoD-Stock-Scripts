@@ -1,0 +1,19 @@
+{
+	surfaceparm cloth
+	surfaceparm trans
+	surfaceparm alphashadow
+	surfaceparm nomarks
+	surfaceparm nonsolid
+	surfaceparm ai_nosight
+	nomipmaps
+	nopicmip
+	//cull disable
+	{
+		map $texturename
+		rgbGen exactVertex
+		alphaFunc GE128
+		depthWrite
+	nextbundle
+		map $lightmap
+	}
+}

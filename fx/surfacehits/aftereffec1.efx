@@ -1,0 +1,86 @@
+Particle
+{
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				13
+
+	life				400
+
+	cullrange			1500
+
+	radius				1 500
+
+	velocity			0 0 23
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.3
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				52 13
+		flags			linear
+	}
+
+	length
+	{
+		end				144
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/waterplume
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				13
+
+	life				600 500
+
+	radius				5 425
+
+	velocity			0 0 33
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				42 23
+		flags			linear
+	}
+
+	length
+	{
+		end				32
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/waterplume
+	]
+}

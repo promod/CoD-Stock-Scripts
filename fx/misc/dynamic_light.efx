@@ -1,0 +1,22 @@
+Light
+{
+	flags				relative
+
+	life				200 100
+
+	origin				-250 -250 -150 250 250 -150
+
+	rgb
+	{
+		start			1 0.9373 0.5922
+		end				0.3059 0.302 0.1961
+		flags			linear
+	}
+
+	size
+	{
+		start			2500
+		end				2500
+		flags			linear
+	}
+}

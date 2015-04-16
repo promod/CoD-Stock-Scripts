@@ -1,0 +1,7 @@
+FxRunner
+{
+	playfx
+	[
+		fx/explosions/firethrow1
+	]
+}

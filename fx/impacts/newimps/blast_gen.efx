@@ -1,0 +1,215 @@
+Line
+{
+	flags				useAlpha
+
+	count				8
+
+	life				1188
+
+	delay				67
+
+	origin2				256 244 244 764 -244 -244
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			-35
+		end				-38
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion/dirtplume_model2
+		gfx/effects/explosion/dirtplume_modelf
+	]
+}
+
+Particle
+{
+	nonUniformScale		1
+
+	count				4
+
+	life				200
+
+	origin				0 33 33 43 -33 -33
+
+	velocity			322 0 0 622 0 0
+
+	rgb
+	{
+		end				0.7608 0.4353 0.2392
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10
+		end				200
+		flags			linear
+	}
+
+	size2
+	{
+		start			122
+		end				2
+		flags			linear
+	}
+
+	length
+	{
+		end				122
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/groundflash1
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 2
+
+	count				4
+
+	life				200
+
+	origin				76 73 73 76 -73 -73
+
+	velocity			322 0 0 622 0 0
+
+	rgb
+	{
+		end				0.7608 0.4353 0.2392
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10
+		end				100
+		flags			linear
+	}
+
+	size2
+	{
+		start			122
+		end				2
+		flags			linear
+	}
+
+	length
+	{
+		end				122
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/groundflash1
+	]
+}
+
+Line
+{
+	name				Copy of Unnamed Line 0
+
+	flags				useAlpha
+
+	count				8
+
+	life				1188
+
+	delay				67
+
+	origin2				55 144 144 55 -144 -144
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			-35
+		end				-38
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion/dirtplume_model2
+		gfx/effects/explosion/dirtplume_modelf
+	]
+}
+
+Emitter
+{
+	flags				emitFx
+
+	count				2
+
+	life				133
+
+	delay				1
+
+	velocity			3322 1244 1244 3322 -1244 -1244
+
+	gravity				-3800
+
+	density				4
+
+	variance			23 24
+
+	emitfx
+	[
+		fx/smoke/whitesmoke_em2
+	]
+}
+
+Light
+{
+	life				100
+
+	size
+	{
+		start			600
+		flags			linear
+	}
+}
+
+Decal
+{
+	rotation			360 -360
+
+	size
+	{
+		start			100
+	}
+
+	shaders
+	[
+		gfx/impact/cratered_ground
+	]
+}

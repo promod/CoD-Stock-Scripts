@@ -1,0 +1,24 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 48 48 0 ) ( -48 48 0 ) ( -48 -48 0 ) common/clipmonster 0 0 0 0.25 0.25 0 0 0 0
+( -48 -48 96 ) ( -48 48 96 ) ( 48 48 96 ) common/clipmonster 0 0 0 0.25 0.25 0 0 0 0
+( -48 -40 96 ) ( 48 -40 96 ) ( 48 -40 0 ) common/clipmonster 0 0 0 0.25 0.25 0 0 0 0
+( 44 -46 96 ) ( 44 50 96 ) ( 44 50 0 ) common/clipmonster 0 0 0 0.25 0.25 0 0 0 0
+( 50 46 96 ) ( -46 46 96 ) ( -46 46 0 ) common/clipmonster 0 0 0 0.25 0.25 0 0 0 0
+( -48 48 96 ) ( -48 -48 96 ) ( -48 -48 0 ) common/clipmonster 0 0 0 0.25 0.25 0 0 0 0
+( -12 42 0 ) ( 24 46 0 ) ( -12 42 32 ) common/clipmonster 0 0 0 0.25 0.25 0 0 0 0
+( -46 20 0 ) ( -25 34 0 ) ( -46 20 32 ) common/clipmonster 0 0 0 0.25 0.25 0 0 0 0
+( 44 -9 0 ) ( 6 -36 0 ) ( 44 -9 32 ) common/clipmonster 0 0 0 0.25 0.25 0 0 0 0
+( -20 -40 0 ) ( -49 -21 0 ) ( -20 -40 32 ) common/clipmonster 0 0 0 0.25 0.25 0 0 0 0
+( 25 46 0 ) ( 45 32 0 ) ( 25 46 32 ) common/clipmonster 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/rock_big"
+"origin" "0 0 0"
+"angles" "0 0 0"
+}

@@ -1,0 +1,805 @@
+#include "ui_mp/menudef.h"
+
+#define ORIGIN_MENUTABS				96 64
+#define ORIGIN_MENUWINDOW			96 96
+#define ORIGIN_WEAPONIMAGE			296 116
+#define ORIGIN_WEAPONTEXT			296 220
+#define ORIGIN_WEAPONPROPERTIESTEXT		296 330
+#define ORIGIN_WEAPONACCURACY			395 319
+#define ORIGIN_WEAPONDAMAGE			395 336
+#define ORIGIN_WEAPONMOBILITY			395 353
+
+{
+	menuDef
+	{
+		name			"weapon_russian"
+		fullscreen		0
+		rect			0 0 640 480
+		focuscolor		1 1 1 1
+		disablecolor		0 0 0 0
+		style			WINDOW_STYLE_EMPTY
+		onEsc 
+		{
+			scriptMenuResponse "close";
+			close weapon_russian;
+		}
+		onOpen 
+		{
+			scriptMenuResponse "open";
+			show nagant_info;
+			show weapon_propertiestext;
+		}
+		onClose
+		{
+			scriptMenuResponse "close";
+			hide nagant_info;
+			hide ppsh_info;
+			hide nagantsniper_info;
+		}
+
+// WINDOW BACKGROUND
+		itemDef
+		{
+			name			"window_background"
+			visible			1
+			rect			0 0 448 288
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			decoration
+		}
+
+// WINDOW BANNER
+		itemDef
+		{
+			name			"window_banner"
+			visible			1
+			rect			9 6 430 24
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_SHADER 
+			background		"ui_mp/assets/hud@banner_weapon.tga"
+			decoration
+		}
+
+// WINDOW LINES
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			3 0 2 283
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			443 0 2 283
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			3 283 442 2
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			5 0 438 2
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			5 34 438 1
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+// MAIN MENU BUTTON
+		itemDef 
+		{
+			name			"button_mainmenu"
+			visible			1
+			rect			0 0 89 32
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_MAIN_MENU"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		45
+			textaligny		24
+			textalign		ITEM_ALIGN_CENTER
+			action
+			{
+				play "mouse_click";
+				close weapon_russian;
+				open main;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			"button_mainmenu_hline"
+			visible			1
+			rect			3 3 86 2
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"button_mainmenu_lvline"
+			visible			1
+			rect			3 5 2 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"button_mainmenu_rvline"
+			visible			1
+			rect			88 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+// TEAM BUTTON
+		itemDef
+		{
+			name			"button_team"
+			visible			1
+			rect			89 0 90 32
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_TEAM"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		45
+			textaligny		24
+			textalign		ITEM_ALIGN_CENTER
+			action
+			{
+				play "mouse_click";
+				scriptMenuResponse "team";
+				close weapon_russian;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			"button_team_hline"
+			visible			1
+			rect			89 3 90 2
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"button_team_lvline"
+			visible			1
+			rect			89 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"button_team_rvline"
+			visible			1
+			rect			178 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+// WEAPON BUTTON
+		itemDef
+		{
+			name			"button_weapon"
+			visible			1
+			rect			179 0 90 32
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			text			"@MPMENU_WEAPON"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		45
+			textaligny		24
+			textalign		ITEM_ALIGN_CENTER
+			decoration
+		}
+		itemDef
+		{
+			name			"button_weapon_gray"
+			visible			1
+			rect			179 3 90 29
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+// VIEW MAP BUTTON
+		itemDef
+		{
+			name			"button_viewmap"
+			visible			1
+			rect			269 0 90 32
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_VIEW_MAP"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		45
+			textaligny		24
+			textalign		ITEM_ALIGN_CENTER
+			action
+			{
+				play "mouse_click";
+				scriptMenuResponse "viewmap";
+				close weapon_russian;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			"button_viewmap_hline"
+			visible			1
+			rect			269 3 90 2
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"button_viewmap_lvline"
+			visible			1
+			rect			269 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"button_viewmap_rvline"
+			visible			1
+			rect			358 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+// CALL VOTE BUTTON
+		itemDef
+		{
+			name			"button_callvote"
+			visible			1
+			rect			359 0 89 32
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_CALL_VOTE"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		42
+			textaligny		24
+			textalign		ITEM_ALIGN_CENTER
+			cvartest		"ui_allowvote"
+			hideCvar		{ "0" }
+			action
+			{
+				play "mouse_click";
+				scriptMenuResponse "callvote";
+				close weapon_russian;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			"button_callvote_hline"
+			visible			1
+			rect			359 3 86 2
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_allowvote"
+			hideCvar		{ "0" }
+		}
+		itemDef
+		{
+			name			"button_callvote_lvline"
+			visible			1
+			rect			359 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_allowvote"
+			hideCvar		{ "0" }
+		}
+		itemDef
+		{
+			name			"button_callvote_rvline"
+			visible			1
+			rect			443 5 2 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_allowvote"
+			hideCvar		{ "0" }
+		}
+
+// CALL VOTE BUTTON HIDDEN
+		itemDef
+		{
+			name			"button_callvote_lvedge"
+			visible			1
+			rect			359 0 4 29
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		0 0 0 0.7975
+			decoration
+			cvartest		"ui_allowvote"
+			showCvar		{ "0" }
+		}
+		itemDef
+		{
+			name			"button_callvote_bhedge"
+			visible			1
+			rect			359 29 89 3
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		0 0 0 0.7975
+			decoration
+			cvartest		"ui_allowvote"
+			showCvar		{ "0" }
+		}
+		itemDef
+		{
+			name			"button_callvote_lvline"
+			visible			1
+			rect			359 3 1 29
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_allowvote"
+			showCvar		{ "0" }
+		}
+
+// MENU CHOICES
+		itemDef 
+		{
+			name			"button_nagant"
+			visible			1
+			rect			16 46 160 22
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_1_MOSINNAGANT"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			cvartest		"ui_allow_nagant"
+			hideCvar		{ "0" }
+			action
+			{
+				play "mouse_click";
+				scriptMenuResponse "mosin_nagant_mp";
+				close weapon_russian;
+			}
+			onFocus
+			{
+				hide ppsh_info;
+				hide nagantsniper_info;
+				play "mouse_over";
+				show nagant_info;
+				show weapon_propertiestext;
+			}
+		}
+		execKey "1" { play "mouse_click"; scriptMenuResponse "mosin_nagant_mp"; close weapon_russian }
+		
+		itemDef 
+		{
+			name			"button_ppsh"
+			visible			1
+			rect			16 70 160 22
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_2_PPSH"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			cvartest		"ui_allow_ppsh"
+			hideCvar		{ "0" }
+			action
+			{
+				play "mouse_click";
+				scriptMenuResponse "ppsh_mp";
+				close weapon_russian;
+			}
+			onFocus
+			{
+				hide nagant_info;
+				hide nagantsniper_info;
+				play "mouse_over";
+				show ppsh_info;
+				show weapon_propertiestext;
+			}
+		}
+		execKey "2" { play "mouse_click"; scriptMenuResponse "ppsh_mp"; close weapon_russian }
+		
+		itemDef 
+		{
+			name			"button_nagantsniper"
+			visible			1
+			rect			16 94 160 22
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_3_SCOPED_MOSINNAGANT"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			cvartest		"ui_allow_nagantsniper"
+			hideCvar		{ "0" }
+			action
+			{
+				play "mouse_click";
+				scriptMenuResponse "mosin_nagant_sniper_mp";
+				close weapon_russian;
+			}
+			onFocus
+			{
+				hide nagant_info;
+				hide ppsh_info;
+				play "mouse_over";
+				show nagantsniper_info;
+				show weapon_propertiestext;
+			}
+		}
+		execKey "3" { play "mouse_click"; scriptMenuResponse "mosin_nagant_sniper_mp"; close weapon_russian }
+
+// WEAPON IMAGES
+		itemDef
+		{
+			name			"nagant_info"
+			visible 		0
+			rect			0 0 224 112
+			origin			ORIGIN_WEAPONIMAGE
+	 		style			WINDOW_STYLE_SHADER
+			background		"ui_mp/assets/hud@nagant.tga"
+			decoration
+		}
+		itemDef
+		{
+			name			"ppsh_info"
+			visible 		0
+			rect			0 10 224 112
+			origin			ORIGIN_WEAPONIMAGE
+	 		style			WINDOW_STYLE_SHADER
+			background		"ui_mp/assets/hud@ppsh.tga"
+			decoration
+		}
+		itemDef
+		{
+			name			"nagantsniper_info"
+			visible 		0
+			rect			0 0 224 112
+			origin			ORIGIN_WEAPONIMAGE
+	 		style			WINDOW_STYLE_SHADER
+			background		"ui_mp/assets/hud@nagantscoped.tga"
+			decoration
+		}
+		
+// WEAPON DESCRIPTIONS
+		itemDef
+		{
+			name			"nagant_info"
+			visible 		0
+			rect			0 0 224 64
+			origin			ORIGIN_WEAPONTEXT
+			forecolor		1 1 1 1
+			autowrapped
+			text			"@MPMENU_THE_MOSINNAGANT_IS_A"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			decoration
+		}
+		itemDef
+		{
+			name			"ppsh_info"
+			visible 		0
+			rect			0 17 224 64
+			origin			ORIGIN_WEAPONTEXT
+			forecolor		1 1 1 1
+			autowrapped
+			text			"@MPMENU_THE_PPSH41_SUBMACHINE"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			decoration
+		}
+		itemDef
+		{
+			name			"nagantsniper_info"
+			visible 		0
+			rect			0 0 224 64
+			origin			ORIGIN_WEAPONTEXT
+			forecolor		1 1 1 1
+			autowrapped
+			text			"@MPMENU_THE_SCOPED_MOSINNAGANT"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			decoration
+		}
+
+// WEAPON PROPERTIES
+		itemDef
+		{
+			name			"weapon_propertiestext"
+			visible 		0
+			origin			ORIGIN_WEAPONPROPERTIESTEXT
+			forecolor		1 1 1 1
+			autowrapped
+			text			"@MPMENU_ACCURACY_DAMAGE_MOBILITY"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			decoration
+		}
+
+		itemDef
+		{
+			name			"nagant_info"
+			visible 		0
+			rect			0 0 128 10
+			origin			ORIGIN_WEAPONACCURACY
+			backcolor		1 1 1 .125
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+		itemDef
+		{
+			name			"nagant_info"
+			visible 		0
+			rect			0 0 104 10
+			origin			ORIGIN_WEAPONACCURACY
+			backcolor		1 1 1 1
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+
+		itemDef
+		{
+			name			"nagant_info"
+			visible 		0
+			rect			0 0 128 10
+			origin			ORIGIN_WEAPONDAMAGE
+			backcolor		1 1 1 .125
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+		itemDef
+		{
+			name			"nagant_info"
+			visible 		0
+			rect			0 0 128 10
+			origin			ORIGIN_WEAPONDAMAGE
+			backcolor		1 1 1 1
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+
+		itemDef
+		{
+			name			"nagant_info"
+			visible 		0
+			rect			0 0 128 10
+			origin			ORIGIN_WEAPONMOBILITY
+			backcolor		1 1 1 .125
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+		itemDef
+		{
+			name			"nagant_info"
+			visible 		0
+			rect			0 0 114 10
+			origin			ORIGIN_WEAPONMOBILITY
+			backcolor		1 1 1 1
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+
+		itemDef
+		{
+			name			"ppsh_info"
+			visible 		0
+			rect			0 0 128 10
+			origin			ORIGIN_WEAPONACCURACY
+			backcolor		1 1 1 .125
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+		itemDef
+		{
+			name			"ppsh_info"
+			visible 		0
+			rect			0 0 52 10
+			origin			ORIGIN_WEAPONACCURACY
+			backcolor		1 1 1 1
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+
+		itemDef
+		{
+			name			"ppsh_info"
+			visible 		0
+			rect			0 0 128 10
+			origin			ORIGIN_WEAPONDAMAGE
+			backcolor		1 1 1 .125
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+		itemDef
+		{
+			name			"ppsh_info"
+			visible 		0
+			rect			0 0 67 10
+			origin			ORIGIN_WEAPONDAMAGE
+			backcolor		1 1 1 1
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+
+		itemDef
+		{
+			name			"ppsh_info"
+			visible 		0
+			rect			0 0 128 10
+			origin			ORIGIN_WEAPONMOBILITY
+			backcolor		1 1 1 .125
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+		itemDef
+		{
+			name			"ppsh_info"
+			visible 		0
+			rect			0 0 120 10
+			origin			ORIGIN_WEAPONMOBILITY
+			backcolor		1 1 1 1
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+
+		itemDef
+		{
+			name			"nagantsniper_info"
+			visible 		0
+			rect			0 0 128 10
+			origin			ORIGIN_WEAPONACCURACY
+			backcolor		1 1 1 .125
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+		itemDef
+		{
+			name			"nagantsniper_info"
+			visible 		0
+			rect			0 0 128 10
+			origin			ORIGIN_WEAPONACCURACY
+			backcolor		1 1 1 1
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+
+		itemDef
+		{
+			name			"nagantsniper_info"
+			visible 		0
+			rect			0 0 128 10
+			origin			ORIGIN_WEAPONDAMAGE
+			backcolor		1 1 1 .125
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+		itemDef
+		{
+			name			"nagantsniper_info"
+			visible 		0
+			rect			0 0 128 10
+			origin			ORIGIN_WEAPONDAMAGE
+			backcolor		1 1 1 1
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+
+		itemDef
+		{
+			name			"nagantsniper_info"
+			visible 		0
+			rect			0 0 128 10
+			origin			ORIGIN_WEAPONMOBILITY
+			backcolor		1 1 1 .125
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+		itemDef
+		{
+			name			"nagantsniper_info"
+			visible 		0
+			rect			0 0 89 10
+			origin			ORIGIN_WEAPONMOBILITY
+			backcolor		1 1 1 1
+	 		style			WINDOW_STYLE_FILLED
+			decoration
+		}
+	}
+}

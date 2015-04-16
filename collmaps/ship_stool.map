@@ -1,0 +1,27 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 5 5 22 ) ( -6 5 22 ) ( -6 -3 22 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -5 -3 24 ) ( -5 5 24 ) ( 6 5 24 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -5 -4 22 ) ( 6 -4 22 ) ( 6 -4 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 7 -3 22 ) ( 7 5 22 ) ( 7 5 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 6 6 22 ) ( -5 6 22 ) ( -5 6 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -6 5 22 ) ( -6 -3 22 ) ( -6 -3 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 1 2 0 ) ( -1 2 0 ) ( -1 0 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -1 0 22 ) ( -1 2 22 ) ( 1 2 22 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -1 0 24 ) ( 1 0 24 ) ( 1 0 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 1 0 24 ) ( 1 2 24 ) ( 1 2 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 1 2 24 ) ( -1 2 24 ) ( -1 2 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -1 2 24 ) ( -1 0 24 ) ( -1 0 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/ship_stool"
+"origin" "0 1 0"
+}

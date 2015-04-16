@@ -1,0 +1,53 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			axisFromSphere
+
+	count				12 9
+
+	life				2000
+
+	delay				32 0
+
+	origin				0 32 54 -64 -64 64
+
+	radius				4 18
+
+	height				50 32
+
+	rotation			80 -60
+
+	rotationDelta		20 -40
+
+	velocity			400 32 34 10 -64 -34
+
+	acceleration		233 0 0
+
+	gravity				-200 -100
+
+	rgb
+	{
+		start			1 0.9843 0.9412
+		end				0.8392 0.8118 0.6627 0.8549 0.7098 0.2706
+		flags			random linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			4 1
+		end				300 200
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/pjsmoke
+	]
+}

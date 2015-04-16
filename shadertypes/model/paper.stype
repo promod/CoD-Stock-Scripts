@@ -1,0 +1,7 @@
+{
+	surfaceparm carpet
+	{
+		map $texturename
+		rgbGen lightingDiffuse
+	}
+}

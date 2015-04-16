@@ -1,0 +1,39 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 11 40 0 ) ( -13 40 0 ) ( -13 -40 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -13 -30 28 ) ( -13 50 28 ) ( 11 50 28 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -13 -40 48 ) ( 11 -40 48 ) ( 11 -40 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( 16 -40 48 ) ( 16 40 48 ) ( 16 40 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( 11 40 48 ) ( -13 40 48 ) ( -13 40 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -13 40 48 ) ( -13 -40 48 ) ( -13 -40 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 16 40 0 ) ( -24 40 0 ) ( -24 -40 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -24 -40 48 ) ( -24 40 48 ) ( 16 40 48 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -24 -40 48 ) ( 16 -40 48 ) ( 16 -40 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -13 -40 49 ) ( -13 40 49 ) ( -13 40 1 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( 14 40 48 ) ( -26 40 48 ) ( -26 40 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -19 40 48 ) ( -19 -40 48 ) ( -19 -40 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 2
+{
+( 16 120 0 ) ( -16 120 0 ) ( -16 40 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -14 40 40 ) ( -14 120 40 ) ( 18 120 40 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -16 40 48 ) ( 16 40 48 ) ( 16 40 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( 16 40 48 ) ( 16 120 48 ) ( 16 120 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( 22 46 48 ) ( -10 46 48 ) ( -10 46 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -19 121 48 ) ( -19 41 48 ) ( -19 41 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 3
+{
+( 16 32 0 ) ( -16 32 0 ) ( -16 -48 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -14 -48 40 ) ( -14 32 40 ) ( 18 32 40 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -17 -46 48 ) ( 15 -46 48 ) ( 15 -46 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( 16 -48 48 ) ( 16 32 48 ) ( 16 32 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( 16 -40 48 ) ( -16 -40 48 ) ( -16 -40 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -19 33 49 ) ( -19 -47 49 ) ( -19 -47 1 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+}
+}

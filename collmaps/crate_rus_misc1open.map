@@ -1,0 +1,54 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 27 -4 1 ) ( 9 -4 1 ) ( 9 -16 1 ) common/clip_nosight -72 -40 0 0.25 0.25 0 0 0 0
+( 8 -16 9 ) ( 8 -4 9 ) ( 26 -4 9 ) common/clip_nosight -72 -40 0 0.25 0.25 0 0 0 0
+( 8 -5 10 ) ( 26 -5 10 ) ( 26 -5 1 ) common/clip_nosight -72 4 0 0.25 0.25 0 0 0 0
+( 10 -14 10 ) ( 10 -2 10 ) ( 10 -2 1 ) common/clip_nosight 40 4 0 0.25 0.25 0 0 0 0
+( 27 5 10 ) ( 9 5 10 ) ( 9 5 1 ) common/clip_nosight -72 4 0 0.25 0.25 0 0 0 0
+( 8 -4 10 ) ( 8 -16 10 ) ( 8 -16 1 ) common/clip_nosight 40 4 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 9 -4 1 ) ( -9 -4 1 ) ( -9 -16 1 ) common/clip_nosight 0 -40 0 0.25 0.25 0 0 0 0
+( -10 -16 9 ) ( -10 -4 9 ) ( 8 -4 9 ) common/clip_nosight 0 -40 0 0.25 0.25 0 0 0 0
+( -10 -5 10 ) ( 8 -5 10 ) ( 8 -5 1 ) common/clip_nosight 0 4 0 0.25 0.25 0 0 0 0
+( -8 -14 10 ) ( -8 -2 10 ) ( -8 -2 1 ) common/clip_nosight 40 4 0 0.25 0.25 0 0 0 0
+( 9 5 10 ) ( -9 5 10 ) ( -9 5 1 ) common/clip_nosight 0 4 0 0.25 0.25 0 0 0 0
+( -10 -4 10 ) ( -10 -16 10 ) ( -10 -16 1 ) common/clip_nosight 40 4 0 0.25 0.25 0 0 0 0
+}
+// brush 2
+{
+( 9 -5 1 ) ( -9 -5 1 ) ( -9 -17 1 ) common/clip_nosight 0 -44 0 0.25 0.25 0 0 0 0
+( -10 -17 9 ) ( -10 -5 9 ) ( 8 -5 9 ) common/clip_nosight 0 -44 0 0.25 0.25 0 0 0 0
+( -10 -6 10 ) ( 8 -6 10 ) ( 8 -6 1 ) common/clip_nosight 0 4 0 0.25 0.25 0 0 0 0
+( 10 -17 10 ) ( 10 -5 10 ) ( 10 -5 1 ) common/clip_nosight 44 4 0 0.25 0.25 0 0 0 0
+( 9 -5 10 ) ( -9 -5 10 ) ( -9 -5 1 ) common/clip_nosight 0 4 0 0.25 0.25 0 0 0 0
+( -10 -5 10 ) ( -10 -17 10 ) ( -10 -17 1 ) common/clip_nosight 44 4 0 0.25 0.25 0 0 0 0
+}
+// brush 3
+{
+( 9 6 1 ) ( -9 6 1 ) ( -9 -6 1 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -10 -6 9 ) ( -10 6 9 ) ( 8 6 9 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -10 5 10 ) ( 8 5 10 ) ( 8 5 1 ) common/clip_nosight 0 4 0 0.25 0.25 0 0 0 0
+( 10 -6 10 ) ( 10 6 10 ) ( 10 6 1 ) common/clip_nosight 0 4 0 0.25 0.25 0 0 0 0
+( 9 6 10 ) ( -9 6 10 ) ( -9 6 1 ) common/clip_nosight 0 4 0 0.25 0.25 0 0 0 0
+( -10 6 10 ) ( -10 -6 10 ) ( -10 -6 1 ) common/clip_nosight 0 4 0 0.25 0.25 0 0 0 0
+}
+// brush 4
+{
+( 9 6 0 ) ( -9 6 0 ) ( -9 -6 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -10 -6 1 ) ( -10 6 1 ) ( 8 6 1 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -9 -6 9 ) ( 9 -6 9 ) ( 9 -6 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 10 -6 9 ) ( 10 6 9 ) ( 10 6 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 9 6 9 ) ( -9 6 9 ) ( -9 6 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -10 6 9 ) ( -10 -6 9 ) ( -10 -6 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/crate_rus_misc1open"
+"classname" "misc_model"
+}

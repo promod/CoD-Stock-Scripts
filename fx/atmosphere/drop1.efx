@@ -1,0 +1,40 @@
+Particle
+{
+	spawnFlags			cheapOrgCalc orgOnSphere evenDistribution
+
+	life				100
+
+	radius				2 1
+
+	rotation			75 -60
+
+	rotationDelta		5 0
+
+	velocity			156 0 0 155 0 0
+
+	gravity				-300 -500
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.7 0.9
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				1 2
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/raindroplett
+	]
+}

@@ -1,0 +1,106 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\trees\mk\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           BEACON
+LANG_ENGLISH        "Beacon"
+
+REFERENCE           BOCAGE_OBJ_ATTACKER
+LANG_ENGLISH        "Capture the Beacon (Yellow Star) and take it to the country manor. (Blue Box)"
+
+REFERENCE           BOCAGE_OBJ_DEFENDER
+LANG_ENGLISH        "Defend the Beacon (Yellow Star) from the Axis. Keep it from the country manor. (Blue Box)"
+
+REFERENCE           BOCAGE_OBJ_SPECTATOR
+LANG_ENGLISH        "Axis: Capture the Beacon (Yellow Star) and take it to the country manor. (Blue Box)\nAllies: Defend the Beacon (Yellow Star) from the Axis. Keep it from the country manor. (Blue Box)"
+
+REFERENCE           TEAMBALANCE_NOTIFICATION_GERMAN
+LANG_ENGLISH        "You were moved to German to balance the teams"
+
+REFERENCE           TEAMBALANCE_NOTIFICATION_BRITISH
+LANG_ENGLISH        "You were moved to British to balance the teams"
+
+REFERENCE           TEAMBALANCE_NOTIFICATION_RUSSIAN
+LANG_ENGLISH        "You were moved to Russian to balance the teams"
+
+REFERENCE           TEAMBALANCE_NOTIFICATION_AMERICAN
+LANG_ENGLISH        "You were moved to American to balance the teams"
+
+REFERENCE           CANTJOINTEAM_AXIS
+LANG_ENGLISH        "Joining German would result in an unbalanced number of players on that team. Try joining %s."
+
+REFERENCE           CANTJOINTEAM_RUSSIAN
+LANG_ENGLISH        "Joining Russian would result in an unbalanced number of players on that team. Try joining German."
+
+REFERENCE           CANTJOINTEAM_BRITISH
+LANG_ENGLISH        "Joining British would result in an unbalanced number of players on that team. Try joining German."
+
+REFERENCE           CANTJOINTEAM_AMERICAN
+LANG_ENGLISH        "Joining American would result in an unbalanced number of players on that team. Try joining German."
+
+REFERENCE           CANTJOINTEAM_AXIS2
+LANG_ENGLISH        "Joining German would result in an unbalanced number of players on that team."
+
+REFERENCE           CANTJOINTEAM_ALLIED2
+LANG_ENGLISH        "Joining %s would result in an unbalanced number of players on that team. Try joining German."
+
+REFERENCE           AMERICAN
+LANG_ENGLISH        "American"
+
+REFERENCE           BRITISH
+LANG_ENGLISH        "British"
+
+REFERENCE           RUSSIAN
+LANG_ENGLISH        "Russian"
+
+REFERENCE           CANTJOINTEAM_ALLIED
+LANG_ENGLISH        "Joining %s would result in an unbalanced number of players on that team."
+
+REFERENCE           GERMAN
+LANG_ENGLISH        "German"
+
+REFERENCE           PUNKBUSTER
+LANG_ENGLISH        "PunkBuster"
+
+REFERENCE           ENABLEPUNKBUSTERTOCONNECT
+LANG_ENGLISH        "You must enable PunkBuster on the client to connect to a PunkBuster enabled server.\nEnable PunkBuster and connect?"
+
+REFERENCE           SYNCPUNKBUSTERSTARTLISTENSERVER
+LANG_ENGLISH        "You must enable PunkBuster on the client before starting a non-dedicated server.\nEnable PunkBuster and start?"
+
+REFERENCE           PUNKBUSTERWITHCOLON
+LANG_ENGLISH        "PunkBuster:"
+
+REFERENCE           PUNKBUSTERWITHCOLONANDTWOSPACES
+LANG_ENGLISH        "PunkBuster:  "
+
+REFERENCE           RE_OBJ_NEUVILLE_OBJ_ATTACKER
+LANG_ENGLISH        "Capture the Artillery Map (Yellow Star) and take it back to the wooden farm gate. (Blue Box)"
+
+REFERENCE           RE_OBJ_NEUVILLE_OBJ_DEFENDER
+LANG_ENGLISH        "Defend the Artillery Map (Yellow Star). Keep the Allies from taking it to the wooden farm gate. (Blue Box)"
+
+REFERENCE           RE_OBJ_NEUVILLE_OBJ_SPECTATOR
+LANG_ENGLISH        "Allies: Capture the Artillery Map (Yellow Star) and take it to the wooden farm gate. (Blue Box)\nAxis: Defend the Artillery Map (Yellow Star) and keep the Allies from taking it to the wooden farm gate. (Blue Box)"
+
+REFERENCE           RE_OBJ_NEUVILLE_SPAWN_ATTACKER
+LANG_ENGLISH        "Take the Artillery Map from the Germans.\nBring it back to the wooden farm gate.\nThe Artillery Map is the Yellow Star on your compass.\nThe wooden farm gate is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_NEUVILLE_SPAWN_DEFENDER
+LANG_ENGLISH        "Defend the Artillery Map from the Allies.\nDon't let the Allies take it to the wooden farm gate.\nThe Artillery Map is the Yellow Star on your compass.\nThe wooden farm gate is the Blue Square on your compass."
+
+
+ENDMARKER
+
+

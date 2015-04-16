@@ -1,0 +1,50 @@
+Particle
+{
+	name				darksmoke
+
+	flags				useAlpha
+
+	count				7 2
+
+	life				3400 4000
+
+	delay				120 170
+
+	origin				3 -10 -6 -3 5 12
+
+	wind				16 9
+
+	rotation			123 -260
+
+	rotationDelta		23 -32
+
+	velocity			6 -12 -2 -6 6 2
+
+	acceleration		36 2 2 16 -2 -2
+
+	gravity				-7 4
+
+	rgb
+	{
+		flags			clamp
+	}
+
+	alpha
+	{
+		start			0.6 0.4
+		end				0
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			5 10
+		end				45 90
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/dark_smoke
+	]
+}

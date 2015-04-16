@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 76 4 -4 ) ( -36 4 -4 ) ( -36 -6 -4 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -36 -6 6 ) ( -36 4 6 ) ( 76 4 6 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -36 -6 6 ) ( 76 -6 6 ) ( 76 -6 -4 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 76 -6 6 ) ( 76 4 6 ) ( 76 4 -4 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 38 6 6 ) ( -74 6 6 ) ( -74 6 -4 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -74 6 6 ) ( -74 -4 6 ) ( -74 -4 -4 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/wood_largebeam"
+"classname" "misc_model"
+}

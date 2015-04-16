@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 4 56 0 ) ( -4 56 0 ) ( -4 -62 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -4 -64 268 ) ( -4 54 268 ) ( 4 54 268 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -4 -4 98 ) ( 4 -4 98 ) ( 4 -4 -4 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 4 -62 102 ) ( 4 56 102 ) ( 4 56 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 4 4 100 ) ( -4 4 100 ) ( -4 4 -2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -4 56 102 ) ( -4 -62 102 ) ( -4 -62 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/tree_shortspruce"
+"classname" "misc_model"
+}

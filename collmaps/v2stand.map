@@ -1,0 +1,27 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 56 56 0 ) ( -52 56 0 ) ( -52 -52 0 ) common/clip_nosight_metal 126 2 0 0.25 0.250004 0 0 0 4
+( -52 -52 64 ) ( -52 56 64 ) ( 56 56 64 ) common/clip_nosight_metal 126 2 0 0.25 0.250004 0 0 0 4
+( 56 -48 76 ) ( 56 -48 0 ) ( -52 -48 0 ) common/clip_nosight_metal -124 0 -180 0.239586 -0.25 0 0 0 4
+( 48 56 76 ) ( 48 56 0 ) ( 48 -52 0 ) common/clip_nosight_metal -5 0 0 0.25 0.25 0 0 0 4
+( -52 48 76 ) ( -52 48 0 ) ( 56 48 0 ) common/clip_nosight_metal 124 0 0 0.249996 0.25 0 0 0 4
+( -48 -52 76 ) ( -48 -52 0 ) ( -48 56 0 ) common/clip_nosight_metal -2 0 0 0.250002 0.25 0 0 0 4
+}
+// brush 1
+{
+( 11 0 0 ) ( 0 11 0 ) ( -14 -3 0 ) common/clip_nosight_metal 0 0 -45 0.25 0.25 0 0 0 4
+( -10 -7 74 ) ( 4 7 74 ) ( 16 -4 74 ) common/clip_nosight_metal 0 0 -45 0.25 0.25 0 0 0 4
+( -40 -37 620 ) ( -28 -48 620 ) ( -28 -48 0 ) common/clip_nosight_metal -87 0 -180 0.176777 -0.25 0 0 0 4
+( 30 -47 620 ) ( 44 -33 620 ) ( 44 -33 0 ) common/clip_nosight_metal 87 0 0 0.176777 0.25 0 0 0 4
+( 44 33 620 ) ( 33 44 620 ) ( 33 44 0 ) common/clip_nosight_metal 87 0 -180 0.176777 -0.25 0 0 0 4
+( -34 42 234 ) ( -48 28 234 ) ( -48 28 -386 ) common/clip_nosight_metal -87 0 0 0.176777 0.25 0 0 0 4
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/v2stand"
+"classname" "misc_model"
+}

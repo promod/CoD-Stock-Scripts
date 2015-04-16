@@ -1,0 +1,43 @@
+Particle
+{
+	name				Copy of Unnamed Particle 2
+
+	spawnFlags			rgbComponentInterpolation
+
+	count				3
+
+	life				1600
+
+	delay				3 6
+
+	radius				50 100
+
+	height				50 1
+
+	rotation			360 -360
+
+	rotationDelta		3 -3
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			13 23
+		end				25 150
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/hotspot
+	]
+}

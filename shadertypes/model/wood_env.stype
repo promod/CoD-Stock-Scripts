@@ -1,0 +1,21 @@
+{	// for wet looking wood on shipdecks
+	surfaceparm wood_env
+	nomipmaps
+	nopicmip
+	{
+		map textures/sfx/environmap_wet.tga
+		tcgen environment
+		rgbgen lightingdiffuse
+		//alphaGen const .25
+		//blendFunc blend
+	}
+	{
+		map $texturename
+		blendFunc GL_ONE_MINUS_SRC_ALPHA GL_SRC_ALPHA
+		rgbgen lightingdiffuse
+		//blendFunc blend
+		//rgbGen identity
+	//nextbundle
+		//map $lightmap
+	}
+}

@@ -1,0 +1,27 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 15 19 -6 ) ( -16 19 -6 ) ( -16 -14 -6 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -16 -14 44 ) ( -16 19 44 ) ( 15 19 44 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -16 -20 44 ) ( 15 -20 44 ) ( 15 -20 0 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( 16 -14 44 ) ( 16 19 44 ) ( 16 19 0 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( 15 19 44 ) ( -16 19 44 ) ( -16 19 0 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -18 19 44 ) ( -18 -14 44 ) ( -18 -14 0 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( -8 4 34 ) ( -8 4 -2 ) ( 10 4 -2 ) common/clip_nosight 56 0 0 0.25 0.25 0 0 0 4
+( 4 6 36 ) ( 4 6 0 ) ( 4 -188 0 ) common/clip_nosight -40 0 0 0.25 0.25 0 0 0 4
+( -4 96 0 ) ( -4 96 36 ) ( -4 -98 36 ) common/clip_nosight -40 0 0 0.25 0.25 0 0 0 4
+( 14 -98 44 ) ( -6 -98 44 ) ( -8 98 44 ) common/clip_nosight -8 56 0 0.25 0.25 0 0 0 4
+( -8 -98 0 ) ( 12 -98 0 ) ( 10 102 0 ) common/clip_nosight -8 56 0 0.25 0.25 0 0 0 4
+( 8 -4 36 ) ( 8 -4 0 ) ( -10 -4 0 ) common/clip_nosight -8 -16 0 0.25 0.25 0 0 0 4
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/roundfullshrub"
+"origin" "0 0 0"
+}

@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 8 24 0 ) ( -8 24 0 ) ( -8 -24 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -6 -24 40 ) ( -6 24 40 ) ( 10 24 40 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 14 -20 34 ) ( 14 28 34 ) ( 14 28 2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 8 26 32 ) ( -8 26 32 ) ( -8 26 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -14 24 24 ) ( -14 -24 24 ) ( -14 -24 -8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 -26 10 ) ( 0 -26 14 ) ( 32 -26 10 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/boxhedge"
+"origin" "0 0 0"
+}

@@ -1,0 +1,15 @@
+Emitter
+{
+	flags				emitFx
+
+	life				100
+
+	velocity			3322 0 0
+
+	density				4
+
+	emitfx
+	[
+		fx/fire/fire_emitter1
+	]
+}

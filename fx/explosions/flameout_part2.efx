@@ -1,0 +1,44 @@
+FxRunner
+{
+	delay				300
+
+	playfx
+	[
+		fx/explosions/new_explosions2
+	]
+}
+
+Emitter
+{
+	flags				useModel usePhysics impactKills
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				5 7
+
+	life				5000
+
+	delay				350
+
+	angle				22 22 111
+
+	angleDelta			111 0 0 76 0 0
+
+	velocity			211 211 911 411 211 711
+
+	gravity				-700
+
+	density				4
+
+	size
+	{
+		start			0.4 0.5
+		end				0.3 1
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/gib_metalplate
+	]
+}

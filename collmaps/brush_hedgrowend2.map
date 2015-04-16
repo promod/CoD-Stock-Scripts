@@ -1,0 +1,19 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 32 168 0 ) ( -8 168 0 ) ( -8 -112 0 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -8 -112 152 ) ( -8 168 152 ) ( 32 168 152 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -8 -104 152 ) ( 32 -104 152 ) ( 32 -104 0 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( 32 -112 152 ) ( 32 168 152 ) ( 32 168 0 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( 32 160 152 ) ( -8 160 152 ) ( -8 160 0 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -8 168 152 ) ( -8 -112 152 ) ( -8 -112 0 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( 0 -48 152 ) ( 0 160 40 ) ( 32 -48 152 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/brush_hedgrowend2"
+"origin" "0 0 0"
+}

@@ -1,0 +1,84 @@
+Particle
+{
+	flags				usePhysics impactKills useAlpha
+
+	count				3 5
+
+	life				1333
+
+	cullrange			600
+
+	rotation			-360 360
+
+	rotationDelta		52 -52
+
+	velocity			332 132 132 311 -132 -132
+
+	gravity				-600
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			5
+		end				22 5
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/impact/grass_piece1
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				usePhysics impactKills useAlpha
+
+	count				3 5
+
+	life				6000
+
+	cullrange			200
+
+	rotation			-360 360
+
+	rotationDelta		52 -52
+
+	velocity			432 132 132 411 -132 -132
+
+	gravity				-600
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				22 4
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/impact/grass_piece1
+	]
+}

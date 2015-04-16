@@ -1,0 +1,11 @@
+{
+	surfaceparm flesh
+	{
+		map $texturename
+		rgbGen exactVertex
+	}
+	{
+		map $lightmap
+		blendFunc filter
+	}
+}

@@ -1,0 +1,31 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 0 88 0 ) ( -8 88 0 ) ( -8 -88 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -4 -88 480 ) ( -4 88 480 ) ( 4 88 480 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -3 -5 0 ) ( -3 -5 480 ) ( -2 -5 480 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 4 -2 0 ) ( 4 -2 480 ) ( 4 5 480 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 8 415 ) ( -8 8 415 ) ( -8 8 7 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -8 88 416 ) ( -8 -88 416 ) ( -8 -88 8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -2 -5 0 ) ( -2 -5 480 ) ( 4 -2 480 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -3 -5 480 ) ( -3 -5 0 ) ( -8 -2 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -8 5 0 ) ( -5 7 0 ) ( -8 5 32 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -1 8 0 ) ( 4 5 0 ) ( -1 8 32 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 79 8 320 ) ( -86 8 320 ) ( -86 -5 320 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -83 -5 532 ) ( -83 8 532 ) ( 82 8 532 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -84 -72 571 ) ( 81 -72 571 ) ( 81 -72 349 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( 72 -2 542 ) ( 72 11 542 ) ( 72 11 320 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( 80 75 530 ) ( -85 75 530 ) ( -85 75 308 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -72 7 539 ) ( -72 -6 539 ) ( -72 -6 317 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"classname" "misc_model"
+"model" "xmodel/hurtgentallpine"
+}

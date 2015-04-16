@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 18 13 0 ) ( -18 13 0 ) ( -18 -13 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -18 -13 37 ) ( -18 13 37 ) ( 18 13 37 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -18 -11 37 ) ( 18 -11 37 ) ( 18 -11 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 18 -13 37 ) ( 18 13 37 ) ( 18 13 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 18 11 37 ) ( -18 11 37 ) ( -18 11 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -18 13 37 ) ( -18 -13 37 ) ( -18 -13 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/ship_hosereel_small"
+"classname" "misc_model"
+}

@@ -1,0 +1,262 @@
+Cylinder
+{
+	life				300
+
+	radius				34 0
+
+	rgb
+	{
+		start			0.6667 0.7686 0.7451
+		end				0.502 0.502 0.502
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.9
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				310
+		flags			linear
+	}
+
+	size2
+	{
+		end				164 166
+		flags			linear
+	}
+
+	length
+	{
+		end				50
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/watersheet1
+	]
+}
+
+Cylinder
+{
+	life				1000
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.3
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				170
+		flags			linear
+	}
+
+	size2
+	{
+		start			0
+		end				650
+		flags			linear
+	}
+
+	length
+	{
+		end				75
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/watersheet1
+	]
+}
+
+Particle
+{
+	spawnFlags			orgOnSphere rgbComponentInterpolation
+
+	count				22 17
+
+	life				1500
+
+	origin				62 32 0 32 -64 0
+
+	radius				0 93
+
+	height				1 21
+
+	rotation			213 -234
+
+	rotationDelta		12 -12
+
+	velocity			1600 34 12 300 -54 -12
+
+	gravity				-900
+
+	rgb
+	{
+		start			0.502 0.502 0.502
+		end				0.4235 0.4824 0.4627 0.502 0.502 0.502
+		flags			random linear
+	}
+
+	alpha
+	{
+		start			1 0.8
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				300 400
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/waterspay
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 3
+
+	spawnFlags			axisFromSphere
+
+	count				10
+
+	life				2300
+
+	delay				445
+
+	origin				750 123 0 50 -123 23
+
+	height				0
+
+	rotation			213 -234
+
+	rotationDelta		2 -12
+
+	velocity			122 89 89 122 -89 -89
+
+	gravity				-320 -400
+
+	rgb
+	{
+		start			0.502 0.502 0.502
+		end				0.6667 0.7686 0.7451
+		flags			random linear
+	}
+
+	alpha
+	{
+		start			0.7
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			59
+		end				300
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/waterspay
+	]
+}
+
+FxRunner
+{
+	count				3
+
+	delay				2100
+
+	playfx
+	[
+		fx/surfacehits/aftereffec1
+	]
+}
+
+FxRunner
+{
+	name				Copy of Unnamed FxRunner 4
+
+	playfx
+	[
+		fx/water/waterplume
+	]
+}
+
+Cylinder
+{
+	flags				useAlpha
+
+	life				400
+
+	origin				-432 0 0
+
+	radius				0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.8
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			100
+		end				0
+		flags			linear
+	}
+
+	size2
+	{
+		start			200
+		end				56
+		flags			linear
+	}
+
+	length
+	{
+		start			100
+		end				3000
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smoke/smoke2
+	]
+}
+
+FxRunner
+{
+	playfx
+	[
+		fx/cannon/woodplank
+	]
+}

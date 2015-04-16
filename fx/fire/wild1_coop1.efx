@@ -1,0 +1,133 @@
+Particle
+{
+	spawnFlags			axisFromSphere
+
+	life				800 700
+
+	origin				11 0 0 41 0 0
+
+	radius				2 17
+
+	rotation			7 -14
+
+	rotationDelta		0 1
+
+	velocity			72 34 0 72 -43 0
+
+	rgb
+	{
+		flags			random linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			12 32
+		end				100
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/firesheet1
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	spawnFlags			orgOnCylinder
+
+	count				2 4
+
+	life				1000
+
+	radius				12
+
+	rotation			2 -14
+
+	rotationDelta		0 2
+
+	velocity			124 0 0 0 0 0
+
+	rgb
+	{
+		end				0.7608 0.4353 0.2392
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			1 32
+		end				100 50
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/firesheet2
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 2
+
+	spawnFlags			orgOnCylinder
+
+	count				5 7
+
+	life				1000 800
+
+	radius				36 1
+
+	rotation			90 -90
+
+	rotationDelta		2 -2
+
+	velocity			71 0 0 21 0 0
+
+	alpha
+	{
+		start			0.8 0.6
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				50
+		flags			linear
+	}
+
+	length
+	{
+		end				100
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/firesheetfill1m
+	]
+}
+
+FxRunner
+{
+	playfx
+	[
+		fx/fire/jh_animfire6
+	]
+}

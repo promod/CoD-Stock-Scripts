@@ -1,0 +1,78 @@
+Particle
+{
+	flags				useAlpha
+
+	life				5000 4000
+
+	origin				345 321 32 0 -428 0
+
+	rotation			328 -256
+
+	rotationDelta		12
+
+	velocity			400 0 0 333 0 0
+
+	rgb
+	{
+		start			0.502 0.502 0.502
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.9
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			70 100
+		end				1000
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/dark_smoke
+	]
+}
+
+Particle
+{
+	count				0 1
+
+	life				9000 6000
+
+	origin				321 321 0 1 -428 0
+
+	rotation			10 -20
+
+	velocity			400 0 0 233 0 0
+
+	rgb
+	{
+		start			0.502 0.502 0.502
+		end				0.6275 0.6275 0.6431 0.8941 0.8941 0.8941
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			100 1
+		end				1050 700
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smokelight
+	]
+}

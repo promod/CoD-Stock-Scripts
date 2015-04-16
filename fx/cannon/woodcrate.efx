@@ -1,0 +1,54 @@
+Particle
+{
+	flags				usePhysics useAlpha
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				7 15
+
+	life				1000 1500
+
+	cullrange			1000
+
+	bounce				1
+
+	height				15
+
+	rotation			-360 360
+
+	rotationDelta		-92 -32
+
+	velocity			400 44 44 465 -44 -44
+
+	gravity				-600 -300
+
+	rgb
+	{
+		end				1 0.9843 0.9412
+		flags			random linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			19 33
+		end				33
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/impact/wood_splinter1
+		gfx/impact/wood_splinter2
+	]
+}

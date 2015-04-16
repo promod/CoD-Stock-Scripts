@@ -1,0 +1,65 @@
+Emitter
+{
+	flags				emitFx
+
+	count				3
+
+	life				100
+
+	origin				-75 0 0
+
+	height				43
+
+	velocity			3223 4220 4722 3223 -4220 -4722
+
+	density				4
+
+	emitfx
+	[
+		fx/tagged/tail_smoke3
+	]
+}
+
+Particle
+{
+	life				100
+
+	rgb
+	{
+		end				0.7608 0.4353 0.2392
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/flash1
+	]
+}
+
+Emitter
+{
+	flags				emitFx
+
+	life				100
+
+	velocity			4000 644 644 5000 -644 -644
+
+	density				4
+
+	emitfx
+	[
+		fx/tagged/train_smoke2
+	]
+}

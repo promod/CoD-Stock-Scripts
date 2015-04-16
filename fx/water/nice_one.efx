@@ -1,0 +1,25 @@
+Particle
+{
+	flags				useAlpha
+
+	life				1000
+
+	rotation			360 -360
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				32 642
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/riverspray2
+	]
+}

@@ -1,0 +1,36 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -56 -52 64 ) ( 48 -52 64 ) ( 48 48 64 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -16 8 152 ) ( 16 8 152 ) ( 16 -16 152 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( 48 -52 64 ) ( -56 -52 64 ) ( -16 -16 152 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( 48 48 64 ) ( 48 -56 64 ) ( 16 -16 152 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -48 48 64 ) ( 48 48 64 ) ( 16 8 152 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -56 -56 64 ) ( -56 48 64 ) ( -16 8 152 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 40 48 0 ) ( -48 48 0 ) ( -48 -56 0 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -48 -56 64 ) ( -48 48 64 ) ( 40 48 64 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -48 -52 8 ) ( 40 -52 8 ) ( 40 -52 0 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( 48 -56 8 ) ( 48 48 8 ) ( 48 48 0 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( 40 48 8 ) ( -48 48 8 ) ( -48 48 0 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -56 48 8 ) ( -56 -56 8 ) ( -56 -56 0 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 2
+{
+( 8 4 0 ) ( -4 4 0 ) ( -4 -4 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+( -4 -4 196 ) ( -4 4 196 ) ( 8 4 196 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+( -4 -4 196 ) ( 8 -4 196 ) ( 8 -4 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+( 4 -4 196 ) ( 4 4 196 ) ( 4 4 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+( 8 4 196 ) ( -4 4 196 ) ( -4 4 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+( -4 4 196 ) ( -4 -4 196 ) ( -4 -4 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/tree_shortpine"
+"origin" "0 0 0"
+}

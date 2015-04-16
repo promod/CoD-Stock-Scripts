@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 0 -80 -8 ) ( 0 64 -8 ) ( 0 64 56 ) common/clip_nosight 63 124 0 -1.11719 0.515625 0 0 0 4
+( -144 6 -2 ) ( 112 6 -2 ) ( 112 6 62 ) common/clip_nosight 53 124 0 -2.00781 0.515625 0 0 0 4
+( 2 80 -8 ) ( 2 -64 -8 ) ( 2 -64 56 ) common/clip_nosight 63 124 0 -1.11719 0.515625 0 0 0 4
+( 116 -6 4 ) ( -140 -6 4 ) ( -140 -6 68 ) common/clip_nosight 53 124 0 -2.00781 0.515625 0 0 0 4
+( 104 -72 30 ) ( -152 -72 30 ) ( -152 72 30 ) common/clip_nosight 53 63 0 -2.00781 1.11719 0 0 0 4
+( -148 -72 0 ) ( 108 -72 0 ) ( 108 72 0 ) common/clip_nosight 53 63 0 -2.00781 1.11719 0 0 0 4
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/minenfake2"
+"origin" "0 0 0"
+}

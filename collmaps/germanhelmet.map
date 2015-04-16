@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 10 5 -4 ) ( -2 5 -4 ) ( -2 -1 -4 ) common/clip_nosight -16 8 0 0.25 0.25 0 0 0 0
+( -2 -1 4 ) ( -2 5 4 ) ( 10 5 4 ) common/clip_nosight -16 8 0 0.25 0.25 0 0 0 0
+( -2 -4 5 ) ( 10 -4 5 ) ( 10 -4 0 ) common/clip_nosight -16 0 0 0.25 0.25 0 0 0 0
+( 10 -1 5 ) ( 10 5 5 ) ( 10 5 0 ) common/clip_nosight -8 0 0 0.25 0.25 0 0 0 0
+( 10 6 4 ) ( -2 6 4 ) ( -2 6 -1 ) common/clip_nosight -16 0 0 0.25 0.25 0 0 0 0
+( 1 5 5 ) ( 1 -1 5 ) ( 1 -1 0 ) common/clip_nosight -8 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"origin" "0 0 0"
+"model" "xmodel/germanhelmet"
+}

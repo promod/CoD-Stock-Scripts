@@ -1,0 +1,54 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 0 -1 21 ) ( -78 -1 21 ) ( -78 -8 21 ) common/clip_nosight_metal 24 -64 0 0.25 0.25 0 0 0 0
+( -80 -8 34 ) ( -80 -1 34 ) ( -2 -1 34 ) common/clip_nosight_metal 24 -64 0 0.25 0.25 0 0 0 0
+( -78 -20 55 ) ( 0 -20 55 ) ( 0 -20 19 ) common/clip_nosight_metal 24 84 0 0.25 0.25 0 0 0 0
+( -18 -8 57 ) ( -18 -1 57 ) ( -18 -1 21 ) common/clip_nosight_metal 64 84 0 0.25 0.25 0 0 0 0
+( 0 -1 57 ) ( -78 -1 57 ) ( -78 -1 21 ) common/clip_nosight_metal 24 84 0 0.25 0.25 0 0 0 0
+( -40 -2 57 ) ( -40 -9 57 ) ( -40 -9 21 ) common/clip_nosight_metal 64 84 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 37 0 0 ) ( -41 0 0 ) ( -41 -7 0 ) common/clip_nosight_metal 4 -60 0 0.25 0.25 0 0 0 0
+( -43 -7 21 ) ( -43 0 21 ) ( 35 0 21 ) common/clip_nosight_metal 4 -60 0 0.25 0.25 0 0 0 0
+( 16 -25 21 ) ( 16 -25 0 ) ( -40 -29 0 ) common/clip_nosight_metal 4 0 0 0.25 0.25 0 0 0 0
+( 16 -25 0 ) ( 16 -25 21 ) ( 16 7 21 ) common/clip_nosight_metal 60 0 0 0.25 0.25 0 0 0 0
+( 38 7 36 ) ( -40 7 36 ) ( -40 7 0 ) common/clip_nosight_metal 4 0 0 0.25 0.25 0 0 0 0
+( -40 0 36 ) ( -40 -7 36 ) ( -40 -7 0 ) common/clip_nosight_metal 60 0 0 0.25 0.25 0 0 0 0
+}
+// brush 2
+{
+( 38 24 0 ) ( -40 24 0 ) ( -40 17 0 ) common/clip_nosight_metal 0 36 0 0.25 0.25 0 0 0 0
+( -42 17 21 ) ( -42 24 21 ) ( 36 24 21 ) common/clip_nosight_metal 0 36 0 0.25 0.25 0 0 0 0
+( -40 16 36 ) ( 38 16 36 ) ( 38 16 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -23 16 36 ) ( -23 23 36 ) ( -23 23 0 ) common/clip_nosight_metal -36 0 0 0.25 0.25 0 0 0 0
+( 38 23 36 ) ( -40 23 36 ) ( -40 23 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -40 24 36 ) ( -40 17 36 ) ( -40 17 0 ) common/clip_nosight_metal -36 0 0 0.25 0.25 0 0 0 0
+}
+// brush 3
+{
+( 54 15 0 ) ( -24 15 0 ) ( -24 8 0 ) common/clip_nosight_metal -64 0 0 0.25 0.25 0 0 0 0
+( -26 8 25 ) ( -26 15 25 ) ( 52 15 25 ) common/clip_nosight_metal -64 0 0 0.25 0.25 0 0 0 0
+( -24 7 36 ) ( 54 7 36 ) ( 54 7 0 ) common/clip_nosight_metal -64 0 0 0.25 0.25 0 0 0 0
+( 38 8 36 ) ( 38 15 36 ) ( 38 15 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 54 16 36 ) ( -24 16 36 ) ( -24 16 0 ) common/clip_nosight_metal -64 0 0 0.25 0.25 0 0 0 0
+( 22 15 36 ) ( 22 8 36 ) ( 22 8 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 4
+{
+( 38 15 0 ) ( -40 15 0 ) ( -40 8 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -42 8 34 ) ( -42 15 34 ) ( 36 15 34 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -40 7 36 ) ( 38 7 36 ) ( 38 7 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 22 8 36 ) ( 22 15 36 ) ( 22 15 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 38 16 36 ) ( -40 16 36 ) ( -40 16 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -40 15 36 ) ( -40 8 36 ) ( -40 8 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/vehicle_german_bmw_bike"
+"classname" "misc_model"
+}

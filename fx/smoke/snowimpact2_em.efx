@@ -1,0 +1,51 @@
+Particle
+{
+	flags				useAlpha
+
+	nonUniformScale		1
+
+	life				200
+
+	rotation			6 -6
+
+	rotationDelta		1 -1
+
+	gravity				-100
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				8 6
+		flags			linear
+	}
+
+	size2
+	{
+		start			54
+		end				50
+		flags			linear
+	}
+
+	length
+	{
+		start			4 14
+		end				144 14
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/snowsheet1
+	]
+}

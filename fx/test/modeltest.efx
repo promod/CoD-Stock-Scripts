@@ -1,0 +1,33 @@
+Emitter
+{
+	flags				useModel emitFx
+
+	life				1000
+
+	angle				323 435 33 890 276 265
+
+	angleDelta			12 0 0 11 0 0
+
+	velocity			1333 0 0
+
+	density				4
+
+	size
+	{
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/gib_brick
+	]
+
+	emitfx
+	[
+		fx/smoke/whitesmoke
+	]
+}
+
+Particle
+{
+}

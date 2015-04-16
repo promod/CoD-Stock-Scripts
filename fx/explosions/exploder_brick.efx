@@ -1,0 +1,114 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder
+
+	count				6
+
+	life				1000
+
+	origin				423 0 123 -45 0 123
+
+	radius				122 12
+
+	rotation			360 -360
+
+	rotationDelta		12 -12
+
+	velocity			1700 0 0 400 0 0
+
+	gravity				-400 -900
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.7
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			156 200
+		end				900 500
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/whitesmoke
+	]
+}
+
+Emitter
+{
+	flags				useModel usePhysics impactKills
+
+	spawnFlags			orgOnCylinder
+
+	count				3 9
+
+	life				1000
+
+	radius				3 64
+
+	angle				-230 33 128 230 -65 -360
+
+	angleDelta			12 0 44 24 0 -88
+
+	velocity			1300 0 0 1000 0 0
+
+	size
+	{
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/gib_brick
+	]
+}
+
+Particle
+{
+	flags				useAlpha
+
+	count				10
+
+	life				1000
+
+	origin				334 0 0 0 0 0
+
+	rotation			123 -360
+
+	rotationDelta		12 0
+
+	velocity			400 0 0 1300 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				400 600
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/impact/dustlayer1
+	]
+}

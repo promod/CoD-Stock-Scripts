@@ -1,0 +1,39 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation
+
+	life				1e+004
+
+	rotation			-360 360
+
+	rotationDelta		-2 2
+
+	velocity			108 -14 -14 108 14 14
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			100
+		end				282 374
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smoke/ultra_smoke1
+		gfx/effects/smoke/ultra_smoke2
+	]
+}

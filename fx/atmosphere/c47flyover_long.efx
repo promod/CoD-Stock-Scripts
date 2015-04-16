@@ -1,0 +1,40 @@
+OrientedParticle
+{
+	spawnFlags			orgOnCylinder
+
+	count				1 3
+
+	life				8e+004
+
+	origin				1000 -345 2230 600 432 -1230
+
+	radius				129 123
+
+	rotation			-90
+
+	velocity			0 0 123 0 0 90
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.3 0.5
+		end				0.5 0.7
+		flags			linear
+	}
+
+	size
+	{
+		start			600 700
+		end				300 400
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/c47formation1
+	]
+}

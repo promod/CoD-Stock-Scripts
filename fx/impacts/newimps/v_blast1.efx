@@ -1,0 +1,354 @@
+Emitter
+{
+	flags				emitFx
+
+	count				4
+
+	life				100
+
+	radius				33
+
+	velocity			1223 2722 2722 1800 -2722 -2722
+
+	density				4
+
+	variance			14
+
+	emitfx
+	[
+		fx/smoke/low_drifting2a
+	]
+}
+
+Particle
+{
+	flags				useAlpha
+
+	count				8
+
+	life				8000
+
+	origin				33 0 0 275 0 0
+
+	rotation			360 -360
+
+	velocity			0 22 22 0 -22 -22
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			55
+		end				300
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/medium_smoke
+	]
+}
+
+Particle
+{
+	nonUniformScale		1
+
+	count				3
+
+	life				100
+
+	origin				0 0 0 24 0 0
+
+	rotation			33 -33
+
+	velocity			399 0 0 799 0 0
+
+	rgb
+	{
+		end				0.7608 0.4353 0.2392
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			55
+		end				183
+		flags			linear
+	}
+
+	size2
+	{
+		start			3
+		end				64
+		flags			linear
+	}
+
+	length
+	{
+		start			2333 3333
+		end				1333
+		parm			7 4
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/flash1
+	]
+}
+
+Emitter
+{
+	name				rocks
+
+	flags				useModel usePhysics impactFx
+
+	count				1 2
+
+	life				5000 6000
+
+	bounce				0.3
+
+	angle				360 360 360 -360 -360 -360
+
+	angleDelta			53 3 3 66 3 3
+
+	velocity			900 341 341 700 -341 -341
+
+	gravity				-800 -900
+
+	size
+	{
+		start			0.1
+		end				0.1
+	}
+
+	models
+	[
+		xmodel/gib_stonebrick1
+	]
+
+	impactfx
+	[
+		fx/smoke/residual1
+	]
+}
+
+Decal
+{
+	life				1e+004
+
+	rotation			360 -360
+
+	size
+	{
+		start			100 80
+	}
+
+	shaders
+	[
+		gfx/impact/cratered
+	]
+}
+
+Emitter
+{
+	name				Copy of rocks
+
+	flags				useModel usePhysics impactFx
+
+	count				1 2
+
+	life				5000 6000
+
+	bounce				0.3
+
+	angle				360 360 360 -360 -360 -360
+
+	angleDelta			53 3 3 66 3 3
+
+	velocity			500 341 341 600 -341 -341
+
+	gravity				-800 -900
+
+	size
+	{
+		start			0.05
+		end				0.05
+	}
+
+	models
+	[
+		xmodel/gib_stonebrick1
+	]
+
+	impactfx
+	[
+		fx/smoke/residual1
+	]
+}
+
+Emitter
+{
+	name				Copy of Copy of rocks
+
+	flags				useModel usePhysics impactFx
+
+	count				1 2
+
+	life				5000 6000
+
+	bounce				0.3
+
+	angle				360 360 360 -360 -360 -360
+
+	angleDelta			53 3 3 66 3 3
+
+	velocity			400 341 341 700 -341 -341
+
+	gravity				-800 -900
+
+	size
+	{
+		start			0.5
+		end				0.5
+	}
+
+	models
+	[
+		xmodel/gib_stone1
+	]
+
+	impactfx
+	[
+		fx/smoke/residual1
+	]
+}
+
+Emitter
+{
+	name				Copy of Copy of Copy of rocks
+
+	flags				useModel usePhysics impactFx
+
+	count				1 2
+
+	life				5000 6000
+
+	bounce				0.3
+
+	angle				360 360 360 -360 -360 -360
+
+	angleDelta			53 3 3 66 3 3
+
+	velocity			300 341 341 600 -341 -341
+
+	gravity				-800 -900
+
+	size
+	{
+		start			0.6 0.5
+		end				0.5
+	}
+
+	models
+	[
+		xmodel/gib_stone1
+	]
+
+	impactfx
+	[
+		fx/smoke/residual1
+	]
+}
+
+Line
+{
+	flags				useAlpha
+
+	count				7
+
+	life				700
+
+	origin2				144 244 244 344 -244 -244
+
+	rgb
+	{
+		start			1 0.9843 0.9412
+		end				0.7569 0.7294 0.6667
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.6 0.7
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			53
+		end				33
+	}
+
+	shaders
+	[
+		gfx/effects/explosion/dirtplume_model2
+		gfx/effects/explosion/dirtplume_modelf
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 1
+
+	flags				useAlpha
+
+	count				3
+
+	life				8000
+
+	origin				433 52 52 275 -52 -52
+
+	radius				13 14
+
+	rotation			360 -360
+
+	velocity			2 22 22 2 -22 -22
+
+	rgb
+	{
+		start			0.7569 0.7294 0.6667
+		end				0.8039 0.8078 0.7569
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			55
+		end				500
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/medium_smoke
+	]
+}

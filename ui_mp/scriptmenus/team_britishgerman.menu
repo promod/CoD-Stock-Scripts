@@ -1,0 +1,596 @@
+#include "ui_mp/menudef.h"
+
+#define ORIGIN_MENUTABS				96 64
+#define ORIGIN_MENUWINDOW			96 96
+
+{
+	menuDef
+	{
+		name			"team_britishgerman"
+		fullscreen		0
+		rect			0 0 640 480
+		focuscolor		1 1 1 1
+		disablecolor		0 0 0 0
+		style			WINDOW_STYLE_EMPTY
+		onEsc 
+		{
+			scriptMenuResponse "close";
+			close team_britishgerman;
+		}
+		onOpen 
+		{
+			scriptMenuResponse "open";
+		}
+		onClose
+		{
+			scriptMenuResponse "close";
+		}
+
+// WINDOW BACKGROUND
+		itemDef
+		{
+			name			"window_background"
+			visible			1
+			rect			0 0 448 288
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			decoration
+		}
+
+// WINDOW BANNER
+		itemDef
+		{
+			name			"window_banner"
+			visible			1
+			rect			9 6 430 24
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_SHADER 
+			background		"ui_mp/assets/hud@banner_team.tga"
+			decoration
+		}
+
+// WINDOW LINES
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			3 0 2 283
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			443 0 2 283
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			3 283 442 2
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			5 0 438 2
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			5 34 438 1
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+// MAIN MENU BUTTON
+		itemDef 
+		{
+			name			"button_mainmenu"
+			visible			1
+			rect			0 0 89 32
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_MAIN_MENU"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		45
+			textaligny		24
+			textalign		ITEM_ALIGN_CENTER
+			action
+			{
+				play "mouse_click";
+				close team_britishgerman;
+				open main;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			"button_mainmenu_hline"
+			visible			1
+			rect			3 3 86 2
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"button_mainmenu_lvline"
+			visible			1
+			rect			3 5 2 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"button_mainmenu_rvline"
+			visible			1
+			rect			88 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+// TEAM BUTTON
+		itemDef
+		{
+			name			"button_team"
+			visible			1
+			rect			89 0 90 32
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			text			"@MPMENU_TEAM"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		45
+			textaligny		24
+			textalign		ITEM_ALIGN_CENTER
+			decoration
+		}
+		itemDef
+		{
+			name			"button_team_gray"
+			visible			1
+			rect			89 3 90 29
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+// WEAPON BUTTON
+		itemDef
+		{
+			name			"button_weapon"
+			visible			1
+			rect			179 0 90 32
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_WEAPON"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		45
+			textaligny		24
+			textalign		ITEM_ALIGN_CENTER
+			cvartest		"ui_weapontab"
+			showCvar		{ "1" }
+			action
+			{
+				play "mouse_click";
+				scriptMenuResponse "weapon";
+				close team_britishgerman;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			"button_weapon_hline"
+			visible			1
+			rect			179 3 90 2
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_weapontab"
+			showCvar		{ "1" }
+		}
+		itemDef
+		{
+			name			"button_weapon_lvline"
+			visible			1
+			rect			179 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_weapontab"
+			showCvar		{ "1" }
+		}
+		itemDef
+		{
+			name			"button_weapon_rvline"
+			visible			1
+			rect			268 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_weapontab"
+			showCvar		{ "1" }
+		}
+
+// WEAPON BUTTON HIDDEN
+		itemDef
+		{
+			name			"button_weapon_lvedge"
+			visible			1
+			rect			179 0 4 29
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		0 0 0 0.7975
+			decoration
+			cvartest		"ui_weapontab"
+			hideCvar		{ "1" }
+		}
+		itemDef
+		{
+			name			"button_weapon_rvedge"
+			visible			1
+			rect			265 0 4 29
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		0 0 0 0.7975
+			decoration
+			cvartest		"ui_weapontab"
+			hideCvar		{ "1" }
+		}
+		itemDef
+		{
+			name			"button_weapon_bhedge"
+			visible			1
+			rect			179 29 90 3
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		0 0 0 0.7975
+			decoration
+			cvartest		"ui_weapontab"
+			hideCvar		{ "1" }
+		}
+		itemDef
+		{
+			name			"button_team_lvline"
+			visible			1
+			rect			179 3 1 29
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_weapontab"
+			hideCvar		{ "1" }
+		}
+		itemDef
+		{
+			name			"button_team_rvline"
+			visible			1
+			rect			268 3 1 29
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_weapontab"
+			hideCvar		{ "1" }
+		}
+
+// VIEW MAP BUTTON
+		itemDef
+		{
+			name			"button_viewmap"
+			visible			1
+			rect			269 0 90 32
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_VIEW_MAP"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		45
+			textaligny		24
+			textalign		ITEM_ALIGN_CENTER
+			action
+			{
+				play "mouse_click";
+				scriptMenuResponse "viewmap";
+				close team_britishgerman;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			"button_viewmap_hline"
+			visible			1
+			rect			269 3 90 2
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"button_viewmap_lvline"
+			visible			1
+			rect			269 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"button_viewmap_rvline"
+			visible			1
+			rect			358 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+// CALL VOTE BUTTON
+		itemDef
+		{
+			name			"button_callvote"
+			visible			1
+			rect			359 0 89 32
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_CALL_VOTE"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		42
+			textaligny		24
+			textalign		ITEM_ALIGN_CENTER
+			cvartest		"ui_allowvote"
+			hideCvar		{ "0" }
+			action
+			{
+				play "mouse_click";
+				scriptMenuResponse "callvote";
+				close team_britishgerman;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			"button_callvote_hline"
+			visible			1
+			rect			359 3 86 2
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_allowvote"
+			hideCvar		{ "0" }
+		}
+		itemDef
+		{
+			name			"button_callvote_lvline"
+			visible			1
+			rect			359 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_allowvote"
+			hideCvar		{ "0" }
+		}
+		itemDef
+		{
+			name			"button_callvote_rvline"
+			visible			1
+			rect			443 5 2 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_allowvote"
+			hideCvar		{ "0" }
+		}
+
+// CALL VOTE BUTTON HIDDEN
+		itemDef
+		{
+			name			"button_callvote_lvedge"
+			visible			1
+			rect			359 0 4 29
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		0 0 0 0.7975
+			decoration
+			cvartest		"ui_allowvote"
+			showCvar		{ "0" }
+		}
+		itemDef
+		{
+			name			"button_callvote_bhedge"
+			visible			1
+			rect			359 29 89 3
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		0 0 0 0.7975
+			decoration
+			cvartest		"ui_allowvote"
+			showCvar		{ "0" }
+		}
+		itemDef
+		{
+			name			"button_callvote_lvline"
+			visible			1
+			rect			359 3 1 29
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_allowvote"
+			showCvar		{ "0" }
+		}
+
+// MENU CHOICES
+		itemDef 
+		{
+			name			"button_british"
+			visible			1
+			rect			16 46 160 22
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_1_BRITISH"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			action
+			{
+				play "mouse_click";
+				scriptMenuResponse "allies";
+				close team_britishgerman;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		execKey "1" { play "mouse_click"; scriptMenuResponse "allies"; close team_britishgerman }
+
+		itemDef 
+		{
+			name			"button_german"
+			visible			1
+			rect			16 70 160 22
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_2_GERMAN"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			action
+			{
+				play "mouse_click";
+				scriptMenuResponse "axis";
+				close team_britishgerman;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		execKey "2" { play "mouse_click"; scriptMenuResponse "axis"; close team_britishgerman }
+		
+		itemDef 
+		{
+			name			"button_autoassign"
+			visible			1
+			rect			16 94 160 22
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_3_AUTOASSIGN"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			action
+			{
+				play "mouse_click";
+				scriptMenuResponse "autoassign";
+				close team_britishgerman;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		execKey "3" { play "mouse_click"; scriptMenuResponse "autoassign"; close team_britishgerman }
+		
+		itemDef 
+		{
+			name			"button_spectate"
+			visible			1
+			rect			16 118 160 22
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_4_SPECTATE"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			action
+			{
+				play "mouse_click";
+				scriptMenuResponse "spectator";
+				close team_britishgerman;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		execKey "4" { play "mouse_click"; scriptMenuResponse "spectator"; close team_britishgerman }
+	}
+}

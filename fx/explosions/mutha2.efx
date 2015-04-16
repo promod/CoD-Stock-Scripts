@@ -1,0 +1,15 @@
+FxRunner
+{
+	playfx
+	[
+		fx/explosions/mutha1_nl
+	]
+}
+
+Sound
+{
+	sounds
+	[
+		KABOOM
+	]
+}

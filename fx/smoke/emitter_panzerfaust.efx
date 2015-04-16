@@ -1,0 +1,13 @@
+Emitter
+{
+	flags				emitFx relative
+
+	life				2e+004
+
+	variance			1 5
+
+	emitfx
+	[
+		fx/smoke/smoke_panzerfaust
+	]
+}

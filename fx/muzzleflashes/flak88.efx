@@ -1,0 +1,214 @@
+Tail
+{
+	flags				relative
+
+	spawnFlags			orgOnCylinder
+
+	count				4
+
+	life				100
+
+	origin				663 1 0 663 0 0
+
+	radius				2
+
+	height				2 1
+
+	velocity			1220 0 0
+
+	alpha
+	{
+		end				0.5 0.4
+		flags			linear
+	}
+
+	size
+	{
+		start			23 31
+		end				70 80
+		flags			linear
+	}
+
+	length
+	{
+		start			22 13
+		end				1000
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/mg42a
+	]
+}
+
+Particle
+{
+	flags				relative
+
+	count				2 4
+
+	life				100
+
+	origin				33 0 0
+
+	rotation			123 -321
+
+	rotationDelta		4 1
+
+	velocity			700 0 0 500 0 0
+
+	acceleration		2341 0 0 0 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0.2 0
+		flags			linear
+	}
+
+	size
+	{
+		start			42 22
+		end				10 24
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/mg42b
+	]
+}
+
+Light
+{
+	life				200 100
+
+	rgb
+	{
+		start			0.8353 0.5176 0.1686
+		end				0.9765 0.949 0.651
+		flags			linear
+	}
+
+	size
+	{
+		start			600 400
+		end				10
+		flags			linear
+	}
+}
+
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder evenDistribution
+
+	count				3 5
+
+	life				300 800
+
+	origin				0 100 -33 22 -100 33
+
+	radius				100 230
+
+	height				33 222
+
+	rotation			321 -230
+
+	rotationDelta		3
+
+	velocity			833 22 100 630 33 0
+
+	acceleration		2000 32 0 1000 -123 0
+
+	gravity				-1400 -1700
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			21 19
+		end				934 624
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/whitesmoke
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 3
+
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder evenDistribution
+
+	count				5 10
+
+	life				1300 800
+
+	origin				0 100 -33 22 -100 33
+
+	radius				100 230
+
+	rotation			321 -230
+
+	rotationDelta		3
+
+	velocity			300 22 100 630 33 0
+
+	acceleration		1000 32 0 1000 -123 0
+
+	gravity				-1000 -1300
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			21 19
+		end				334 224
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/whitesmoke
+	]
+}
+
+FxRunner
+{
+	playfx
+	[
+		fx/atmosphere/verlingpop
+	]
+}

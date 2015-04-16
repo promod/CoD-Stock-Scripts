@@ -1,0 +1,28 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation
+
+	life				1000
+
+	radius				100 43
+
+	height				33 122
+
+	alpha
+	{
+		end				0
+	}
+
+	size
+	{
+		start			50
+		end				50
+	}
+
+	shaders
+	[
+		gfx/effects/explosion1
+	]
+}

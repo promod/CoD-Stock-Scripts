@@ -1,0 +1,8 @@
+{
+	surfaceparm metal
+	{
+		map $texturename
+		rgbGen lightingDiffuse
+		tcmod scroll -1 0
+	}
+}

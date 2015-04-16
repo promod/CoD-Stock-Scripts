@@ -1,0 +1,1244 @@
+#include "ui_mp/menudef.h"
+
+#define ORIGIN_MENUTABS				96 64
+#define ORIGIN_MENUWINDOW			96 96
+#define ORIGIN_SUBMENU				367 142
+#define ORIGIN_MAPIMAGE				367 248
+#define OPTION_DISABLED_COLOR			1 1 1 .6
+
+{
+	menuDef
+	{
+		name			"callvote"
+		fullscreen		0
+		rect			0 0 640 480
+		focuscolor		1 1 1 1
+		disablecolor		0 0 0 0
+		style			WINDOW_STYLE_EMPTY
+		disablecolor		OPTION_DISABLED_COLOR
+		onEsc 
+		{
+			scriptMenuResponse "close";
+			close callvote;
+		}
+		onOpen 
+		{
+			uiScript loadArenas;
+			scriptMenuResponse "open";
+		}
+		onClose
+		{
+			scriptMenuResponse "close";
+		}
+
+// WINDOW BACKGROUND
+		itemDef
+		{
+			name			"window_background"
+			visible			1
+			rect			0 0 448 288
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			decoration
+		}
+
+// WINDOW BANNER
+		itemDef
+		{
+			name			"window_banner"
+			visible			1
+			rect			9 6 430 24
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_SHADER 
+			background		"ui_mp/assets/hud@banner_callvote.tga"
+			decoration
+		}
+
+// WINDOW LINES
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			3 0 2 283
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			443 0 2 283
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			3 283 442 2
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			5 0 438 2
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			5 34 438 1
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+// MAIN MENU BUTTON
+		itemDef 
+		{
+			name			"button_mainmenu"
+			visible			1
+			rect			0 0 89 32
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_MAIN_MENU"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		45
+			textaligny		24
+			textalign		ITEM_ALIGN_CENTER
+			action
+			{
+				play "mouse_click";
+				close callvote;
+				open main;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			"button_mainmenu_hline"
+			visible			1
+			rect			3 3 86 2
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"button_mainmenu_lvline"
+			visible			1
+			rect			3 5 2 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"button_mainmenu_rvline"
+			visible			1
+			rect			88 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+// TEAM BUTTON
+		itemDef
+		{
+			name			"button_team"
+			visible			1
+			rect			89 0 90 32
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_TEAM"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		45
+			textaligny		24
+			textalign		ITEM_ALIGN_CENTER
+			action
+			{
+				play "mouse_click";
+				scriptMenuResponse "team";
+				close callvote;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			"button_team_hline"
+			visible			1
+			rect			89 3 90 2
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"button_team_lvline"
+			visible			1
+			rect			89 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"button_team_rvline"
+			visible			1
+			rect			178 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+// WEAPON BUTTON
+		itemDef
+		{
+			name			"button_weapon"
+			visible			1
+			rect			179 0 90 32
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_WEAPON"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		45
+			textaligny		24
+			textalign		ITEM_ALIGN_CENTER
+			cvartest		"ui_weapontab"
+			showCvar		{ "1" }
+			action
+			{
+				play "mouse_click";
+				scriptMenuResponse "weapon";
+				close callvote;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}		
+		itemDef
+		{
+			name			"button_weapon_hline"
+			visible			1
+			rect			179 3 90 2
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_weapontab"
+			showCvar		{ "1" }
+		}
+		itemDef
+		{
+			name			"button_weapon_lvline"
+			visible			1
+			rect			179 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_weapontab"
+			showCvar		{ "1" }
+		}
+		itemDef
+		{
+			name			"button_weapon_rvline"
+			visible			1
+			rect			268 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_weapontab"
+			showCvar		{ "1" }
+		}
+
+// WEAPON BUTTON HIDDEN
+		itemDef
+		{
+			name			"button_weapon_lvedge"
+			visible			1
+			rect			179 0 4 29
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		0 0 0 0.7975
+			decoration
+			cvartest		"ui_weapontab"
+			hideCvar		{ "1" }
+		}
+		itemDef
+		{
+			name			"button_weapon_rvedge"
+			visible			1
+			rect			265 0 4 29
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		0 0 0 0.7975
+			decoration
+			cvartest		"ui_weapontab"
+			hideCvar		{ "1" }
+		}
+		itemDef
+		{
+			name			"button_weapon_bhedge"
+			visible			1
+			rect			179 29 90 3
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		0 0 0 0.7975
+			decoration
+			cvartest		"ui_weapontab"
+			hideCvar		{ "1" }
+		}
+		itemDef
+		{
+			name			"button_team_lvline"
+			visible			1
+			rect			179 3 1 29
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_weapontab"
+			hideCvar		{ "1" }
+		}
+		itemDef
+		{
+			name			"button_team_rvline"
+			visible			1
+			rect			268 3 1 29
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+			cvartest		"ui_weapontab"
+			hideCvar		{ "1" }
+		}
+
+// VIEW MAP BUTTON
+		itemDef
+		{
+			name			"button_viewmap"
+			visible			1
+			rect			269 0 90 32
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_VIEW_MAP"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		45
+			textaligny		24
+			textalign		ITEM_ALIGN_CENTER
+			action
+			{
+				play "mouse_click";
+				scriptMenuResponse "viewmap";
+				close callvote;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}		
+		itemDef
+		{
+			name			"button_viewmap_hline"
+			visible			1
+			rect			269 3 90 2
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"button_viewmap_lvline"
+			visible			1
+			rect			269 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+		itemDef
+		{
+			name			"button_viewmap_rvline"
+			visible			1
+			rect			358 5 1 27
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+// CALL VOTE BUTTON
+		itemDef
+		{
+			name			"button_callvote"
+			visible			1
+			rect			359 0 89 32
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			text			"@MPMENU_CALL_VOTE"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		42
+			textaligny		24
+			textalign		ITEM_ALIGN_CENTER
+			decoration
+		}
+		itemDef
+		{
+			name			"button_team_gray"
+			visible			1
+			rect			359 3 86 29
+			origin			ORIGIN_MENUTABS
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+// MENU CHOICES
+		itemDef 
+		{
+			name			"button_restartmap"
+			visible			1
+			rect			16 40 160 20
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_RESTART_MAP"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			cvartest		"ui_allowvotemaprestart"
+			disablecvar		{ "0" }
+			action
+			{
+				play "mouse_click";
+				exec "cmd callvote map_restart";
+				close callvote;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef 
+		{
+			name			"button_nextmap"
+			visible			1
+			rect			16 62 160 20
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_NEXT_MAP"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			cvartest		"ui_allowvotemaprotate"
+			disablecvar		{ "0" }
+			action
+			{
+				play "mouse_click";
+				exec "cmd callvote map_rotate";
+				close callvote;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef 
+		{
+			name			"button_changemap"
+			visible			1
+			rect			16 84 160 20
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_CHANGE_MAP"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			cvartest		"ui_allowvotemap"
+			disablecvar		{ "0" }			
+			action
+			{
+				play "mouse_click";
+				hide callvote_submenu;
+				hide killcam;
+				hide friendlyfire;
+				hide drawfriend;
+				show map;
+				uiScript loadArenas;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef 
+		{
+			name			"button_changegametype"
+			visible			1
+			rect			16 106 160 20
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_CHANGE_GAME_TYPE"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			cvartest		"ui_allowvotetypemap"
+			disablecvar		{ "0" }			
+			action
+			{
+				play "mouse_click";
+				hide callvote_submenu;
+				hide drawfriend;
+				hide friendlyfire;
+				hide killcam;
+				show gametype;
+				uiScript loadArenas;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef 
+		{
+			name			"button_kickplayer"
+			visible			1
+			rect			16 128 160 20
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_KICK_PLAYER"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			cvartest		"ui_allowvotekick"
+			disablecvar		{ "0" }			
+			action
+			{
+				play "mouse_click";
+				hide callvote_submenu;
+				hide killcam;
+				hide friendlyfire;
+				hide drawfriend;
+				show kick;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef 
+		{
+			name			"button_tempbanplayer"
+			visible			1
+			rect			16 150 160 20
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_TEMPORARILY_BAN_PLAYER"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			cvartest		"ui_allowvotetempbanuser"
+			disablecvar		{ "0" }
+			action
+			{
+				play "mouse_click";
+				hide callvote_submenu;
+				hide friendlyfire;
+				hide killcam;
+				hide drawfriend;
+				show tempban;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+	
+		
+		// ==================================================================================
+		//	DRAW FRIENDLY INDICATORS	
+		// ==================================================================================
+		itemDef 
+		{
+			name			button_drawfriend
+			visible			1
+			rect			16 172 160 20
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@PATCH_1_5_DRAWFRIEND"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			cvartest		"ui_allowvotedrawfriend"
+			disablecvar		{ "0" }
+			action
+			{
+				play "mouse_click";
+				hide callvote_submenu;
+				hide killcam;
+				hide tempban;
+				hide friendlyfire;
+				show drawfriend;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			drawfriend
+			group			submenu_drawfriend
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_OFF"
+			rect			180 172 50 20
+			origin			ORIGIN_MENUWINDOW
+			visible			0
+			textscale		.24
+			textfont		UI_FONT_NORMAL
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_FILLED
+			outlinecolor		.5 .5 .5 .5
+			textalign		1
+			textalignx		23
+			textaligny		15
+			cvartest		"ui_drawfriend"
+			disablecvar		{ "0" }
+			action
+			{
+				play "mouse_click";
+				exec "cmd callvote drawfriend 0";
+				close callvote;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			drawfriend
+			group			submenu_drawfriend
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_ON"
+			rect			230 172 50 20
+			origin			ORIGIN_MENUWINDOW
+			visible			0		
+			textscale		.24
+			textfont		UI_FONT_NORMAL
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_FILLED
+			outlinecolor		.5 .5 .5 .5
+			textalign		1
+			textalignx		24
+			textaligny		15
+			cvartest		"ui_drawfriend"
+			disablecvar		{ "1" }
+			action
+			{
+				play "mouse_click";
+				exec "cmd callvote drawfriend 1";
+				close callvote;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		
+		// ==================================================================================
+		//	FRIENDLY FIRE	
+		// ==================================================================================
+		itemDef 
+		{
+			name			button_friendlyfire
+			visible			1
+			rect			16 194 160 20
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@PATCH_1_5_FRIENDLYFIRE"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			cvartest		"ui_allowvotefriendlyfire"
+			disablecvar		{ "0" }
+			action
+			{
+				play "mouse_click";
+				hide callvote_submenu;
+				hide killcam;
+				hide tempban;
+				hide drawfriend;
+				show friendlyfire;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			friendlyfire
+			group			submenu_friendlyfire
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_OFF"
+			rect			180 194 50 20
+			origin			ORIGIN_MENUWINDOW
+			visible			0
+			textscale		.24
+			textfont		UI_FONT_NORMAL
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_FILLED
+			outlinecolor		.5 .5 .5 .5
+			textalign		1
+			textalignx		23
+			textaligny		15
+			cvartest		"ui_friendlyfire"
+			disablecvar		{ "0" }
+			action
+			{
+				play "mouse_click";
+				exec "cmd callvote friendlyfire 0";
+				close callvote;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			friendlyfire
+			group			submenu_friendlyfire
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_ON"
+			rect			230 194 50 20
+			origin			ORIGIN_MENUWINDOW
+			visible			0		
+			textscale		.24
+			textfont		UI_FONT_NORMAL
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_FILLED
+			outlinecolor		.5 .5 .5 .5
+			textalign		1
+			textalignx		24
+			textaligny		15
+			cvartest		"ui_friendlyfire"
+			disablecvar		{ "1" }
+			action
+			{
+				play "mouse_click";
+				exec "cmd callvote friendlyfire 1";
+				close callvote;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			friendlyfire
+			group			submenu_friendlyfire
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_REFLECT"
+			rect			280 194 50 20
+			origin			ORIGIN_MENUWINDOW
+			visible			0
+			textscale		.24
+			textfont		UI_FONT_NORMAL
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_FILLED
+			outlinecolor		.5 .5 .5 .5
+			textalign		1
+			textalignx		24
+			textaligny		15
+			cvartest		"ui_friendlyfire"
+			disablecvar		{ "2" }
+			action
+			{
+				play "mouse_click";
+				exec "cmd callvote friendlyfire 2";
+				close callvote;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			friendlyfire
+			group			submenu_friendlyfire
+			type			ITEM_TYPE_BUTTON
+			text			"@MENU_SHARED"
+			rect			330 194 50 20
+			origin			ORIGIN_MENUWINDOW
+			visible			0		
+			textscale		.24
+			textfont		UI_FONT_NORMAL
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_FILLED
+			outlinecolor		.5 .5 .5 .5
+			textalign		1
+			textalignx		24
+			textaligny		15
+			cvartest		"ui_friendlyfire"
+			disablecvar		{ "3" }
+			action
+			{
+				play "mouse_click";
+				exec "cmd callvote friendlyfire 3";
+				close callvote;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}	
+		
+			
+		// ==================================================================================
+		//	KILL CAM	
+		// ==================================================================================
+		itemDef 
+		{
+			name			button_killcam
+			visible			1
+			rect			16 216 160 20
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@PATCH_1_5_KILLCAM"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			cvartest		"ui_allowvotekillcam"
+			disablecvar		{ "0" }
+			action
+			{
+				play "mouse_click";
+				hide callvote_submenu;
+				hide drawfriend;
+				hide friendlyfire;
+				hide tempban;
+				show killcam;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			killcam
+			group			submenu_killcam
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_OFF"
+			rect			180 216 50 20
+			origin			ORIGIN_MENUWINDOW
+			visible			0
+			textscale		.24
+			textfont		UI_FONT_NORMAL
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_FILLED
+			outlinecolor		.5 .5 .5 .5
+			textalign		1
+			textalignx		23
+			textaligny		15
+			cvartest		"ui_killcam"
+			disablecvar		{ "0" }
+			action
+			{
+				play "mouse_click";
+				exec "cmd callvote killcam 0";
+				close callvote;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef
+		{
+			name			killcam
+			group			submenu_killcam
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_ON"
+			rect			230 216 50 20
+			origin			ORIGIN_MENUWINDOW
+			visible			0		
+			textscale		.24
+			textfont		UI_FONT_NORMAL
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_FILLED
+			outlinecolor		.5 .5 .5 .5
+			textalign		1
+			textalignx		24
+			textaligny		15
+			cvartest		"ui_killcam"
+			disablecvar		{ "1" }
+			action
+			{
+				play "mouse_click";
+				exec "cmd callvote killcam 1";
+				close callvote;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		
+		
+		// ==================================================================================
+		//	 CHANGE MAP
+		// ==================================================================================
+
+		itemDef 
+		{
+			name			map
+			group			callvote_submenu
+			visible			0
+			rect			0 0 160 106
+			origin			ORIGIN_SUBMENU
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_FILLED
+			outlinecolor		.5 .5 .5 .5
+			type			ITEM_TYPE_LISTBOX
+			textscale		.24
+			textfont		UI_FONT_NORMAL
+			textaligny		-1
+			elementtype		LISTBOX_TEXT
+			elementwidth		120
+			elementheight		15
+			feeder			FEEDER_ALLMAPS
+			columns			1 2 190 25
+			mouseEnter
+			{
+				fadein message_arena;
+			} 
+			mouseExit
+			{
+				fadeout message_arena;
+			} 
+		}
+		itemDef
+		{
+			name			map
+			group			callvote_submenu
+			visible			0
+			style			0
+			ownerdraw		UI_STARTMAPCINEMATIC
+			rect			0 0 160 120
+			origin			ORIGIN_MAPIMAGE
+			border			1
+			bordercolor		1 1 1 1
+		}
+		itemDef 
+		{
+			name			map
+			group			callvote_submenu
+			visible			0
+			rect			16 260 160 20
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_OK"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			action
+			{
+				play "mouse_click";
+				uiScript voteMap;
+				close callvote;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		
+		
+		// ==================================================================================
+		//	 CHANGE GAME TYPE
+		// ==================================================================================
+		itemDef 
+		{
+			name			gametype
+			group			callvote_submenu
+			visible			0
+			rect			0 0 160 24
+			origin			ORIGIN_SUBMENU
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_FILLED
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		7
+			textaligny		17
+			ownerdraw		UI_NETGAMETYPE
+			action
+			{
+				play "mouse_click";
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+		itemDef 
+		{
+			name			gametype
+			group			callvote_submenu
+			visible			0
+			rect			0 24 160 82
+			origin			ORIGIN_SUBMENU
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_FILLED
+			outlinecolor		.5 .5 .5 .5
+			type			ITEM_TYPE_LISTBOX
+			textscale		.24
+			textfont		UI_FONT_NORMAL
+			textaligny		-1
+			elementtype		LISTBOX_TEXT
+			elementwidth		120
+			elementheight		15
+			feeder			FEEDER_ALLMAPS
+			columns			1 2 190 25
+			mouseEnter
+			{
+				fadein message_arena;
+			} 
+			mouseExit
+			{
+				fadeout message_arena;
+			} 
+		}
+		itemDef
+		{
+			name			gametype
+			group			callvote_submenu
+			visible			0
+			style			0
+			ownerdraw		UI_STARTMAPCINEMATIC
+			rect			0 0 160 120
+			origin			ORIGIN_MAPIMAGE
+			border			1
+			bordercolor		1 1 1 1
+		}
+		itemDef 
+		{
+			name			gametype
+			group			callvote_submenu
+			visible			0
+			rect			16 260 160 20
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_OK"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			action
+			{
+				play "mouse_click";
+				uiScript voteTypeMap;
+				close callvote;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}		
+
+
+		// ==================================================================================
+		//	 KICK PLAYER
+		// ==================================================================================
+		itemDef 
+		{
+			name			kick
+			group			callvote_submenu
+			visible			0
+			rect			0 0 160 226
+			origin			ORIGIN_SUBMENU
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_FILLED
+			outlinecolor		.5 .5 .5 .5
+			type			ITEM_TYPE_LISTBOX
+			textscale		.24
+			textfont		UI_FONT_NORMAL
+			textaligny		-1
+			elementtype		LISTBOX_TEXT
+			elementwidth		120
+			elementheight		15
+			feeder			FEEDER_PLAYER_LIST
+			columns			1 2 190 25
+			mouseEnter
+			{
+				fadein message_arena
+			} 
+			mouseExit
+			{
+				fadeout message_arena
+			}
+		}
+		itemDef 
+		{
+			name			kick
+			group			callvote_submenu
+			visible			0
+			rect			16 260 160 20
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_OK"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			action
+			{
+				play "mouse_click";
+				uiScript voteKick;
+				close callvote;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+
+
+		// ==================================================================================
+		//	 TEMPBAN PLAYER
+		// ==================================================================================
+ 
+		itemDef 
+		{
+			name			tempban
+			group			callvote_submenu
+			visible			0
+			rect			0 0 160 226
+			origin			ORIGIN_SUBMENU
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_FILLED
+			outlinecolor		.5 .5 .5 .5
+			type			ITEM_TYPE_LISTBOX
+			textscale		.24
+			textfont		UI_FONT_NORMAL
+			textaligny		-1
+			elementtype		LISTBOX_TEXT
+			elementwidth		120
+			elementheight		15
+			feeder			FEEDER_PLAYER_LIST
+			columns			1 2 190 25
+			mouseEnter
+			{
+				fadein message_arena
+			} 
+			mouseExit
+			{
+				fadeout message_arena
+			}
+		}
+		itemDef 
+		{
+			name			tempban
+			group			callvote_submenu
+			visible			0
+			rect			16 260 160 20
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_BUTTON
+			text			"@MPMENU_OK"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			action
+			{
+				play "mouse_click";
+				uiScript voteTempBan;
+				close callvote;
+			}
+			onFocus
+			{
+				play "mouse_over";
+			}
+		}
+	}
+}

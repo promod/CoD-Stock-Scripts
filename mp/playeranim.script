@@ -1,0 +1,1177 @@
+
+//==========================================================================
+//
+// Character Animation Script     M U L T I P L A Y E R
+//
+// All player states should have animations sutable for a two handed rifle type weapon.
+//
+// This defines the animations and events that might occur at different times
+// for this character. State changes, and random behaviour during idle/alert
+// states will look here for default behaviour, if that character doesn't have
+// something specific in their scripts for that level.
+//
+//==========================================================================
+// DEFINES
+//
+// These can be used to simplify the scripting, by defining replacement strings
+
+DEFINES
+
+// weapons
+//set weapons pistols = colt_mp AND luger_mp
+//set weapons machineguns = bar_mp AND bar_slow_mp AND fg42_mp AND fg42_semi_mp AND mp40_mp AND mp44_mp AND mp44_semi_mp AND panzerfaust_mp AND thompson_mp AND thompson_semi_mp AND ppsh_mp AND ppsh_semi_mp
+//set weapons rifles = kar98k_mp AND m1carbine_mp AND m1garand_mp AND springfield_mp AND enfield_mp
+//set weapons throwables = fraggrenade_mp AND fraggrenade-cook_mp
+
+//panzerfaust
+//set weapons one_handed_weapons = colt_mp AND luger_mp
+//set weapons two_handed_weapons = bar_mp AND bar_slow_mp AND fg42_mp AND fg42_semi_mp AND mp40_mp AND panzerfaust_mp AND thompson_mp AND thompson_semi_mp AND kar98k_mp AND m1carbine_mp AND m1garand_mp AND springfield_mp AND ppsh_mp AND ppsh_semi_mp AND enfield_mp
+
+//pineapple AND grenade AND smokeGrenade
+//set weapons all_one_handed_weapons = colt_mp AND luger_mp AND fraggrenade_mp AND fraggrenade-cook_mp
+
+//panzerfaust AND Ammo Pack AND Medicheal
+//set weapons all_two_handed_weapons = bar_mp AND bar_slow_mp AND fg42_mp AND fg42_semi_mp AND mp40_mp AND panzerfaust_mp AND thompson_mp AND thompson_semi_mp AND kar98k_mp AND m1carbine_mp AND m1garand_mp AND springfield_mp AND ppsh_mp AND ppsh_semi_mp AND enfield_mp
+
+// Stick type grenades
+set weapons stickgrenades = RGD-33russianfrag_mp AND Stielhandgranate_mp
+
+// weaponclasses
+set weaponclass autofire = mg AND smg
+
+// movetypes
+set movetype moving = walk AND walkcr AND walkcrbk AND walkbk AND run AND runbk AND runcr AND runcrbk AND walkprone AND walkpronebk
+set movetype crouching = idlecr AND runcr AND runcrbk AND walkcr AND walkcrbk
+set movetype prone = idleprone AND walkprone AND walkpronebk
+set movetype backstep = walkbk AND runbk AND walkcrbk AND walkpronebk
+
+//==========================================================================
+// ANIMATIONS
+//
+//	NOTE: scripts are chosen by first-come-first-serve basis. The first match
+//	found is the one used.
+//
+// format:
+//
+// state <state description>
+// {
+//		<movement type>
+//		{
+//			[DEFAULT / <condition type> [<condition value>], ...]
+//			{
+//				<both/legs/torso/turret> <animation> [sound <filename>]
+//				<both/legs/torso/turret> <animation> [sound <filename>]
+//				...
+//			}
+//		}
+//	}
+//
+//	legend:
+//
+//	<state description>: relaxed, alert, combat
+//
+//	<movement type>: idle, idlecr, idleprone,
+//                   walk, walkbk, walkcr, walkcrbk, walkprone, walkpronebk.
+//                   run, runbk, runcr, runcrbk, 
+//                   straferight, strafeleft, turnright, turnleft
+//
+//	<condition type>: weapons, weaponclass, position, enemy_weapon, underwater, mounted, movetype, underhand, leaning, weapon_position
+//
+//	<condition value>:
+//
+//		weapons: <see weapon pickup names>
+//		position: behind, infront, right, left
+//		enemy_weapon: <see weapon pickup names>
+//		underwater: <no values>
+//		mounted: mg42
+//		movetype: <see movement types>
+//		underhand: <no values>
+//		leaning: right, left
+//		weaponclass: rifle, smg, mg, pistol, grenade, rocketlauncher, flamethrower, turret, non-player
+//		weapon_position: hip, ads
+//		strafing: not, left, right - will never be left or right while moving backwards
+//
+// NOTES:
+// - The player walks when they are ADS, so they can not ADS while running.
+//
+
+ANIMATIONS
+
+STATE RELAXED
+{
+	
+}
+
+STATE ALERT
+{
+
+}	
+
+STATE COMBAT
+{
+	idle
+	{
+		mounted mg42, firing
+		{
+//			both pb_standMG42gunner_fire_forward_level
+			both standMG42_fire turretanim
+		}
+		mounted mg42
+		{
+//			both pb_standMG42gunner_aim_forward_level
+			both standMG42_aim turretanim
+		}
+		weapons none
+		{
+			both pb_stand_alert
+		}
+		weaponclass pistol, weapon_position ads
+		{
+			both pb_stand_ads_pistol
+		}
+		weaponclass pistol
+		{
+			both pb_stand_alert_pistol
+		}
+		weapons springfield_mp AND kar98k_sniper_mp AND mosin_nagant_sniper_mp, weapon_position ads
+		{
+			both pb_rifle_idleA_ads
+		}
+		weapon_position ads
+		{
+			both pb_stand_ads
+		}
+		weapons stickgrenades
+		{
+			both pb_stand_stickgrenade_idle // This should be an idle anim for holding stick grenades
+		}
+		weaponclass grenade
+		{
+			both pb_stand_grenade_idle // This should be an idle anim for holding pinapple type grenades
+		}
+/*
+		weaponclass rocketlauncher
+		{
+			both pb_stand_alert
+		}
+
+*/
+		default // two handed rifle type weapon
+		{
+			both pb_stand_alert
+		}
+	}
+	idlecr
+	{
+		mounted mg42, firing
+		{
+//			both pb_standMG42gunner_fire_forward_level
+			both standMG42_fire turretanim
+		}
+		mounted mg42
+		{
+//			both pb_standMG42gunner_aim_forward_level
+			both standMG42_aim turretanim
+		}
+		weapons none
+		{	
+			both pb_crouch_alert_unarmed
+		}
+		weaponclass pistol, weapon_position ads
+		{
+			both pb_crouch_ads_pistol
+		}
+		weaponclass pistol
+		{
+			both pb_crouch_alert_pistol
+		}
+		weapons stickgrenades
+		{
+			both pb_crouch_stickgrenade_idle
+		}
+		weaponclass grenade
+		{
+			both pb_crouch_grenade_idle
+		}
+		weapons springfield_mp AND kar98k_sniper_mp AND mosin_nagant_sniper_mp, weapon_position ads
+		{
+			both pb_rifle_idleB_ads
+		}
+		weapon_position ads
+		{
+			both pb_crouch_ads
+		}
+		default // two handed rifle type weapon
+		{
+			both pb_crouch_alert
+		}
+	}
+	idleprone
+	{
+		mounted mg42, firing
+		{
+//			both pb_proneMG42gunner_fire_forward_level
+			both proneMG42_fire turretanim
+		}
+		mounted mg42
+		{
+//			both pb_proneMG42gunner_aim_forward_level
+			both proneMG42_aim turretanim
+		}
+		weapons none
+		{
+			both pb_prone_aim_pistol
+		}
+		weaponclass pistol
+		{
+			both pb_prone_aim_pistol
+		}
+		weaponclass grenade
+		{
+			both pb_prone_aim_grenade
+		}
+		default
+		{
+			both pb_prone_aim
+		}
+	}
+	walk
+	{
+		weapons none
+		{
+			both pb_stand_shoot_walk_forward_unarmed
+		}
+		weaponclass pistol AND grenade, strafing left
+		{
+			both pb_combatwalk_left_loop_pistol
+		}
+		weaponclass pistol AND grenade, strafing right
+		{
+			both pb_combatwalk_right_loop_pistol
+		}
+		weaponclass pistol AND grenade
+		{
+			both pb_combatwalk_forward_loop_pistol
+		}
+		strafing left
+		{
+			both pb_stand_shoot_walk_left
+		}
+		strafing right
+		{
+			both pb_stand_shoot_walk_right
+		}
+		default // two handed rifle type weapon
+		{
+			both pb_stand_shoot_walk_forward
+		}
+	}
+	walkbk // Always ADS when walking
+	{
+		weapons none
+		{
+			both pb_stand_shoot_walk_forward_unarmed
+		}
+		weaponclass pistol AND grenade
+		{
+			both pb_combatwalk_back_loop_pistol
+		}
+		default
+		{
+			both pb_stand_shoot_walk_back
+		}
+	}
+	walkcr
+	{
+		weapons none
+		{
+			both pb_crouch_walk_forward_unarmed
+		}
+		weaponclass pistol AND grenade, strafing left
+		{
+			both pb_crouch_walk_left_pistol
+		}
+		weaponclass pistol AND grenade, strafing right
+		{
+			both pb_crouch_walk_right_pistol
+		}
+		weaponclass pistol AND grenade
+		{
+			both pb_crouch_walk_forward_pistol
+		}
+		strafing left
+		{
+			both pb_crouch_shoot_run_left
+		}
+		strafing right
+		{
+			both pb_crouch_shoot_run_right
+		}
+		default // two handed rifle type weapon
+		{
+			both pb_crouch_shoot_run_forward
+		}
+	}
+
+	walkcrbk
+	{
+		weapons none
+		{
+			both pb_crouch_walk_forward_unarmed
+		}
+		weaponclass pistol AND grenade
+		{
+			both pb_crouch_walk_back_pistol
+
+		}
+		default // two handed rifle type weapon
+		{
+			both pb_crouch_shoot_run_back
+		}
+	}
+	walkprone
+	{
+		weaponclass pistol, strafing left
+		{
+			both pb_prone_pistol_crawl_left
+		}
+		weaponclass pistol, strafing right
+		{
+			both pb_prone_pistol_crawl_right
+		}
+		weaponclass grenade, strafing left
+		{
+			both pb_prone_grenade_crawl_left
+		}
+		weaponclass grenade, strafing right
+		{
+			both pb_prone_grenade_crawl_right
+		}
+		weaponclass pistol
+		{
+			both pb_prone_crawl_pistol
+		}
+		weaponclass grenade
+		{
+			both pb_prone_grenade_crawl
+		}
+		strafing left
+		{
+			both pb_prone_crawl_left
+		}
+		strafing right
+		{
+			both pb_prone_crawl_right
+		}
+		default
+		{
+			both pb_prone_crawl
+		}
+	}
+	walkpronebk
+	{
+		weaponclass pistol
+		{
+			both pb_prone_crawl_pistol_back
+		}
+		weaponclass grenade
+		{
+			both pb_prone_grenade_crawl_back
+		}
+		default
+		{
+			both pb_prone_crawl_back
+		}
+	}
+	run
+	{
+		weapons none
+		{
+			both pb_crouch_walk_forward_unarmed
+		}
+		weaponclass pistol AND grenade, strafing left
+		{
+			both pb_combatrun_left_loop_pistol
+		}
+		weaponclass pistol AND grenade, strafing right
+		{
+			both pb_combatrun_right_loop_pistol
+		}
+		weapons stickgrenades
+		{
+			both pb_sprint_stickgrenade
+		}
+		weaponclass grenade
+		{
+			both pb_sprint_grenade
+		}
+		weaponclass pistol
+		{
+			both pb_sprint
+		}
+		weapons bar_mp AND bar_slow_mp AND mp44_mp AND mp44_semi_mp AND panzerfaust_mp AND bren_mp
+		{
+			both pb_combatrun_forward_loop_heavy
+		}
+		weapons kar98k_sniper_mp AND springfield_mp AND mosin_nagant_sniper_mp
+		{
+			both pb_combatrun_forward_loop_rifles
+		}
+		weapons mp40_mp AND thompson_mp AND thompson_semi_mp AND ppsh_mp AND ppsh_semi_mp AND sten_mp
+		{
+			both pb_combatrun_forward_loop_light
+		}
+		strafing left
+		{
+			both pb_combatrun_left_loop
+		}
+		strafing right
+		{
+			both pb_combatrun_right_loop
+		}
+		default
+		{
+			both pb_combatrun_forward_loop
+		}
+	}
+	runbk
+	{
+		weapons none
+		{
+			both pb_crouch_run_forward_unarmed
+		}
+		weaponclass pistol AND grenade
+		{
+			both pb_combatrun_back_loop_pistol
+		}
+		default
+		{
+			both pb_combatrun_back_loop
+		}
+	}
+	runcr
+	{
+		weapons none
+		{
+			both pb_crouch_run_forward_unarmed
+		}
+		weaponclass pistol AND grenade, strafing left
+		{
+			both pb_crouch_run_left_pistol
+		}
+		weaponclass pistol AND grenade, strafing right
+		{
+			both pb_crouch_run_right_pistol
+		}
+		weaponclass pistol
+		{
+			both pb_crouch_run_forward_pistol
+		}
+		weapons stickgrenades
+		{
+			both pb_crouch_run_forward_stickgrenade
+		}
+		weaponclass grenade
+		{
+			both pb_crouch_run_forward_grenade
+		}
+		strafing left
+		{
+			both pb_crouch_run_left
+		}
+		strafing right
+		{
+			both pb_crouch_run_right
+		}
+		default
+		{
+			both pb_crouch_run_forward
+		}
+	}
+
+	runcrbk
+	{
+		weapons none
+		{
+			both pb_crouch_run_forward_unarmed
+		}
+		weaponclass pistol AND grenade
+		{
+			both pb_crouch_run_back_pistol
+		}
+		default
+		{
+			both pb_crouch_run_back
+		}
+	}
+
+	climbup
+	{
+		default
+		{
+			// Can't play the chicken dance here as a temp because it has no movement speed
+//			both pb_wounded_walk_loop
+			both pb_climbup
+		}
+	}
+	climbdown
+	{
+		default
+		{
+			// Can't play the chicken dance here as a temp because it has no movement speed
+//			both pb_wounded_walk_loop
+			both pb_climbdown
+		}
+	}
+	turnright
+	{
+		movetype idle
+		{
+			legs pl_chicken_dance 
+		}
+		movetype idlecr
+		{
+			legs pl_chicken_dance_crouch
+		}
+	}
+	turnleft
+	{
+		movetype idle
+		{
+			legs pl_chicken_dance 
+		}
+		movetype idlecr
+		{
+			legs pl_chicken_dance_crouch
+		}
+	}
+}
+
+//==========================================================================
+// EVENTS
+//
+// format:
+//
+// <event description>
+// {
+//		[DEFAULT / <condition type> [<condition value>], ...]
+//		{
+//			<both/legs/torso> <animation> [sound <filename>]
+//			<both/legs/torso> <animation> [sound <filename>]
+//			...
+//		}
+// }
+//
+// legend:
+//
+// <event description>: pain, death, fireweapon, jump, jumpbk, land, dropweapon,
+//		raiseweapon, reload, crouch_to_prone, 
+//		prone_to_crouch, meleeattack
+//
+//	NOTE: for gameplay anims (weapons firing, reload, etc) that show no legs movement
+//		only the torso should animation from here, leave the legs doing what their
+//		locomotive anims want them to do
+//
+
+EVENTS
+
+fireweapon
+{
+// MG42
+	mounted mg42
+	{
+		// Ignore the fireweapon event while on a turret
+	}
+
+// PISTOLS
+	weaponclass pistol, movetype prone
+	{
+		torso pt_prone_shoot_pistol
+	}
+	weaponclass pistol, movetype moving
+	{
+		// Play no special firing animation
+	}
+	weaponclass pistol, movetype crouching, weapon_position ads
+	{
+		torso pt_crouch_shoot_ads_pistol
+	}
+	weaponclass pistol, movetype crouching
+	{
+		torso pt_crouch_shoot_pistol
+	}
+	weaponclass pistol, weapon_position ads
+	{
+		both pb_stand__shoot_ads_pistol
+	}
+	weaponclass pistol
+	{
+		torso pt_stand_shoot_pistol
+	}
+
+// MG & SMG
+	weaponclass autofire, movetype prone
+	{
+		torso pt_prone_shoot_auto duration 150
+	}
+	weaponclass autofire, movetype moving
+	{
+		// Play no special firing animation
+	}
+	weaponclass autofire, movetype crouching, weapon_position ads
+	{
+		torso pt_crouch_shoot_auto_ads duration 150
+	}
+	weaponclass autofire, movetype crouching
+	{
+		torso pt_crouch_shoot_auto duration 150
+	}
+	weaponclass autofire, weapon_position ads
+	{
+		torso pt_stand_shoot_auto_ads duration 150
+	}
+	weaponclass autofire
+	{
+		torso pt_stand_shoot_auto duration 150
+	}
+
+// PROJECTILE WEAPONS (assume ads since you can't fire these from the hip)
+	weaponclass rocketlauncher, movetype moving
+	{
+		// Play no special firing animation
+	}
+	weaponclass rocketlauncher, movetype crouching
+	{
+		torso pt_crouch_shoot_ads
+	}
+	weaponclass rocketlauncher, movetype prone
+	{
+		torso pt_prone_shoot
+	}
+	weaponclass rocketlauncher
+	{
+		torso pt_stand_shoot_ads
+	}
+
+// GRENADES
+	 weaponclass grenade, movetype prone  // All prone
+	 {
+		  torso pt_prone_grenade_throw
+	 }
+	 weaponclass grenade, movetype idlecr // Crouch, still
+	 {
+		  both pb_crouch_grenade_throw
+	 }
+	 weaponclass grenade, movetype crouching // Crouch, moving
+	 {
+ 		 torso pt_crouch_grenade_throw
+	 }
+ 	weapons stickgrenades, movetype idle  // Stand still
+	 {
+		  both pb_stand_stickgrenade_throw
+	 }
+ 	weaponclass grenade, movetype idle  // Stand still
+	 {
+		  both pb_stand_grenade_throw
+	 }
+	 weapons stickgrenades      // Stand, moving
+ 	{
+ 		 torso pt_stand_stickgrenade_throw
+ 	}
+	 weaponclass grenade      // Stand, moving
+ 	{
+ 		 torso pt_stand_grenade_throw
+ 	}
+	
+//bolt (RIFLES)
+	weapons  kar98k_mp AND springfield_mp AND enfield_mp AND kar98k_sniper_mp AND mosin_nagant_sniper_mp, movetype prone
+	{
+		torso pt_rifle_fire_prone
+	}
+	weapons  kar98k_mp AND springfield_mp AND enfield_mp AND kar98k_sniper_mp AND mosin_nagant_sniper_mp, movetype moving
+	{
+		// Play no special firing animation
+	}
+	weapons  kar98k_mp AND springfield_mp AND enfield_mp AND kar98k_sniper_mp AND mosin_nagant_sniper_mp, movetype crouching, weapon_position ads
+	{
+		torso pt_rifle_fire_ads
+	}
+	weapons  kar98k_mp AND springfield_mp AND enfield_mp AND kar98k_sniper_mp AND mosin_nagant_sniper_mp, movetype crouching
+	{
+		torso pt_rifle_fire_ads
+	}
+	weapons  kar98k_mp AND springfield_mp AND enfield_mp AND kar98k_sniper_mp AND mosin_nagant_sniper_mp, weapon_position ads
+	{
+		torso pt_rifle_fire_ads
+	}
+	weapons  kar98k_mp AND springfield_mp AND enfield_mp AND kar98k_sniper_mp AND mosin_nagant_sniper_mp 
+	{
+		torso pt_rifle_fire
+	}
+// DEFAULT (RIFLES)
+	 movetype prone
+	 {
+	  torso pt_prone_shoot
+	 }
+	 movetype moving
+	 {
+	  // Play no special firing animation
+	 }
+	 movetype crouching, weapon_position ads
+	 {
+	  torso pt_crouch_shoot_ads
+	 }
+	 movetype crouching
+	 {
+	  torso pt_crouch_shoot
+	 }
+	 weapon_position ads
+ 	{
+ 	 torso pt_stand_shoot_ads
+	 }
+	 default
+	 {
+ 	 torso pt_stand_shoot
+	 }
+}
+
+meleeattack
+{
+	weaponclass pistol AND grenade, movetype prone
+	{
+		torso pt_prone_shoot_pistol
+	}
+	weaponclass pistol AND grenade
+	{
+		torso pt_melee_pistol_1 duration 400
+		torso pt_melee_pistol_2 duration 350
+		torso pt_melee_pistol_3 duration 550
+		torso pt_melee_pistol_4 duration 400
+	}
+	movetype prone
+	{
+		torso pt_prone_shoot
+	}
+	movetype crouching
+	{
+		torso pt_melee_crouch_left2left
+		torso pt_melee_crouch_left2right
+		torso pt_melee_crouch_right2left
+	}
+	default
+	{
+		torso pt_melee_right2right_1 duration 400
+		torso pt_melee_right2right_2 duration 400
+		torso pt_melee_right2left duration 300
+		torso pt_melee_left2left_1 duration 400
+		torso pt_melee_left2right duration 300
+	}
+}
+
+dropweapon
+{
+	movetype prone
+	{
+		torso pt_prone_pullout_pose
+	}
+	movetype crouching
+	{
+		torso pt_crouch_pullout_pose
+	}
+	default
+	{
+		torso pt_stand_pullout_pose
+	}
+}
+
+raiseweapon
+{
+	// (Boon 07-11-2003) Don't want anything here - just blend into the correct pose.
+//	weaponclass rocketlauncher
+//	{
+//		torso pt_chicken_dance
+//	}
+//	weaponclass pistol
+//	{
+//		torso pt_chicken_dance
+//	}
+//	weaponclass grenade
+//	{
+//		torso pt_chicken_dance
+//	}
+//	default
+//	{
+//		torso pt_chicken_dance
+//	}
+}
+
+reload
+{
+	weaponclass pistol, movetype crouching
+	{
+		torso pt_reload_crouch_pistol
+	}
+	weaponclass pistol, movetype prone
+	{
+		torso pt_reload_prone_pistol
+	}
+	weaponclass pistol
+	{
+		torso pt_reload_stand_pistol
+	}
+	weapons fg42_mp AND fg42_semi_mp, movetype prone
+	{
+		torso pt_reload_prone_auto
+	}
+	weapons fg42_mp AND fg42_semi_mp
+	{
+		torso pt_reload_stand_auto_fg42
+	}
+	weapons sten_mp, movetype prone
+	{
+		torso pt_reload_prone_auto
+	}
+	weapons sten_mp
+	{
+		torso pt_reload_stand_auto_sten
+	}
+	weapons mp40_mp AND ppsh_mp AND ppsh_semi_mp, movetype prone
+	{
+		torso pt_reload_prone_auto
+	}
+	weapons mp40_mp AND ppsh_mp AND ppsh_semi_mp
+	{
+		torso pt_reload_stand_auto_mp40
+	}
+	weapons bar_mp AND bar_slow_mp AND mp44_mp AND mp44_semi_mp AND m1carbine_mp, movetype prone
+	{
+		torso pt_reload_prone_auto
+	}
+	weapons bar_mp AND bar_slow_mp AND mp44_mp AND mp44_semi_mp AND m1carbine_mp
+	{
+		torso pt_reload_stand_auto
+	}
+	weaponclass autofire, movetype prone
+	{
+		torso pt_reload_prone_auto
+	}
+	weaponclass autofire
+	{
+		torso pt_reload_stand_auto
+	}
+	movetype crouching
+	{
+		torso pt_reload_crouch_rifle
+	}
+	movetype prone
+	{
+		torso pt_reload_prone_rifle
+	}
+	default
+	{
+		torso pt_reload_stand_rifle
+	}
+//	weaponclass pistol, movetype crouching AND prone
+//	{
+//		torso pt_chicken_dance_crouch
+//	}
+//	weaponclass pistol
+//	{
+//		torso pt_chicken_dance
+//	}
+//	
+//	weaponclass rocketlauncher
+//	{
+//		torso pt_chicken_dance
+//	}
+//
+//	weaponclass grenade
+//	{
+//		torso pt_chicken_dance
+//	}
+//	
+//	movetype crouching AND prone
+//	{
+//		torso pt_chicken_dance_crouch
+//	}
+//	default
+//	{
+//		torso pt_chicken_dance
+//	}
+}
+
+jump
+{
+//	movetype crouching AND prone
+//	{
+//		legs pb_chicken_dance_crouch duration 5 blendtime 100
+//	}
+
+	weapons none, movetype run
+	{
+		both pb_runjump_takeoff duration 5 blendtime 100
+	}
+	weapons none
+	{
+		legs pb_standjump_takeoff duration 5 blendtime 100
+	}
+	
+	weaponclass pistol AND grenade, movetype run
+	{
+		both pb_runjump_takeoff_pistol duration 5 blendtime 100
+	}
+	weaponclass pistol AND grenade
+	{
+		legs pb_standjump_takeoff_pistol duration 5 blendtime 100
+	}
+	
+	weaponclass rocketlauncher, movetype run
+	{
+		legs pb_runjump_takeoff duration 5 blendtime 100
+	}
+	weaponclass rocketlauncher
+	{
+		legs pb_standjump_takeoff duration 5 blendtime 100
+	}
+	
+	weaponclass grenade, movetype run
+	{
+		legs pb_runjump_takeoff duration 5 blendtime 100
+	}
+	weaponclass grenade
+	{
+		legs pb_standjump_takeoff duration 5 blendtime 100
+	}
+	
+	movetype run
+	{
+		legs pb_runjump_takeoff duration 5 blendtime 100
+	}
+	default
+	{
+		legs pb_standjump_takeoff duration 5 blendtime 100
+	}
+}
+
+jumpbk
+{
+	movetype crouching AND prone
+	{
+		both pb_chicken_dance_crouch duration 5 blendtime 100
+	}
+
+	weapons none, movetype run
+	{
+		legs pb_standjump_takeoff duration 5 blendtime 100
+	}
+	weapons none
+	{
+		legs pb_standjump_takeoff duration 5 blendtime 100
+	}
+	
+	weaponclass pistol, movetype run
+	{
+		legs pb_standjump_takeoff duration 5 blendtime 100
+	}
+	weaponclass pistol
+	{
+		legs pb_standjump_takeoff duration 5 blendtime 100
+	}
+	
+	weaponclass rocketlauncher, movetype run
+	{
+		legs pb_standjump_takeoff duration 5 blendtime 100
+	}
+	weaponclass rocketlauncher
+	{
+		legs pb_standjump_takeoff duration 5 blendtime 100
+	}
+	
+	weaponclass grenade, movetype run
+	{
+		legs pb_standjump_takeoff duration 5 blendtime 100
+	}
+	weaponclass grenade
+	{
+		legs pb_standjump_takeoff duration 5 blendtime 100
+	}
+	
+	movetype run
+	{
+		legs pb_standjump_takeoff duration 5 blendtime 100
+	}
+	default
+	{
+		legs pb_standjump_takeoff duration 5 blendtime 100
+	}
+}
+
+land
+{
+	weaponclass pistol AND grenade, movetype run
+	{
+		legs pb_runjump_land_pistol duration 5
+	}
+	movetype run
+	{
+		legs pb_runjump_land duration 100 blendtime 50
+	}
+	weaponclass pistol AND grenade
+	{
+		both pb_standjump_land_pistol duration 5
+	}
+	default
+	{
+		legs pb_standjump_land duration 100 blendtime 50
+	}
+}
+
+DEATH
+{
+/*
+	enemy_weapon machineguns
+ 	{
+		both stand_death_frontspin
+	}
+
+	enemy_weapon rifles, impact_point head
+	{
+		both stand_death_neckdeath
+	}
+
+	enemy_weapon rifles, impact_point chest
+	{
+		both stand_death_headchest_topple
+	}
+*/
+	movetype prone
+	{
+		both pb_prone_death_quickdeath
+	}
+	movetype idlecr
+	{
+		both pb_crouch_death_headshot_front
+		both pb_crouch_death_clutchchest
+		both pb_crouch_death_flip
+		both pb_crouch_death_fetal
+		both pb_crouch_death_falltohands
+	}
+	movetype runbk
+	{
+		both pb_death_run_back
+	}
+	movetype run AND runcr, strafing left
+	{
+		both pb_death_run_left
+	}
+	movetype run AND runcr, strafing right
+	{
+		both pb_death_run_right
+	}
+	movetype runcr
+	{
+		both pb_crouchrun_death_drop
+		both pb_crouchrun_death_crumple
+	}
+	movetype run
+	{
+		both pb_death_run_forward_crumple
+		both pb_death_run_onfront
+		both pb_death_run_stumble
+	}
+	default
+	{
+		both pb_stand_death_neckdeath
+		both pb_stand_death_headchest_topple
+		both pb_stand_death_frontspin
+		both pb_stand_death_nervedeath
+		both pb_stand_death_legs
+		both pb_stand_death_lowerback
+		both pb_stand_death_head_collapse
+		both pb_stand_death_neckdeath_thrash
+	}
+/*
+	enemy_weapon grenades  //tmp
+ 	{
+		death_explosion_up10
+		death_explosion_back13
+		death_explosion_left11
+		death_explosion_forward13
+		death_explosion_right13
+	}
+*/
+}
+/*
+revive
+{
+	default
+	{
+		both pb_chicken_dance
+	}
+}
+*/
+pain
+{
+/*
+	movetype crouching, impact_point head
+	{
+		both pb_crouch_pain_holdStomach
+	}
+	movetype crouching, impact_point shoulder_right
+	{
+		both pb_crouch_pain_holdStomach
+	}
+	movetype crouching, impact_point shoulder_left
+	{
+		both pb_crouch_pain_holdStomach
+	}
+*/
+	movetype prone
+	{
+		both pb_prone_painA_holdchest
+		both pb_prone_painB_holdhead
+	}
+	movetype crouching
+	{
+		both pb_crouch_pain_holdStomach
+	}
+/*
+	impact_point head
+	{
+		both minorpain_head_front
+	}
+	impact_point chest
+	{
+		both pb_minorpain_chest_front
+	}
+	impact_point gut
+	{
+		both pb_minorpain_chest_front
+	}
+	impact_point groin
+	{
+		both pb_minorpain_chest_front
+	}
+	impact_point shoulder_right
+	{
+		both minorpain_rightarm_front
+	}
+	impact_point shoulder_left
+	{
+		both minorpain_leftarm_front
+	}
+	impact_point knee_right
+	{
+		both pb_minorpain_chest_front
+	}
+	impact_point knee_left
+	{
+		both pb_minorpain_chest_front
+	}
+*/
+	default
+	{
+//		both pb_minorpain_chest_front
+		both pb_crouch_pain_holdStomach
+	}
+}

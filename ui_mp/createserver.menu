@@ -1,0 +1,1004 @@
+#include "ui_mp/menudef.h"
+
+#define ORIGIN_SETTINGS		20 -15
+#define OPTIONS_ADVANCED_XALIGN	230
+#define HELP_ORIGIN		0 5
+#define GLOBAL_TEXTSCALE	0.25
+#define GLOBAL_TEXTSCALE3	0.25
+#define UI_TAB_BACK_COLOR	0 0 0.25 0.2
+#define UI_TAB_BORDER		1
+#define UI_TAB_BORDER_COLOR	0 0 0 .7
+#define UI_SELECTED_COLOR	.1 .1 .7 .5
+
+
+{
+	// Server Creation //
+	
+	// ==================================================================================
+	//	MAP DISPLAY -- LOWER RIGHT	
+	// ==================================================================================
+
+	menuDef
+	{
+		name			"createserver_maps"
+		fullscreen		0    	
+		rect			404 137 200 300	
+		focuscolor		UI_FOCUS_COLOR
+		style			1
+		border			0
+
+		onEsc  
+		{
+			close createserver;
+			close settings_dm;
+			close createserver_maps;
+			close createserver_op;
+			open main
+		}
+
+		itemDef 
+		{
+			name			mappreview
+			style			0
+			ownerdraw		UI_STARTMAPCINEMATIC
+			rect			405 130 191 142
+			border			0
+			bordercolor		.5 .5 .5 .5
+			origin			-404 -135
+			visible			1
+		}
+
+		itemDef 
+		{
+			name			maplist
+			rect			404 271 192 130
+			type			ITEM_TYPE_LISTBOX
+			style			WINDOW_STYLE_FILLED
+			elementwidth		119
+			elementheight		20
+			origin			-405 -135
+			textfont		UI_FONT_NORMAL
+			textscale		GLOBAL_TEXTSCALE
+			elementtype		LISTBOX_TEXT
+			feeder			FEEDER_ALLMAPS
+			textstyle		6
+			textaligny		-5
+			border			1
+			bordercolor		.5 .5 .5 .5
+			forecolor		1 1 1 1
+			backcolor		0 0 0 .6
+			outlinecolor		UI_SELECTED_COLOR
+			visible			1
+			columns			1 2 190 25
+			
+			mouseEnter 
+			{
+				play "mouse_over";
+			}
+			mouseExit 
+			{
+				setitemcolor maplist bordercolor .5 .5 .5 .5
+			} 
+		}
+		
+		onOpen
+		{
+			exec "set ui_allow_vote_gametype 1\n";
+			execOnCvarIntValue g_allowvotegametype 0 "set ui_allow_vote_gametype 0";
+
+			exec "set ui_allow_vote_kick 0\n";
+			execOnCvarIntValue g_allowvotekick 1 "set ui_allow_vote_kick 1";
+
+			exec "set ui_allow_vote_ban 0\n";
+			execOnCvarIntValue g_allowvotetempbanuser 1 "set ui_allow_vote_ban 1";
+		}
+		onClose
+		{
+			execOnCvarIntValue ui_allow_vote_gametype 0 "set g_allowvotegametype 0";
+			execOnCvarIntValue ui_allow_vote_gametype 0 "set g_allowvotetypemap 0";
+			execOnCvarIntValue ui_allow_vote_gametype 1 "set g_allowvotegametype 1";
+			execOnCvarIntValue ui_allow_vote_gametype 1 "set g_allowvotetypemap 1";
+
+			execOnCvarIntValue ui_allow_vote_kick 0 "set g_allowvotekick 0";
+			execOnCvarIntValue ui_allow_vote_kick 0 "set g_allowvoteclientkick 0";
+			execOnCvarIntValue ui_allow_vote_kick 1 "set g_allowvotekick 1";
+			execOnCvarIntValue ui_allow_vote_kick 1 "set g_allowvoteclientkick 1";
+
+			execOnCvarIntValue ui_allow_vote_ban 0 "set g_allowvotetempbanuser 0";
+			execOnCvarIntValue ui_allow_vote_ban 0 "set g_allowvotetempbanclient 0";
+			execOnCvarIntValue ui_allow_vote_ban 1 "set g_allowvotetempbanuser 1";
+			execOnCvarIntValue ui_allow_vote_ban 1 "set g_allowvotetempbanclient 1";
+		}
+	}
+
+
+	// ==================================================================================
+	//	SERVER OPTIONS  	
+	// ==================================================================================
+
+	menuDef
+	{
+		name			"createserver_op"
+		fullscreen		0    	
+		rect			0 0 400 410	
+		focuscolor		UI_FOCUS_COLOR
+		style			1
+		border			0
+		onOpen 
+		{
+			hide advancedsettings;
+			hide gametypesettings;
+			hide vehiclesettings;
+			hide weaponsettings;
+			show generalsettings
+		}
+
+		onEsc  
+		{
+			close createserver;
+			close settings_dm;
+			close createserver_maps;
+			close createserver_op;
+			open main
+		}
+
+		itemDef 
+		{
+			name			look_back
+			rect			5 80 OPTIONS_WINDOW_SIZE	
+			style			WINDOW_STYLE_FILLED
+			border			1
+			bordercolor		.5 .5 .5 .5
+			forecolor		1 1 1 1
+			backcolor		OPTIONS_WINDOW_BACKCOLOR
+			visible			1
+			decoration
+		}
+		
+		itemDef 
+		{
+			name			credits_look
+			text			"@MENU_START_NEW_SERVER"
+			textscale		.3
+			group			grpControlbutton
+			type			ITEM_TYPE_BUTTON
+			style			0
+			rect			102.5 95 120 10
+			textalign		1
+			textalignx		75
+			textaligny		10
+			forecolor		0.75 0.75 0.75 1
+			visible			1
+			decoration 
+		}
+		
+		// ==================================================================================
+		//	TABS    ---    General  *  Game Type  *  Advanced
+		// ==================================================================================
+
+		itemDef 
+		{
+			group			generalsettings
+			visible			1
+			rect			72 110 71 22
+			origin 			1 1
+			style			WINDOW_STYLE_FILLED
+			backcolor		UI_SELECTED_COLOR
+			decoration
+		}
+		itemDef 
+		{
+			name			button_generalsettings
+			text			"@PATCH_1_5_GENERAL_SETTINGS"
+			type			ITEM_TYPE_BUTTON
+			textfont		UI_FONT_NORMAL
+			textscale		.252
+			style			UI_BUTTON_STYLE
+			textstyle		UI_BUTTON_TEXT_STYLE
+			rect			72 110 71 22
+			textalign		1
+			textalignx		34
+			textaligny		15
+			forecolor		UI_BUTTON_TEXT_COLOR
+			backcolor		UI_TAB_BACK_COLOR 
+			bordercolor		UI_TAB_BORDER_COLOR 
+			border			UI_TAB_BORDER
+			visible			1
+			mouseEnter		{ setitemcolor button_generalsettings backcolor UI_BUTTON_BACK_COLOR_HOVER ; play "mouse_over"} 
+			mouseExit		{ setitemcolor button_generalsettings backcolor UI_TAB_BACK_COLOR} 
+			cvar			"ui_netGametypeName"
+			action 
+			{
+				closeForGameType "settings_%s";
+				hide advancedsettings;
+				hide gametypesettings;
+				show generalsettings;
+				show heading_server;
+				hide heading_gametype;
+				play "mouse_click" ; 
+			}	
+		}
+		itemDef 
+		{
+			group			gametypesettings
+			visible			1
+			rect			148 110 71 22 
+			origin 			1 1
+			style			WINDOW_STYLE_FILLED
+			backcolor		UI_SELECTED_COLOR
+			decoration
+		}
+		itemDef 
+		{
+			name			button_gametypesettings
+			text			"@PATCH_1_5_GAMETYPE"
+			type			ITEM_TYPE_BUTTON
+			textfont		UI_FONT_NORMAL
+			textscale		.252
+			style			UI_BUTTON_STYLE
+			textstyle		UI_BUTTON_TEXT_STYLE
+			rect			148 110 71 22
+			textalign		1
+			textalignx		34
+			textaligny		15
+			forecolor		UI_BUTTON_TEXT_COLOR
+			backcolor		UI_TAB_BACK_COLOR 
+			bordercolor		UI_TAB_BORDER_COLOR 
+			border			UI_TAB_BORDER
+			visible			1
+			mouseEnter		{ setitemcolor button_gametypesettings backcolor UI_BUTTON_BACK_COLOR_HOVER ; play "mouse_over"} 
+			mouseExit		{ setitemcolor button_gametypesettings backcolor UI_TAB_BACK_COLOR} 
+			cvar			"ui_netGametypeName"
+			action 
+			{
+				hide generalsettings;
+				hide advancedsettings;
+				hide vehiclesettings;
+				hide weaponsettings;
+				show gametypesettings;
+				openForGameType "settings_%s";
+				show heading_server;
+				hide heading_gametype;
+				play "mouse_click" ; 
+
+			}	
+		}
+		itemDef 
+		{
+			group			advancedsettings
+			visible			1
+			rect			224 110 71 22
+			origin 			1 1
+			style			WINDOW_STYLE_FILLED
+			backcolor		UI_SELECTED_COLOR
+			decoration
+		}
+		itemDef 
+		{
+			name			button_advancedsettings
+			text			"@PATCH_1_5_ADVANCED_SETTINGS"
+			type			ITEM_TYPE_BUTTON
+			textfont		UI_FONT_NORMAL
+			textscale		.252
+			style			UI_BUTTON_STYLE
+			textstyle		UI_BUTTON_TEXT_STYLE
+			rect			224 110 71 22
+			textalign		1
+			textalignx		33
+			textaligny		15
+			forecolor		UI_BUTTON_TEXT_COLOR
+			backcolor		UI_TAB_BACK_COLOR 
+			bordercolor		UI_TAB_BORDER_COLOR 
+			border			UI_TAB_BORDER
+			visible			1
+			mouseEnter		{ setitemcolor button_advancedsettings backcolor UI_BUTTON_BACK_COLOR_HOVER ; play "mouse_over"} 
+			mouseExit		{ setitemcolor button_advancedsettings backcolor UI_TAB_BACK_COLOR} 
+			cvar			"ui_netGametypeName"
+			action 
+			{
+				closeForGameType "settings_%s";
+				hide generalsettings;
+				hide vehiclesettings;
+				hide weaponsettings;
+				hide gametypesettings;
+				show advancedsettings;
+				show heading_server;
+				hide heading_gametype;
+				play "mouse_click" ; 
+
+			}	
+		}
+		// ==================================================================================
+		//	GENERAL SETTINGS TAB	
+		// ==================================================================================
+		itemDef 
+		{
+			name			expert
+			group			generalsettings
+			type			ITEM_TYPE_MULTI
+			origin			ORIGIN_SETTINGS
+			textfont		UI_FONT_NORMAL
+			text			"@MENU_GAME_TYPE"
+			ownerdraw		UI_NETGAMETYPE
+			rect			10 165 OPTIONS_CONTROL_SIZE
+			style			WINDOW_STYLE_FILLED
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_CONTROL_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			visible			1 
+			action			{ play "mouse_click"; }
+			mouseEnter		{ show message_game_type ; play "mouse_over"}
+			mouseExit		{ hide message_game_type }
+		}
+		itemDef 
+		{
+			name			expert
+			group			generalsettings
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_EDITFIELD
+			text			"@MENU_SERVER_NAME"
+			cvar			"sv_hostname"
+			maxChars		32
+			maxPaintChars		26
+			rect			-10 195 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			style			WINDOW_STYLE_FILLED
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_CONTROL_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			visible			1 
+			action			{ play "mouse_click"; }
+			mouseEnter		{ show message_hostname ; play "mouse_over"}
+			mouseExit		{ hide message_hostname }
+		}
+		itemDef 
+		{
+			name			normal
+			group			generalsettings
+			type			ITEM_TYPE_MULTI
+			textfont		UI_FONT_NORMAL
+			text			"@MENU_DEDICATED"
+			// syntax for this is cvar name followed by a semicolan separated list of choices first choice equals 0
+			// dedicated is a special cvar in that as soon as it is set, the game goes to console only so the ui catches this one specifically
+			cvar			"ui_dedicated"
+			cvarFloatList		{ "@MENU_NO" 0 "@MENU_LAN" 1 "@MENU_INTERNET" 2 }
+			rect			-10 210 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			style			WINDOW_STYLE_FILLED
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_CONTROL_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			visible			1
+			action			{ play "mouse_click" }
+			mouseEnter		{ show message_dedicated ; play "mouse_over"}
+			mouseExit		{ hide message_dedicated }
+		}
+
+		itemDef 
+		{
+			name			normal
+			group			generalsettings
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_YESNO
+			text			"@MENU_PURE"
+			cvar			"sv_pure"
+			rect			-10 225 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			style			WINDOW_STYLE_FILLED
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_CONTROL_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			visible			1
+			action			{ play "mouse_click"; }
+			mouseEnter		{ show message_pure_server ; play "mouse_over"}
+			mouseExit		{ hide message_pure_server }
+		}
+
+		itemDef 
+		{
+			name			expert
+			group			generalsettings
+			type			ITEM_TYPE_NUMERICFIELD
+			textfont		UI_FONT_NORMAL
+			text			"@MENU_MAXIMUM_PLAYERS"
+			cvar			"sv_maxclients"
+			maxChars		3
+			rect			-10 240 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			style			WINDOW_STYLE_FILLED
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_CONTROL_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			visible			1 
+			action			{ play "mouse_click"; }
+			mouseEnter		{ show message_maximum_players ; play "mouse_over"}
+			mouseExit		{ hide message_maximum_players }
+		}
+
+		itemDef 
+		{
+			name			expert
+			group			generalsettings
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_NUMERICFIELD
+			text			"@MENU_MINIMUM_PING"
+			cvar			"sv_minping"
+			maxChars		4
+			rect			-10 255 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			style			WINDOW_STYLE_FILLED
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_CONTROL_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			visible			1 
+			action			{ play "mouse_click"; }
+			mouseEnter		{ show message_minimum_ping ; play "mouse_over"}
+			mouseExit		{ hide message_minimum_ping }
+		}
+
+		itemDef 
+		{
+			name			expert
+			group			generalsettings
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_NUMERICFIELD
+			text			"@MENU_MAXIMUM_PING"
+			maxChars		4
+			cvar			"sv_maxping"
+			rect			-10 270 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			style			WINDOW_STYLE_FILLED
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_CONTROL_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			visible			1 
+			action			{ play "mouse_click"; }
+			mouseEnter		{ show message_maximum_ping ; play "mouse_over"}
+			mouseExit		{ hide message_maximum_ping }
+		}
+
+		itemDef 
+		{
+			name			expert
+			group			generalsettings
+			type			ITEM_TYPE_NUMERICFIELD
+			textfont		UI_FONT_NORMAL
+			text			"@MENU_MAXIMUM_RATE"
+			maxChars		8
+			cvar			"sv_maxrate"
+			rect			-10 285 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			style			WINDOW_STYLE_FILLED
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_CONTROL_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			visible			1 
+			action			{ play "mouse_click"; }
+			mouseEnter		{ show message_max_rate ; play "mouse_over"}
+			mouseExit		{ hide message_max_rate }
+		}
+
+		itemDef 
+		{
+			name			expert
+			group			generalsettings
+			type			4
+			text			"@MENU_PASSWORD1"
+			textfont		UI_FONT_NORMAL
+			cvar			"g_password"
+			rect			-10 300 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			maxChars		12
+			maxPaintChars		12
+			style			WINDOW_STYLE_FILLED
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_CONTROL_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			visible			1
+			action			{ play "mouse_click"; }
+			mouseEnter		{ show message_password ; play "mouse_over"}
+			mouseExit		{ hide message_password } 
+		}
+
+		itemDef 
+		{
+			name			normal
+			group			generalsettings
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_YESNO
+			text			"@PATCH_1_3_PUNKBUSTERWITHCOLONANDTWOSPACES"
+			cvar			"sv_punkbuster"
+			rect			-10 315 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			style			WINDOW_STYLE_FILLED
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_CONTROL_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			visible			1
+			action			{ play "mouse_click"; }
+			mouseEnter		{ show message_pure_server ; play "mouse_over"}
+			mouseExit		{ hide message_pure_server }
+		}
+
+
+		// ==================================================================================
+		//	ADVANCED SETTINGS TAB	
+		// ==================================================================================
+
+		itemDef
+		{
+			group			advancedsettings
+			visible			1
+			rect			-10 180 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			style			WINDOW_STYLE_FILLED
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_YESNO
+			text			"@MENU_KILLCAM"
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_ADVANCED_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			cvar			"scr_killcam"
+			mouseEnter		{ play "mouse_over" }
+			action			{ play "mouse_click" }
+		}
+
+		itemDef
+		{
+			group			advancedsettings
+			visible			1
+			rect			-10 195 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			style			WINDOW_STYLE_FILLED
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_YESNO
+			text			"@MENU_ALLOW_VOTING"
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_ADVANCED_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			cvar			"g_allowvote"
+			mouseEnter		{ play "mouse_over" }
+			action			{ play "mouse_click" }
+		}
+
+		itemDef
+		{
+			group			advancedsettings
+			visible			1
+			rect			-10 210 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			style			WINDOW_STYLE_FILLED
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_YESNO
+			text			"@PATCH_1_5_ALLOW_VOTE_MAP_RESTART"
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_ADVANCED_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			cvar			"g_allowvotemaprestart"
+			mouseEnter		{ play "mouse_over" }
+			action			{ play "mouse_click" }
+		}
+
+		itemDef
+		{
+			group			advancedsettings
+			visible			1
+			rect			-10 225 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			style			WINDOW_STYLE_FILLED
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_YESNO
+			text			"@PATCH_1_5_ALLOW_VOTE_MAP_ROTATE"
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_ADVANCED_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			cvar			"g_allowvotemaprotate"
+			mouseEnter		{ play "mouse_over" }
+			action			{ play "mouse_click" }
+		}
+
+		itemDef
+		{
+			group			advancedsettings
+			visible			1
+			rect			-10 240 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			style			WINDOW_STYLE_FILLED
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_YESNO
+			text			"@PATCH_1_5_ALLOW_VOTE_MAP"
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_ADVANCED_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			cvar			"g_allowvotemap"
+			mouseEnter		{ play "mouse_over" }
+			action			{ play "mouse_click" }
+		}
+
+		itemDef
+		{
+			group			advancedsettings
+			visible			1
+			rect			-10 255 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			style			WINDOW_STYLE_FILLED
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_YESNO
+			text			"@PATCH_1_5_ALLOW_VOTE_GAMETYPE"
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_ADVANCED_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			cvar			"ui_allow_vote_gametype"
+			mouseEnter		{ play "mouse_over" }
+			cvartest		"ui_allow_vote_gametype"
+			showCvar		{ "0" }
+			action
+			{
+				setcvar g_allowvotegametype "1";
+				setcvar g_allowvotetypemap "1";
+				play "mouse_click";
+			}
+		}
+		itemDef
+		{
+			group			advancedsettings
+			visible			1
+			rect			-10 255 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			style			WINDOW_STYLE_FILLED
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_YESNO
+			text			"@PATCH_1_5_ALLOW_VOTE_GAMETYPE"
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_ADVANCED_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			cvar			"ui_allow_vote_gametype"
+			mouseEnter		{ play "mouse_over" }
+			cvartest		"ui_allow_vote_gametype"
+			hideCvar		{ "0" }
+			action
+			{
+				setcvar g_allowvotegametype "0";
+				setcvar g_allowvotetypemap "0";
+				play "mouse_click";
+			}
+		}
+
+		itemDef
+		{
+			group			advancedsettings
+			visible			1
+			rect			-10 270 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			style			WINDOW_STYLE_FILLED
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_YESNO
+			text			"@PATCH_1_5_ALLOW_VOTE_KICK"
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_ADVANCED_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			cvar			"ui_allow_vote_kick"
+			mouseEnter		{ play "mouse_over" }
+			cvartest		"ui_allow_vote_kick"
+			showCvar		{ "0" }
+			action
+			{
+				setcvar g_allowvotekick "1";
+				setcvar g_allowvoteclientkick "1";
+				play "mouse_click";
+			}
+		}
+		itemDef
+		{
+			group			advancedsettings
+			visible			1
+			rect			-10 270 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			style			WINDOW_STYLE_FILLED
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_YESNO
+			text			"@PATCH_1_5_ALLOW_VOTE_KICK"
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_ADVANCED_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			cvar			"ui_allow_vote_kick"
+			mouseEnter		{ play "mouse_over" }
+			cvartest		"ui_allow_vote_kick"
+			hideCvar		{ "0" }
+			action
+			{
+				setcvar g_allowvotekick "0";
+				setcvar g_allowvoteclientkick "0";
+				play "mouse_click";
+			}
+		}
+
+		itemDef
+		{
+			group			advancedsettings
+			visible			1
+			rect			-10 285 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			style			WINDOW_STYLE_FILLED
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_YESNO
+			text			"@PATCH_1_5_ALLOW_VOTE_BAN"
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_ADVANCED_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			cvar			"ui_allow_vote_ban"
+			mouseEnter		{ play "mouse_over" }
+			cvartest		"ui_allow_vote_ban"
+			showCvar		{ "0" }
+			action
+			{
+				setcvar g_allowvotetempbanuser "1";
+				setcvar g_allowvotetempbanclient "1";
+				play "mouse_click";
+			}
+		}
+		itemDef
+		{
+			group			advancedsettings
+			visible			1
+			rect			-10 285 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			style			WINDOW_STYLE_FILLED
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_YESNO
+			text			"@PATCH_1_5_ALLOW_VOTE_BAN"
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_ADVANCED_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			cvar			"ui_allow_vote_ban"
+			mouseEnter		{ play "mouse_over" }
+			cvartest		"ui_allow_vote_ban"
+			hideCvar		{ "0" }
+			action
+			{
+				setcvar g_allowvotetempbanuser "0";
+				setcvar g_allowvotetempbanclient "0";
+				play "mouse_click";
+			}
+		}
+		
+		itemDef
+		{
+			group			advancedsettings
+			visible			1
+			rect			-10 300 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			style			WINDOW_STYLE_FILLED
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_YESNO
+			text			"@PATCH_1_5_ALLOW_VOTE_DRAWFRIEND"
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_ADVANCED_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			cvar			"g_allowvotedrawfriend"
+			mouseEnter		{ play "mouse_over" }
+			action			{ play "mouse_click" }
+		}
+		
+		itemDef
+		{
+			group			advancedsettings
+			visible			1
+			rect			-10 315 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			style			WINDOW_STYLE_FILLED
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_YESNO
+			text			"@PATCH_1_5_ALLOW_VOTE_FRIENDLYFIRE"
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_ADVANCED_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			cvar			"g_allowvotefriendlyfire"
+			mouseEnter		{ play "mouse_over" }
+			action			{ play "mouse_click" }
+		}
+		
+		itemDef
+		{
+			group			advancedsettings
+			visible			1
+			rect			-10 330 OPTIONS_CONTROL_SIZE
+			origin			ORIGIN_SETTINGS
+			forecolor		OPTIONS_CONTROL_FORECOLOR
+			backcolor		OPTIONS_CONTROL_BACKCOLOR       
+			style			WINDOW_STYLE_FILLED
+			textfont		UI_FONT_NORMAL
+			type			ITEM_TYPE_YESNO
+			text			"@PATCH_1_5_ALLOW_VOTE_KILLCAM"
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		OPTIONS_ADVANCED_XALIGN 
+			textaligny		OPTIONS_CONTROL_YALIGN
+			textscale		GLOBAL_TEXTSCALE
+			cvar			"g_allowvotekillcam"
+			mouseEnter		{ play "mouse_over" }
+			action			{ play "mouse_click" }
+		}
+		
+		
+		// ==================================================================================
+		//	BACK AND START BUTTONS	
+		// ==================================================================================
+		
+		itemDef 
+		{
+			name			back
+			text			"@MENU_BACK"
+			type			1
+			style			UI_BUTTON_STYLE
+			textstyle		UI_BUTTON_TEXT_STYLE
+			rect			10 380 65 22 
+			textfont		UI_FONT_NORMAL
+			textalign		1
+			border			UI_TAB_BORDER
+			bordercolor		UI_TAB_BORDER_COLOR
+			textscale		GLOBAL_TEXTSCALE		
+			textalignx		32
+			textaligny		15
+			forecolor		UI_BUTTON_TEXT_COLOR
+			backcolor		UI_BUTTON_BACK_COLOR
+			visible			1
+			mouseEnter		{ setitemcolor back backcolor UI_BUTTON_BACK_COLOR_HOVER;play "mouse_over"; }
+			mouseExit		{ setitemcolor back backcolor UI_BUTTON_BACK_COLOR }
+			
+			action 
+			{
+				play "mouse_click";
+				close createserver ;
+				close joinserver ;
+				close multi_menu ;
+				close main ;
+				close settings_dm;
+				open main
+			}	
+		}
+		
+		//   start button   //
+		itemDef 
+		{
+			name			accept
+			text			"@MENU_START"
+			type			1
+			textfont		UI_FONT_NORMAL
+			style			UI_BUTTON_STYLE	
+			textstyle		UI_BUTTON_TEXT_STYLE
+			rect			294 380 65 22 
+			textalign		1
+			textscale		GLOBAL_TEXTSCALE		
+			textalignx		32
+			textaligny		15
+			border			UI_TAB_BORDER
+			bordercolor		UI_TAB_BORDER_COLOR
+			forecolor		UI_BUTTON_TEXT_COLOR
+			backcolor		UI_BUTTON_BACK_COLOR
+			visible			1
+			mouseEnter		{ setitemcolor accept backcolor UI_BUTTON_BACK_COLOR_HOVER;play "mouse_over"; }
+			mouseExit		{ setitemcolor accept backcolor UI_BUTTON_BACK_COLOR }
+	
+			action 
+			{
+				play "mouse_click";
+				uiScript StartServer
+			}	
+		}
+	}
+
+
+	// ==================================================================================
+	//	CREATE SERVER   	
+	// ==================================================================================
+
+	menuDef 
+	{
+		name			"createserver"
+		fullscreen		1    	
+		rect			0 0 640 300	
+		focuscolor		UI_FOCUS_COLOR
+		style			1
+		border			0
+		
+		onEsc  
+		{
+			close createserver;
+			close settings_dm;
+			close createserver_maps;
+			close createserver_op;
+			open main
+		}
+
+		onOpen 
+		{
+			uiScript loadArenas ;	
+			hide advancedsettings;
+			hide gametypesettings;
+			close settings_dm;
+			
+			show generalsettings
+			open createserver_op;
+			open createserver_maps;
+			
+		}
+		
+		onClose
+		{
+			close settings_dm;
+			close createserver_maps;
+			close createserver_op;
+		}
+
+		#include "ui_mp/menu_background.menu"
+	}
+}

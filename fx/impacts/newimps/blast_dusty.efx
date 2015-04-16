@@ -1,0 +1,25 @@
+Emitter
+{
+	flags				emitFx
+
+	count				3
+
+	life				100 150
+
+	delay				30
+
+	height				0
+
+	velocity			1111 4422 4422 4111 -4422 -4422
+
+	gravity				-1.78e+004
+
+	density				4
+
+	variance			44
+
+	emitfx
+	[
+		fx/impacts/dusty_emlite2
+	]
+}

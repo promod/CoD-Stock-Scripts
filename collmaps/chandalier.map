@@ -1,0 +1,27 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 18 18 -35 ) ( -18 18 -35 ) ( -18 -18 -35 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -20 -18 -21 ) ( -20 18 -21 ) ( 16 18 -21 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -27 -9 21 ) ( 9 -9 21 ) ( 9 -9 -50 ) common/clip_nosight 0 84 0 0.25 0.25 0 0 0 0
+( 9 -9 21 ) ( 9 27 21 ) ( 9 27 -50 ) common/clip_nosight 0 84 0 0.25 0.25 0 0 0 0
+( 27 9 21 ) ( -9 9 21 ) ( -9 9 -50 ) common/clip_nosight 0 84 0 0.25 0.25 0 0 0 0
+( -8 9 21 ) ( -8 -27 21 ) ( -8 -27 -50 ) common/clip_nosight 0 84 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 18 18 -56 ) ( -18 18 -56 ) ( -18 -18 -56 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -20 -18 -35 ) ( -20 18 -35 ) ( 16 18 -35 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -18 -18 0 ) ( 18 -18 0 ) ( 18 -18 -71 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 18 -18 0 ) ( 18 18 0 ) ( 18 18 -71 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 18 18 0 ) ( -18 18 0 ) ( -18 18 -71 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -17 18 0 ) ( -17 -18 0 ) ( -17 -18 -71 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"model" "xmodel/chandalier"
+"origin" "0 0 0"
+"classname" "misc_model"
+}

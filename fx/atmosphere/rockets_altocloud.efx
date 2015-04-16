@@ -1,0 +1,40 @@
+Particle
+{
+	count				1
+
+	life				2000
+
+//	origin				200 1200 1090 1200 -1200 1090
+	origin				1100 0 0 1100 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			9000
+	}
+
+	size2
+	{
+		start			554 -554
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/cloudflash_highalt1
+	]
+}

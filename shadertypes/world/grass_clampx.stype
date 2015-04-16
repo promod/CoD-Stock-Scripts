@@ -1,0 +1,11 @@
+{
+	surfaceparm grass
+	{
+		map clampx $texturename
+		rgbGen exactVertex
+	}
+	{
+		map $lightmap
+		blendFunc filter
+	}
+}

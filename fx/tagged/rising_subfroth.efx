@@ -1,0 +1,39 @@
+OrientedParticle
+{
+	count				5
+
+	life				7000
+
+	origin				0 -76 -76 0 76 76
+
+	radius				100
+
+	rotation			0 360
+
+	rotationDelta		4 -4
+
+	rgb
+	{
+		start			0.7529 0.7529 0.7608 0.6275 0.6275 0.6431
+		end				0.03529 0.02745 0.02353
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				312 342
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/surface_froth
+	]
+}

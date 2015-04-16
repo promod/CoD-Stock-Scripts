@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 28 29 0 ) ( -60 29 0 ) ( -60 -31 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -64 -31 54 ) ( -64 29 54 ) ( 24 29 54 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -60 -36 50 ) ( 28 -36 50 ) ( 28 -36 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 36 -28 47 ) ( 36 32 47 ) ( 36 32 -3 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 28 36 51 ) ( -60 36 51 ) ( -60 36 1 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -36 29 53 ) ( -36 -31 53 ) ( -36 -31 3 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/ship_capstan"
+"classname" "misc_model"
+}

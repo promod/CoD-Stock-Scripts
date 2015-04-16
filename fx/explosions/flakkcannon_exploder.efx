@@ -1,0 +1,55 @@
+Emitter
+{
+	flags				emitFx
+
+	count				2
+
+	life				100
+
+	velocity			1700 123 123 1720 -123 -123
+
+	gravity				-600
+
+	density				4
+
+	variance			13 122
+
+	emitfx
+	[
+		fx/explosions/explosive_fire1
+	]
+}
+
+Emitter
+{
+	name				Copy of Unnamed Emitter 0
+
+	flags				emitFx
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				2
+
+	life				100
+
+	velocity			1700 123 123 1720 -123 -123
+
+	gravity				-600
+
+	density				4
+
+	variance			13 122
+
+	emitfx
+	[
+		fx/explosions/explosive_fire1
+	]
+}
+
+FxRunner
+{
+	playfx
+	[
+		fx/explosions/exp_fill1nl
+	]
+}

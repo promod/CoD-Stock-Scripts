@@ -1,0 +1,346 @@
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				useAlpha
+
+	nonUniformScale		1
+
+	count				8
+
+	life				1800
+
+	rotation			320 -320
+
+	velocity			345 0 0 245 0 0
+
+	gravity				-400
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				100 300
+		flags			linear
+	}
+
+	size2
+	{
+		end				-320 420
+		flags			linear
+	}
+
+	length
+	{
+		start			100
+		end				1000
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/groundblastdark_gib
+	]
+}
+
+Particle
+{
+	flags				useAlpha
+
+	count				14
+
+	life				2800
+
+	rotation			-360 360
+
+	rotationDelta		3 -3
+
+	velocity			100 22 12 600 -22 -22
+
+	gravity				-600
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				150 240
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/groundblastdark_gib
+	]
+}
+
+Particle
+{
+	nonUniformScale		1
+
+	count				3
+
+	life				100
+
+	origin				-21 17 12 -32 -18 -12
+
+	velocity			733 0 0
+
+	rgb
+	{
+		start			0.7608 0.4353 0.2392
+		end				0.9765 0.949 0.651
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			32
+		end				63 84
+		flags			linear
+	}
+
+	size2
+	{
+		end				133
+		flags			linear
+	}
+
+	length
+	{
+		start			333
+		end				133
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion/explosion_1
+		gfx/effects/groundflash1
+	]
+}
+
+Light
+{
+	life				100
+
+	rgb
+	{
+		end				0.9765 0.949 0.651
+		flags			linear
+	}
+
+	size
+	{
+		start			400
+		flags			linear
+	}
+}
+
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder
+
+	count				7
+
+	life				1e+004
+
+	cullrange			4000
+
+	radius				62
+
+	rotation			360 -360
+
+	rotationDelta		2 -2
+
+	velocity			24 32 32 26 -32 -32
+
+	acceleration		0 13 13 0 -13 -13
+
+	gravity				-3
+
+	rgb
+	{
+		start			0.6824 0.6431 0.5569
+		end				1 0.9843 0.9412
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			45
+		end				300
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/medium_smoke
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 4
+
+	flags				useAlpha
+
+	spawnFlags			axisFromSphere
+
+	count				4
+
+	life				1e+004
+
+	origin				123 23 23 176 -23 -23
+
+	radius				32
+
+	rotation			360 -360
+
+	rotationDelta		7 9
+
+	velocity			4 12 12 65 -12 -12
+
+	acceleration		3 1 0 5 1 0
+
+	rgb
+	{
+		start			0.6824 0.6431 0.5569
+		end				1 0.9843 0.9412
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			45
+		end				600 500
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/medium_smoke
+	]
+}
+
+Emitter
+{
+	flags				useModel usePhysics impactKills
+
+	count				12
+
+	life				5000
+
+	cullrange			3000
+
+	angle				360 360 360 -360 -360 -360
+
+	angleDelta			33 33 33 -33 -33 -33
+
+	velocity			544 455 455 344 -455 -455
+
+	gravity				-800
+
+	size
+	{
+		start			0.1
+		end				0.3 0.6
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/gib_stone1
+	]
+}
+
+Decal
+{
+	life				1e+004
+
+	size
+	{
+		start			100
+	}
+
+	shaders
+	[
+		gfx/impact/cratered_ground
+	]
+}
+
+Line
+{
+	flags				setShaderTime useAlpha
+
+	count				3
+
+	life				750
+
+	origin2				144 244 244 344 -244 -244
+
+	rgb
+	{
+		start			0.6824 0.6431 0.5569
+		end				0.8039 0.8078 0.7569
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.7
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			34
+	}
+
+	shaders
+	[
+		gfx/effects/explosion/dirtplume_model2
+		gfx/effects/explosion/dirtplume_modelf
+	]
+}

@@ -1,0 +1,73 @@
+Particle
+{
+	life				800 1000
+
+	origin				-23 42 42 0 -42 -42
+
+	rotation			-360 360
+
+	velocity			0 22 22 611 -22 -22
+
+	acceleration		32 0 0 14 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			100
+		end				10
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/fire_wisp3
+	]
+}
+
+Particle
+{
+	count				3 1
+
+	life				1500
+
+	cullrange			700
+
+	origin				-21 83 83 0 -83 -83
+
+	rotation			360 -360
+
+	velocity			223 74 74 370 -74 -74
+
+	rgb
+	{
+		end				0.03529 0.02745 0.02353
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			132 -132
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/fire_wisp1
+	]
+}

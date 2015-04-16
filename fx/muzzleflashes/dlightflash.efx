@@ -1,0 +1,17 @@
+Light
+{
+	life				100
+
+	rgb
+	{
+		start			0.9686 0.8235 0.03529 0.8392 0.8118 0.6627
+		end				0.9765 0.949 0.651 0.8549 0.7098 0.2706
+		flags			linear
+	}
+
+	size
+	{
+		start			210 190
+		flags			linear
+	}
+}

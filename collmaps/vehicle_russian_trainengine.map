@@ -1,0 +1,314 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -340 52 0 ) ( -372 52 0 ) ( -372 28 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -372 28 16 ) ( -372 52 16 ) ( -340 52 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -372 40 20 ) ( -340 40 20 ) ( -340 40 4 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -340 28 16 ) ( -340 52 16 ) ( -340 52 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -340 48 16 ) ( -372 48 16 ) ( -372 48 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -372 52 16 ) ( -372 28 16 ) ( -372 28 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( -272 52 0 ) ( -304 52 0 ) ( -304 28 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -304 28 16 ) ( -304 52 16 ) ( -272 52 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -304 40 20 ) ( -272 40 20 ) ( -272 40 4 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -272 28 16 ) ( -272 52 16 ) ( -272 52 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -272 48 16 ) ( -304 48 16 ) ( -304 48 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -304 52 16 ) ( -304 28 16 ) ( -304 28 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 2
+{
+( -204 52 0 ) ( -236 52 0 ) ( -236 28 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -236 28 16 ) ( -236 52 16 ) ( -204 52 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -236 40 20 ) ( -204 40 20 ) ( -204 40 4 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -204 28 16 ) ( -204 52 16 ) ( -204 52 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -204 48 16 ) ( -236 48 16 ) ( -236 48 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -236 52 16 ) ( -236 28 16 ) ( -236 28 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 3
+{
+( -136 52 0 ) ( -168 52 0 ) ( -168 28 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 28 16 ) ( -168 52 16 ) ( -136 52 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 40 20 ) ( -136 40 20 ) ( -136 40 4 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -136 28 16 ) ( -136 52 16 ) ( -136 52 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -136 48 16 ) ( -168 48 16 ) ( -168 48 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 52 16 ) ( -168 28 16 ) ( -168 28 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 4
+{
+( -136 -32 0 ) ( -168 -32 0 ) ( -168 -56 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 -56 16 ) ( -168 -32 16 ) ( -136 -32 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 -44 20 ) ( -136 -44 20 ) ( -136 -44 4 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -136 -56 16 ) ( -136 -32 16 ) ( -136 -32 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -136 -36 16 ) ( -168 -36 16 ) ( -168 -36 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 -32 16 ) ( -168 -56 16 ) ( -168 -56 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 5
+{
+( -204 -32 0 ) ( -236 -32 0 ) ( -236 -56 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -236 -56 16 ) ( -236 -32 16 ) ( -204 -32 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -236 -44 20 ) ( -204 -44 20 ) ( -204 -44 4 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -204 -56 16 ) ( -204 -32 16 ) ( -204 -32 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -204 -36 16 ) ( -236 -36 16 ) ( -236 -36 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -236 -32 16 ) ( -236 -56 16 ) ( -236 -56 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 6
+{
+( -272 -32 0 ) ( -304 -32 0 ) ( -304 -56 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -304 -56 16 ) ( -304 -32 16 ) ( -272 -32 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -304 -44 20 ) ( -272 -44 20 ) ( -272 -44 4 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -272 -56 16 ) ( -272 -32 16 ) ( -272 -32 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -272 -36 16 ) ( -304 -36 16 ) ( -304 -36 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -304 -32 16 ) ( -304 -56 16 ) ( -304 -56 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 7
+{
+( -340 -32 0 ) ( -372 -32 0 ) ( -372 -56 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -372 -56 16 ) ( -372 -32 16 ) ( -340 -32 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -372 -44 20 ) ( -340 -44 20 ) ( -340 -44 4 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -340 -56 16 ) ( -340 -32 16 ) ( -340 -32 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -340 -36 16 ) ( -372 -36 16 ) ( -372 -36 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -372 -32 16 ) ( -372 -56 16 ) ( -372 -56 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 8
+{
+( 368 148 0 ) ( 328 148 0 ) ( 328 32 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 328 36 40 ) ( 328 152 40 ) ( 368 152 40 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 328 36 40 ) ( 368 36 40 ) ( 368 36 -4 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 360 36 40 ) ( 360 152 40 ) ( 360 152 -4 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 368 56 44 ) ( 328 56 44 ) ( 328 56 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 328 152 40 ) ( 328 36 40 ) ( 328 36 -4 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 9
+{
+( 368 60 0 ) ( 328 60 0 ) ( 328 -56 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 328 -56 40 ) ( 328 60 40 ) ( 368 60 40 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 328 -56 40 ) ( 368 -56 40 ) ( 368 -56 -4 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 360 -56 40 ) ( 360 60 40 ) ( 360 60 -4 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 368 -36 44 ) ( 328 -36 44 ) ( 328 -36 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 328 60 40 ) ( 328 -56 40 ) ( 328 -56 -4 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 10
+{
+( 320 -36 18 ) ( 278 -36 18 ) ( 278 -54 18 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 270 -54 60 ) ( 270 -36 60 ) ( 312 -36 60 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 272 -56 180 ) ( 314 -56 180 ) ( 314 -56 -14 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 316 -54 180 ) ( 316 -36 180 ) ( 316 -36 -14 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 316 -36 180 ) ( 274 -36 180 ) ( 274 -36 -14 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 274 -36 180 ) ( 274 -54 180 ) ( 274 -54 -14 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 11
+{
+( 320 58 18 ) ( 278 58 18 ) ( 278 40 18 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 270 40 60 ) ( 270 58 60 ) ( 312 58 60 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 272 38 180 ) ( 314 38 180 ) ( 314 38 -14 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 316 40 180 ) ( 316 58 180 ) ( 316 58 -14 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 316 58 180 ) ( 274 58 180 ) ( 274 58 -14 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 274 58 180 ) ( 274 40 180 ) ( 274 40 -14 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 12
+{
+( 268 142 0 ) ( 218 142 0 ) ( 218 28 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 216 28 16 ) ( 216 142 16 ) ( 266 142 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 218 40 14 ) ( 268 40 14 ) ( 268 40 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 268 28 14 ) ( 268 142 14 ) ( 268 142 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 268 46 16 ) ( 218 46 16 ) ( 218 46 2 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -24 142 6 ) ( -24 28 6 ) ( -24 28 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 13
+{
+( 268 58 0 ) ( 218 58 0 ) ( 218 -56 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 216 -56 16 ) ( 216 58 16 ) ( 266 58 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 218 -44 14 ) ( 268 -44 14 ) ( 268 -44 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 268 -56 14 ) ( 268 58 14 ) ( 268 58 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 268 -38 16 ) ( 218 -38 16 ) ( 218 -38 2 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -24 58 6 ) ( -24 -56 6 ) ( -24 -56 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 14
+{
+( 394 58 2 ) ( 372 58 2 ) ( 372 -56 2 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 370 -56 36 ) ( 370 58 36 ) ( 392 58 36 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 370 -32 54 ) ( 392 -32 54 ) ( 392 -32 2 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 392 38 54 ) ( 370 38 54 ) ( 370 38 2 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 360 58 54 ) ( 360 -56 54 ) ( 360 -56 2 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 394 -12 4 ) ( 380 -12 36 ) ( 380 20 36 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 380 38 0 ) ( 394 2 0 ) ( 380 38 32 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 394 2 0 ) ( 378 -32 0 ) ( 394 2 32 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 15
+{
+( 380 58 36 ) ( 358 58 36 ) ( 358 -56 36 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 358 -56 88 ) ( 358 58 88 ) ( 380 58 88 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 358 -56 136 ) ( 380 -56 136 ) ( 380 -56 36 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 380 -56 136 ) ( 380 58 136 ) ( 380 58 36 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 380 58 136 ) ( 358 58 136 ) ( 358 58 36 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 360 58 136 ) ( 360 -56 136 ) ( 360 -56 36 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 16
+{
+( 346 170 84 ) ( 256 170 84 ) ( 256 58 84 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 256 58 136 ) ( 256 170 136 ) ( 346 170 136 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 256 54 138 ) ( 346 54 138 ) ( 346 54 82 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 370 58 140 ) ( 370 170 140 ) ( 370 170 84 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 346 60 142 ) ( 256 60 142 ) ( 256 60 86 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 256 170 136 ) ( 256 58 136 ) ( 256 58 80 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 17
+{
+( 346 60 84 ) ( 256 60 84 ) ( 256 -52 84 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 256 -52 136 ) ( 256 60 136 ) ( 346 60 136 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 256 -56 138 ) ( 346 -56 138 ) ( 346 -56 82 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 370 -52 140 ) ( 370 60 140 ) ( 370 60 84 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 346 -50 142 ) ( 256 -50 142 ) ( 256 -50 86 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 256 60 136 ) ( 256 -52 136 ) ( 256 -52 80 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 18
+{
+( -176 60 16 ) ( -400 60 16 ) ( -400 -52 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -392 -52 136 ) ( -392 60 136 ) ( -168 60 136 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -392 -52 176 ) ( -168 -52 176 ) ( -168 -52 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 -52 176 ) ( -168 60 176 ) ( -168 60 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 60 176 ) ( -392 60 176 ) ( -392 60 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -392 60 176 ) ( -392 -52 176 ) ( -392 -52 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -270 -12 136 ) ( -392 -12 108 ) ( -392 20 108 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 19
+{
+( 168 -50 84 ) ( -24 -50 84 ) ( -24 -52 84 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -24 -52 114 ) ( -24 -50 114 ) ( 168 -50 114 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -22 -56 108 ) ( 170 -56 108 ) ( 170 -56 84 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 256 -52 118 ) ( 256 -50 118 ) ( 256 -50 94 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 170 -50 108 ) ( -22 -50 108 ) ( -22 -50 84 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -22 -50 108 ) ( -22 -52 108 ) ( -22 -52 84 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 20
+{
+( 168 60 84 ) ( -24 60 84 ) ( -24 58 84 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -24 58 114 ) ( -24 60 114 ) ( 168 60 114 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -22 54 108 ) ( 170 54 108 ) ( 170 54 84 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 256 58 118 ) ( 256 60 118 ) ( 256 60 94 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 170 60 108 ) ( -22 60 108 ) ( -22 60 84 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -22 60 108 ) ( -22 58 108 ) ( -22 58 84 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 21
+{
+( -160 60 66 ) ( -168 60 66 ) ( -168 42 66 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -178 42 70 ) ( -178 60 70 ) ( -170 60 70 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -160 40 158 ) ( -152 40 158 ) ( -152 40 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 40 44 160 ) ( 40 62 160 ) ( 40 62 18 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -160 60 158 ) ( -168 60 158 ) ( -168 60 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 60 158 ) ( -168 42 158 ) ( -168 42 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 22
+{
+( 46 60 58 ) ( 38 60 58 ) ( 38 42 58 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 26 42 82 ) ( 26 60 82 ) ( 34 60 82 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 48 40 158 ) ( 56 40 158 ) ( 56 40 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 360 44 160 ) ( 360 62 160 ) ( 360 62 18 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 48 60 158 ) ( 40 60 158 ) ( 40 60 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 40 60 158 ) ( 40 42 158 ) ( 40 42 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 23
+{
+( 46 -36 58 ) ( 38 -36 58 ) ( 38 -54 58 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 26 -54 82 ) ( 26 -36 82 ) ( 34 -36 82 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 48 -56 158 ) ( 56 -56 158 ) ( 56 -56 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 360 -52 160 ) ( 360 -34 160 ) ( 360 -34 18 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 48 -36 158 ) ( 40 -36 158 ) ( 40 -36 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 40 -36 158 ) ( 40 -54 158 ) ( 40 -54 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 24
+{
+( -160 -36 66 ) ( -168 -36 66 ) ( -168 -54 66 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -178 -54 70 ) ( -178 -36 70 ) ( -170 -36 70 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -160 -56 158 ) ( -152 -56 158 ) ( -152 -56 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 40 -52 160 ) ( 40 -34 160 ) ( 40 -34 18 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -160 -36 158 ) ( -168 -36 158 ) ( -168 -36 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 -36 158 ) ( -168 -54 158 ) ( -168 -54 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 25
+{
+( 48 18 156 ) ( -480 18 156 ) ( -480 -14 156 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -480 -14 176 ) ( -480 18 176 ) ( 48 18 176 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -480 -2 182 ) ( 48 -2 182 ) ( 48 -2 154 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -2 -18 182 ) ( -2 14 182 ) ( -2 14 154 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 50 4 182 ) ( -478 4 182 ) ( -478 4 154 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -20 14 184 ) ( -20 -18 184 ) ( -20 -18 156 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 26
+{
+( 138 18 154 ) ( -390 18 154 ) ( -390 -14 154 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -390 -14 174 ) ( -390 18 174 ) ( 138 18 174 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -388 -8 180 ) ( 140 -8 180 ) ( 140 -8 152 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 94 -18 180 ) ( 94 14 180 ) ( 94 14 152 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 140 10 180 ) ( -388 10 180 ) ( -388 10 152 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 70 14 182 ) ( 70 -18 182 ) ( 70 -18 154 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 27
+{
+( 188 18 148 ) ( -340 18 148 ) ( -340 -14 148 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -342 -14 176 ) ( -342 18 176 ) ( 186 18 176 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -340 -8 182 ) ( 188 -8 182 ) ( 188 -8 154 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 138 -18 182 ) ( 138 14 182 ) ( 138 14 154 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 188 10 182 ) ( -340 10 182 ) ( -340 10 154 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 118 14 184 ) ( 118 -18 184 ) ( 118 -18 156 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 28
+{
+( 236 18 148 ) ( -292 18 148 ) ( -292 -14 148 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -292 -14 182 ) ( -292 18 182 ) ( 236 18 182 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -292 -14 182 ) ( 236 -14 182 ) ( 236 -14 154 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 194 -18 182 ) ( 194 14 182 ) ( 194 14 154 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 236 18 182 ) ( -292 18 182 ) ( -292 18 154 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 160 14 182 ) ( 160 -18 182 ) ( 160 -18 154 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 29
+{
+( 360 18 148 ) ( -168 18 148 ) ( -168 -14 148 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 -14 182 ) ( -168 18 182 ) ( 360 18 182 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 -14 182 ) ( 360 -14 182 ) ( 360 -14 154 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 318 -18 182 ) ( 318 14 182 ) ( 318 14 154 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 360 18 182 ) ( -168 18 182 ) ( -168 18 154 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 284 14 182 ) ( 284 -18 182 ) ( 284 -18 154 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 30
+{
+( 0 -36 134 ) ( 0 -26 146 ) ( 32 -36 134 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 60 176 ) ( -168 -52 176 ) ( -168 -52 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 56 36 176 ) ( -168 36 176 ) ( -168 36 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 360 -20 176 ) ( 360 92 176 ) ( 360 92 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 -36 176 ) ( 56 -36 176 ) ( 56 -36 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 48 60 16 ) ( -176 60 16 ) ( -176 -52 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 0 -26 148 ) ( 0 -14 156 ) ( 32 -26 148 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 0 -14 156 ) ( 0 0 158 ) ( 32 -14 156 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 0 0 158 ) ( 0 16 156 ) ( 32 0 158 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 0 16 156 ) ( 0 30 146 ) ( 32 16 156 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 0 30 146 ) ( 0 36 136 ) ( 32 30 146 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 31
+{
+( 48 -24 16 ) ( -176 -24 16 ) ( -176 -136 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 -136 160 ) ( -168 -24 160 ) ( 56 -24 160 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -280 -56 176 ) ( -56 -56 176 ) ( -56 -56 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -128 -136 176 ) ( -128 -24 176 ) ( -128 -24 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 56 -54 176 ) ( -168 -54 176 ) ( -168 -54 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 -24 176 ) ( -168 -136 176 ) ( -168 -136 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 32
+{
+( 48 84 16 ) ( -176 84 16 ) ( -176 -28 16 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 -28 160 ) ( -168 84 160 ) ( 56 84 160 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -280 58 176 ) ( -56 58 176 ) ( -56 58 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -128 -28 176 ) ( -128 84 176 ) ( -128 84 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 56 60 176 ) ( -168 60 176 ) ( -168 60 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -168 84 176 ) ( -168 -28 176 ) ( -168 -28 -8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/vehicle_russian_trainengine"
+"origin" "0 1 0"
+}

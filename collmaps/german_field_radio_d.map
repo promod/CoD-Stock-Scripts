@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 10 -3 0 ) ( -2 -3 0 ) ( -2 -9 0 ) common/clip_nosight -16 -24 0 0.25 0.25 0 0 0 0
+( -1 6 16 ) ( -1 12 16 ) ( 11 12 16 ) common/clip_nosight -16 -24 0 0.25 0.25 0 0 0 0
+( -2 -12 9 ) ( 10 -12 9 ) ( 10 -12 4 ) common/clip_nosight -16 16 0 0.25 0.25 0 0 0 0
+( 7 -9 9 ) ( 7 -3 9 ) ( 7 -3 4 ) common/clip_nosight 24 16 0 0.25 0.25 0 0 0 0
+( 10 13 37 ) ( -2 13 37 ) ( -2 13 32 ) common/clip_nosight -16 16 0 0.25 0.25 0 0 0 0
+( -6 -3 9 ) ( -6 -9 9 ) ( -6 -9 4 ) common/clip_nosight 24 16 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"origin" "0 0 0"
+"model" "xmodel/german_field_radio_d"
+}

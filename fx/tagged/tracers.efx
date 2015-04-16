@@ -1,0 +1,47 @@
+Tail
+{
+	name				tracer
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteAccel evenDistribution
+
+	life				3700 4300
+
+	delay				300 100
+
+	radius				45 55
+
+	height				100 10
+
+	velocity			1.19e+004 0 0 1.18e+004 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		flags			linear
+	}
+
+	size
+	{
+		start			5
+		end				10
+		flags			linear
+	}
+
+	length
+	{
+		start			60 90
+		end				120
+		flags			random linear
+	}
+
+	shaders
+	[
+		gfx/effects/antiaircraft_tracer
+	]
+}

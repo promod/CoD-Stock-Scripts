@@ -1,0 +1,181 @@
+Particle
+{
+	spawnFlags			rgbComponentInterpolation
+
+	count				2
+
+	life				600
+
+	delay				511 411
+
+	radius				10
+
+	height				100
+
+	rotation			360 -360
+
+	rotationDelta		1 -1
+
+	velocity			323 23 32 223 -46 64
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			54 101
+		end				400 350
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion/medium_firecloud
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 2
+
+	spawnFlags			rgbComponentInterpolation
+
+	count				2
+
+	life				300
+
+	delay				22
+
+	origin				44 12 10 0 -12 -10
+
+	radius				50 100
+
+	height				50 1
+
+	rotation			360 -360
+
+	rotationDelta		1 -1
+
+	velocity			200 143 0 100 -175 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				200 250
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion/explosion_1
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	spawnFlags			orgOnCylinder axisFromSphere rgbComponentInterpolation
+
+	count				11
+
+	life				900
+
+	delay				244
+
+	origin				1 1 1
+
+	radius				32
+
+	rotation			360 -360
+
+	rotationDelta		1 -1
+
+	velocity			100 146 32 123 192 64
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10
+		end				100 150
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion/medium_firecloud
+	]
+}
+
+Light
+{
+	life				500
+
+	delay				111
+
+	rgb
+	{
+		start			0.9686 0.8235 0.03529 0.9765 0.949 0.651
+		end				0.8549 0.7098 0.2706 0.7412 0.5961 0.2588
+		flags			random linear
+	}
+
+	size
+	{
+		start			1700
+		end				1400
+		flags			random linear
+	}
+}
+
+FxRunner
+{
+	spawnFlags			randrotaroundfwd
+
+	delay				270
+
+	playfx
+	[
+		fx/explosions/explosionstart
+	]
+}
+
+FxRunner
+{
+	spawnFlags			axisFromSphere randrotaroundfwd
+
+	count				3
+
+	playfx
+	[
+		fx/explosions/darksmoke_rnr
+	]
+}

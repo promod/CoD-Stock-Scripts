@@ -1,0 +1,292 @@
+#include "ui_mp/menudef.h"
+
+#define ORIGIN_MENUWINDOW			96 72
+#define ORIGIN_SERVERNAME			106 92
+#define ORIGIN_GAMETYPE				430 156
+#define ORIGIN_SERVERSETTINGS			480 178
+#define ORIGIN_CLICKTOCONTINUE			534 374
+
+{
+	menuDef
+	{
+		name			"serverinfo_bel"
+		fullscreen		0
+		rect			0 0 640 480
+		focuscolor		1 1 1 1
+		disablecolor		0 0 0 0
+		style			WINDOW_STYLE_EMPTY
+		border			0
+		onEsc 
+		{
+			scriptMenuResponse "close";
+			close serverinfo_bel;
+		}
+		onOpen 
+		{
+			scriptMenuResponse "open";
+		}
+		onClose
+		{
+			scriptMenuResponse "close";
+		}
+
+// WINDOW BACKGROUND
+		itemDef
+		{
+			name			"window_background"
+			visible			1
+			rect			0 0 448 312
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.7975
+			decoration
+		}
+
+// WINDOW BANNER
+		itemDef
+		{
+			name			"window_banner"
+			visible			1
+			rect			9 30 430 24
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_SHADER 
+			background		"ui_mp/assets/hud@banner_team.tga"
+			decoration
+		}
+
+// WINDOW LINES
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			3 5 2 302
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			443 5 2 302
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			3 307 442 2
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			5 25 438 1
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			5 58 438 1
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			5 286 438 1
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			3 3 442 2
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+		itemDef
+		{
+			name			"window_lines"
+			visible			1
+			rect			224 59 1 227
+			origin			ORIGIN_MENUWINDOW
+			style			WINDOW_STYLE_FILLED
+			backcolor		1 1 1 .125
+			decoration
+		}
+
+// SERVER NAME
+		itemDef
+		{
+			name			"text_servername"
+			visible			1
+			origin			ORIGIN_SERVERNAME
+			forecolor		1 1 1 1
+			cvar			"ui_hostname"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			decoration
+		}
+		
+// MESSAGE OF THE DAY
+		itemDef
+		{
+			name			"text_motd"
+			visible			1
+			rect			12 66 190 213
+			origin			ORIGIN_MENUWINDOW
+			forecolor		1 1 1 1
+			autowrapped
+			cvar			"ui_motd"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalignx		8
+			textaligny		16
+			decoration
+		}
+		
+// GAMETYPE
+		itemDef
+		{
+			visible 		1
+			origin			ORIGIN_GAMETYPE
+			forecolor		1 1 1 1
+			text			"@BEL_BEHIND_ENEMY_LINES"
+			textfont		UI_FONT_NORMAL
+			textscale		.35
+			textalign		ITEM_ALIGN_CENTER
+			decoration
+		}
+
+// SERVER SETTINGS
+		itemDef
+		{
+			visible			1
+			rect			0 0 350 12
+			origin			ORIGIN_SERVERSETTINGS
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_NUMERICFIELD
+			text			"@MENU_SCORE_LIMIT_PLAYER_POINTS"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalign		ITEM_ALIGN_RIGHT
+			cvar			"ui_bel_scorelimit"
+			decoration
+		}
+
+		itemDef
+		{
+			visible			1
+			rect			0 15 350 12
+			origin			ORIGIN_SERVERSETTINGS
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_NUMERICFIELD
+			text			"@MENU_TIME_LIMIT"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalign		ITEM_ALIGN_RIGHT
+			cvar			"ui_bel_timelimit"
+			decoration
+		}
+
+		itemDef
+		{
+			visible			1
+			rect			0 30 350 12
+			origin			ORIGIN_SERVERSETTINGS
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_MULTI
+			text			"@MENU_FRIENDLY_FIRE"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalign		ITEM_ALIGN_RIGHT
+			cvar			"ui_friendlyfire"
+			cvarFloatList		{ "@MENU_OFF" 0 "@MENU_ON" 1 "@MENU_REFLECT" 2 "@MENU_SHARED" 3 }
+			decoration
+		}
+
+		itemDef
+		{
+			visible			1
+			rect			0 45 350 12
+			origin			ORIGIN_SERVERSETTINGS
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_YESNO
+			text			"@MENU_ALLOW_PANZERFAUSTS"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalign		ITEM_ALIGN_RIGHT
+			cvar			"ui_allow_panzerfaust"
+			decoration
+		}
+
+		itemDef
+		{
+			visible			1
+			rect			0 60 350 12
+			origin			ORIGIN_SERVERSETTINGS
+			forecolor		1 1 1 1
+			type			ITEM_TYPE_YESNO
+			text			"@MENU_ALLOW_FG42S"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalign		ITEM_ALIGN_RIGHT
+			cvar			"ui_allow_fg42"
+			decoration
+		}
+
+// CLICK TO CONTINUE
+		itemDef
+		{
+			visible 		1
+			rect			0 0 640 480
+			type 			ITEM_TYPE_BUTTON
+			action
+			{
+				scriptMenuResponse "close";
+				close serverinfo_bel;
+			}
+		}
+		
+		itemDef
+		{
+			visible 		1
+			origin			ORIGIN_CLICKTOCONTINUE
+			forecolor		1 1 1 1
+			text			"@MPMENU_CLICK_TO_CONTINUE"
+			textfont		UI_FONT_NORMAL
+			textscale		.24
+			textalign		ITEM_ALIGN_RIGHT
+			decoration
+		}
+	}
+}

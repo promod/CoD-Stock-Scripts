@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 2 -3 -32 ) ( -50 -3 -32 ) ( -50 -29 -32 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -50 -29 -5 ) ( -50 -3 -5 ) ( 2 -3 -5 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -50 -29 -5 ) ( 2 -29 -5 ) ( 2 -29 -32 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 1 -29 -5 ) ( 1 -3 -5 ) ( 1 -3 -32 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 3 -2 -5 ) ( -49 -2 -5 ) ( -49 -2 -32 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -50 -3 -5 ) ( -50 -29 -5 ) ( -50 -29 -32 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "-24 -16 -32"
+"model" "xmodel/crate_misc_green1"
+"classname" "misc_model"
+}

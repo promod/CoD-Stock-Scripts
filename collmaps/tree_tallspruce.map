@@ -1,0 +1,27 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 8 144 0 ) ( -8 144 0 ) ( -8 -160 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -8 -160 496 ) ( -8 144 496 ) ( 8 144 496 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -8 -8 504 ) ( 8 -8 504 ) ( 8 -8 8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 8 -160 496 ) ( 8 144 496 ) ( 8 144 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 8 8 496 ) ( -8 8 496 ) ( -8 8 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -8 144 496 ) ( -8 -160 496 ) ( -8 -160 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 128 16 -8 ) ( -112 16 -8 ) ( -112 -16 -8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -112 -16 592 ) ( -112 16 592 ) ( 128 16 592 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -112 -16 592 ) ( 128 -16 592 ) ( 128 -16 -8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 16 -24 592 ) ( 16 8 592 ) ( 16 8 -8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 128 16 592 ) ( -112 16 592 ) ( -112 16 -8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -16 32 592 ) ( -16 0 592 ) ( -16 0 -8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/tree_tallspruce"
+"classname" "misc_model"
+}

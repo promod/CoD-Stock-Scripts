@@ -1,0 +1,19 @@
+Emitter
+{
+	flags				emitFx
+
+	count				4
+
+	life				100
+
+	velocity			5322 2221 -2221 5322 -2221 2221
+
+	density				4
+
+	variance			43 66
+
+	emitfx
+	[
+		fx/explosions/dirt_em
+	]
+}

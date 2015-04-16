@@ -1,0 +1,17 @@
+Emitter
+{
+	flags				emitFx
+
+	life				100
+
+	velocity			5322 1233 1222 5322 -1233 -1222
+
+	density				4
+
+	variance			43 73
+
+	emitfx
+	[
+		fx/smoke/em_crsmoke
+	]
+}

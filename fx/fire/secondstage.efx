@@ -1,0 +1,33 @@
+Particle
+{
+	spawnFlags			evenDistribution
+
+	life				1000
+
+	rotation			-360 360
+
+	velocity			23 23 23 -23 -23 -23
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			100
+		end				130
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/fire_wisp1
+	]
+}

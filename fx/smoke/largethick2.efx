@@ -1,0 +1,91 @@
+Particle
+{
+	name				smoke
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			orgOnSphere evenDistribution
+
+	count				5 3
+
+	life				5000 1e+004
+
+	delay				100
+
+	origin				-2 0 0 30 0 0
+
+	radius				60 50
+
+	wind				100
+
+	rotation			0 300
+
+	rotationDelta		0 20
+
+	velocity			25 -1 -1 50 15 1
+
+	acceleration		50 0 0 100 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			90
+		flags			linear
+	}
+
+	size
+	{
+		start			8 12
+		end				400 300
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/dark_smoke
+		gfx/effects/smoke/smoke_bck
+	]
+}
+
+Particle
+{
+	count				3 1
+
+	life				2500 2000
+
+	origin				0 0 0 123 0 0
+
+	rotation			11 -22
+
+	velocity			143 51 0 122 -42 0
+
+	acceleration		42 0 0 33 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10
+		end				65 160
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smokelight
+	]
+}

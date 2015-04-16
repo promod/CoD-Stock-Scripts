@@ -1,0 +1,55 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 14 -32 22 ) ( 12 0 20 ) ( 14 0 22 ) common/clip_nosight 0 -88 0 0.25 -0.25 0 0 0 0
+( 8 -32 29 ) ( 24 0 2 ) ( 8 0 29 ) common/clip_nosight 88 0 -180 0.25 -0.25 0 0 0 0
+( 26 -32 2 ) ( 20 0 12 ) ( 26 0 2 ) common/clip_nosight 88 0 -180 0.25 -0.25 0 0 0 0
+( 6 3 0 ) ( 6 -3 0 ) ( 28 -3 0 ) common/clip_nosight 0 -88 0 0.25 -0.25 0 0 0 0
+( 32 6 18 ) ( 0 6 18 ) ( 0 12 9 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 32 9 11 ) ( 0 9 11 ) ( 0 5 17 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 14 0 22 ) ( 12 0 20 ) ( 14 32 22 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 8 0 29 ) ( 24 0 2 ) ( 8 32 29 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 26 0 2 ) ( 20 0 12 ) ( 26 32 2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 28 3 0 ) ( 6 3 0 ) ( 6 -3 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 -12 9 ) ( 0 -6 18 ) ( 32 -6 18 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 -5 17 ) ( 0 -9 11 ) ( 32 -9 11 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 2
+{
+( 6 3 33 ) ( 6 -3 33 ) ( 6 -3 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 28 3 33 ) ( 6 3 33 ) ( 6 3 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 6 -3 33 ) ( 28 -3 33 ) ( 28 -3 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 6 -3 34 ) ( 6 3 34 ) ( 28 3 34 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 26 0 2 ) ( 20 0 12 ) ( 26 32 2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 8 0 29 ) ( 24 0 2 ) ( 8 32 29 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 12 0 21 ) ( 14 0 22 ) ( 12 32 21 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 3
+{
+( -16 15 3 ) ( -19 15 5 ) ( -19 -15 5 ) common/clip_nosight -8 0 0 0.206923 0.25 0 0 0 0
+( 12 -15 51 ) ( 12 15 51 ) ( 15 15 49 ) common/clip_nosight 0 0 0 0.206922 0.25 0 0 0 0
+( 8 -3 43 ) ( 11 -3 41 ) ( -16 -3 4 ) common/clip_nosight 102 -20 -34 0.249979 0.250009 0 0 0 0
+( 11 -15 40 ) ( 11 15 40 ) ( -16 15 3 ) common/clip_nosight 0 16 0 0.25 0.207378 0 0 0 0
+( 11 3 40 ) ( 8 3 42 ) ( -19 3 5 ) common/clip_nosight 102 -20 -34 0.249979 0.250009 0 0 0 0
+( 7 15 43 ) ( 7 -15 43 ) ( -20 -15 6 ) common/clip_nosight 0 27 0 0.25 0.20738 0 0 0 0
+}
+// brush 4
+{
+( -25 15 4 ) ( -25 11 4 ) ( -25 11 0 ) common/clip_nosight -52 8 0 0.25 0.25 0 0 0 0
+( -9 15 4 ) ( -25 15 4 ) ( -25 15 0 ) common/clip_nosight 64 8 0 0.25 0.25 0 0 0 0
+( -10 11 4 ) ( -10 15 4 ) ( -10 15 0 ) common/clip_nosight -52 8 0 0.25 0.25 0 0 0 0
+( -24 -15 4 ) ( -8 -15 4 ) ( -8 -15 0 ) common/clip_nosight 64 8 0 0.25 0.25 0 0 0 0
+( -9 15 0 ) ( -25 15 0 ) ( -25 11 0 ) common/clip_nosight 64 52 0 0.25 0.25 0 0 0 0
+( -10 0 2 ) ( -25 0 5 ) ( -10 32 2 ) common/clip_nosight 64 52 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/artillery_german_granatwerfer"
+"classname" "misc_model"
+}

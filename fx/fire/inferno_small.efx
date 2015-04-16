@@ -1,0 +1,132 @@
+Particle
+{
+	nonUniformScale		1
+
+	count				3 5
+
+	life				800 2000
+
+	cullrange			1000
+
+	origin				22 23 23 0 -23 -23
+
+	radius				45 0
+
+	rotation			-54 54
+
+	rotationDelta		2 -4
+
+	velocity			52 0 0 82 0 0
+
+	rgb
+	{
+		start			0.6275 0.6275 0.6431
+		end				0.03529 0.02745 0.02353
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				67 113
+		flags			linear
+	}
+
+	size2
+	{
+		start			10 1
+		end				38 18
+		flags			linear
+	}
+
+	length
+	{
+		end				18 68
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/firesheet1
+		gfx/effects/fire/firesheet2
+	]
+}
+
+Particle
+{
+	flags				useAlpha
+
+	life				1500 1000
+
+	cullrange			600
+
+	origin				172 33 33 73 -33 -33
+
+	rotation			360 -360
+
+	velocity			133 32 32 232 -32 -32
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				200 100
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/dark_smoke
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 3
+
+	life				500 1000
+
+	cullrange			1000
+
+	origin				142 22 22 42 -22 -22
+
+	rotation			3 -3
+
+	velocity			233 32 32 132 -32 -32
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				100 50
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smokelight
+	]
+}

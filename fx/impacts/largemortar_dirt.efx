@@ -1,0 +1,162 @@
+Particle
+{
+	name				flash
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	nonUniformScale		1
+
+	count				4 5
+
+	life				100
+
+	velocity			923 0 223 923 0 923
+
+	rgb
+	{
+		end				0.7608 0.4353 0.2392
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.7 0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				500 190
+		flags			linear
+	}
+
+	size2
+	{
+		start			5
+		end				100
+		flags			linear
+	}
+
+	length
+	{
+		start			100
+		end				100
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/groundflash1
+	]
+}
+
+Emitter
+{
+	flags				emitFx
+
+	spawnFlags			absoluteAccel
+
+	count				7
+
+	life				100
+
+	origin				134 0 0 -123 0 0
+
+	radius				63 62
+
+	height				41
+
+	velocity			3355 1733 1122 3044 -1655 -1144
+
+	gravity				-600
+
+	density				4
+
+	variance			102 10
+
+	size
+	{
+		start			344
+		end				1100 1400
+		flags			linear
+	}
+
+	emitfx
+	[
+		fx/smoke/blacksmoke2
+	]
+}
+
+Emitter
+{
+	name				Copy of Unnamed Emitter 3
+
+	flags				emitFx
+
+	spawnFlags			absoluteAccel orgOnCylinder
+
+	life				200 100
+
+	radius				63 62
+
+	velocity			2355 733 0 2044 -655 0
+
+	gravity				-500
+
+	density				4
+
+	size
+	{
+		start			344
+		end				400
+		flags			linear
+	}
+
+	emitfx
+	[
+		fx/smoke/whitesmoke2
+	]
+}
+
+Light
+{
+	life				300 100
+
+	rgb
+	{
+		start			0.9765 0.949 0.651
+		end				0.7569 0.6627 0.5922
+		flags			linear
+	}
+
+	size
+	{
+		start			3000 2000
+		flags			linear
+	}
+}
+
+FxRunner
+{
+	playfx
+	[
+		fx/smoke/cratersmoke
+	]
+}
+
+FxRunner
+{
+	playfx
+	[
+		fx/impacts/dirthit_mortem
+	]
+}
+
+FxRunner
+{
+	playfx
+	[
+		fx/surfacehits/mortarimpact
+	]
+}

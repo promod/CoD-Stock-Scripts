@@ -1,0 +1,26 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -12 -7 4 ) ( -12 -7 43 ) ( -7 -12 43 ) common/clip_nosight_metal -63 -84 -180 0.221834 -0.25 0 0 0 0
+( -14 0 4 ) ( -14 0 43 ) ( -12 -7 43 ) common/clip_nosight_metal 18 -83 -180 0.274771 -0.25 0 0 0 0
+( -12 7 4 ) ( -12 7 43 ) ( -14 0 43 ) common/clip_nosight_metal 18 -83 -180 0.240315 -0.25 0 0 0 0
+( -7 12 4 ) ( -7 12 43 ) ( -12 7 43 ) common/clip_nosight_metal -59 -84 -180 0.221837 -0.25 0 0 0 0
+( -7 12 43 ) ( -7 12 4 ) ( 0 14 4 ) common/clip_nosight_metal -14 -84 0 0.27477 0.25 0 0 0 0
+( 7 12 4 ) ( 7 12 43 ) ( 0 14 43 ) common/clip_nosight_metal -14 -84 0 0.240315 0.25 0 0 0 0
+( 12 7 4 ) ( 12 7 43 ) ( 7 12 43 ) common/clip_nosight_metal 64 -83 -180 0.221839 -0.25 0 0 0 0
+( 14 0 4 ) ( 14 0 43 ) ( 12 7 43 ) common/clip_nosight_metal -9 -84 -180 0.27477 -0.25 0 0 0 0
+( 12 -7 4 ) ( 12 -7 43 ) ( 14 0 43 ) common/clip_nosight_metal -9 -84 -180 0.240315 -0.25 0 0 0 0
+( 7 -12 4 ) ( 7 -12 43 ) ( 12 -7 43 ) common/clip_nosight_metal 68 -83 -180 0.221837 -0.25 0 0 0 0
+( 0 -14 4 ) ( 0 -14 43 ) ( 7 -12 43 ) common/clip_nosight_metal 14 -84 0 0.27477 0.25 0 0 0 0
+( -7 -12 4 ) ( -7 -12 43 ) ( 0 -14 43 ) common/clip_nosight_metal 14 -84 0 0.240315 0.25 0 0 0 0
+( -11 8 1 ) ( -14 -1 1 ) ( 11 -8 1 ) common/clip_nosight_metal 4 0 -106 0.25 0.25 0 0 0 0
+( 11 -8 43 ) ( -14 -1 43 ) ( -11 8 43 ) common/clip_nosight_metal 4 0 -106 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/barrel_grey_snowy"
+"classname" "misc_model"
+}

@@ -1,0 +1,40 @@
+Tail
+{
+	name				aatracertails
+
+	flags				deathFx useAlpha
+
+	life				6000 8500
+
+	delay				110 0
+
+	velocity			505 16 5 505 -15 -10
+
+	acceleration		2 0 0 -5 0 0
+
+	gravity				-30
+
+	size
+	{
+		start			13 12
+		end				15 11
+		flags			linear
+	}
+
+	length
+	{
+		start			10
+		end				10 11
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/antiaircraft_tracer
+	]
+
+	deathfx
+	[
+		fx/atmosphere/cloudflash1
+	]
+}

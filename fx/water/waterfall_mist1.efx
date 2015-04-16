@@ -1,0 +1,80 @@
+Particle
+{
+	flags				useAlpha
+
+	count				8
+
+	life				1000
+
+	origin				12 22 0 0 -22 0
+
+	rotation			360 -360
+
+	rotationDelta		2
+
+	velocity			-26 0 -22
+
+	rgb
+	{
+		end				0.8 0.7765 0.6745
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				22 32
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/riverspray2
+	]
+}
+
+Tail
+{
+	spawnFlags			axisFromSphere
+
+	count				4 8
+
+	life				1000
+
+	origin				22 24 -33 0 -24 0
+
+	velocity			46 52 -33 76 -52 -33
+
+	gravity				-200
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			0.5
+		end				0.5
+		flags			linear
+	}
+
+	length
+	{
+		end				5
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/raindroplett
+	]
+}

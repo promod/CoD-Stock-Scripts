@@ -1,0 +1,88 @@
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	spawnFlags			evenDistribution
+
+	count				3
+
+	life				1000 1500
+
+	origin				32 64 64 0 -64 -64
+
+	rotation			360 -360
+
+	velocity			12 0 0 323 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			23 -23
+		end				200 -200
+		flags			linear
+	}
+
+	size2
+	{
+		start			35
+		end				94 144
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/fire_wisp1
+	]
+}
+
+Particle
+{
+	flags				useAlpha
+
+	life				1000
+
+	origin				62 12 12 0 -12 -12
+
+	rotation			360 -360
+
+	velocity			333 23 23 0 -23 -23
+
+	rgb
+	{
+		start			0.7608 0.4353 0.2392
+		end				0.7608 0.4353 0.2392
+		flags			random linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				100 200
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/cloudflash1
+	]
+}

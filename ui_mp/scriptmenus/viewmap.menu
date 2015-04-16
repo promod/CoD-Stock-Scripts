@@ -1,0 +1,49 @@
+#include "ui_mp/menudef.h"
+
+{
+	menuDef
+	{
+		name			"viewmap"
+		fullscreen		0
+		rect			0 0 640 480
+		focuscolor		1 1 1 1
+		disablecolor		0 0 0 0
+		style			WINDOW_STYLE_EMPTY
+		border			0
+		onEsc 
+		{
+			scriptMenuResponse "close";
+			close viewmap;
+		}
+		onOpen 
+		{
+			scriptMenuResponse "open";
+		}
+		onClose
+		{
+			scriptMenuResponse "close";
+		}
+
+// LAYOUT IMAGE
+		itemDef
+		{
+			visible 		1
+			rect			64 32 512 416
+	 		style			WINDOW_STYLE_CVAR_SHADER
+			cvar			"scr_layoutimage"
+			decoration
+		}
+
+		itemDef
+		{
+			visible 		1
+			rect			0 0 640 480
+			type 			ITEM_TYPE_BUTTON
+			action
+			{
+				scriptMenuResponse "close";
+				close viewmap;
+			}
+		}
+	}
+}

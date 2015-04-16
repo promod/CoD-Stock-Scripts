@@ -1,0 +1,39 @@
+Particle
+{
+	flags				useAlpha
+
+	life				2000
+
+	origin				0 12 0 0 -24 0
+
+	rotation			232 -364
+
+	rotationDelta		2 1
+
+	velocity			120 0 0 112 0 0
+
+	rgb
+	{
+		start			0.2745 0.2275 0.2
+		end				0.502 0.502 0.502
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			13 15
+		end				200 100
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smoke/smoke_frnt
+	]
+}

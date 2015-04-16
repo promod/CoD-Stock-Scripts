@@ -1,0 +1,28 @@
+Emitter
+{
+	flags				emitFx
+
+	count				2 3
+
+	life				100
+
+	origin				-21 0 0
+
+	velocity			4211 2222 2222 4211 -2222 -2222
+
+	gravity				-1.48e+004
+
+	density				4
+
+	variance			33 24
+
+	size
+	{
+		flags			linear
+	}
+
+	emitfx
+	[
+		fx/explosions/em_exsmoke
+	]
+}

@@ -1,0 +1,101 @@
+Particle
+{
+	flags				relative
+
+	count				3
+
+	life				500
+
+	origin				32 32 32 -32 -32 -32
+
+	rotation			360 -360
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				400
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion/explosion_1
+		gfx/effects/fire/hotspot
+	]
+}
+
+Particle
+{
+	flags				relative
+
+	count				4
+
+	life				500
+
+	origin				12 22 22 -12 -22 -22
+
+	rotation			360 -360
+
+	rotationDelta		4 -4
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			122 211
+		end				300 400
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/burn
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 1
+
+	flags				relative
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				4
+
+	life				1000
+
+	origin				12 22 22 -12 -22 -22
+
+	rotation			360 -360
+
+	rotationDelta		4 -4
+
+	velocity			122 122 122 -122 -122 -122
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				400
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/hotspot
+	]
+}

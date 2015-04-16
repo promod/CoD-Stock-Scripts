@@ -1,0 +1,293 @@
+Particle
+{
+	flags				relative
+
+	count				4
+
+	life				200
+
+	origin				33 0 0 173 0 0
+
+	rotation			0 360
+
+	rotationDelta		-23 0
+
+	velocity			363 0 0 623 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				67 114
+		flags			linear
+	}
+
+	size2
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	length
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion1b
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				relative
+
+	nonUniformScale		1
+
+	count				9 12
+
+	life				200
+
+	origin				0 0 0 60 0 0
+
+	rotation			0 360
+
+	velocity			1 0 0 223 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				11 33
+		flags			linear
+	}
+
+	size2
+	{
+		start			0
+		end				44
+		flags			linear
+	}
+
+	length
+	{
+		start			0
+		end				111
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion1b
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				useAlpha
+
+	spawnFlags			absoluteAccel axisFromSphere
+
+	count				3
+
+	life				900 800
+
+	origin				33 22 0 222 -32 0
+
+	radius				43
+
+	rotation			0 360
+
+	rotationDelta		-13 -28
+
+	velocity			150 0 0 322 0 0
+
+	acceleration		0 0 0 0 33 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			33 55
+		end				114
+		flags			linear
+	}
+
+	size2
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	length
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/whitesmoke
+	]
+}
+
+Particle
+{
+	name				Copy of Copy of Unnamed Particl
+
+	flags				useAlpha
+
+	spawnFlags			absoluteAccel orgOnSphere axisFromSphere
+
+	count				6 4
+
+	life				600 800
+
+	origin				33 64 0 222 -32 0
+
+	radius				43
+
+	rotation			0 360
+
+	rotationDelta		-3 -18
+
+	velocity			122 0 0
+
+	acceleration		0 222 -222 0 -233 222
+
+	gravity				-100
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			23 55
+		end				114
+		flags			linear
+	}
+
+	size2
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	length
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/whitesmoke
+	]
+}
+
+Tail
+{
+	flags				useAlpha relative
+
+	life				100
+
+	origin				266 0 0
+
+	velocity			33 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				33
+		flags			linear
+	}
+
+	length
+	{
+		start			211
+		end				322
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/muzzleflashes/thompson_stage1
+	]
+}
+
+Light
+{
+	life				100
+
+	rgb
+	{
+		end				0.9765 0.949 0.651
+		flags			linear
+	}
+
+	size
+	{
+		start			700
+		flags			linear
+	}
+}

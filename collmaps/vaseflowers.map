@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 4 4 0 ) ( -4 4 0 ) ( -4 -4 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -5 -4 21 ) ( -5 4 21 ) ( 3 4 21 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -4 -4 30 ) ( 4 -4 30 ) ( 4 -4 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 4 -4 30 ) ( 4 4 30 ) ( 4 4 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 4 4 30 ) ( -4 4 30 ) ( -4 4 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -4 4 30 ) ( -4 -4 30 ) ( -4 -4 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"model" "xmodel/vaseflowers"
+"origin" "0 0 0"
+"classname" "misc_model"
+}

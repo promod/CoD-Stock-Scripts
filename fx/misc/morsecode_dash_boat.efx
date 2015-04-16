@@ -1,0 +1,45 @@
+Particle
+{
+	flags				useAlpha relative
+
+	spawnFlags			rgbComponentInterpolation
+
+	life				500
+
+	radius				100 43
+
+	height				33 122
+
+	alpha
+	{
+		end				0
+	}
+
+	size
+	{
+		start			11.5
+		end				11.5
+	}
+
+	shaders
+	[
+		gfx/effects/flash1
+	]
+}
+
+Light
+{
+	life				450
+
+	rgb
+	{
+		start			0.9765 0.9333 0.7569
+		end				0.9765 0.9333 0.7569
+	}
+
+	size
+	{
+		start			200
+		end				200
+	}
+}

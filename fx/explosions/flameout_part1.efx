@@ -1,0 +1,51 @@
+Particle
+{
+	flags				useAlpha
+
+	count				17
+
+	life				8000
+
+	delay				400
+
+	origin				233 42 42 123 -42 -42
+
+	rotation			360 -360
+
+	rotationDelta		4 -4
+
+	velocity			272 32 32 32 -32 -32
+
+	rgb
+	{
+		start			0.6275 0.6275 0.6431
+		end				0.2078 0.2 0.1843
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			43
+		end				400 300
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/dark_smoke
+		gfx/effects/whitesmoke
+	]
+}
+
+FxRunner
+{
+	playfx
+	[
+		fx/explosions/fire_hit
+	]
+}

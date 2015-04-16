@@ -1,0 +1,11 @@
+{
+	surfaceparm brick
+	{
+		map clampx $texturename
+		rgbGen exactVertex
+	}
+	{
+		map $lightmap
+		blendFunc filter
+	}
+}

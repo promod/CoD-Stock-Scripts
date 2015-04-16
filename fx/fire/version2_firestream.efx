@@ -1,0 +1,19 @@
+Emitter
+{
+	flags				emitFx
+
+	life				100
+
+	origin				-75 0 0
+
+	velocity			9223 0 0 5223 0 0
+
+	density				4
+
+	variance			33 1
+
+	emitfx
+	[
+		fx/cannon/fire_emready
+	]
+}

@@ -1,0 +1,185 @@
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	count				6
+
+	life				700
+
+	radius				100
+
+	rotation			360 -360
+
+	rotationDelta		13 -13
+
+	velocity			1323 46 64 223 -46 -64
+
+	gravity				100 -600
+
+	rgb
+	{
+		start			0.6353 0.4902 0.06667 0.8235 0.5765 0.3922
+		end				0.9765 0.949 0.651
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10
+		end				400
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/hotspot
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation
+
+	count				5
+
+	life				1700
+
+	origin				0 23 0 20 -36 0
+
+	radius				100
+
+	rotation			350 -321
+
+	rotationDelta		23 -32
+
+	velocity			100 246 32 823 -292 64
+
+	rgb
+	{
+		start			0.2745 0.2275 0.2
+		end				0.7529 0.7529 0.7608 0.502 0.502 0.502
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.6
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10 100
+		end				500
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/whitesmoke
+	]
+}
+
+Light
+{
+	life				500
+
+	rgb
+	{
+		start			0.9686 0.8235 0.03529 0.9765 0.949 0.651
+		end				0.8549 0.7098 0.2706 0.7412 0.5961 0.2588
+		flags			random linear
+	}
+
+	size
+	{
+		start			1700
+		end				1400
+		flags			random linear
+	}
+}
+
+Emitter
+{
+	flags				useModel usePhysics impactKills impactFx
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				5 8
+
+	life				1000 1200
+
+	angle				122 0 0 2 0 0
+
+	angleDelta			123 0 0 22 0 0
+
+	velocity			1222 0 822
+
+	gravity				-1500 -700
+
+	size
+	{
+		start			0.3 0.48
+		end				0.4 0.47
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/gib_woodplank
+	]
+
+	impactfx
+	[
+		fx/water/rocksplashes
+	]
+}
+
+Emitter
+{
+	name				Copy of Unnamed Emitter 5
+
+	flags				useModel usePhysics impactKills impactFx
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				5 8
+
+	life				1000 1200
+
+	angle				122 0 0 2 0 0
+
+	angleDelta			123 0 0 22 0 0
+
+	velocity			522 0 322
+
+	gravity				-1500 -700
+
+	size
+	{
+		start			0.2 2
+		end				0.2 2
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/gib_woodplank
+	]
+
+	impactfx
+	[
+		fx/impacts/woodhit_small
+	]
+}

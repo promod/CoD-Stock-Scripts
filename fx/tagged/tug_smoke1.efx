@@ -1,0 +1,28 @@
+Emitter
+{
+	flags				emitFx
+
+	spawnFlags			cheapOrgCalc
+
+	life				200
+
+	cullrange			4000
+
+	origin				-12 0 -12
+
+	velocity			123 0 0
+
+	gravity				-23 -10
+
+	density				4
+
+	size
+	{
+		flags			linear
+	}
+
+	emitfx
+	[
+		fx/tagged/tug_smoke
+	]
+}

@@ -1,0 +1,116 @@
+Particle
+{
+	life				1500 1000
+
+	cullrange			2000
+
+	origin				-33 22 22 0 -22 -22
+
+	rotation			-360 360
+
+	velocity			0 12 12 45 -12 -12
+
+	acceleration		32 0 0 14 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			25 -25
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/fire_wisp3
+	]
+}
+
+Particle
+{
+	count				3 1
+
+	life				1500
+
+	cullrange			700
+
+	origin				-31 23 23 0 -23 -23
+
+	rotation			360 -360
+
+	velocity			32 14 14 80 -14 -14
+
+	rgb
+	{
+		end				0.03529 0.02745 0.02353
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			42 -42
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/fire_wisp1
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	life				1500 1000
+
+	cullrange			500
+
+	origin				-33 22 22 0 -22 -22
+
+	rotation			-360 360
+
+	velocity			0 12 12 45 -12 -12
+
+	acceleration		32 0 0 14 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			25 -25
+		end				22
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/fire_wisp3
+	]
+}

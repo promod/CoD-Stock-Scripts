@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 3 3 -14 ) ( 0 3 -14 ) ( 0 -3 -14 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 -3 5 ) ( 0 3 5 ) ( 3 3 5 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 -1 5 ) ( 3 -1 5 ) ( 3 -1 -14 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 3 -3 5 ) ( 3 3 5 ) ( 3 3 -14 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 3 1 5 ) ( 0 1 5 ) ( 0 1 -14 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 3 5 ) ( 0 -3 5 ) ( 0 -3 -14 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"model" "xmodel/USEquipment_Rope"
+"origin" "0 0 0"
+"classname" "misc_model"
+}

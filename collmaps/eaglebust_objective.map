@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 10 7 0 ) ( -7 7 0 ) ( -7 -7 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -7 -6 24 ) ( -7 8 24 ) ( 10 8 24 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -7 -10 15 ) ( 10 -10 15 ) ( 10 -10 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 3 -7 15 ) ( 3 7 15 ) ( 3 7 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 10 10 15 ) ( -7 10 15 ) ( -7 10 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -3 7 15 ) ( -3 -7 15 ) ( -3 -7 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/eaglebust_objective"
+"classname" "misc_model"
+}

@@ -1,0 +1,173 @@
+FxRunner
+{
+	count				2
+
+	playfx
+	[
+		fx/misc/radio_spark
+	]
+}
+
+FxRunner
+{
+	name				Copy of Unnamed FxRunner 0
+
+	delay				733
+
+	origin				22 0 -22 22 -22 0
+
+	playfx
+	[
+		fx/misc/radio_spark
+	]
+}
+
+FxRunner
+{
+	name				Copy of Copy of Unnamed FxRunne
+
+	delay				1733
+
+	origin				0 22 0 22 0 12
+
+	playfx
+	[
+		fx/misc/radio_spark
+	]
+}
+
+FxRunner
+{
+	count				2
+
+	playfx
+	[
+		fx/misc/radio_smoke
+	]
+}
+
+FxRunner
+{
+	name				Copy of Unnamed FxRunner 3
+
+	delay				1733
+
+	playfx
+	[
+		fx/misc/radio_smoke
+	]
+}
+
+FxRunner
+{
+	name				Copy of Copy of Unnamed FxRunne
+
+	delay				2733
+
+	playfx
+	[
+		fx/misc/radio_smoke
+	]
+}
+
+Particle
+{
+	life				100
+
+	rotation			360 -360
+
+	rgb
+	{
+		end				0.7765 0.8745 0.9255
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			35 32
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/flash1
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 6
+
+	life				100
+
+	delay				733
+
+	origin				12 12 0 0 -12 0
+
+	rotation			360 -360
+
+	rgb
+	{
+		start			0.6588 0.8078 0.8824
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			27 22
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/flash1
+	]
+}
+
+Particle
+{
+	name				Copy of Copy of Unnamed Particl
+
+	life				100
+
+	delay				1733
+
+	origin				0 -12 0 12 12 0
+
+	rotation			360 -360
+
+	rgb
+	{
+		start			0.9412 0.9294 0.749 0.9765 0.949 0.651
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			15 17
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/flash1
+	]
+}

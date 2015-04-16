@@ -1,0 +1,22 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -4 18 34 ) ( -4 18 -2 ) ( 14 18 -2 ) common/clip_nosight 56 0 0 0.25 0.25 0 0 0 4
+( 18 4 36 ) ( 18 4 0 ) ( 18 -190 0 ) common/clip_nosight -40 0 0 0.25 0.25 0 0 0 4
+( -20 96 0 ) ( -20 96 36 ) ( -20 -98 36 ) common/clip_nosight -40 0 0 0.25 0.25 0 0 0 4
+( 24 -82 24 ) ( 4 -82 24 ) ( 2 114 24 ) common/clip_nosight -8 56 0 0.25 0.25 0 0 0 4
+( -8 -98 0 ) ( 12 -98 0 ) ( 10 102 0 ) common/clip_nosight -8 56 0 0.25 0.25 0 0 0 4
+( 12 -20 36 ) ( 12 -20 0 ) ( -6 -20 0 ) common/clip_nosight -8 -16 0 0.25 0.25 0 0 0 4
+( -20 6 0 ) ( -8 18 0 ) ( -20 6 32 ) common/clip_nosight -8 -16 0 0.25 0.25 0 0 0 4
+( 8 18 0 ) ( 18 8 0 ) ( 8 18 32 ) common/clip_nosight -8 -16 0 0.25 0.25 0 0 0 4
+( 18 -8 0 ) ( 6 -20 0 ) ( 18 -8 32 ) common/clip_nosight -8 -16 0 0.25 0.25 0 0 0 4
+( -8 -20 0 ) ( -20 -8 0 ) ( -8 -20 32 ) common/clip_nosight -8 -16 0 0.25 0.25 0 0 0 4
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/smallcoffeetable"
+"origin" "0 0 0"
+}

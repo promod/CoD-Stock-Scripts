@@ -1,0 +1,36 @@
+OrientedParticle
+{
+	life				1.8e+005
+
+	origin				-600 -600 -1e+004 600 600 -1e+004
+
+	radius				123
+
+	rotation			-90
+
+	velocity			0 0 1500
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.3 0.5
+		end				0.5 0.7
+		flags			linear
+	}
+
+	size
+	{
+		start			5000
+		end				30
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/c47formation1
+	]
+}

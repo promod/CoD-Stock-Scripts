@@ -1,0 +1,196 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\trees\mk\bin\StringEd\StringEd.cfg"
+FILENOTES           "All game messages made by script should go in this file."
+
+REFERENCE           KILLCAM
+LANG_ENGLISH        "KILLCAM"
+
+REFERENCE           ROUNDCAM
+LANG_ENGLISH        "ROUNDCAM"
+
+REFERENCE           STARTING_NEW_ROUND
+LANG_ENGLISH        "Starting new round..."
+
+REFERENCE           PRESS_ATTACK_TO_SKIP
+LANG_ENGLISH        "Press Attack to skip"
+
+REFERENCE           PRESS_USE_TO_SKIP
+LANG_ENGLISH        "Press Use to skip"
+
+REFERENCE           AMERICAN
+LANG_ENGLISH        "American"
+
+REFERENCE           BRITISH
+LANG_ENGLISH        "British"
+
+REFERENCE           RUSSIAN
+LANG_ENGLISH        "Russian"
+
+REFERENCE           GERMAN
+LANG_ENGLISH        "German"
+
+REFERENCE           AMERICAN_FORCES
+LANG_ENGLISH        "American Forces"
+
+REFERENCE           BRITISH_FORCES
+LANG_ENGLISH        "British Forces"
+
+REFERENCE           RUSSIAN_FORCES
+LANG_ENGLISH        "Russian Forces"
+
+REFERENCE           GERMAN_FORCES
+LANG_ENGLISH        "German Forces"
+
+REFERENCE           M1A1_CARBINE_IS_A_RESTRICTED
+LANG_ENGLISH        "M1A1 Carbine is a restricted weapon."
+
+REFERENCE           M1_GARAND_IS_A_RESTRICTED
+LANG_ENGLISH        "M1 Garand is a restricted weapon."
+
+REFERENCE           THOMPSON_IS_A_RESTRICTED
+LANG_ENGLISH        "Thompson is a restricted weapon."
+
+REFERENCE           BAR_IS_A_RESTRICTED_WEAPON
+LANG_ENGLISH        "BAR is a restricted weapon."
+
+REFERENCE           SPRINGFIELD_IS_A_RESTRICTED
+LANG_ENGLISH        "Springfield is a restricted weapon."
+
+REFERENCE           LEEENFIELD_IS_A_RESTRICTED
+LANG_ENGLISH        "Lee-Enfield is a restricted weapon."
+
+REFERENCE           STEN_IS_A_RESTRICTED
+LANG_ENGLISH        "Sten is a restricted weapon."
+
+REFERENCE           BREN_LMG_IS_A_RESTRICTED
+LANG_ENGLISH        "Bren LMG is a restricted weapon."
+
+REFERENCE           SPRINGFIELD_IS_A_RESTRICTED1
+LANG_ENGLISH        "Springfield is a restricted weapon."
+
+REFERENCE           MOSINNAGANT_IS_A_RESTRICTED
+LANG_ENGLISH        "Mosin-Nagant is a restricted weapon."
+
+REFERENCE           PPSH_IS_A_RESTRICTED
+LANG_ENGLISH        "PPSh is a restricted weapon."
+
+REFERENCE           SCOPED_MOSINNAGANT_IS
+LANG_ENGLISH        "Scoped Mosin-Nagant is a restricted weapon."
+
+REFERENCE           KAR98K_IS_A_RESTRICTED
+LANG_ENGLISH        "Kar98k is a restricted weapon."
+
+REFERENCE           MP40_IS_A_RESTRICTED
+LANG_ENGLISH        "MP40 is a restricted weapon."
+
+REFERENCE           MP44_IS_A_RESTRICTED
+LANG_ENGLISH        "MP44 is a restricted weapon."
+
+REFERENCE           SCOPED_KAR98K_IS_A_RESTRICTED
+LANG_ENGLISH        "Scoped Kar98k is a restricted weapon."
+
+REFERENCE           UNKNOWN_WEAPON_SELECTED
+LANG_ENGLISH        "Unknown weapon selected."
+
+REFERENCE           PRESS_ATTACK_TO_RESPAWN
+LANG_ENGLISH        "Press Attack to respawn"
+
+REFERENCE           PRESS_USE_TO_RESPAWN
+LANG_ENGLISH        "Press Use to respawn"
+
+REFERENCE           PRESS_ACTIVATE_TO_RESPAWN
+LANG_ENGLISH        "Press [{+activate}] to respawn"
+
+REFERENCE           PRESS_ACTIVATE_TO_SKIP
+LANG_ENGLISH        "Press [{+activate}] to skip"
+
+REFERENCE           CONNECTED
+LANG_ENGLISH        "%s Connected"
+
+REFERENCE           DISCONNECTED
+LANG_ENGLISH        "%s Disconnected"
+
+REFERENCE           SCORE_LIMIT_REACHED
+LANG_ENGLISH        "Score limit reached."
+
+REFERENCE           ROUND_LIMIT_REACHED
+LANG_ENGLISH        "Round limit reached."
+
+REFERENCE           TIME_LIMIT_REACHED
+LANG_ENGLISH        "Time limit reached."
+
+REFERENCE           ALLIES_WIN
+LANG_ENGLISH        "Allies Win!"
+
+REFERENCE           AXIS_WIN
+LANG_ENGLISH        "Axis Win!"
+
+REFERENCE           WINS
+LANG_ENGLISH        "%s Wins!"
+
+REFERENCE           THE_GAME_IS_A_TIE
+LANG_ENGLISH        "The game is a tie!"
+
+REFERENCE           JOINED_ALLIES
+LANG_ENGLISH        "%s Joined Allies"
+
+REFERENCE           JOINED_AXIS
+LANG_ENGLISH        "%s Joined Axis"
+
+REFERENCE           FRIENDLY_FIRE_WILL_NOT
+LANG_ENGLISH        "Friendly fire will not be tolerated!"
+
+REFERENCE           YOU_WILL_SPAWN_ALLIED_WITH_A_NEXT_ROUND
+LANG_ENGLISH        "You will spawn Allied with a %s next round"
+
+REFERENCE           YOU_WILL_SPAWN_ALLIED_WITH_AN_NEXT_ROUND
+LANG_ENGLISH        "You will spawn Allied with an %s next round"
+
+REFERENCE           YOU_WILL_SPAWN_AXIS_WITH_A_NEXT_ROUND
+LANG_ENGLISH        "You will spawn Axis with a %s next round"
+
+REFERENCE           YOU_WILL_SPAWN_AXIS_WITH_AN_NEXT_ROUND
+LANG_ENGLISH        "You will spawn Axis with an %s next round"
+
+REFERENCE           YOU_WILL_RESPAWN_WITH_A
+LANG_ENGLISH        "You will respawn with a %s"
+
+REFERENCE           YOU_WILL_RESPAWN_WITH_AN
+LANG_ENGLISH        "You will respawn with an %s"
+
+REFERENCE           YOU_WILL_SPAWN_ALLIED_WITH_A
+LANG_ENGLISH        "You will have a %s next Allied respawn"
+
+REFERENCE           YOU_WILL_SPAWN_ALLIED_WITH_AN
+LANG_ENGLISH        "You will have an %s next Allied respawn"
+
+REFERENCE           YOU_WILL_SPAWN_AXIS_WITH_A
+LANG_ENGLISH        "You will have a %s next Axis respawn"
+
+REFERENCE           YOU_WILL_SPAWN_AXIS_WITH_AN
+LANG_ENGLISH        "You will have an %s next Axis respawn"
+
+REFERENCE           AUTOBALANCE_NEXT_ROUND
+LANG_ENGLISH        "Teams will be auto-balanced next round"
+
+REFERENCE           AUTOBALANCE_SECONDS
+LANG_ENGLISH        "Teams will be auto-balanced in %s seconds"
+
+REFERENCE           AUTOBALANCE_NOW
+LANG_ENGLISH        "Auto-balancing teams"
+
+
+ENDMARKER
+
+

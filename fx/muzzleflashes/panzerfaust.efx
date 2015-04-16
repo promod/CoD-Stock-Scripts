@@ -1,0 +1,177 @@
+Particle
+{
+	life				150 200
+
+	origin				22 0 0 70 0 0
+
+	rotation			-360 360
+
+	velocity			0 0 0 21 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			13 15
+		end				124 100
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/cloudflash1a
+	]
+}
+
+Light
+{
+	life				100
+
+	origin				253 0 0 750 0 0
+
+	rgb
+	{
+		start			0.9765 0.949 0.651
+		end				0.7608 0.4353 0.2392
+		flags			random linear
+	}
+
+	size
+	{
+		start			3000
+		flags			linear
+	}
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 3
+
+	count				2
+
+	life				250 300
+
+	origin				42 0 0 90 0 0
+
+	rotation			-360 360
+
+	velocity			53 0 0 41 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.7
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			13 15
+		end				74 70
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion1b
+	]
+}
+
+Particle
+{
+	name				Copy of Copy of Unnamed Particl
+
+	count				2
+
+	life				250 300
+
+	delay				43
+
+	origin				92 0 0 130 0 0
+
+	rotation			-360 360
+
+	velocity			53 0 0 41 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.7
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			13 15
+		end				74 70
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion1b
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 3
+
+	flags				useAlpha
+
+	count				3
+
+	life				1150 1200
+
+	origin				122 0 0 30 0 0
+
+	rotation			-360 360
+
+	rotationDelta		3 -3
+
+	velocity			122 0 0 21 0 0
+
+	rgb
+	{
+		start			0.3725 0.3725 0.3725
+		end				0.3725 0.3725 0.3725
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			13 15
+		end				124 100
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/medium_smoke
+	]
+}

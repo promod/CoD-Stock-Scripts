@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -2 -78 -8 ) ( -2 66 -8 ) ( -2 66 56 ) common/clip_nosight 63 124 0 -1.11719 0.515625 0 0 0 4
+( -146 2 0 ) ( 110 2 0 ) ( 110 2 64 ) common/clip_nosight 53 124 0 -2.00781 0.515625 0 0 0 4
+( 2 78 -8 ) ( 2 -66 -8 ) ( 2 -66 56 ) common/clip_nosight 63 124 0 -1.11719 0.515625 0 0 0 4
+( 118 -2 4 ) ( -138 -2 4 ) ( -138 -2 68 ) common/clip_nosight 53 124 0 -2.00781 0.515625 0 0 0 4
+( 104 -72 16 ) ( -152 -72 16 ) ( -152 72 16 ) common/clip_nosight 53 63 0 -2.00781 1.11719 0 0 0 4
+( -148 -72 0 ) ( 108 -72 0 ) ( 108 72 0 ) common/clip_nosight 53 63 0 -2.00781 1.11719 0 0 0 4
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/lamp_desk_off"
+"classname" "misc_model"
+}

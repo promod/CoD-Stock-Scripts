@@ -1,0 +1,27 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 80 -76 364 ) ( 80 72 364 ) ( -76 72 364 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -16 12 632 ) ( 28 12 632 ) ( 28 -20 632 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( 108 -76 364 ) ( -100 -76 364 ) ( -16 -20 632 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( 80 72 364 ) ( 80 -76 364 ) ( 28 -20 632 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -100 72 364 ) ( 108 72 364 ) ( 28 12 632 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -76 -76 364 ) ( -76 72 364 ) ( -16 12 632 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 128 16 -8 ) ( -112 16 -8 ) ( -112 -16 -8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -112 -16 592 ) ( -112 16 592 ) ( 128 16 592 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -112 -12 592 ) ( 128 -12 592 ) ( 128 -12 -8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 12 -24 592 ) ( 12 8 592 ) ( 12 8 -8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 128 12 592 ) ( -112 12 592 ) ( -112 12 -8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -12 32 592 ) ( -12 0 592 ) ( -12 0 -8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/tree_winter_firhighbranch"
+"origin" "0 0 0"
+}

@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 8 8 0 ) ( -8 8 0 ) ( -8 -12 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+( -2 -12 26 ) ( -2 8 26 ) ( 14 8 26 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+( -8 -12 620 ) ( 8 -12 620 ) ( 8 -12 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+( 2 -12 620 ) ( 2 8 620 ) ( 2 8 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+( 8 12 620 ) ( -8 12 620 ) ( -8 12 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+( -2 6 234 ) ( -2 -14 234 ) ( -2 -14 -386 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/minenclear"
+"origin" "0 0 0"
+}

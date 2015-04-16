@@ -1,0 +1,37 @@
+Particle
+{
+	flags				usePhysics impactKills
+
+	life				6000
+
+	rotation			360 -360
+
+	rotationDelta		133 -133
+
+	velocity			0 -45 -45 0 45 45
+
+	gravity				-270 -200
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10 2
+		end				4 2
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/impact/foliage_stick
+	]
+}

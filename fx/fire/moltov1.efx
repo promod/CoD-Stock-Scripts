@@ -1,0 +1,75 @@
+Particle
+{
+	spawnFlags			orgOnCylinder
+
+	life				500 300
+
+	origin				-23 2 2 -12 -2 -2
+
+	rotation			-360 360
+
+	velocity			0 22 22 76 -22 -22
+
+	acceleration		22 0 0 12 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10 -10
+		end				130 -160
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/fire_wisp1
+		gfx/effects/fire/fire_wisp3
+	]
+}
+
+Particle
+{
+	life				100 500
+
+	origin				-1 0 0 1 0 0
+
+	rotation			360 -360
+
+	velocity			43 14 14 70 -14 -14
+
+	acceleration		32 0 0 42 0 0
+
+	rgb
+	{
+		end				0.03529 0.02745 0.02353
+		flags			random linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			43 -23
+		end				153 -173
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/fire_wisp1
+	]
+}

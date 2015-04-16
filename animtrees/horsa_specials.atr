@@ -1,0 +1,25 @@
+//Glider passengers 3 and 11 - guys with Enfields who are really close to the player
+body
+{
+	pegasus_glider_guy06_lowturb
+	pegasus_glider_guy06_highturb
+	pegasus_glider_guy11_lowturb_lookaround
+	pegasus_glider_guy11_lowturb_adjusthelmet
+	pegasus_glider_guy11_lowturb_lookleft
+	pegasus_glider_guy11_lowturb_lookright
+	pegasus_glider_guy11_lowturb_sneeze
+		 
+	pegasus_glider_guy03_2ndhalf
+	pegasus_glider_guy11_2ndhalf
+}	
+facial
+{
+	PegNight_facial_glider_highturb
+	PegNight_facial_glider_guy12_lowturb
+	PegNight_facial_glider_guy12_highturb
+	PegNight_facial_glider_guy12_lowturb_twitch
+	PegNight_facial_glider_guy11_lookaround
+	PegNight_facial_glider_guy11_lookright
+	PegNight_facial_glider_guy11_lookleft
+	PegNight_facial_glider_guy11_sneeze
+}

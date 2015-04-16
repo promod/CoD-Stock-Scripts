@@ -1,0 +1,39 @@
+OrientedParticle
+{
+	count				4
+
+	life				1500 2000
+
+	delay				23 0
+
+	origin				0 823 0 0 -823 0
+
+	radius				122
+
+	rotation			23 -33
+
+	velocity			0 0 232
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.8 0.6
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				500 600
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/ripple1
+	]
+}

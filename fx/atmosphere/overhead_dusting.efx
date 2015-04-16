@@ -1,0 +1,40 @@
+Tail
+{
+	flags				useAlpha
+
+	life				1000
+
+	velocity			-254 13 0 -254 -24 0
+
+	rgb
+	{
+		start			0.8392 0.8118 0.6627
+		end				0.8941 0.8941 0.8941
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.4
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			25
+		end				35
+		flags			linear
+	}
+
+	length
+	{
+		end				322
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/dustsheet1
+	]
+}

@@ -1,0 +1,115 @@
+Particle
+{
+	name				fire
+
+	flags				impactKills
+
+	count				2
+
+	life				2500 2000
+
+	origin				33 21 32 44 -22 -34
+
+	rotation			5 -10
+
+	rotationDelta		3 -4
+
+	velocity			130 -10 -10 120 10 10
+
+	acceleration		50 0 0
+
+	gravity				-32 -64
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			24 43
+		end				40 70
+		flags			linear
+	}
+
+	size2
+	{
+		start			10 43
+		end				13 23
+		flags			linear
+	}
+
+	length
+	{
+		start			13
+		end				1000
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/hotspot
+	]
+}
+
+Particle
+{
+	name				fire2
+
+	count				2 3
+
+	life				2600 3000
+
+	origin				222 -22 -23 264 29 21
+
+	rotation			360 -360
+
+	rotationDelta		3 -3
+
+	velocity			70 -1 15 45 1 1
+
+	acceleration		34 0 -6 34 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				25 36
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/smallfill
+	]
+}
+
+FxRunner
+{
+	origin				223 0 0 224 0 0
+
+	playfx
+	[
+		fx/smoke/firesmoke_col2
+	]
+}

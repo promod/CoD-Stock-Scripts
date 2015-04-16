@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -4 -1 16 ) ( 20 -1 16 ) ( 20 -6 -7 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 20 5 15 ) ( -4 5 15 ) ( -4 0 -8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 8 5 15 ) ( -4 2 3 ) ( -4 34 -3 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 22 3 9 ) ( 8 5 15 ) ( 8 36 8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 16 0 -8 ) ( 22 3 9 ) ( 22 35 3 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -6 2 1 ) ( 14 -1 -10 ) ( 14 31 -17 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"model" "xmodel/panzerflak_ammo"
+"origin" "0 0 0"
+"classname" "misc_model"
+}

@@ -1,0 +1,155 @@
+Tail
+{
+	flags				relative
+
+	spawnFlags			orgOnCylinder
+
+	count				4
+
+	life				100
+
+	origin				363 1 0 363 0 0
+
+	radius				2
+
+	height				2 1
+
+	velocity			1220 0 0
+
+	alpha
+	{
+		end				0.5 0.4
+		flags			linear
+	}
+
+	size
+	{
+		start			23 31
+		end				70 80
+		flags			linear
+	}
+
+	length
+	{
+		start			22 13
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/mg42a
+	]
+}
+
+Light
+{
+	life				120 100
+
+	rgb
+	{
+		start			0.9765 0.949 0.651 0.9686 0.8235 0.03529
+		end				1 0.9843 0.9412 0.9765 0.949 0.651
+		flags			linear
+	}
+
+	size
+	{
+		start			750 780
+		end				100
+		flags			linear
+	}
+}
+
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			orgOnSphere
+
+	count				1 3
+
+	life				800 500
+
+	origin				21 0 0 0 0 0
+
+	radius				100 43
+
+	height				33 122
+
+	rotation			120 -230
+
+	rotationDelta		3 -3
+
+	velocity			722 22 0 134 -33 0
+
+	gravity				-400
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.4 0.6
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			21 29
+		end				434 124
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/whitesmoke
+	]
+}
+
+Tail
+{
+	name				Copy of Unnamed Tail 0
+
+	flags				relative
+
+	spawnFlags			orgOnCylinder
+
+	count				0 2
+
+	life				100
+
+	origin				363 1 0 363 0 0
+
+	radius				2
+
+	velocity			1220 0 0
+
+	alpha
+	{
+		end				0.5 0.4
+		flags			linear
+	}
+
+	size
+	{
+		start			23 31
+		end				80
+		flags			linear
+	}
+
+	length
+	{
+		start			13
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/mg42a
+	]
+}

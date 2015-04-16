@@ -1,0 +1,105 @@
+Particle
+{
+	spawnFlags			evenDistribution
+
+	nonUniformScale		1
+
+	count				3
+
+	life				1000
+
+	origin				0 134 134 0 -134 -134
+
+	rotation			360 -360
+
+	velocity			12 0 0 323 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			1 -1
+		end				100 -100
+		flags			linear
+	}
+
+	size2
+	{
+		start			35
+		end				94 144
+		flags			linear
+	}
+
+	length
+	{
+		start			155
+		end				555
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/fire_wisp1
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	spawnFlags			evenDistribution
+
+	count				3
+
+	life				1000
+
+	origin				0 64 64 0 -64 -64
+
+	rotation			360 -360
+
+	velocity			12 0 0 323 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			13 -13
+		end				200 -200
+		flags			linear
+	}
+
+	size2
+	{
+		start			35
+		end				94 144
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/fire_wisp1
+	]
+}

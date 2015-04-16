@@ -1,0 +1,41 @@
+Particle
+{
+	flags				useAlpha
+
+	life				700 1600
+
+	origin				22 0 0 0 0 0
+
+	rotation			360 -360
+
+	rotationDelta		8 -8
+
+	velocity			355 0 0 255 0 0
+
+	gravity				-122 -222
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			12 17
+		end				30 150
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/snowchunks
+		gfx/effects/mist2
+	]
+}

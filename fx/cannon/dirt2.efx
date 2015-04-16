@@ -1,0 +1,168 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder
+
+	count				10 30
+
+	life				1000
+
+	origin				0 0 12 0 0 -24
+
+	radius				10
+
+	rotation			0 360
+
+	rotationDelta		-223 223
+
+	velocity			1000 100 100 1000 700 700
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			3
+		end				5
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/stonegib1
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				10 30
+
+	life				1000
+
+	radius				10
+
+	rotation			0 360
+
+	rotationDelta		-223 223
+
+	velocity			100 0 222 1000 0 622
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			3 6
+		end				2 4
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/stonegib1
+	]
+}
+
+Emitter
+{
+	flags				useModel usePhysics impactKills emitFx
+
+	spawnFlags			orgOnCylinder
+
+	count				3 6
+
+	life				200 300
+
+	radius				10
+
+	height				122
+
+	angleDelta			12 33 222 -35 222 0
+
+	velocity			1300 500 500 700 -600 -600
+
+	gravity				-900
+
+	density				4
+
+	size
+	{
+		start			1 2
+		end				3 1
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/gib_stone1
+	]
+
+	emitfx
+	[
+		fx/tagged/tail_smoke
+	]
+}
+
+Particle
+{
+	flags				useAlpha
+
+	count				10
+
+	life				600 1000
+
+	rotation			0 360
+
+	rotationDelta		5 -5
+
+	velocity			0 12 0 700 -24 0
+
+	gravity				100
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.3
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10 30
+		end				300 200
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smoke/smoke2
+	]
+}

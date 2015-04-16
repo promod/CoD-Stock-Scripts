@@ -1,0 +1,27 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -88 120 64 ) ( -88 -112 64 ) ( 96 -112 64 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( 32 -40 504 ) ( -40 -40 504 ) ( -40 40 504 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( 104 -112 56 ) ( -96 -112 56 ) ( -40 -40 504 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( 96 120 64 ) ( 96 -112 64 ) ( 32 -40 504 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -96 120 56 ) ( 104 120 56 ) ( 32 40 504 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+( -88 -112 64 ) ( -88 120 64 ) ( -40 40 504 ) common/clipfoliage 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 8 8 0 ) ( -8 8 0 ) ( -8 -8 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -18 -8 372 ) ( -18 8 372 ) ( -2 8 372 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -8 -8 64 ) ( 8 -8 64 ) ( 8 -8 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 10 -8 64 ) ( 10 8 64 ) ( 10 8 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 8 8 64 ) ( -8 8 64 ) ( -8 8 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -6 10 64 ) ( -6 -6 64 ) ( -6 -6 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"origin" "0 0 0"
+"model" "xmodel/tree_spruce_winter"
+}

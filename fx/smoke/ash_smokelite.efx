@@ -1,0 +1,40 @@
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				useAlpha
+
+	life				500
+
+	origin				-10 0 0
+
+	rotation			-90 90
+
+	rotationDelta		-2 2
+
+	velocity			42 0 0 21 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.3
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			15
+		end				60
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smoke/smoke2
+	]
+}

@@ -1,0 +1,70 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\trees\mk\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           HEADQUARTERS
+LANG_ENGLISH        "Headquarters"
+
+REFERENCE           SHUTDOWN_ALLIED_HQ
+LANG_ENGLISH        "Axis have shut down the Allied HQ"
+
+REFERENCE           SHUTDOWN_AXIS_HQ
+LANG_ENGLISH        "Allies have shut down the Axis HQ"
+
+REFERENCE           SETUP_HQ_ALLIED
+LANG_ENGLISH        "Allies have set up their HQ"
+
+REFERENCE           SETUP_HQ_AXIS
+LANG_ENGLISH        "Axis have set up their HQ"
+
+REFERENCE           OBJ_TEXT
+LANG_ENGLISH        "Capture neutral HQs and destroy enemy HQs by staying near them. Gain points by defending your HQ for 45 seconds or by destroying enemy headquarters. First team to %s points wins."
+
+REFERENCE           REINFORCEMENTS
+LANG_ENGLISH        "Reinforcements spawn in %s seconds"
+
+REFERENCE           REINFORCEMENTS_HUD
+LANG_ENGLISH        "Reinforcements: %s"
+
+REFERENCE           INSTANT
+LANG_ENGLISH        "instant"
+
+REFERENCE           SCORED_ALLIES
+LANG_ENGLISH        "Allies scored %s points!"
+
+REFERENCE           SCORED_AXIS
+LANG_ENGLISH        "Axis scored %s points!"
+
+REFERENCE           PRESS_ACTIVATE_TO_SKIP
+LANG_ENGLISH        "Press [{+activate}] to skip"
+
+REFERENCE           CAPTURNING_RADIO
+LANG_ENGLISH        "Capturing radio..."
+
+REFERENCE           DESTROYING_RADIO
+LANG_ENGLISH        "Destroying radio..."
+
+REFERENCE           LOSING_RADIO
+LANG_ENGLISH        "Your radio is being destroyed!"
+
+REFERENCE           MAXHOLDTIME_ALLIES
+LANG_ENGLISH        "Allies held the radio for the maximum time of 4.5 minutes!"
+
+REFERENCE           MAXHOLDTIME_AXIS
+LANG_ENGLISH        "Axis held the radio for the maximum time of 4.5 minutes!"
+
+
+ENDMARKER
+
+

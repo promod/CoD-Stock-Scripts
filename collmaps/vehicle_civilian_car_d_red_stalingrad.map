@@ -1,0 +1,70 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -54 31 9 ) ( -60 31 9 ) ( -60 -33 9 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -60 -33 20 ) ( -60 31 20 ) ( -54 31 20 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -60 -33 20 ) ( -54 -33 20 ) ( -54 -33 9 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -54 -33 20 ) ( -54 31 20 ) ( -54 31 9 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -54 31 20 ) ( -60 31 20 ) ( -60 31 9 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -60 31 20 ) ( -60 -33 20 ) ( -60 -33 9 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 22 23 0 ) ( -54 23 0 ) ( -54 13 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -54 13 67 ) ( -54 23 67 ) ( 22 23 67 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -57 -33 69 ) ( 19 -33 69 ) ( 19 -33 2 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 22 13 67 ) ( 22 23 67 ) ( 22 23 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 23 31 67 ) ( -53 31 67 ) ( -53 31 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -54 23 67 ) ( -54 13 67 ) ( -54 13 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 17 0 63 ) ( -17 0 67 ) ( -17 32 67 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 22 0 58 ) ( 18 0 63 ) ( 18 32 63 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 2
+{
+( 69 67 25 ) ( 60 67 25 ) ( 60 4 25 ) common/clip_nosight_metal 0 16 0 0.25 0.25 0 0 0 0
+( 60 10 34 ) ( 60 73 34 ) ( 69 73 34 ) common/clip_nosight_metal 0 16 0 0.25 0.25 0 0 0 0
+( 60 13 32 ) ( 69 13 32 ) ( 69 13 20 ) common/clip_nosight_metal 0 4 0 0.25 0.25 0 0 0 0
+( 69 4 37 ) ( 69 67 37 ) ( 69 67 25 ) common/clip_nosight_metal -16 4 0 0.25 0.25 0 0 0 0
+( 69 23 36 ) ( 60 23 36 ) ( 60 23 24 ) common/clip_nosight_metal 0 4 0 0.25 0.25 0 0 0 0
+( 60 67 37 ) ( 60 4 37 ) ( 60 4 25 ) common/clip_nosight_metal -16 4 0 0.25 0.25 0 0 0 0
+}
+// brush 3
+{
+( 69 30 24 ) ( 60 30 24 ) ( 60 -33 24 ) common/clip_nosight_metal 0 -4 0 0.25 0.25 0 0 0 0
+( 60 -27 33 ) ( 60 36 33 ) ( 69 36 33 ) common/clip_nosight_metal 0 -4 0 0.25 0.25 0 0 0 0
+( 60 -24 31 ) ( 69 -24 31 ) ( 69 -24 19 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 69 -33 36 ) ( 69 30 36 ) ( 69 30 24 ) common/clip_nosight_metal 4 0 0 0.25 0.25 0 0 0 0
+( 69 -14 35 ) ( 60 -14 35 ) ( 60 -14 23 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 60 30 36 ) ( 60 -33 36 ) ( 60 -33 24 ) common/clip_nosight_metal 4 0 0 0.25 0.25 0 0 0 0
+}
+// brush 4
+{
+( 69 31 0 ) ( 36 31 0 ) ( 36 -32 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 36 -32 30 ) ( 36 31 30 ) ( 69 31 30 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 36 -32 46 ) ( 69 -32 46 ) ( 69 -32 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 69 -32 46 ) ( 69 31 46 ) ( 69 31 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 69 31 46 ) ( 36 31 46 ) ( 36 31 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 34 31 46 ) ( 34 -32 46 ) ( 34 -32 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 37 0 26 ) ( 34 0 19 ) ( 34 32 19 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 45 0 30 ) ( 38 0 26 ) ( 38 32 26 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 65 0 26 ) ( 58 0 29 ) ( 58 32 29 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 70 0 20 ) ( 67 0 24 ) ( 67 32 24 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 5
+{
+( 71 -19 0 ) ( -59 -19 0 ) ( -59 -32 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 22 -32 46 ) ( 22 -19 46 ) ( 152 -19 46 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 71 -32 28 ) ( 71 -19 28 ) ( 71 -19 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 22 -19 46 ) ( 22 -32 46 ) ( 22 -32 18 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 71 0 39 ) ( 23 0 46 ) ( 23 32 46 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 22 25 0 ) ( 66 11 0 ) ( 22 25 32 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 66 -13 0 ) ( 23 -28 0 ) ( 66 -13 32 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/vehicle_civilian_car_d_blue"
+"origin" "0 0 0"
+}

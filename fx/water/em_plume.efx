@@ -1,0 +1,56 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation
+
+	nonUniformScale		1
+
+	life				400 600
+
+	origin				22 0 0 0 0 0
+
+	rotation			-5 5
+
+	rotationDelta		1 -1
+
+	velocity			12 34 0 1 -43 0
+
+	rgb
+	{
+		start			1 0.9843 0.9412
+		end				0.8235 0.8745 0.8627
+		flags			random linear
+	}
+
+	alpha
+	{
+		start			0.7 0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			54 14
+		end				500 200
+		flags			linear
+	}
+
+	size2
+	{
+		start			622
+		end				2
+	}
+
+	length
+	{
+		end				1222 2222
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/watersheet1a
+	]
+}

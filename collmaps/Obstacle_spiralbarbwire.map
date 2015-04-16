@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 8 40 0 ) ( -8 40 0 ) ( -8 -56 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -8 -56 24 ) ( -8 40 24 ) ( 8 40 24 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -8 -62 24 ) ( 8 -62 24 ) ( 8 -62 -8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 10 -56 24 ) ( 10 40 24 ) ( 10 40 -8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 8 52 26 ) ( -8 52 26 ) ( -8 52 -6 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -10 40 24 ) ( -10 -56 24 ) ( -10 -56 -8 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/obstacle_spiralbarbwire"
+"origin" "0 0 0"
+}

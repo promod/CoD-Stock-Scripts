@@ -1,0 +1,98 @@
+Particle
+{
+	flags				relative
+
+	count				6
+
+	life				100
+
+	origin				0 0 0 19 0 0
+
+	rotation			360 -360
+
+	rotationDelta		3 -3
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				10
+		flags			linear
+	}
+
+	size2
+	{
+		end				12
+		flags			linear
+	}
+
+	length
+	{
+		start			12
+		end				275
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/muzflash2a_sn
+	]
+}
+
+Light
+{
+	flags				depthHack
+
+	life				100
+
+	rgb
+	{
+		start			0.9804 0.9373 0.8118
+		end				0.9765 0.949 0.651
+		flags			linear
+	}
+
+	size
+	{
+		start			200
+		flags			random linear
+	}
+}
+
+Particle
+{
+	flags				depthHack useAlpha
+
+	life				400
+
+	rotation			-360 360
+
+	rotationDelta		2 -2
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.3
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				10 20
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/whitesmoke
+	]
+}

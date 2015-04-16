@@ -1,0 +1,9 @@
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/woodgib_medium"
+"origin" "0 0 0"
+}

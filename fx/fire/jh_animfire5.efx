@@ -1,0 +1,55 @@
+Particle
+{
+	name				centerflameparticle
+
+	flags				useAlpha
+
+	nonUniformScale		1
+
+	life				1000
+
+	delay				1000
+
+	origin				64 0 0
+
+	radius				0
+
+	rgb
+	{
+		start			0.1647 0.1647 0.1647
+		end				0.1647 0.1647 0.1647
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.2
+		end				0.2
+	}
+
+	size
+	{
+		start			48
+		end				48
+		flags			linear
+	}
+
+	size2
+	{
+		start			112 128
+		end				112 128
+		flags			linear
+	}
+
+	length
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/animated/jh_animfire
+	]
+}

@@ -1,0 +1,12 @@
+{
+	surfaceparm glass
+	surfaceparm trans
+	sort innerBlend
+	{
+		map $texturename
+		rgbGen exactVertex
+		blendfunc blend
+	nextbundle
+		map $lightmap
+	}
+}

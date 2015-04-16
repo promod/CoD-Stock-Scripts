@@ -1,0 +1,85 @@
+Particle
+{
+	life				1000
+
+	rotation			360
+
+	rotationDelta		12 10
+
+	velocity			12 -123 64 0 -123 64
+
+	gravity				-100 0
+
+	rgb
+	{
+		end				0.6275 0.6275 0.6431
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				100
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/riverspray1
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	life				1000
+
+	rotation			36 360
+
+	rotationDelta		12 10
+
+	velocity			12 -123 64 0 -123 64
+
+	gravity				-100 0
+
+	rgb
+	{
+		end				0.6275 0.6275 0.6431
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				100
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/waterspay
+	]
+}

@@ -1,0 +1,12 @@
+{
+	surfaceparm metal
+	surfaceparm nonsolid
+	polygonOffset
+	{
+		map $texturename
+		blendFunc blend
+		rgbGen exactVertex
+	nextbundle
+		map $lightmap
+	}
+}

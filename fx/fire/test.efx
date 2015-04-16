@@ -1,0 +1,29 @@
+FxRunner
+{
+	spawnFlags			axisFromSphere
+
+	count				2 3
+
+	origin				-15 333 0 -15 -333 0
+
+	playfx
+	[
+		fx/fire/stage1
+	]
+}
+
+FxRunner
+{
+	name				Copy of Unnamed FxRunner 1
+
+	spawnFlags			axisFromSphere
+
+	count				2 3
+
+	origin				-15 333 0 -15 -333 0
+
+	playfx
+	[
+		fx/fire/stage1
+	]
+}

@@ -1,0 +1,14 @@
+{
+	{
+		map $texturename
+		blendfunc GE128
+		rgbGen lightingDiffuse
+	}
+	{	// glowing additive layer
+		depthfunc equal
+		map $whiteimage
+		blendFunc GL_ONE GL_ONE
+//		rgbGen wave sin 0.11 0.11 0 0.45
+		rgbGen wave sin 0.11 0.31 0 0.8
+	}
+}

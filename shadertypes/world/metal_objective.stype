@@ -1,0 +1,22 @@
+{
+	surfaceparm metal
+	{
+		map $texturename
+		rgbGen exactVertex
+	}
+	{
+		map $lightmap
+		blendFunc filter
+	}
+	{
+		map $whiteimage
+		rgbgen constLighting ( 0.10 0.079 0.031 )
+		blendFunc add
+	}
+	{
+		map $whiteimage
+		rgbgen constLighting ( 0.10 0.079 0.031  )
+		alphaGen wave sin -0.1 1.1 0 .5
+		blendFunc GL_SRC_ALPHA GL_ONE
+	}
+}

@@ -1,0 +1,19 @@
+{
+"model" "xmodel/crate_champagne3"
+"classname" "worldspawn"
+// brush 0
+{
+( 7 13 0 ) ( -7 13 0 ) ( -7 -12 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -7 -12 15 ) ( -7 13 15 ) ( 7 13 15 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -7 -13 15 ) ( 7 -13 15 ) ( 7 -13 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 7 -12 15 ) ( 7 13 15 ) ( 7 13 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 7 13 15 ) ( -7 13 15 ) ( -7 13 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -7 13 15 ) ( -7 -12 15 ) ( -7 -12 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/crate_champagne3"
+"classname" "misc_model"
+}

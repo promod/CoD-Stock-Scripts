@@ -1,0 +1,27 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 55 48 418 ) ( -39 48 418 ) ( -39 -54 418 ) common/clipfoliage 0 20 0 0.25 0.25 0 0 0 0
+( -45 -54 598 ) ( -45 48 598 ) ( 49 48 598 ) common/clipfoliage 0 20 0 0.25 0.25 0 0 0 0
+( -45 -54 483 ) ( 49 -54 483 ) ( 49 -54 6 ) common/clipfoliage 0 24 0 0.25 0.25 0 0 0 0
+( 49 -51 717 ) ( 49 51 717 ) ( 49 51 240 ) common/clipfoliage -20 24 0 0.25 0.25 0 0 0 0
+( 49 48 483 ) ( -45 48 483 ) ( -45 48 6 ) common/clipfoliage 0 24 0 0.25 0.25 0 0 0 0
+( -45 48 483 ) ( -45 -54 483 ) ( -45 -54 6 ) common/clipfoliage -20 24 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 16 8 0 ) ( -8 8 0 ) ( -8 -8 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -8 -8 477 ) ( -8 8 477 ) ( 16 8 477 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -8 -6 664 ) ( 16 -6 664 ) ( 16 -6 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 6 -8 478 ) ( 6 8 478 ) ( 6 8 -186 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 16 5 665 ) ( -8 5 665 ) ( -8 5 1 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -6 8 664 ) ( -6 -8 664 ) ( -6 -8 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/hurtgentalla"
+"origin" "0 0 0"
+}

@@ -1,0 +1,29 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -72 44 53 ) ( -72 -44 53 ) ( -96 -44 24 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -96 44 24 ) ( -96 -44 24 ) ( -96 -44 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 111 0 21 ) ( 84 0 49 ) ( 111 32 21 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 112 42 7 ) ( -96 42 7 ) ( -96 42 -1 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 111 -48 8 ) ( 111 48 8 ) ( 111 48 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -96 -41 8 ) ( 112 -41 8 ) ( 112 -41 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -72 -44 53 ) ( -72 44 53 ) ( 80 44 53 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 112 48 0 ) ( -96 48 0 ) ( -96 -48 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( -63 30 53 ) ( -63 -30 53 ) ( 38 -30 53 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -42 -30 74 ) ( -42 30 74 ) ( 22 30 74 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -96 -31 53 ) ( 112 -31 53 ) ( 112 -31 45 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 112 30 51 ) ( -96 30 51 ) ( -96 30 43 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -42 30 74 ) ( -42 -30 74 ) ( -63 -30 53 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 22 -30 74 ) ( 22 30 74 ) ( 38 30 53 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/vehicle_peugeot_static"
+"origin" "0 0 0"
+}

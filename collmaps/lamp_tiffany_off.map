@@ -1,0 +1,32 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 2 2 15 ) ( -2 2 15 ) ( -2 -2 15 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -2 -2 22 ) ( -2 2 22 ) ( 2 2 22 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 8 -8 0 ) ( 0 -12 0 ) ( 0 -12 32 ) common/clip_nosight 0 60 0 0.25 0.25 0 0 0 0
+( 12 0 0 ) ( 8 -8 0 ) ( 8 -8 32 ) common/clip_nosight 0 60 0 0.25 0.25 0 0 0 0
+( 8 8 0 ) ( 12 0 0 ) ( 12 0 32 ) common/clip_nosight 0 60 0 0.25 0.25 0 0 0 0
+( 0 12 0 ) ( 8 8 0 ) ( 8 8 32 ) common/clip_nosight 0 60 0 0.25 0.25 0 0 0 0
+( -9 8 0 ) ( 0 12 0 ) ( 0 12 32 ) common/clip_nosight 0 60 0 0.25 0.25 0 0 0 0
+( -8 8 0 ) ( 0 12 0 ) ( 0 12 32 ) common/clip_nosight 0 60 0 0.25 0.25 0 0 0 0
+( -12 0 0 ) ( -8 8 0 ) ( -8 8 32 ) common/clip_nosight 0 60 0 0.25 0.25 0 0 0 0
+( -8 -8 0 ) ( -12 0 0 ) ( -12 0 32 ) common/clip_nosight 0 60 0 0.25 0.25 0 0 0 0
+( 0 -12 0 ) ( -8 -8 0 ) ( -8 -8 32 ) common/clip_nosight 0 60 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 2 2 0 ) ( -2 2 0 ) ( -2 -2 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -2 -2 15 ) ( -2 2 15 ) ( 2 2 15 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -2 -2 23 ) ( 2 -2 23 ) ( 2 -2 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 2 -1 23 ) ( 2 3 23 ) ( 2 3 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 2 2 23 ) ( -2 2 23 ) ( -2 2 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -2 2 23 ) ( -2 -2 23 ) ( -2 -2 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"model" "xmodel/lamp_tiffany_off"
+"origin" "0 0 0"
+"classname" "misc_model"
+}

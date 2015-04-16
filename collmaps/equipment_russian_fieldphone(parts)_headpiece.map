@@ -1,0 +1,9 @@
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"model" "xmodel/equipment_russian_fieldphone(parts)_headpiece"
+"origin" "0 0 0"
+"classname" "misc_model"
+}

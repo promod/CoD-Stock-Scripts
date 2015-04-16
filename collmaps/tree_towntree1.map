@@ -1,0 +1,27 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 32 40 40 ) ( -24 40 40 ) ( -24 -40 40 ) common/clipfoliage -32 0 0 0.25 0.25 0 0 0 0
+( -24 -40 152 ) ( -24 40 152 ) ( 32 40 152 ) common/clipfoliage -32 0 0 0.25 0.25 0 0 0 0
+( -24 -40 64 ) ( 32 -40 64 ) ( 32 -40 56 ) common/clipfoliage -32 96 0 0.25 0.25 0 0 0 0
+( 32 -40 64 ) ( 32 40 64 ) ( 32 40 56 ) common/clipfoliage 0 96 0 0.25 0.25 0 0 0 0
+( 32 40 64 ) ( -24 40 64 ) ( -24 40 56 ) common/clipfoliage -32 96 0 0.25 0.25 0 0 0 0
+( -32 40 64 ) ( -32 -40 64 ) ( -32 -40 56 ) common/clipfoliage 0 96 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 4 54 -2 ) ( -4 54 -2 ) ( -4 -54 -2 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -4 -54 126 ) ( -4 54 126 ) ( 4 54 126 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -4 -4 124 ) ( 4 -4 124 ) ( 4 -4 -4 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( 4 -54 126 ) ( 4 54 126 ) ( 4 54 -2 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( 4 4 130 ) ( -4 4 130 ) ( -4 4 2 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -4 54 126 ) ( -4 -54 126 ) ( -4 -54 -2 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/tree_towntree1"
+"classname" "misc_model"
+}

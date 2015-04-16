@@ -1,0 +1,43 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			axisFromSphere rgbComponentInterpolation
+
+	life				2000
+
+	radius				4 18
+
+	height				50 32
+
+	rotation			360 -360
+
+	rotationDelta		2 -2
+
+	velocity			0 65 65 10 -65 -65
+
+	rgb
+	{
+		start			0.3765 0.3333 0.2902
+		end				0.6275 0.6275 0.6431 0.3765 0.3333 0.2902
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			4 1
+		end				300 200
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/whitesmoke
+	]
+}

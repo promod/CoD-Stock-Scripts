@@ -1,0 +1,175 @@
+Emitter
+{
+	flags				emitFx
+
+	count				2
+
+	life				100
+
+	origin				-143 0 0
+
+	velocity			5322 2221 -2221 5322 -2221 2221
+
+	density				4
+
+	variance			43 66
+
+	emitfx
+	[
+		fx/explosions/ground
+	]
+}
+
+FxRunner
+{
+	count				2
+
+	delay				54
+
+	playfx
+	[
+		fx/explosions/firestraight1
+	]
+}
+
+Particle
+{
+}
+
+Particle
+{
+	count				4
+
+	life				1000
+
+	delay				55
+
+	origin				280 32 32 480 -32 -32
+
+	rotation			360 -360
+
+	rotationDelta		2 -2
+
+	velocity			131 32 32 312 -32 -32
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10
+		end				100 200
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/hotspot
+		gfx/effects/fire/smallfill
+	]
+}
+
+FxRunner
+{
+	count				2
+
+	playfx
+	[
+		fx/explosions/new_emsmokerunner
+	]
+}
+
+Particle
+{
+	count				2
+
+	life				100
+
+	origin				0 -42 42 33 42 -42
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				22 65
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/flash1
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 5
+
+	count				2
+
+	life				100
+
+	origin				0 -42 42 33 42 -42
+
+	rotation			360 -3600
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				122 165
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion/explosion_1
+	]
+}
+
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				13
+
+	life				1000
+
+	delay				122
+
+	rotation			360 -360
+
+	rotationDelta		2 -2
+
+	velocity			233 0 0 176 0 0
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				100
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/dark_smoke
+	]
+}

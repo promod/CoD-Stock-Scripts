@@ -1,0 +1,15 @@
+{
+	surfaceparm cloth
+	surfaceparm trans
+	//nomipmaps
+	//nopicmip
+	cull disable
+	{
+		map $texturename
+		rgbGen exactVertex
+		blendfunc blend
+		//depthWrite
+	nextbundle
+		map $lightmap
+	}
+}

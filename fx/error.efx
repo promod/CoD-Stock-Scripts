@@ -1,0 +1,24 @@
+Emitter
+{
+	flags				emitFx
+
+	life				200
+
+	velocity			4611 333 333 4611 -333 -333
+
+	density				4
+
+	variance			44
+
+	size
+	{
+		end				133
+		parm			4
+		flags			wave
+	}
+
+	emitfx
+	[
+		fx/test/morsecode_dot
+	]
+}

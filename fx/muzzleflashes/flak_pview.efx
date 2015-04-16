@@ -1,0 +1,188 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			axisFromSphere
+
+	count				1 0
+
+	life				1200 1500
+
+	cullrange			1000
+
+	origin				121 0 0 155 0 0
+
+	radius				100 43
+
+	height				33 122
+
+	rotation			360 -360
+
+	rotationDelta		2 -2
+
+	velocity			0 22 22 0 -22 -22
+
+	gravity				-100
+
+	rgb
+	{
+		start			0.7647 0.7647 0.7647
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.3 0.4
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				134 124
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion/smokeplume1
+	]
+}
+
+FxRunner
+{
+	origin				323 0 0
+
+	playfx
+	[
+		fx/tagged/verlingtracer
+	]
+}
+
+Particle
+{
+	flags				relative
+
+	life				100
+
+	origin				64 0 0
+
+	rotation			360 -360
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			50
+		end				70
+		flags			linear
+	}
+
+	size2
+	{
+		start			122
+		end				12
+		flags			linear
+	}
+
+	length
+	{
+		end				12
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/muzflash2a
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 5
+
+	flags				relative
+
+	life				100
+
+	origin				84 0 0
+
+	rotation			360 -360
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			30
+		end				60
+	}
+
+	size2
+	{
+		start			122
+		end				12
+		flags			linear
+	}
+
+	length
+	{
+		end				12
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/muzflash2a
+	]
+}
+
+Particle
+{
+	name				Copy of Copy of Unnamed Particl
+
+	flags				relative
+
+	life				100
+
+	origin				100 0 0
+
+	rotation			360 -360
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			30
+		end				60
+	}
+
+	size2
+	{
+		start			122
+		end				12
+		flags			linear
+	}
+
+	length
+	{
+		end				12
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/muzflash2a
+	]
+}

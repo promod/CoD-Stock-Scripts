@@ -1,0 +1,119 @@
+Emitter
+{
+	flags				useModel impactKills
+
+	spawnFlags			axisFromSphere
+
+	count				11 21
+
+	life				3000
+
+	delay				222 0
+
+	origin				2 35 12 -4 -70 -24
+
+	angleDelta			54 28 100 -108 -4 -100
+
+	velocity			800 0 22 320 0 44
+
+	gravity				-300
+
+	density				4
+
+	size
+	{
+		start			1 5
+		end				1 5
+	}
+
+	models
+	[
+		xmodel/gib_glass1
+	]
+}
+
+Emitter
+{
+	name				Copy of Unnamed Emitter 0
+
+	flags				useModel impactKills
+
+	spawnFlags			axisFromSphere
+
+	count				11 21
+
+	life				3000 2000
+
+	delay				32 0
+
+	origin				2 35 12 -4 -70 -24
+
+	angleDelta			54 28 100 -108 -4 -100
+
+	velocity			1000 0 212 320 0 144
+
+	gravity				-200 -300
+
+	density				4
+
+	size
+	{
+		start			1 5
+		end				1 5
+	}
+
+	models
+	[
+		xmodel/gib_glass2
+	]
+}
+
+Particle
+{
+	flags				useAlpha
+
+	count				11 16
+
+	life				1000
+
+	rotationDelta		11 23
+
+	velocity			1000 0 0 32 0 0
+
+	gravity				300
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.4
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			13 1
+		end				100 400
+		flags			linear
+	}
+
+	size2
+	{
+		flags			linear
+	}
+
+	length
+	{
+		end				1222
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smoke/smoke_frnt
+	]
+}

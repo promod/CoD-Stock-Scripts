@@ -1,0 +1,54 @@
+FxRunner
+{
+	count				1 2
+
+	origin				-43 421 221 -43 -421 -221
+
+	playfx
+	[
+		fx/fire/stage1
+	]
+}
+
+Particle
+{
+	nonUniformScale		1
+
+	life				500 1000
+
+	origin				0 343 43 0 -343 -43
+
+	rotation			23 -23
+
+	rotationDelta		3 -3
+
+	velocity			11 0 0 111 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				233 -233
+		flags			linear
+	}
+
+	size2
+	{
+		end				100
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/firesheet2a
+	]
+}

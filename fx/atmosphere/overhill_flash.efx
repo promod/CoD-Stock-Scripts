@@ -1,0 +1,77 @@
+Particle
+{
+	name				flare
+
+	count				3 1
+
+	life				600
+
+	origin				-55 150 0 -40 -140 -65
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.2
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			1690
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/flash1
+	]
+}
+
+Particle
+{
+	count				2 1
+
+	life				100
+
+	delay				70 0
+
+	origin				0 360 0 0 -350 0
+
+	rgb
+	{
+		flags			random linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0.1
+		flags			linear
+	}
+
+	size
+	{
+		start			1600
+		end				30
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/flash1
+	]
+}
+
+Sound
+{
+	sounds
+	[
+		cloudflash
+	]
+}

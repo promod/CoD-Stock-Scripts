@@ -1,0 +1,198 @@
+Particle
+{
+	flags				useAlpha
+
+	nonUniformScale		1
+
+	count				2
+
+	life				1000
+
+	velocity			211 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				100
+		flags			linear
+	}
+
+	size2
+	{
+		end				230
+		flags			linear
+	}
+
+	length
+	{
+		start			0 1
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/groundblast1dark
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				useAlpha
+
+	nonUniformScale		1
+
+	count				3
+
+	life				1200 1000
+
+	rotation			320 -320
+
+	velocity			245 0 0 145 0 0
+
+	gravity				-400
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				300
+		flags			linear
+	}
+
+	size2
+	{
+		end				-320 420
+		flags			linear
+	}
+
+	length
+	{
+		start			100
+		end				1000
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/groundblastdark_gib
+	]
+}
+
+Particle
+{
+	flags				useAlpha
+
+	count				14
+
+	life				1000
+
+	rotation			-360 360
+
+	rotationDelta		12 -12
+
+	velocity			400 22 12 900 -22 -22
+
+	gravity				-700 -1000
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				160 140
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/groundblastdark_gib
+	]
+}
+
+Particle
+{
+	flags				useAlpha
+
+	count				2
+
+	life				100
+
+	origin				22 17 12 0 -18 -12
+
+	rgb
+	{
+		start			0.7608 0.4353 0.2392
+		end				0.9765 0.949 0.651
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				33 54
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/flash1
+		gfx/effects/groundflash1
+	]
+}
+
+Light
+{
+	life				100
+
+	rgb
+	{
+		start			0.7608 0.4353 0.2392
+		end				0.9765 0.949 0.651
+		flags			random linear
+	}
+
+	size
+	{
+		start			600
+		flags			linear
+	}
+}

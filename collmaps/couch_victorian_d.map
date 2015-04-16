@@ -1,0 +1,63 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -13 32 0 ) ( -19 32 0 ) ( -19 28 0 ) common/clip_nosight_nothing -16 0 0 0.25 0.25 0 0 0 0
+( -19 28 42 ) ( -19 32 42 ) ( -13 32 42 ) common/clip_nosight_nothing -16 0 0 0.25 0.25 0 0 0 0
+( -19 28 42 ) ( -13 28 42 ) ( -13 28 0 ) common/clip_nosight_nothing -16 0 0 0.25 0.25 0 0 0 0
+( -13 28 42 ) ( -13 32 42 ) ( -13 32 0 ) common/clip_nosight_nothing -16 0 0 0.25 0.25 0 0 0 0
+( -13 32 42 ) ( -19 32 42 ) ( -19 32 0 ) common/clip_nosight_nothing -16 0 0 0.25 0.25 0 0 0 0
+( -19 32 42 ) ( -19 28 42 ) ( -19 28 0 ) common/clip_nosight_nothing -16 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( -20 0 0 ) ( -26 0 0 ) ( -26 0 36 ) common/clip_nosight_nothing 8 0 0 0.25 0.25 0 0 0 0
+( -19 28 0 ) ( -19 28 42 ) ( -26 0 36 ) common/clip_nosight_nothing 8 0 0 0.25 0.25 0 0 0 0
+( -18 28 0 ) ( -12 28 0 ) ( -13 28 42 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -13 28 42 ) ( -13 28 0 ) ( -20 0 0 ) common/clip_nosight_nothing 8 0 0 0.25 0.25 0 0 0 0
+( -19 28 42 ) ( -13 28 42 ) ( -20 0 36 ) common/clip_nosight_nothing 0 -8 0 0.25 0.25 0 0 0 0
+( -13 28 0 ) ( -19 28 0 ) ( -26 0 0 ) common/clip_nosight_nothing 0 -8 0 0.25 0.25 0 0 0 0
+}
+// brush 2
+{
+( -26 0 0 ) ( -20 0 0 ) ( -20 0 36 ) common/clip_nosight_nothing 8 0 0 0.25 0.25 0 0 0 0
+( -19 -42 0 ) ( -26 0 0 ) ( -26 0 36 ) common/clip_nosight_nothing 8 0 0 0.25 0.25 0 0 0 0
+( -20 0 0 ) ( -13 -42 0 ) ( -13 -42 27 ) common/clip_nosight_nothing 8 0 0 0.25 0.25 0 0 0 0
+( -13 -42 0 ) ( -19 -42 0 ) ( -19 -42 27 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -13 -42 27 ) ( -19 -42 27 ) ( -26 0 36 ) common/clip_nosight_nothing 0 -8 0 0.25 0.25 0 0 0 0
+( -26 0 0 ) ( -19 -42 0 ) ( -13 -42 0 ) common/clip_nosight_nothing 0 -8 0 0.25 0.25 0 0 0 0
+}
+// brush 3
+{
+( -13 -42 0 ) ( 10 -42 0 ) ( 14 32 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( 10 -42 5 ) ( -13 -42 5 ) ( -13 32 19 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( 10 -42 0 ) ( -13 -42 0 ) ( -13 -42 5 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( 14 33 19 ) ( 14 33 0 ) ( 10 -40 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( 14 32 19 ) ( -13 32 19 ) ( -13 32 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -13 40 48 ) ( -13 -40 48 ) ( -13 -40 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 4
+{
+( 20 107 0 ) ( -12 107 0 ) ( -12 27 0 ) common/clip_nosight_nothing -16 -52 0 0.25 0.25 0 0 0 0
+( 14 32 29 ) ( 14 28 29 ) ( -13 28 42 ) common/clip_nosight_nothing -16 -52 0 0.25 0.25 0 0 0 0
+( -12 28 48 ) ( 20 28 48 ) ( 20 28 0 ) common/clip_nosight_nothing -16 0 0 0.25 0.25 0 0 0 0
+( 14 28 29 ) ( 14 32 29 ) ( 14 32 0 ) common/clip_nosight_nothing 52 0 0 0.25 0.25 0 0 0 0
+( 28 32 48 ) ( -4 32 48 ) ( -4 32 0 ) common/clip_nosight_nothing -16 0 0 0.25 0.25 0 0 0 0
+( -13 32 42 ) ( -13 28 42 ) ( -13 28 0 ) common/clip_nosight_nothing 52 0 0 0.25 0.25 0 0 0 0
+}
+// brush 5
+{
+( -13 -42 0 ) ( 10 -42 0 ) ( 10 -35 0 ) common/clip_nosight_nothing 0 24 0 0.25 0.25 0 0 0 0
+( -14 -45 18 ) ( -14 35 18 ) ( 18 35 18 ) common/clip_nosight_nothing 0 24 0 0.25 0.25 0 0 0 0
+( 10 -42 0 ) ( -13 -42 0 ) ( -13 -42 18 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( 10 -43 18 ) ( 10 -38 18 ) ( 10 -36 0 ) common/clip_nosight_nothing -24 0 0 0.25 0.25 0 0 0 0
+( 16 -37 18 ) ( -19 -37 18 ) ( -19 -35 0 ) common/clip_nosight_nothing 0 0 0 0.25 0.25 0 0 0 0
+( -13 -37 18 ) ( -13 -42 18 ) ( -13 -40 0 ) common/clip_nosight_nothing -24 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/couch_victorian_d"
+"origin" "0 0 0"
+}

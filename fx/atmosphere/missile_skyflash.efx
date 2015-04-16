@@ -1,0 +1,12 @@
+FxRunner
+{
+	count				3
+
+//	origin				1.9e+004 2.1e+004 1200 5000 -2.1e+004 -1000
+	origin				0 0 0 0 0 0
+
+	playfx
+	[
+		fx/atmosphere/rockets_altocloud
+	]	
+}

@@ -1,0 +1,136 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -59 114 0 ) ( -85 84 0 ) ( -17 28 0 ) common/clipmonster -54 -42 50 0.25001 0.25 0 0 0 0
+( -17 28 99 ) ( -85 84 99 ) ( -59 114 99 ) common/clipmonster -54 -42 50 0.25001 0.25 0 0 0 0
+( -17 28 35 ) ( 10 56 35 ) ( 10 56 0 ) common/clipmonster -32 0 0 0.181786 0.25 0 0 0 0
+( 10 56 35 ) ( -59 114 35 ) ( -59 114 0 ) common/clipmonster 80 0 -180 0.19254 -0.25 0 0 0 0
+( -25 82 35 ) ( -47 52 35 ) ( -47 52 0 ) common/clipmonster -72 0 0 0.193237 0.25 0 0 0 0
+( -38 72 35 ) ( 30 14 35 ) ( 30 14 0 ) common/clipmonster 127 0 -180 0.19216 -0.25 0 0 0 0
+}
+// brush 1
+{
+( 3 90 0 ) ( -34 79 0 ) ( -8 -6 0 ) common/clipmonster 25 -50 17 0.250007 0.25 0 0 0 0
+( -8 -6 99 ) ( -34 79 99 ) ( 3 90 99 ) common/clipmonster 25 -50 17 0.250007 0.25 0 0 0 0
+( -8 -6 35 ) ( 30 4 35 ) ( 30 4 0 ) common/clipmonster -102 0 0 0.243784 0.25 0 0 0 0
+( 30 4 35 ) ( 3 90 35 ) ( 3 90 0 ) common/clipmonster 13 0 0 0.238241 0.25 0 0 0 0
+( 15 55 35 ) ( -20 43 35 ) ( -20 43 0 ) common/clipmonster -45 0 0 0.23238 0.25 0 0 0 0
+( -2 43 99 ) ( 24 -42 99 ) ( 24 -42 64 ) common/clipmonster 20 0 0 0.239781 0.25 0 0 0 0
+}
+// brush 2
+{
+( 43 37 0 ) ( 6 48 0 ) ( -20 -37 0 ) common/clipmonster 25 56 -16 0.250002 0.250003 0 0 0 0
+( -20 -37 99 ) ( 6 48 99 ) ( 43 37 99 ) common/clipmonster 25 56 -16 0.250002 0.250003 0 0 0 0
+( -20 -37 99 ) ( 17 -49 99 ) ( 17 -49 64 ) common/clipmonster -51 0 0 0.241281 0.25 0 0 0 0
+( 17 -49 35 ) ( 43 37 35 ) ( 43 37 0 ) common/clipmonster -19 0 0 0.238697 0.25 0 0 0 0
+( 33 1 35 ) ( -3 11 35 ) ( -3 11 0 ) common/clipmonster 8 0 0 0.236069 0.25 0 0 0 0
+( 12 1 99 ) ( -14 -84 99 ) ( -14 -84 64 ) common/clipmonster -60 0 0 0.239761 0.25 0 0 0 0
+}
+// brush 3
+{
+( 38 -24 0 ) ( 9 1 0 ) ( -50 -65 0 ) common/clipmonster -29 20 -41 0.250002 0.249995 0 0 0 0
+( -50 -65 99 ) ( 9 1 99 ) ( 38 -24 99 ) common/clipmonster -29 20 -41 0.250002 0.249995 0 0 0 0
+( -50 -65 35 ) ( -22 -91 35 ) ( -22 -91 0 ) common/clipmonster 9 0 0 0.185781 0.25 0 0 0 0
+( -22 -91 35 ) ( 38 -24 35 ) ( 38 -24 0 ) common/clipmonster 11 0 0 0.185787 0.25 0 0 0 0
+( 14 -53 35 ) ( -15 -28 35 ) ( -15 -28 0 ) common/clipmonster -54 0 0 0.185787 0.25 0 0 0 0
+( -5 -44 35 ) ( -65 -110 35 ) ( -65 -110 0 ) common/clipmonster 53 0 0 0.185787 0.25 0 0 0 0
+}
+// brush 4
+{
+( 28 20 0 ) ( 28 20 36 ) ( 8 16 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 30 0 0 ) ( 30 0 36 ) ( 28 20 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 10 0 36 ) ( 10 0 0 ) ( 8 16 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 28 0 36 ) ( 8 0 36 ) ( 8 16 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 8 0 0 ) ( 28 0 0 ) ( 28 20 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 30 0 36 ) ( 30 0 0 ) ( 10 0 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+}
+// brush 5
+{
+( 30 0 36 ) ( 30 0 0 ) ( 28 -20 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 8 -12 0 ) ( 8 -12 36 ) ( 28 -20 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 10 0 0 ) ( 10 0 36 ) ( 8 -12 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 28 -16 36 ) ( 8 -20 36 ) ( 8 0 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 8 -16 0 ) ( 28 -16 0 ) ( 28 0 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 30 0 0 ) ( 30 0 36 ) ( 10 0 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+}
+// brush 6
+{
+( -36 -70 0 ) ( -24 -86 0 ) ( -12 -78 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -24 -62 32 ) ( -12 -78 32 ) ( -24 -88 12 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -36 -72 36 ) ( -36 -72 0 ) ( -24 -62 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -36 -72 12 ) ( -24 -88 12 ) ( -24 -88 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -24 -88 0 ) ( -24 -88 36 ) ( -12 -78 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -12 -78 32 ) ( -24 -62 32 ) ( -24 -62 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+}
+// brush 7
+{
+( -24 -60 0 ) ( -12 -76 0 ) ( 0 -68 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -12 -78 32 ) ( -24 -62 32 ) ( -12 -52 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -24 -62 36 ) ( -24 -62 0 ) ( -12 -52 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -24 -62 32 ) ( -12 -78 32 ) ( -12 -78 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -12 -78 0 ) ( -12 -78 36 ) ( 0 -68 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 0 -68 0 ) ( 0 -68 36 ) ( -12 -52 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+}
+// brush 8
+{
+( -16 -56 0 ) ( 4 -64 0 ) ( 20 -44 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 4 -64 36 ) ( -16 -56 36 ) ( 0 -36 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -12 -52 36 ) ( -12 -52 0 ) ( 0 -36 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -12 -52 0 ) ( -12 -52 36 ) ( 0 -68 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 0 -68 0 ) ( 0 -68 36 ) ( 20 -44 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 20 -44 0 ) ( 20 -44 36 ) ( 0 -36 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+}
+// brush 9
+{
+( 0 -36 0 ) ( 20 -44 0 ) ( 28 -20 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 20 -44 36 ) ( 0 -36 36 ) ( 8 -12 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 0 -36 36 ) ( 0 -36 0 ) ( 8 -12 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 0 -36 0 ) ( 0 -36 36 ) ( 20 -44 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 20 -44 0 ) ( 20 -44 36 ) ( 28 -20 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 28 -20 0 ) ( 28 -20 36 ) ( 8 -12 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+}
+// brush 10
+{
+( 36 48 0 ) ( 12 48 0 ) ( 12 24 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 28 20 36 ) ( 8 12 36 ) ( 0 32 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 8 16 36 ) ( 8 16 0 ) ( 0 32 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 8 16 0 ) ( 8 16 36 ) ( 28 20 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 28 20 0 ) ( 28 20 36 ) ( 20 40 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 20 40 0 ) ( 20 40 36 ) ( 0 32 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+}
+// brush 11
+{
+( 28 60 0 ) ( 4 60 0 ) ( 4 36 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 4 36 36 ) ( 4 60 36 ) ( 28 60 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 0 32 36 ) ( 0 32 0 ) ( -8 44 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 0 32 0 ) ( 0 32 36 ) ( 20 40 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 20 40 0 ) ( 20 40 36 ) ( 8 60 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -8 44 36 ) ( -8 44 0 ) ( 8 60 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+}
+// brush 12
+{
+( 12 76 0 ) ( -12 76 0 ) ( -12 52 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -12 52 36 ) ( -12 76 36 ) ( 12 76 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -8 44 36 ) ( -8 44 0 ) ( -20 56 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 8 60 36 ) ( 8 60 0 ) ( -8 44 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( 8 60 0 ) ( 8 60 36 ) ( -8 76 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -20 56 36 ) ( -20 56 0 ) ( -8 76 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+}
+// brush 13
+{
+( -20 56 36 ) ( -36 68 6 ) ( -28 84 6 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -8 84 0 ) ( -32 84 0 ) ( -32 60 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -28 84 6 ) ( -8 76 36 ) ( -20 56 36 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -20 56 32 ) ( -20 56 0 ) ( -36 68 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -20 56 0 ) ( -20 56 32 ) ( -8 76 32 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -28 84 36 ) ( -28 84 0 ) ( -8 76 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+( -28 84 6 ) ( -36 68 6 ) ( -36 68 0 ) common/clip_nosight_dirt 32 0 0 0.25 0.25 0 0 0 4
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/sandbags_curved"
+"origin" "0 0 0"
+}

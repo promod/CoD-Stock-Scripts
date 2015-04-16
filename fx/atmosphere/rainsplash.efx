@@ -1,0 +1,44 @@
+Particle
+{
+	nonUniformScale		1
+
+	life				100
+
+	rotation			360 -12
+
+	velocity			32 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				5 7
+		flags			linear
+	}
+
+	size2
+	{
+		end				12 7
+		flags			linear
+	}
+
+	length
+	{
+		end				6
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/riverspray1
+	]
+}

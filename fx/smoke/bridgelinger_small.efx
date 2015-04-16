@@ -1,0 +1,13 @@
+FxRunner
+{
+	spawnFlags			evenDistribution
+
+	count				7 8
+
+	delay				3e+004 4e+004
+
+	playfx
+	[
+		fx/smoke/linger_smoke_smaller
+	]
+}

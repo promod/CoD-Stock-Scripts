@@ -1,0 +1,29 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 7 79 -3 ) ( -27 79 -3 ) ( -27 -38 -3 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( -27 -38 32 ) ( -27 79 32 ) ( 7 79 32 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( -27 -38 32 ) ( 7 -38 32 ) ( 7 -38 -3 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( 7 31 18 ) ( 7 31 -3 ) ( 7 -25 -3 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( -34 78 32 ) ( -34 -39 32 ) ( -34 -39 -3 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( -28 0 27 ) ( -34 0 14 ) ( -34 32 14 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( -18 0 32 ) ( -28 0 27 ) ( -28 32 27 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( 6 0 19 ) ( -10 0 32 ) ( -10 32 32 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( -33 35 0 ) ( -28 61 0 ) ( -33 35 32 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( -28 61 0 ) ( -21 76 0 ) ( -28 61 32 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( -16 77 -3 ) ( -16 77 6 ) ( -21 77 6 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( -16 77 6 ) ( -16 77 -3 ) ( 7 31 -3 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( 0 0 32 ) ( 0 24 27 ) ( 32 0 32 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( 0 38 24 ) ( 0 66 11 ) ( 32 38 24 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( 0 -38 18 ) ( 0 -27 32 ) ( 32 -38 18 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( -23 -38 0 ) ( -34 -27 0 ) ( -23 -38 32 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( 7 -25 0 ) ( -15 -38 0 ) ( 7 -25 32 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/cow_dead2"
+"classname" "misc_model"
+}

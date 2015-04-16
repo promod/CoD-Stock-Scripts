@@ -1,0 +1,11 @@
+{
+	surfaceparm snow
+	{
+		map clamp $texturename
+		rgbGen exactVertex
+	}
+	{
+		map $lightmap
+		blendFunc filter
+	}
+}

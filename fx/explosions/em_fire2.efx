@@ -1,0 +1,24 @@
+Particle
+{
+	life				500 600
+
+	rotation			360 -360
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				33 166
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/smallfill
+		gfx/effects/fire/top
+	]
+}

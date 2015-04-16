@@ -1,0 +1,19 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -8 24 73 ) ( -8 -24 73 ) ( -8 -24 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 10 24 73 ) ( -8 24 73 ) ( -8 24 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 10 -24 73 ) ( 10 24 73 ) ( 10 24 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -8 -24 73 ) ( 10 -24 73 ) ( 10 -24 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 10 24 0 ) ( -8 24 0 ) ( -8 -24 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 -24 65 ) ( 0 0 73 ) ( 32 0 73 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 0 73 ) ( 0 24 65 ) ( 32 24 65 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/armoir_d"
+"classname" "misc_model"
+}

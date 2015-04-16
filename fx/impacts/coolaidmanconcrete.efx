@@ -1,0 +1,84 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			evenDistribution rgbComponentInterpolation
+
+	count				3 5
+
+	life				3000 2400
+
+	origin				11 44 44 -11 -44 -44
+
+	height				0 1
+
+	rotation			6 4
+
+	rotationDelta		3
+
+	velocity			6 0 32 11 0 0
+
+	gravity				-100 -111
+
+	rgb
+	{
+		start			1 0.9843 0.9412
+		end				1 0.9843 0.9412
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.6 0.7
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			100 120
+		end				140 160
+		parm			2
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smoke/roller
+	]
+}
+
+Emitter
+{
+	flags				useModel usePhysics
+
+	spawnFlags			cheapOrgCalc
+
+	count				5
+
+	life				2000 3000
+
+	delay				10 100
+
+	origin				44 44 44 -44 -44 -44
+
+	angle				55 55 55 0 0 0
+
+	angleDelta			50 50 50 0 0 0
+
+	velocity			450 64 64 200 -64 -64
+
+	gravity				-800
+
+	size
+	{
+		start			0.1 0.15
+		end				0.1 0.15
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/gib_concrete1
+	]
+}

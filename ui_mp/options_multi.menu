@@ -1,0 +1,518 @@
+#include "ui/menudef.h"
+{
+menuDef 
+{
+	name options_multi
+	fullScreen 0				
+	rect OPTIONS_WINDOW_POS OPTIONS_WINDOW_SIZE				// Size and position of the menu
+	focusColor UI_FOCUS_COLOR			// Menu focus color for text and items
+	soundloop ""
+	onOpen
+	{
+		uiScript loadControls ;
+		exec "setfromcvar ui_name name"
+	}
+	onClose
+	{
+		exec "setfromcvar name ui_name"
+	}
+	onESC 
+	{ 
+		open main;
+		close options_menu;		
+	}
+
+/*
+	itemDef 
+	{
+		name keyBindStatus
+		rect 0 322 640 30 
+		ownerdraw UI_KEYBINDSTATUS
+		text "-"      
+		forecolor 1 .75 0 1
+		textscale .23
+		textalignx 221
+		textalign 1
+		textaligny 20
+		visible 1
+		decoration 
+	}
+*/
+	itemDef 
+	{
+		name credit_back
+		rect 0 0 OPTIONS_WINDOW_SIZE	
+		style WINDOW_STYLE_FILLED
+		border 1
+		bordercolor .5 .5 .5 .5
+		forecolor 1 1 1 1
+		backcolor OPTIONS_WINDOW_BACKCOLOR
+		visible 1
+		decoration
+	}
+	itemDef {
+		name keyBindStatus
+		rect 0 324 360 15 
+		ownerdraw UI_KEYBINDSTATUS
+		text " "      
+		style WINDOW_STYLE_FILLED
+		backcolor OPTIONS_WINDOW_BACKCOLOR
+		forecolor .9 .9 1 1
+		border 1
+		bordercolor .5 .5 .5 .5
+		textscale .20
+		textalignx 168
+		textalign 1
+		textaligny 12
+		visible 0
+		decoration 
+	}
+	
+	itemDef 
+	{
+		name credits_look
+		text "@MENU_MULTIPLAYER_OPTIONS"
+		textscale .23
+		group grpControlbutton
+		type ITEM_TYPE_BUTTON
+		style 0
+		rect 102.5 7 120 10
+		textalign 1
+		textalignx 75
+		textaligny 10
+		forecolor 0.75 0.75 0.75 1
+		visible 1
+		decoration 
+	}
+	itemDef 
+	{
+		name		cdkeybt
+		text		"@MENU_ENTER CD-KEY"
+		type		ITEM_TYPE_BUTTON
+		style		UI_BUTTON_STYLE
+		textstyle	UI_BUTTON_TEXT_STYLE
+		rect		102 50 150 20 
+		textalign	ITEM_ALIGN_CENTER
+		textscale	.3		
+		textalignx	75
+		textaligny	14
+		forecolor	UI_BUTTON_TEXT_COLOR
+		bordercolor	UI_BUTTON_BORDER_COLOR 
+		backcolor	UI_BUTTON_BACK_COLOR
+		border		UI_BUTTON_BORDER
+		visible		1
+		textfont	UI_FONT_NORMAL
+		mouseEnter 
+		{
+			play "mouse_over";
+			setitemcolor cdkeybt backcolor UI_BUTTON_BACK_COLOR_HOVER
+		}
+		mouseExit 
+		{ 
+			setitemcolor cdkeybt backcolor UI_BUTTON_BACK_COLOR 
+		}
+		action 
+		{ 
+			play "mouse_click";
+			open cdkey_menu;
+//			exec "loadgame_continue";
+		}
+	}
+/*
+	itemDef
+	{
+		name misc		
+		type ITEM_TYPE_BIND
+		text "Open Limbo Menu:"
+		cvar "OpenLimboMenu"
+		rect		5 65 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		mouseenter	{ show keyBindStatus }
+		mouseexit	{ hide keyBindStatus }
+    	}
+*/
+/*
+	itemDef
+	{
+		name misc		
+		type ITEM_TYPE_BIND
+		text "@MENU_SHOW_OBJECTIVES_SCORES"
+		cvar "+scores"
+		rect		5 80 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+   	}
+*/
+	itemDef
+	{
+		name misc		
+		type ITEM_TYPE_BIND
+		text "@MENU_VOTE_YES"
+		cvar "vote yes"
+		rect		5 95 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		mouseEnter 
+		{
+			play "mouse_over";
+			show keyBindStatus
+		}
+		mouseexit { hide keyBindStatus }
+		action { play "mouse_click"; }
+    	}
+		itemDef
+	{
+		name misc		
+		type ITEM_TYPE_BIND
+		text "@MENU_VOTE_NO"
+		cvar "vote no"
+		rect		5 110 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		mouseEnter 
+		{
+			play "mouse_over";
+			show keyBindStatus
+		}
+		mouseexit { hide keyBindStatus }
+		action { play "mouse_click"; }
+    	}
+	itemDef
+	{
+		name misc		
+		type ITEM_TYPE_BIND
+		text "@MENU_CHAT"
+		cvar "messagemode"
+		rect		5 125 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		mouseEnter 
+		{
+			play "mouse_over";
+			show keyBindStatus
+		}
+		mouseexit { hide keyBindStatus }
+		action { play "mouse_click"; }
+    	}
+	itemDef
+	{
+		name misc		
+		type ITEM_TYPE_BIND
+		text "@MENU_TEAM_CHAT"
+		cvar "messagemode2"
+		rect		5 140 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		mouseEnter 
+		{
+			play "mouse_over";
+			show keyBindStatus
+		}
+		mouseexit { hide keyBindStatus }
+		action { play "mouse_click"; }
+    	}
+	itemDef
+	{
+		name misc		
+		type ITEM_TYPE_BIND
+		text "@MENU_QUICK_CHAT"
+		cvar "mp_QuickMessage"
+		rect		5 155 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		mouseEnter 
+		{
+			play "mouse_over";
+			show keyBindStatus
+		}
+		mouseexit { hide keyBindStatus }
+		action { play "mouse_click"; }
+    	}
+/*
+	itemDef
+	{
+		name misc		
+		type ITEM_TYPE_BIND
+		text "Quick Chat Mode:"
+		cvar "cg_quickMessageAlt"
+		rect		5 140 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+    	}
+*/
+/*
+	itemDef
+	{
+		name misc		
+		type ITEM_TYPE_MULTI
+		text "@MENU_SHOW_COMPASS"
+		cvar "cg_drawCompass"
+		cvarFloatList { "Off" 0 "On" 1 }
+		rect		5 170 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+    	}
+	itemDef
+	{
+		name misc		
+		type ITEM_TYPE_MULTI
+		text "@MENU_TEAM_OVERLAY"
+		cvar "cg_drawteamoverlay"
+		cvarFloatList { "Off" 0 "Short" 1 "Long" 2 }
+		rect		5 185 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+    	}
+
+	itemDef
+	{
+		name misc		
+		type ITEM_TYPE_MULTI
+		text "@MENU_CHAT_ICON_TIME"
+		cvar "cg_voicespritetime"
+		cvarFloatList { "Short" 3000 "Normal" 6000 "Long" 12000 "Really Long" 24000 }
+		rect		5 200 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+    	}
+*/
+	itemDef
+	{
+		name misc		
+		type ITEM_TYPE_YESNO
+		text "@MENU_ALLOW_DOWNLOAD"
+		cvar "cl_allowdownload"
+//		cvarFloatList { "yes" 1 "no" 0   }
+		rect		5 185 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		action { play "mouse_click"; }
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+    	}
+	itemDef
+	{
+		name misc		
+		type ITEM_TYPE_YESNO
+		text "@MENU_DRAW_HUD"
+		cvar "cg_drawstatus"
+//		cvarFloatList { "yes" 1 "no" 0 }
+		rect		5 200 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		action { play "mouse_click"; }
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+    	}
+	itemDef
+	{
+		name misc		
+		type ITEM_TYPE_YESNO
+		text "@MENU_DRAW_CROSSHAIR"
+		cvar "cg_drawcrosshair"
+//		cvarFloatList { "yes" 1 "no" 0   }
+		rect		5 215 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		action { play "mouse_click"; }
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+    	}
+
+	itemDef
+	{
+		name misc		
+		type ITEM_TYPE_MULTI
+		text "@MENU_CONNECTION"
+		cvar "rate"
+		cvarFloatList { "@MENU_288K" 2500 "@MENU_336K" 3000 "@MENU_56K" 4000 "@MENU_ISDN" 5000 "@MENU_LAN_CABLE_XDSL" 25000  }
+		rect		5 245 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		action { play "mouse_click"; }
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+    	}
+
+	itemDef
+	{
+		name		player_name
+		type		ITEM_TYPE_EDITFIELD
+		text		"@MENU_PLAYER_NAME"
+		cvar		"ui_name"
+		rect		5 260 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1
+//		rect		99 200 256 15		
+//		textalign	ITEM_ALIGN_RIGHT
+//		textalignx	126
+//		textaligny	11
+//		textscale	GLOBAL_TEXTSCALE1
+//		style		0
+//		backcolor	0 0 0 0
+//		forecolor	1 1 1 1
+//		visible		1
+
+		outlinecolor	1 1 0 .5
+		textfont	UI_FONT_NORMAL
+   		border		0
+		bordercolor	.5 .5 .5 .5
+		maxChars	32
+		maxpaintchars	18
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+
+	}
+
+	itemDef
+	{
+		name misc		
+		type ITEM_TYPE_YESNO
+		text "@PATCH_1_3_PUNKBUSTERWITHCOLON"
+		cvar "cl_punkbuster"
+		rect		5 290 OPTIONS_CONTROL_SIZE
+		textalign	ITEM_ALIGN_RIGHT
+		textalignx	OPTIONS_CONTROL_XALIGN 
+		textaligny	OPTIONS_CONTROL_YALIGN
+		textscale	OPTIONS_CONTROL_TXTSCALE
+		style		WINDOW_STYLE_FILLED
+		backcolor	OPTIONS_CONTROL_BACKCOLOR
+		forecolor	OPTIONS_CONTROL_FORECOLOR
+		visible		1 
+		action { play "mouse_click"; }
+		mouseEnter 
+		{
+			play "mouse_over";
+		}
+   	}
+
+}
+
+}//

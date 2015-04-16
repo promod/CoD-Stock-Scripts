@@ -1,0 +1,9 @@
+FxRunner
+{
+	origin				-23 33 43 23 -33 -43
+
+	playfx
+	[
+		fx/fire/em_fire1stalin
+	]
+}

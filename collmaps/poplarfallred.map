@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 4 54 -2 ) ( -4 54 -2 ) ( -4 -54 -2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -4 -50 128 ) ( -4 58 128 ) ( 4 58 128 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -4 -8 122 ) ( 4 -8 122 ) ( 4 -8 -6 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 8 -54 128 ) ( 8 54 128 ) ( 8 54 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 4 10 130 ) ( -4 10 130 ) ( -4 10 2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -6 52 126 ) ( -6 -56 126 ) ( -6 -56 -2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/poplarfallred"
+"classname" "misc_model"
+}

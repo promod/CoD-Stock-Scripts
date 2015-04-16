@@ -1,0 +1,47 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation
+
+	life				1600 3000
+
+	origin				0 12 0 0 -24 0
+
+	rotation			360 -360
+
+	rotationDelta		2 1
+
+	velocity			120 0 0 112 0 0
+
+	gravity				-400 -800
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			43 45
+		end				200 400
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/groundblastdark_gib
+		gfx/impact/dusty_puff
+	]
+}

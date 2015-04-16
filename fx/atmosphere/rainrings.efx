@@ -1,0 +1,39 @@
+OrientedParticle
+{
+	spawnFlags			orgOnSphere
+
+	count				18 6
+
+	life				1400 2100
+
+	delay				120 90
+
+	origin				1 0 0
+
+	radius				880 380
+
+	height				0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.9 0.8
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				55 34
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/watering1
+	]
+}

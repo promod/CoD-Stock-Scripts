@@ -1,0 +1,116 @@
+Emitter
+{
+	flags				useModel usePhysics impactKills
+
+	spawnFlags			axisFromSphere
+
+	count				5 8
+
+	life				3000
+
+	delay				123
+
+	radius				122
+
+	height				133
+
+	angle				220 11 123 90 33 323
+
+	angleDelta			2 12 23 22 12 43
+
+	velocity			1111 -600 -600 900 600 600
+
+	gravity				-1200
+
+	density				4
+
+	variance			260
+
+	size
+	{
+		start			0.02 0.1
+		end				0.15
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/gib_concrete1
+	]
+}
+
+Emitter
+{
+	flags				emitFx
+
+	life				333
+
+	velocity			33 0 0
+
+	density				4
+
+	size
+	{
+		end				13
+		flags			linear
+	}
+
+	emitfx
+	[
+		fx/smoke/cratersmoke_tame
+	]
+}
+
+FxRunner
+{
+	playfx
+	[
+		fx/explosions/exp_fill1_tame
+	]
+}
+
+Emitter
+{
+	name				Copy of Unnamed Emitter 0
+
+	flags				useModel impactKills emitFx
+
+	spawnFlags			axisFromSphere
+
+	count				3 5
+
+	life				3000
+
+	delay				123
+
+	radius				122
+
+	angle				220 11 123 90 33 323
+
+	angleDelta			2 12 23 22 12 43
+
+	velocity			750 -400 -400 600 400 400
+
+	gravity				-1200
+
+	density				33
+
+	variance			222
+
+	size
+	{
+		start			0.08 0.16
+		end				0.2 0.3
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/gib_concrete1
+	]
+
+	emitfx
+	[
+		fx/smoke/whitesmoke_tame
+	]
+}

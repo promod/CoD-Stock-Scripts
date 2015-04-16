@@ -1,0 +1,309 @@
+Emitter
+{
+	flags				useModel usePhysics impactKills
+
+	spawnFlags			orgOnCylinder
+
+	count				12 8
+
+	life				1000
+
+	origin				0 32 43 23 -64 -86
+
+	radius				45
+
+	angleDelta			41 0 3 12 0 0
+
+	velocity			2323 122 233 223 -264 -444
+
+	gravity				-200 -100
+
+	density				4
+
+	variance			0 1
+
+	size
+	{
+		start			1 4
+		end				1 4
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/gib_stone1
+	]
+}
+
+Emitter
+{
+	name				Copy of Unnamed Emitter 0
+
+	flags				expensivePhysics useModel usePhysics
+
+	spawnFlags			orgOnCylinder
+
+	count				1 3
+
+	life				1000
+
+	bounce				2
+
+	origin				0 32 43 0 -64 -86
+
+	velocity			2323 32 0 423 -64 0
+
+	acceleration		0 0 900 0 0 -900
+
+	gravity				-200 0
+
+	density				4
+
+	variance			0 1
+
+	size
+	{
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/gib_stone1
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 4
+
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder
+
+	count				10
+
+	life				1000
+
+	radius				17 62
+
+	rotation			0 360
+
+	rotationDelta		12 32
+
+	velocity			200 43 0 1200 -86 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			56
+		end				600 100
+		flags			linear
+	}
+
+	size2
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	length
+	{
+		end				499
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/dark_smoke
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 4
+
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder rgbComponentInterpolation
+
+	count				10
+
+	life				1000
+
+	origin				0 21 0 0 -42 0
+
+	rotation			0 360
+
+	rotationDelta		12 32
+
+	velocity			200 21 0 1200 -42 0
+
+	rgb
+	{
+		flags			random linear
+	}
+
+	alpha
+	{
+		start			0.1
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			56 1
+		end				600 300
+		flags			linear
+	}
+
+	size2
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	length
+	{
+		start			333
+		end				199
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smoke/smoke2
+	]
+}
+
+Particle
+{
+	flags				usePhysics impactKills useAlpha
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				12
+
+	life				1000 500
+
+	rotation			0 360
+
+	rotationDelta		-92 -32
+
+	velocity			700 0 0 1200 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			3
+		end				13 12
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/stonegib1
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 2
+
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder
+
+	count				5
+
+	life				1000
+
+	rotation			0 -360
+
+	rotationDelta		-12 -32
+
+	velocity			500 0 0 2100 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.3 0.4
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			56 41
+		end				600 400
+		flags			linear
+	}
+
+	size2
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	length
+	{
+		end				199
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/whitesmoke
+	]
+}
+
+Light
+{
+	life				100
+
+	rgb
+	{
+		start			0.9765 0.949 0.651
+		end				0.7608 0.4353 0.2392
+		flags			random linear
+	}
+
+	size
+	{
+		start			100
+		flags			linear
+	}
+}

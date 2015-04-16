@@ -1,0 +1,127 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				6
+
+	life				5000
+
+	radius				32
+
+	height				22
+
+	rotation			360 -360
+
+	rotationDelta		4 -4
+
+	velocity			12 19 19 22 -19 -19
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			25
+		end				75
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/medium_smoke
+	]
+}
+
+Line
+{
+	life				100
+
+	origin2				23 0 0 33 0 0
+
+	alpha
+	{
+		start			0.6 1
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			2
+		end				13
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion1b
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				useAlpha
+
+	count				6
+
+	life				5000
+
+	origin				22 0 0 52 0 0
+
+	radius				32 22
+
+	rotation			360 -360
+
+	rotationDelta		4 -4
+
+	velocity			12 44 44 22 -44 -44
+
+	gravity				-10
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			25
+		end				75
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/medium_smoke
+	]
+}
+
+Emitter
+{
+	flags				emitFx
+
+	life				100
+
+	velocity			4000 0 0
+
+	size
+	{
+		start			0
+		end				0
+	}
+
+	emitfx
+	[
+		fx/muzzleflashes/motarsmoke_em
+	]
+}

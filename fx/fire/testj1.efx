@@ -1,0 +1,25 @@
+Particle
+{
+	name				Copy of Unnamed Particle 2
+
+	life				1000 800
+
+	rotation			360 -360
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			100
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion1a
+	]
+}

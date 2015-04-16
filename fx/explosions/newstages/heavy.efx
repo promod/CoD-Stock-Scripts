@@ -1,0 +1,28 @@
+Particle
+{
+	count				2
+
+	life				500
+
+	origin				0 32 32 0 -32 -32
+
+	rotation			360 -360
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				50 100
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion/explosion_1
+		gfx/effects/fire/hotspot
+	]
+}

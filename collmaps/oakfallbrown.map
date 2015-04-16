@@ -1,0 +1,40 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -4 46 228 ) ( -4 0 228 ) ( -4 0 128 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 18 46 228 ) ( -6 46 228 ) ( -6 46 128 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 12 0 228 ) ( 12 46 228 ) ( 12 46 128 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -10 0 228 ) ( 14 0 228 ) ( 14 0 128 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -6 0 228 ) ( -6 46 228 ) ( 18 46 228 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 14 46 128 ) ( -10 46 128 ) ( -10 0 128 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 46 222 ) ( 0 12 128 ) ( 32 46 222 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 0 144 ) ( 0 16 198 ) ( 32 0 144 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 0 46 114 ) ( -8 46 114 ) ( -8 -62 114 ) common/clip_nosight 0 -72 0 0.25 0.25 0 0 0 0
+( -4 -68 182 ) ( -4 40 182 ) ( 4 40 182 ) common/clip_nosight 0 -72 0 0.25 0.25 0 0 0 0
+( 12 -72 182 ) ( 12 36 182 ) ( 12 36 54 ) common/clip_nosight 72 88 0 0.25 0.25 0 0 0 0
+( 0 0 184 ) ( -8 0 184 ) ( -8 0 56 ) common/clip_nosight 0 88 0 0.25 0.25 0 0 0 0
+( -4 34 180 ) ( -4 -74 180 ) ( -4 -74 52 ) common/clip_nosight 72 88 0 0.25 0.25 0 0 0 0
+( 0 -8 114 ) ( 0 -28 134 ) ( 32 -8 114 ) common/clip_nosight 72 88 0 0.25 0.25 0 0 0 0
+( 0 -26 148 ) ( 0 -28 180 ) ( 32 -26 148 ) common/clip_nosight 72 88 0 0.25 0.25 0 0 0 0
+( -4 -20 180 ) ( -4 -2 142 ) ( 28 -20 180 ) common/clip_nosight 72 88 0 0.25 0.25 0 0 0 0
+}
+// brush 2
+{
+( 4 54 -2 ) ( -4 54 -2 ) ( -4 -54 -2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -4 -50 128 ) ( -4 58 128 ) ( 4 58 128 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -4 -12 122 ) ( 4 -12 122 ) ( 4 -12 -6 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 18 -54 128 ) ( 18 54 128 ) ( 18 54 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 4 12 130 ) ( -4 12 130 ) ( -4 12 2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -6 52 126 ) ( -6 -56 126 ) ( -6 -56 -2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/oakfallbrown"
+"classname" "misc_model"
+}

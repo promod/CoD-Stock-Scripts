@@ -1,0 +1,26 @@
+Emitter
+{
+	flags				emitFx
+
+	life				300
+
+	origin				-21 0 0
+
+	velocity			4211 1222 1222 4211 -1222 -1222
+
+	gravity				-1.68e+004 -1.48e+004
+
+	density				4
+
+	variance			33 44
+
+	size
+	{
+		flags			linear
+	}
+
+	emitfx
+	[
+		fx/smoke/whitesmoke_em
+	]
+}

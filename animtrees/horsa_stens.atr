@@ -1,0 +1,19 @@
+//Glider passengers 10 and 12 - guys with Stens who are really close to the player
+// Also guy4 who is not so close.
+body
+{
+	pegasus_glider_guy12_highturb
+	pegasus_glider_guy12_lowturb
+	pegasus_glider_guy12_lowturb_twitch
+	
+	pegasus_glider_guy04_2ndhalf
+	pegasus_glider_guy10_2ndhalf
+	pegasus_glider_guy12_2ndhalf
+}
+facial
+{
+	PegNight_facial_glider_highturb
+	PegNight_facial_glider_guy12_lowturb
+	PegNight_facial_glider_guy12_highturb
+	PegNight_facial_glider_guy12_lowturb_twitch
+}

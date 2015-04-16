@@ -1,0 +1,643 @@
+#include "ui/menudef.h"
+
+{
+	assetGlobalDef 
+	{
+		consoleFont "fonts/consoleFont" 18		// font
+		smallFont "fonts/smallFont" 12			// font
+		font "fonts/normalFont" 16				// font
+		bigFont "fonts/bigFont" 24				// font
+		extraBigFont "fonts/extraBigFont" 32	// font
+		boldFont "fonts/boldFont" 30			// font
+
+		cursor "ui/assets/3_cursor3"			// cursor	
+//		gradientBar "ui/assets/gradientbar2.tga"	// gradient bar
+//		itemFocusSound "sound/misc/menu2.wav"	
+					// sound for item getting focus (via keyboard or mouse )
+
+		fadeClamp 1.0				// sets the fadeup alpha
+		fadeCycle 1					// how often fade happens in milliseconds
+		fadeAmount 0.1				// amount to adjust alpha per cycle
+		
+		shadowColor 0.1 0.1 0.1 0.25			// shadow color
+	}
+
+	menuDef 
+	{
+		name "main"
+//		background "menuback_cw"		// Spinning Circle Background
+//		fullScreen MENU_TRUE				
+		fullScreen MENU_TRUE
+		rect 0 0 640 480				// Size and position of the menu
+		focusColor UI_FOCUS_COLOR			// Menu focus color for text and items
+		soundloop ""
+					
+		onOpen 
+		{ 
+//			setitemcolor fadebox backcolor 0 0 0 1; 
+			close mods_menu;
+			close options_multi;
+//			play "music_mainmenu";
+//			fadeout fadebox ;
+			uiScript stopRefresh ;
+		}
+		
+		onESC 
+		{ 
+//			open quit_popmenu 
+//			close main
+			close mods_menu;
+			close options_multi;
+			ingameclose main
+//			open quit_popmenu 
+		}
+		
+		// Temp full screen backdrop image
+/*
+		itemDef 
+		{
+			name main_back
+			style WINDOW_STYLE_SHADER
+			rect 0 0 640 480
+			background "main_back"
+			visible 1
+			decoration
+		}
+*/
+		#include "ui_mp/menu_background.menu"		
+////////// GAMETYPE //////////////////////////////////////////////////////// 
+
+
+
+/*
+		//ingame - return to game
+		itemDef 
+		{
+			name resume
+			text "@MENU_JOIN_AN_INTERNET_GAME"
+			type ITEM_TYPE_BUTTON
+			style WINDOW_STYLE_EMPTY
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			rect 385 160 210 15 
+			textalign 0
+			textscale .4		
+			textalignx 0
+			textaligny 14
+			backcolor 0 0 1 1
+			forecolor .9 .9 .9 .9
+			visible 1
+			textfont UI_FONT_NORMAL
+			mouseEnter 
+			{
+				play "mouse_over";
+			}
+			action 
+			{ 
+			//ui_netSource 1
+				play "mouse_click";
+				setcvar ui_netSource 1
+				close main ; 
+				close mods_menu;
+				close options_multi;
+				open multi_menu;
+				open joinserver
+			}
+			cvarTest "cl_ingame"
+			showCVar { "0" }
+		}
+*/
+		itemDef 
+		{
+			name resume
+			text "@MENU_BACKTOGAME"
+			type ITEM_TYPE_BUTTON
+			style WINDOW_STYLE_EMPTY
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			rect 385 190 250 15 
+			textalign 0
+			textscale .4		
+			textalignx 0
+			textaligny 14
+			forecolor .9 .9 .9 .9
+			visible 1
+			textfont UI_FONT_NORMAL
+			mouseEnter 
+			{
+				play "mouse_over";
+			}
+			action 
+			{ 
+				play "mouse_click";
+				ingameclose main;
+				close mods_menu;
+				close options_multi;
+				close main;
+
+			}
+			cvarTest "cl_ingame"
+			showCVar { "1" }
+		}
+		itemDef 
+		{
+			name play
+			text "@MENU_JOIN_GAME"
+			type ITEM_TYPE_BUTTON
+			style WINDOW_STYLE_EMPTY
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			rect 385 190 250 15 
+			textalign 0
+			textscale .4		
+			textalignx 0
+			textaligny 14
+			forecolor .9 .9 .9 .9
+			backcolor 0 0 0 0
+			visible 1
+			textfont UI_FONT_NORMAL
+			mouseEnter 
+			{
+				play "mouse_over";
+			}
+			action 
+			{ 
+				play "mouse_click";
+//				setcvar ui_netSource 0
+				close mods_menu;
+				close options_multi;
+				close main ; 
+//				open multi_menu;
+				open joinserver
+			}
+			cvarTest "cl_ingame"
+			showCVar { "0" }
+		}
+		itemDef 
+		{
+			name play
+			text "@MENU_DISCONNECT"
+			type ITEM_TYPE_BUTTON
+			style WINDOW_STYLE_EMPTY
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			rect 385 220 250 15 
+			textalign 0
+			textscale .4		
+			textalignx 0
+			textaligny 14
+			forecolor .9 .9 .9 .9
+			backcolor 0 0 0 0
+			visible 1
+			textfont UI_FONT_NORMAL
+			mouseEnter 
+			{
+				play "mouse_over";
+			}
+			action 
+			{ 
+				play "mouse_click";
+				close mods_menu;
+				close options_multi;
+				exec "disconnect";
+			}
+			cvarTest "cl_ingame"
+			showCVar { "1" }
+		}
+// AUTO UPDATE GOES HERE
+
+		itemDef 
+		{
+			name play
+			text "@MENU_START_NEW_SERVER"
+			type ITEM_TYPE_BUTTON
+			style WINDOW_STYLE_EMPTY
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			rect 385 220 250 15 
+			textalign 0
+			textscale .4		
+			textalignx 0
+			textaligny 14
+			forecolor .9 .9 .9 .9
+			visible 1
+			textfont UI_FONT_NORMAL
+			mouseEnter 
+			{
+				play "mouse_over";
+			}
+			action 
+			{ 
+				play "mouse_click";
+				close main;
+				close mods_menu;
+				close options_multi;
+//				open multi_menu;
+				open createserver;
+			}
+			cvarTest "cl_ingame"
+			showCVar { "0" }
+		}
+
+		itemDef 
+		{
+			name options
+			text "@MENU_MULTIPLAYER_OPTIONS"
+			type ITEM_TYPE_BUTTON
+			style WINDOW_STYLE_EMPTY	
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			rect 385 250 250 15 
+			textalign 0
+			textscale .4		
+			textalignx 0
+			textaligny 14
+			forecolor .9 .9 .9 .9
+			visible 1
+			textfont UI_FONT_NORMAL 
+			mouseEnter 
+			{
+				play "mouse_over";
+			}
+			action 
+			{
+				play "mouse_click"; 
+//				close main;
+//				close mods_menu;
+//				open options_menu;
+//				open options_multi;
+				
+				close mods_menu;
+				open options_multi;
+			} 
+		}		
+		itemDef 
+		{
+			name options
+			text "@MENU_OPTIONS"
+			type ITEM_TYPE_BUTTON
+			style WINDOW_STYLE_EMPTY	
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			rect 385 280 250 15 
+			textalign 0
+			textscale .4		
+			textalignx 0
+			textaligny 14
+			forecolor .9 .9 .9 .9
+			visible 1
+			textfont UI_FONT_NORMAL 
+			mouseEnter 
+			{
+				play "mouse_over";
+			}
+			action 
+			{
+				play "mouse_click"; 
+				close main;
+				close mods_menu;
+				close options_multi;
+				open options_menu;
+				open options_look;
+				 
+//				open control_menu;
+			} 
+		}
+		itemDef 
+		{
+			name options
+			text "@MENU_MODS"
+			type ITEM_TYPE_BUTTON
+			style WINDOW_STYLE_EMPTY	
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			rect 385 310 250 15 
+			textalign 0
+			textscale .4		
+			textalignx 0
+			textaligny 14
+			forecolor .9 .9 .9 .9
+			visible 1
+			textfont UI_FONT_NORMAL 
+			mouseEnter 
+			{
+				play "mouse_over";
+			}
+			action 
+			{
+				play "mouse_click"; 
+				open mods_menu;
+				close options_multi;
+//				open options_menu;
+//				open options_look;
+//				close main; 
+//				open control_menu;
+			} 
+		}
+
+		itemDef 
+		{
+		      	name playselection
+		  	text "@MENU_SINGLE_PLAYER"
+			type ITEM_TYPE_BUTTON
+			style WINDOW_STYLE_EMPTY	
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			rect 385 340 250 15 
+			textalign 0
+			textscale .4		
+			textalignx 0
+			textaligny 14
+			textfont UI_FONT_NORMAL
+			forecolor .9 .9 .9 .9
+			visible 1  
+			mouseEnter 
+			{
+				play "mouse_over";
+			}
+			action 
+			{
+				play "mouse_click";
+				close mods_menu;
+				close options_multi;
+				open single_popmenu;
+			}
+//			action { uiScript startMultiplayer }
+	    	}
+
+
+		itemDef 
+		{
+			name quit
+			text "@MENU_QUIT"
+			type ITEM_TYPE_BUTTON
+			style WINDOW_STYLE_EMPTY	
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			rect 385 370 250 15 
+			textalign 0
+			textscale .4		
+			textalignx 0
+			textaligny 14
+			textfont UI_FONT_NORMAL
+			forecolor .9 .9 .9 .9
+			visible 1 
+			mouseEnter 
+			{
+				play "mouse_over";
+			}
+			action 
+			{
+				close mods_menu;
+				close options_multi;
+				play "mouse_click";
+				open quit_popmenu;
+			}
+		}	
+
+		itemDef 
+		{
+			name play
+			text "@MENU_AUTO_UPDATE"
+			type ITEM_TYPE_BUTTON
+			style WINDOW_STYLE_EMPTY
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			rect 385 430 250 15 
+			textalign 0
+			textscale .4		
+			textalignx 0
+			textaligny 14
+			forecolor .9 .9 .9 .9
+			visible 1
+			textfont UI_FONT_NORMAL
+			mouseEnter 
+			{
+				play "mouse_over";
+			}
+			action 
+			{ 
+				play "mouse_click"; 
+				close mods_menu; 
+				close options_multi; 
+				open auconfirm 
+			}	
+
+			cvarTest "cl_updateavailable"
+			showCVar { "1" }
+		}
+/*
+		itemDef 
+		{
+			name backtogame
+			type 1
+			text "@MENU_BACKTOGAME" 
+			style WINDOW_STYLE_FILLED
+			textscale .3 
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			rect 500 425 141 41	
+			textalign 1
+			textalignx 73
+			textaligny 25
+			textfont UI_FONT_NORMAL
+			//decoration
+			forecolor 1 1 1 1
+			visible 0
+			action { play "mouse_click"; close mods_menu; close options_multi; close main }	
+
+			cvarTest "cl_ingame"
+			showCVar { "1" }
+			mouseEnter 
+			{
+				play "mouse_over";
+			}
+		}
+	*/			
+
+		//
+		// Box for fading in menus
+		//
+/*
+		itemDef 	
+		{
+	      	name fadebox
+	      	style WINDOW_STYLE_FILLED
+	 		background "ui/assets/fadebox.tga"
+			forecolor 0 0 0 1
+			backcolor 0 0 0 1
+			rect 0 0 640 480
+	      	visible 0 
+			decoration
+    		}
+
+		itemDef 
+		{
+			name auwindow
+			rect 220 428 146 45
+			style WINDOW_STYLE_FILLED
+			border 1
+			bordercolor .5 .5 .5 .5
+			forecolor 1 1 1 1
+			backcolor 0 0 0 0
+			visible 1
+			decoration
+
+			cvarTest "cl_updateavailable"
+			showCVar { "1" }
+		}
+
+		itemDef 
+		{
+			name auwindow2
+			rect 222 430 142 41	
+			style WINDOW_STYLE_FILLED
+			border 1
+			bordercolor .1 .1 .1 .2
+			forecolor 1 1 1 1
+//			backcolor .3 0.5 0.2 .55
+			backcolor .3 0.2 0.5 .55
+			visible 1
+			decoration
+
+			cvarTest "cl_updateavailable"
+			showCVar { "1" }
+		}
+		itemDef 
+		{
+			name autoupdateclick
+			type 1
+			text "@MENU_CLICK_FOR_AUTOUPDATE" 
+			style WINDOW_STYLE_FILLED
+			textscale .25 
+			textstyle 3
+			rect 222 430 141 41	
+			textalign 1
+			textalignx 73
+			textaligny 25
+			textfont UI_FONT_NORMAL
+			//decoration
+			forecolor 1 1 1 1
+			visible 1
+			action { play "mouse_click"; close mods_menu; close options_multi; open auconfirm }	
+
+			cvarTest "cl_updateavailable"
+			showCVar { "1" }
+		}
+*/
+}
+
+	menuDef 
+	{
+		name "single_popmenu"
+   		fullscreen 0
+		//rect 217 200 210 85
+		rect 204 160 235 135
+		focusColor UI_FOCUS_COLOR
+		style 1
+		border 1
+		popup
+		onESC { close single_popmenu ; open main }
+	
+		itemDef 
+		{
+			name window
+			group grpControlbutton
+			rect 0 2 235 135
+			style WINDOW_STYLE_FILLED
+			border 1
+			bordercolor .5 .5 .5 .5
+			forecolor 1 1 1 1
+			backcolor 0 0 0 .5
+			visible 1
+			decoration
+		}
+		itemDef 
+		{
+			name backimage2fade
+			style WINDOW_STYLE_SHADER
+			rect -206 -162 642 482
+	 		background "ui/assets/fadebox.tga"
+			forecolor 0 0 0 0.4
+			backcolor 0 0 0 0.4
+			visible 1
+			decoration
+		}
+		itemDef 
+		{
+			name window2
+			group grpControlbutton
+			rect 2 4 231 20	
+			style WINDOW_STYLE_FILLED
+			border 1
+			bordercolor .1 .1 .1 .2
+			forecolor 1 1 1 1
+			backcolor 1 1 .3 .3
+			visible 1
+			decoration
+		}
+
+	// QUIT	//
+
+		itemDef 
+		{
+			name confirm
+			text "@MENU_SWITCH_TO_SINGLE_PLAYER" 
+			style 0
+			textscale .25 
+			textstyle 3
+			rect 116 20 110 20
+			textalign 1
+			textalignx 0
+			textaligny 0
+			decoration
+			forecolor 1 1 1 1
+			visible 1
+		}
+
+		itemDef 
+		{
+			name		yes
+			text		"@MENU_YES"
+			type		1	
+			textscale	.4
+			style		UI_BUTTON_STYLE
+			textstyle	UI_BUTTON_TEXT_STYLE
+//			background "ui/assets/button_back.tga"
+			rect		45 60 55 30
+			textalign	1
+			textalignx	25
+			textaligny	21
+			forecolor	UI_BUTTON_TEXT_COLOR
+			backcolor	UI_BUTTON_BACK_COLOR 
+			visible			1
+			border UI_BUTTON_BORDER
+			bordercolor UI_BUTTON_BORDER_COLOR
+			action { 
+				play "mouse_click"; 
+				close main ;
+				close single_popmenu ; 
+				uiScript startsingleplayer;
+				}
+			mouseEnter { setitemcolor yes backcolor UI_BUTTON_BACK_COLOR_HOVER 
+			play "mouse_over"} 
+			mouseExit { setitemcolor yes backcolor UI_BUTTON_BACK_COLOR } 	
+		}
+	
+		itemDef 
+		{
+			name		no
+			text		"@MENU_NO"
+			type		1
+			textscale	.4
+			style		UI_BUTTON_STYLE
+			textstyle	UI_BUTTON_TEXT_STYLE
+//			background "ui/assets/button_back.tga"
+			rect		140 60 55 30
+			textalign	1
+			textalignx	25
+			textaligny	21
+			forecolor	UI_BUTTON_TEXT_COLOR
+			backcolor	UI_BUTTON_BACK_COLOR 
+			border		UI_BUTTON_BORDER
+			bordercolor	UI_BUTTON_BORDER_COLOR
+			visible		1
+			action { 
+				play "mouse_click"; 
+				close single_popmenu ; 
+				open main;
+			}
+			mouseEnter { setitemcolor no backcolor UI_BUTTON_BACK_COLOR_HOVER 
+			play "mouse_over"} 
+			mouseExit { setitemcolor no backcolor UI_BUTTON_BACK_COLOR } 		
+		}
+	}
+}

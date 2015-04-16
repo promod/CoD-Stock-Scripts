@@ -1,0 +1,74 @@
+Particle
+{
+	count				3 5
+
+	life				1000
+
+	origin				22 0 0
+
+	rotation			360 -360
+
+	velocity			32 12 12 60 -12 -12
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			12
+		end				14 16
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/smallfill
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	count				5
+
+	life				800 1000
+
+	cullrange			900
+
+	rotation			360 -360
+
+	velocity			22 0 0 62 0 0
+
+	rgb
+	{
+		end				0.9765 0.949 0.651
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			22 17
+		end				14 40
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/top
+	]
+}

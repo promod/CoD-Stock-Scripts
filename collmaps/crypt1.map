@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 38 68 0 ) ( -38 68 0 ) ( -38 -60 0 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( -37 -60 53 ) ( -37 68 53 ) ( 39 68 53 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( -40 -67 73 ) ( 36 -67 73 ) ( 36 -67 0 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( 36 -67 73 ) ( 36 61 73 ) ( 36 61 0 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( 40 67 73 ) ( -36 67 73 ) ( -36 67 0 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( -36 67 73 ) ( -36 -61 73 ) ( -36 -61 0 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/crypt1"
+"origin" "0 0 0"
+}

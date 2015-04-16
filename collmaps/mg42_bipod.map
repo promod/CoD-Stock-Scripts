@@ -1,0 +1,9 @@
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"model" "xmodel/mg42_bipod"
+"origin" "0 0 0"
+"classname" "misc_model"
+}

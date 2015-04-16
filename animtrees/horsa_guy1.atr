@@ -1,0 +1,18 @@
+//Glider Pilot
+
+pegasus_glider_guy01_intro
+	
+pegasus_glider_guy01_highturb
+pegasus_glider_guy01_lowturb
+pegasus_glider_guy01_lowturb_twitch
+    	
+pegasus_glider_guy01_dialogue_start
+pegasus_glider_guy01_dialogue_loop
+pegasus_glider_guy01_turnright
+    	
+pegasus_glider_guy01_2ndhalf
+
+facial
+{
+	PegNight_facial_Glider_05_allright
+}

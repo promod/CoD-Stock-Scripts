@@ -1,0 +1,129 @@
+Tail
+{
+	flags				useAlpha
+
+	life				1000
+
+	delay				123
+
+	velocity			2080 0 0
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				400
+		flags			linear
+	}
+
+	length
+	{
+		end				2444
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/mn_waterplume
+		gfx/effects/misc/mn_waterplume2
+	]
+}
+
+Line
+{
+	flags				useAlpha
+
+	count				12
+
+	life				1000
+
+	delay				144
+
+	origin2				245 456 433 345 -456 -433
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				183
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/n_waterplume
+		gfx/effects/misc/n_waterplume2
+	]
+}
+
+Particle
+{
+	flags				useAlpha
+
+	nonUniformScale		1
+
+	count				4
+
+	life				700
+
+	rotation			360 -360
+
+	velocity			233 0 0
+
+	acceleration		-200 0 0
+
+	gravity				-300
+
+	rgb
+	{
+		end				0.6039 0.6784 0.6588
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				100
+		flags			linear
+	}
+
+	size2
+	{
+		start			0
+		end				333
+		flags			linear
+	}
+
+	length
+	{
+		start			0
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/mist
+	]
+}
+
+FxRunner
+{
+	playfx
+	[
+		fx/impacts/n_wlarge
+	]
+}

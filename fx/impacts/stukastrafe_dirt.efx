@@ -1,0 +1,87 @@
+Emitter
+{
+	flags				emitFx
+
+	life				120 150
+
+	cullrange			3500
+
+	velocity			2000 154 -154 2000 -154 154
+
+	density				4
+
+	variance			36 64
+
+	size
+	{
+		flags			linear
+	}
+
+	emitfx
+	[
+		fx/impacts/dusty_emlite
+	]
+}
+
+Emitter
+{
+	flags				emitFx
+
+	life				100
+
+	cullrange			1000
+
+	velocity			1300 700 700 1000 -700 -700
+
+	density				4
+
+	variance			30 54
+
+	size
+	{
+		end				122
+		flags			linear
+	}
+
+	emitfx
+	[
+		fx/smoke/ash_smokelite
+	]
+}
+
+Particle
+{
+	count				3
+
+	life				100
+
+	cullrange			1000
+
+	origin				17 7 7 0 -7 -7
+
+	rgb
+	{
+		start			0.9804 0.9373 0.8118
+		end				0.9765 0.949 0.651
+		flags			random linear
+	}
+
+	alpha
+	{
+		start			0.4
+		end				0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			3
+		end				20
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/groundflash1
+	]
+}

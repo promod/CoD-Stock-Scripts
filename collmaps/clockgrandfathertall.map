@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 22 56 0 ) ( -6 56 0 ) ( -6 -6 0 ) common/clip_nosight -24 -24 0 0.25 0.25 0 0 0 0
+( -4 -6 88 ) ( -4 56 88 ) ( 24 56 88 ) common/clip_nosight -24 -24 0 0.25 0.25 0 0 0 0
+( -8 -6 8 ) ( 20 -6 8 ) ( 20 -6 -8 ) common/clip_nosight -24 0 0 0.25 0.25 0 0 0 0
+( 2 -54 8 ) ( 2 8 8 ) ( 2 8 -8 ) common/clip_nosight 24 0 0 0.25 0.25 0 0 0 0
+( 2 6 8 ) ( -26 6 8 ) ( -26 6 -8 ) common/clip_nosight -24 0 0 0.25 0.25 0 0 0 0
+( -8 56 8 ) ( -8 -6 8 ) ( -8 -6 -8 ) common/clip_nosight 24 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/clockgrandfathertall"
+"classname" "misc_model"
+}

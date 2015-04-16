@@ -1,0 +1,195 @@
+#include "ui/menudef.h"
+
+// Displays after level has loaded, and we're waiting for the player to click before starting the game.
+{
+	assetGlobalDef 
+	{
+		cursor "ui/assets/3_cursor3"			// cursor	
+		gradientBar "ui/assets/gradientbar2.tga"	// gradient bar
+		itemFocusSound "sound/misc/menu2.wav"	
+					// sound for item getting focus (via keyboard or mouse )
+
+		fadeClamp 1.0				// sets the fadeup alpha
+		fadeCycle 1					// how often fade happens in milliseconds
+		fadeAmount 0.1				// amount to adjust alpha per cycle
+		
+		shadowColor 0.1 0.1 0.1 0.25			// shadow color
+	}
+	menuDef 
+	{
+		name "pregame"
+		background "ui/assets/backscreen"
+  		rect 0 0 640 480
+		fullScreen MENU_TRUE
+//  		style WINDOW_STYLE_EMPTY
+		focusColor UI_FOCUS_COLOR
+		backcolor 0 0 0 1
+		style WINDOW_STYLE_FILLED
+      	
+		#include "ui/load_screens.menu"
+
+//
+// draw levelshot
+//
+
+		itemDef 
+		{
+			name background
+			rect 0 0 640 480
+			ownerdraw UI_LEVELSHOT
+			forecolor 0 0 0 1
+			visible MENU_TRUE
+			decoration
+		}
+
+/*
+		itemDef 
+		{
+			name win2
+			rect 328 12 296 456
+			textfile "text/chateau.txt"
+			textfont UI_FONT_HANDWRITING
+			textscale .2
+			forecolor .1 .1 .1 1
+			visible MENU_TRUE
+			autowrapped
+			decoration
+		}
+*/
+/////////////// chateau ///////////////////////
+
+/*
+		itemDef 
+		{
+			name win2
+			rect 348 12 254 456
+			cvarTest "mapname"
+			showcvar { "chateau" }	// added current map rev
+			textfile "text/EnglishUSA/chateau.txt"
+			textfont UI_FONT_SMALL
+			textscale .2
+			forecolor .1 .1 .1 1
+			visible MENU_TRUE
+			autowrapped
+			decoration
+		}
+*/
+
+//
+// the button
+//
+
+		// Text message saying you should click to continue
+/*
+		itemDef 
+		{
+			name projectname
+			text "Click To Start the Mission"
+			style 0
+			textscale 0.5
+			rect 0 239 638 40
+			textalign 1	
+			textalignx 319 
+			textaligny 0
+			forecolor 0 0 0 .6
+			backcolor 0 0 0 0
+			visible 1 
+			decoration 
+		}
+		itemDef 
+		{
+			name projectname
+			text "Click To Start the Mission"
+			style 0
+			textscale 0.5
+			rect 2 241 638 40
+			textalign 1	
+			textalignx 319 
+			textaligny 0
+			forecolor 0 0 0 .6
+			backcolor 0 0 0 0
+			visible 1 
+			decoration 
+		}
+		itemDef 
+		{
+			name projectname
+			text "Click To Start the Mission"
+			style 0
+			textscale 0.5
+			rect 1 240 638 40
+			textalign 1	
+			textalignx 319 
+			textaligny 0
+			forecolor .8 .8 .8 1
+			backcolor 0 0 0 0
+			visible 1 
+			decoration 
+		}
+*/		
+/*
+		itemDef 
+		{
+			name butn
+			type ITEM_TYPE_BUTTON
+			rect 155 445 330 45
+			style 0
+			visible 0
+			textalign 1
+			border 0
+			bordercolor 1 1 1 1
+			forecolor 0 0 0 0
+			backcolor 0 0 0 0.75
+			action { uiScript playerstart }
+		}
+*/
+		itemDef 
+		{
+			name projectname
+			type ITEM_TYPE_BUTTON
+			text "@MENU_CLICK_TO_START_THE_MISSION"
+			style WINDOW_STYLE_FILLED
+			textscale 0.5
+			border 0
+			bordercolor 1 1 1 1
+//			textstyle 2
+			rect 0 445 640 45
+			textalign 1	
+			textalignx 320 
+			textaligny 28
+			forecolor 1 1 1 1
+			backcolor 0 0 0 .7
+			visible 1 
+			decoration
+//			action { uiScript playerstart }
+//			decoration 
+		}
+		itemDef 
+		{
+			name butn
+			type ITEM_TYPE_BUTTON
+			rect 0 0 640 480
+			style 0
+			visible 1
+			forecolor 0 0 0 0
+			backcolor 0 0 0 0
+			action { uiScript playerstart }
+		}
+
+		// invisible, full screen button
+/*
+		itemDef 
+		{
+			name butn
+			type ITEM_TYPE_BUTTON
+			rect 0 0 640 480
+			style 0
+			visible 1
+			forecolor 0 0 0 0
+			backcolor 0 0 0 0
+			action { uiScript playerstart }
+		}
+*/
+	}	// menudef
+}	// end
+

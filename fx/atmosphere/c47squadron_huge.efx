@@ -1,0 +1,163 @@
+OrientedParticle
+{
+	life				1.8e+005
+
+	origin				58 0 300 -58 0 300
+
+	velocity			12 3 950 -12 -3 979
+
+	size
+	{
+		start			400
+		end				10
+	}
+
+	shaders
+	[
+		gfx/effects/c47_singledetail
+	]
+}
+
+OrientedParticle
+{
+	name				Copy of Unnamed OrientedParticl
+
+	life				1.8e+005
+
+	origin				68 1432 -142 -68 1432 -142
+
+	velocity			12 4 945 -12 -4 956
+
+	acceleration		0 1 0 0 -1 0
+
+	size
+	{
+		start			400
+		end				10
+	}
+
+	shaders
+	[
+		gfx/effects/c47_singledetail
+	]
+}
+
+OrientedParticle
+{
+	name				Copy of Copy of Unnamed Oriente
+
+	life				1.8e+005
+
+	origin				68 -1432 -142 -68 -1432 -142
+
+	velocity			12 7 945 -12 -7 976
+
+	acceleration		0 1 0 0 -1 0
+
+	size
+	{
+		start			400
+		end				10
+	}
+
+	shaders
+	[
+		gfx/effects/c47_singledetail
+	]
+}
+
+OrientedParticle
+{
+	name				Copy of Copy of Copy of Unnamed
+
+	life				1.8e+005
+
+	origin				58 -2400 -1234 -58 -2400 -1230
+
+	velocity			3 5 934 -3 -5 946
+
+	acceleration		0 1 0 0 -1 0
+
+	size
+	{
+		start			400
+		end				10
+	}
+
+	shaders
+	[
+		gfx/effects/c47_singledetail
+	]
+}
+
+OrientedParticle
+{
+	name				Copy of Copy of Copy of Copy of
+
+	life				1.8e+005
+
+	origin				58 2400 -1234 -58 2400 -1200
+
+	velocity			7 4 945 -7 -4 946
+
+	acceleration		0 1 0 0 -1 0
+
+	size
+	{
+		start			400
+		end				10
+	}
+
+	shaders
+	[
+		gfx/effects/c47_singledetail
+	]
+}
+
+OrientedParticle
+{
+	name				Copy of Copy of Copy of Copy of
+
+	life				1.8e+005
+
+	origin				68 3400 -1834 -68 3400 -1800
+
+	velocity			7 2 945 -7 -2 950
+
+	acceleration		0 1 0 0 -1 0
+
+	size
+	{
+		start			400
+		end				10
+	}
+
+	shaders
+	[
+		gfx/effects/c47_singledetail
+	]
+}
+
+OrientedParticle
+{
+	name				Copy of Copy of Copy of Copy of
+
+	life				1.8e+005
+
+	origin				68 -3400 -1834 -68 -3400 -1834
+
+	velocity			22 2 945 -22 -2 850
+
+	acceleration		0 1 0 0 -1 0
+
+	size
+	{
+		start			400
+		end				10
+	}
+
+	shaders
+	[
+		gfx/effects/c47_singledetail
+	]
+}

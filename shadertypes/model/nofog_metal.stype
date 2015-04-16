@@ -1,0 +1,8 @@
+{
+	nofog
+	surfaceparm metal
+	{
+		map $texturename
+		rgbGen lightingDiffuse
+	}
+}

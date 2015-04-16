@@ -1,0 +1,40 @@
+Tail
+{
+	flags				useAlpha
+
+	life				600
+
+	velocity			5000 0 0
+
+	acceleration		1 0 1
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			125
+		end				240
+		flags			linear
+	}
+
+	length
+	{
+		start			320
+		end				3511
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/sploosh_med
+	]
+}

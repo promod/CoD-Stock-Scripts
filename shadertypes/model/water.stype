@@ -1,0 +1,7 @@
+{
+	surfaceparm water
+	{
+		map $texturename
+		rgbGen lightingDiffuse
+	}
+}

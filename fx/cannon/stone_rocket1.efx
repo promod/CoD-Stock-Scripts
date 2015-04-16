@@ -1,0 +1,45 @@
+Emitter
+{
+	flags				useModel usePhysics impactKills emitFx
+
+	spawnFlags			orgOnCylinder
+
+	count				2 4
+
+	life				600 1000
+
+	radius				22 122
+
+	height				3 133
+
+	angle				220 11 123 90 33 323
+
+	angleDelta			2 12 23 22 12 43
+
+	velocity			3122 434 131 1322 -424 -123
+
+	acceleration		-145 12 0 -234 -12 0
+
+	gravity				-4000 -2000
+
+	density				4
+
+	variance			36 6
+
+	size
+	{
+		start			0.1 0.3
+		end				0.1 0.3
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/gib_stone1
+	]
+
+	emitfx
+	[
+		fx/smoke/em_darksmoke1
+	]
+}

@@ -1,0 +1,20 @@
+{
+"classname" "worldspawn"
+"model" "xmodel/booksingle"
+// brush 0
+{
+( 10 35 0 ) ( -10 35 0 ) ( -10 -30 0 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( -9 -30 35 ) ( -9 35 35 ) ( 11 35 35 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( -10 -27 37 ) ( 10 -27 37 ) ( 10 -27 0 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( 10 -30 37 ) ( 10 35 37 ) ( 10 35 0 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( 10 26 38 ) ( -10 26 38 ) ( -10 26 1 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( -10 35 37 ) ( -10 -30 37 ) ( -10 -30 0 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+( 0 11 35 ) ( 0 26 9 ) ( 32 11 35 ) common/clip_nosight_dirt 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/sandbags_end02"
+"origin" "0 0 0"
+}

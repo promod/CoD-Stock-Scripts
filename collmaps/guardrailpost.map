@@ -1,0 +1,10 @@
+{
+"classname" "worldspawn"
+"model" "xmodel/booksingle"
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/guardrailpost"
+"origin" "0 0 0"
+}

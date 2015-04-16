@@ -1,0 +1,13 @@
+FxRunner
+{
+	spawnFlags			evenDistribution
+
+	count				90 120
+
+	delay				1.5e+005 2.1e+005
+
+	playfx
+	[
+		fx/smoke/blacksmokelinger
+	]
+}

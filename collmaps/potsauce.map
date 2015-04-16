@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 7 8 0 ) ( -6 8 0 ) ( -6 -8 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -8 -8 4 ) ( -8 8 4 ) ( 5 8 4 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -8 -4 13 ) ( 5 -4 13 ) ( 5 -4 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 4 -5 13 ) ( 4 11 13 ) ( 4 11 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 7 4 13 ) ( -6 4 13 ) ( -6 4 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -4 8 13 ) ( -4 -8 13 ) ( -4 -8 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"origin" "0 0 0"
+"model" "xmodel/potsauce"
+}

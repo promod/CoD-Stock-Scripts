@@ -1,0 +1,11 @@
+FxRunner
+{
+	spawnFlags			randrotaroundfwd
+
+	origin				22 0 0
+
+	playfx
+	[
+		fx/explosions/fireball2_gren
+	]
+}

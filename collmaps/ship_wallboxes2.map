@@ -1,0 +1,45 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 2 -20 -24 ) ( 2 4 -24 ) ( 0 4 -24 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 12 4 -12 ) ( 12 -20 -12 ) ( 0 -20 -12 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 -20 10 ) ( 14 -20 10 ) ( 14 -20 -24 ) common/clip_nosight 0 -52 0 0.25 0.25 0 0 0 0
+( 12 -20 -12 ) ( 12 4 -12 ) ( 2 4 -24 ) common/clip_nosight 0 -52 0 0.25 0.25 0 0 0 0
+( 14 4 10 ) ( 0 4 10 ) ( 0 4 -24 ) common/clip_nosight 0 -52 0 0.25 0.25 0 0 0 0
+( 0 4 -12 ) ( 0 -20 -12 ) ( 0 -20 -24 ) common/clip_nosight 0 -52 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 14 38 1 ) ( 0 38 1 ) ( 0 14 1 ) common/clip_nosight 0 16 0 0.25 0.25 0 0 0 0
+( 0 16 23 ) ( 0 40 23 ) ( 14 40 23 ) common/clip_nosight 0 16 0 0.25 0.25 0 0 0 0
+( 0 21 23 ) ( 14 21 23 ) ( 14 21 -11 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 12 16 23 ) ( 12 40 23 ) ( 12 40 -11 ) common/clip_nosight -16 0 0 0.25 0.25 0 0 0 0
+( 14 40 23 ) ( 0 40 23 ) ( 0 40 -11 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 40 23 ) ( 0 16 23 ) ( 0 16 -11 ) common/clip_nosight -16 0 0 0.25 0.25 0 0 0 0
+}
+// brush 2
+{
+( 14 21 -12 ) ( 0 21 -12 ) ( 0 -3 -12 ) common/clip_nosight 0 68 0 0.25 0.25 0 0 0 0
+( 0 -3 23 ) ( 0 21 23 ) ( 14 21 23 ) common/clip_nosight 0 68 0 0.25 0.25 0 0 0 0
+( 0 4 23 ) ( 14 4 23 ) ( 14 4 -11 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 12 -3 23 ) ( 12 21 23 ) ( 12 21 -11 ) common/clip_nosight -68 0 0 0.25 0.25 0 0 0 0
+( 14 21 23 ) ( 0 21 23 ) ( 0 21 -11 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 21 23 ) ( 0 -3 23 ) ( 0 -3 -11 ) common/clip_nosight -68 0 0 0.25 0.25 0 0 0 0
+}
+// brush 3
+{
+( 14 4 -12 ) ( 0 4 -12 ) ( 0 -20 -12 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 -20 23 ) ( 0 4 23 ) ( 14 4 23 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 -20 23 ) ( 14 -20 23 ) ( 14 -20 -11 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 12 -20 23 ) ( 12 4 23 ) ( 12 4 -11 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 14 4 23 ) ( 0 4 23 ) ( 0 4 -11 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 4 23 ) ( 0 -20 23 ) ( 0 -20 -11 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/ship_wallboxes2"
+"classname" "misc_model"
+}

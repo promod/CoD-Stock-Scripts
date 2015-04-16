@@ -1,0 +1,87 @@
+Particle
+{
+	life				1400
+
+	delay				200 10
+
+	cullrange			2200
+
+	origin				22 60 32 0 -60 54
+
+	rotation			3 -6
+
+	rotationDelta		1 -2
+
+	velocity			30 35 11 220 -30 11
+
+	acceleration		35 0 0 20 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			43 1
+		end				281 300
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smokelight
+	]
+}
+
+Particle
+{
+	flags				useAlpha
+
+	count				2
+
+	life				1400 1800
+
+	delay				0 200
+
+	cullrange			2000
+
+	origin				0 45 0 0 -45 0
+
+	rotation			360 -360
+
+	rotationDelta		3 -2
+
+	velocity			130 0 0 520 0 0
+
+	rgb
+	{
+		start			0.8392 0.8118 0.6627 0.9765 0.949 0.651
+		end				0.9765 0.949 0.651
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			50 100
+		end				200 400
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/dark_smoke
+	]
+}

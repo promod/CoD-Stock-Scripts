@@ -1,0 +1,123 @@
+Particle
+{
+	flags				depthHack relative
+
+	count				23 11
+
+	life				100
+
+	origin				0 0 0 12 0 0
+
+	rotation			0 -360
+
+	rotationDelta		3 -3
+
+	velocity			44 0 0 22 0 0
+
+	acceleration		4 0 0 1122 0 0
+
+	rgb
+	{
+		start			0.9765 0.949 0.651 0.8353 0.5176 0.1686
+		end				0.7412 0.5961 0.2588 0.8549 0.7098 0.2706
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.8
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			15 11
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/cloudflash1
+	]
+}
+
+OrientedParticle
+{
+	flags				depthHack relative
+
+	spawnFlags			absoluteVel absoluteAccel orgOnCylinder axisFromSphere
+
+	count				4
+
+	life				100
+
+	origin				12 0 0 -5 0 0
+
+	rotation			34 -320
+
+	acceleration		222 0 0
+
+	rgb
+	{
+		start			0.8392 0.8118 0.6627 0.9765 0.949 0.651
+		end				0.7412 0.5961 0.2588 0.6235 0.5922 0.3569
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			22
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/groundflash1
+	]
+}
+
+Tail
+{
+	flags				depthHack relative
+
+	spawnFlags			absoluteAccel orgOnCylinder
+
+	count				12 4
+
+	life				122
+
+	origin				33 0 0 53 0 0
+
+	velocity			44 0 0
+
+	rgb
+	{
+		start			0.9765 0.949 0.651 0.9686 0.8235 0.03529
+		end				0.8353 0.5176 0.1686 0.8549 0.7098 0.2706
+	}
+
+	size
+	{
+		end				4
+		flags			linear
+	}
+
+	length
+	{
+		start			33
+		end				44 77
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/cloudflash1a
+	]
+}

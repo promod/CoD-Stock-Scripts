@@ -1,0 +1,40 @@
+Tail
+{
+	flags				useAlpha
+
+	count				1 3
+
+	life				1000
+
+	velocity			-254 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			25
+		end				45 40
+		flags			linear
+	}
+
+	length
+	{
+		end				322
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/snowsheet1
+		gfx/effects/misc/watersheet1
+	]
+}

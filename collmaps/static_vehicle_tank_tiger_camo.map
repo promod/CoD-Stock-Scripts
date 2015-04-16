@@ -1,0 +1,65 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 8 12 124 ) ( 8 12 137 ) ( 20 28 137 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -2 5 124 ) ( -2 5 137 ) ( 17 11 137 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -14 5 124 ) ( -14 5 137 ) ( 5 -1 137 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -24 12 124 ) ( -24 12 137 ) ( -12 -4 137 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -28 24 124 ) ( -28 24 137 ) ( -28 4 137 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -24 36 124 ) ( -24 36 137 ) ( -36 20 137 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -14 43 124 ) ( -14 43 137 ) ( -33 37 137 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -2 43 124 ) ( -2 43 137 ) ( -21 49 137 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 8 36 124 ) ( 8 36 137 ) ( -4 52 137 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 12 24 124 ) ( 12 24 137 ) ( 12 44 137 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -27 4 124 ) ( 11 4 124 ) ( 11 44 124 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 11 44 137 ) ( 11 4 137 ) ( -27 4 137 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 144 88 0 ) ( -136 88 0 ) ( -136 -88 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -136 -88 64 ) ( -136 88 64 ) ( 144 88 64 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -136 -88 136 ) ( 144 -88 136 ) ( 144 -88 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 136 -88 136 ) ( 136 88 136 ) ( 136 88 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 152 88 64 ) ( -128 88 64 ) ( -128 88 -72 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 144 0 56 ) ( 104 0 64 ) ( 104 32 64 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -120 0 32 ) ( -120 0 8 ) ( -120 32 8 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 2
+{
+( 124 10 96 ) ( 76 10 96 ) ( 76 -6 96 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 80 -6 114 ) ( 80 10 114 ) ( 128 10 114 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 78 -6 124 ) ( 126 -6 124 ) ( 126 -6 86 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 252 -14 124 ) ( 252 2 124 ) ( 252 2 86 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 126 10 124 ) ( 78 10 124 ) ( 78 10 86 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 78 10 124 ) ( 78 -6 124 ) ( 78 -6 86 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 3
+{
+( 96 70 86 ) ( -112 70 86 ) ( -112 -74 86 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -116 -78 124 ) ( -116 66 124 ) ( 92 66 124 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -112 -52 138 ) ( 96 -52 138 ) ( 96 -52 74 ) common/clip_nosight_metal 0 48 0 0.25 0.25 0 0 0 0
+( 78 -72 140 ) ( 78 72 140 ) ( 78 72 76 ) common/clip_nosight_metal 0 48 0 0.25 0.25 0 0 0 0
+( 96 54 138 ) ( -112 54 138 ) ( -112 54 74 ) common/clip_nosight_metal 0 48 0 0.25 0.25 0 0 0 0
+( -66 58 136 ) ( -66 -86 136 ) ( -66 -86 72 ) common/clip_nosight_metal 0 48 0 0.25 0.25 0 0 0 0
+( -60 40 0 ) ( -42 44 0 ) ( -60 40 32 ) common/clip_nosight_metal 0 48 0 0.25 0.25 0 0 0 0
+( -6 -52 0 ) ( -64 -36 0 ) ( -64 -36 32 ) common/clip_nosight_metal 0 48 0 0.25 0.25 0 0 0 0
+( 28 54 0 ) ( 78 34 0 ) ( 28 54 32 ) common/clip_nosight_metal 0 48 0 0.25 0.25 0 0 0 0
+( 78 -28 0 ) ( 24 -52 0 ) ( 78 -28 32 ) common/clip_nosight_metal 0 48 0 0.25 0.25 0 0 0 0
+}
+// brush 4
+{
+( 88 70 64 ) ( -120 70 64 ) ( -120 -74 64 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -112 -78 86 ) ( -112 66 86 ) ( 96 66 86 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -112 -72 120 ) ( 96 -72 120 ) ( 96 -72 56 ) common/clip_nosight_metal 0 96 0 0.25 0.25 0 0 0 0
+( 104 -68 120 ) ( 104 76 120 ) ( 104 76 56 ) common/clip_nosight_metal 0 96 0 0.25 0.25 0 0 0 0
+( 96 74 120 ) ( -112 74 120 ) ( -112 74 56 ) common/clip_nosight_metal 0 96 0 0.25 0.25 0 0 0 0
+( -120 68 116 ) ( -120 -76 116 ) ( -120 -76 52 ) common/clip_nosight_metal 0 96 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/vehicle_tank_tiger"
+"origin" "0 0 0"
+}

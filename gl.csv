@@ -1,0 +1,12 @@
+renderer,r_arb_vertex_buffer_object,r_vbo_stream_draw,r_vbo_interleave,r_vbo_smc_static_draw,r_vbo_paranoia,r_mem_video,r_mem_agp,r_mem_backend,r_ext_draw_range_elements,r_arb_texture_cube_map,r_swapDelay,r_ati_vertex_array_object
+GeForce,1,1,0,1,1,0,10,1,1,1,0,0
+GeForce256,0,1,0,1,1,0,10,1,1,1,1,0
+GeForce 256,0,1,0,1,1,0,10,1,1,1,1,0
+Radeon,1,0,0,1,1,9,1,1,0,1,0,1
+Radeon 70,1,0,0,1,1,9,1,1,0,0,0,1
+Radeon 71,1,0,0,1,1,9,1,1,0,0,0,1
+Radeon 72,1,0,0,1,1,9,1,1,0,0,0,1
+Radeon 73,1,0,0,1,1,9,1,1,0,0,0,1
+Radeon 74,1,0,0,1,1,9,1,1,0,0,0,1
+Radeon 7,1,0,0,1,1,9,1,1,0,1,0,1
+Matrox,1,1,0,1,1,0,0,0,1,1,0,0

@@ -1,0 +1,10 @@
+{
+	surfaceparm metal
+	{
+		map $texturename
+		rgbGen lightingDiffuse
+		tcmod scroll 0 1
+		alphaFunc GE128
+		depthWrite
+	}
+}

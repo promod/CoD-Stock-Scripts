@@ -1,0 +1,11 @@
+{
+	surfaceparm bark
+	{
+		map $texturename
+		rgbGen exactVertex
+	}
+	{
+		map $lightmap
+		blendFunc filter
+	}
+}

@@ -1,0 +1,7 @@
+{
+	surfaceparm grass
+	{
+		map $texturename
+		rgbGen lightingDiffuse
+	}
+}

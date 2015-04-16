@@ -1,0 +1,83 @@
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	life				200
+
+	radius				100
+
+	rotation			360 -360
+
+	rotationDelta		3 -3
+
+	velocity			0 23 32 0 -46 -64
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10
+		end				300 400
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion/explosion_1
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				useAlpha
+
+	count				5
+
+	life				1700
+
+	origin				0 23 0 20 -36 0
+
+	radius				100
+
+	rotation			360 -360
+
+	rotationDelta		4 -4
+
+	velocity			100 246 32 923 -292 64
+
+	rgb
+	{
+		start			0.03529 0.02745 0.02353
+		end				0.03529 0.02745 0.02353
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			10 100
+		end				500
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/dark_smoke
+	]
+}

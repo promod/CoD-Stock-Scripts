@@ -1,0 +1,90 @@
+Particle
+{
+	name				flash
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	nonUniformScale		1
+
+	count				4 5
+
+	life				100 300
+
+	velocity			923 0 223 923 0 923
+
+	rgb
+	{
+		end				0.7608 0.4353 0.2392
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0.3
+		flags			linear
+	}
+
+	size
+	{
+		end				300 590
+		flags			linear
+	}
+
+	size2
+	{
+		start			5
+		end				100
+		flags			linear
+	}
+
+	length
+	{
+		start			100
+		end				400
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/groundflash1
+	]
+}
+
+Emitter
+{
+	flags				emitFx
+
+	spawnFlags			absoluteAccel
+
+	count				2 3
+
+	life				200
+
+	delay				50
+
+	origin				-233 0 0
+
+	radius				63 62
+
+	height				41
+
+	velocity			2355 2733 2122 6044 -2655 -2144
+
+	gravity				-600
+
+	density				4
+
+	variance			102 42
+
+	size
+	{
+		start			344
+		end				1100 1400
+		flags			linear
+	}
+
+	emitfx
+	[
+		fx/smoke/em_darksmoke2
+	]
+}

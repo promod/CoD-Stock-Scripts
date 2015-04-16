@@ -1,0 +1,9 @@
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"origin" "7 0 0"
+"model" "xmodel/outdoorwalllight"
+"classname" "misc_model"
+}

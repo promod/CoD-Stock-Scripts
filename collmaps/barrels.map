@@ -1,0 +1,40 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 13 30 0 ) ( -15 30 0 ) ( -15 -24 0 ) common/clipmonster 0 0 0 0.25 0.25 0 0 0 0
+( -15 -27 51 ) ( -15 27 51 ) ( 13 27 51 ) common/clipmonster 0 0 0 0.25 0.25 0 0 0 0
+( -15 -27 51 ) ( 13 -27 51 ) ( 13 -27 28 ) common/clipmonster 0 0 0 0.25 0.25 0 0 0 0
+( 13 -27 51 ) ( 13 27 51 ) ( 13 27 28 ) common/clipmonster 0 0 0 0.25 0.25 0 0 0 0
+( 13 27 51 ) ( -15 27 51 ) ( -15 27 28 ) common/clipmonster 0 0 0 0.25 0.25 0 0 0 0
+( -15 27 51 ) ( -15 -27 51 ) ( -15 -27 28 ) common/clipmonster 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 12 26 0 ) ( -15 26 0 ) ( -15 -27 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -15 -30 28 ) ( -15 23 28 ) ( 12 23 28 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -15 -27 51 ) ( 12 -27 51 ) ( 12 -27 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 13 -27 51 ) ( 13 26 51 ) ( 13 26 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 12 27 51 ) ( -15 27 51 ) ( -15 27 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -15 26 51 ) ( -15 -27 51 ) ( -15 -27 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 -23 25 ) ( 0 -22 26 ) ( 32 -22 26 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 0 18 30 ) ( 0 21 27 ) ( 32 21 27 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 2
+{
+( 12 26 28 ) ( -15 26 28 ) ( -15 -27 28 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -15 -30 51 ) ( -15 23 51 ) ( 12 23 51 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -15 -13 77 ) ( 12 -13 77 ) ( 12 -13 26 ) common/clip_nosight 0 112 0 0.25 0.25 0 0 0 0
+( 13 -27 79 ) ( 13 26 79 ) ( 13 26 28 ) common/clip_nosight 0 112 0 0.25 0.25 0 0 0 0
+( 12 13 80 ) ( -15 13 80 ) ( -15 13 29 ) common/clip_nosight 0 112 0 0.25 0.25 0 0 0 0
+( -15 26 79 ) ( -15 -27 79 ) ( -15 -27 28 ) common/clip_nosight 0 112 0 0.25 0.25 0 0 0 0
+( 0 -10 47 ) ( 0 -7 50 ) ( 32 -7 50 ) common/clip_nosight 0 112 0 0.25 0.25 0 0 0 0
+( 0 7 50 ) ( 0 11 46 ) ( 32 11 46 ) common/clip_nosight 0 112 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"origin" "0 0 0"
+"model" "xmodel/barrels"
+}

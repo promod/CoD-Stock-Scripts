@@ -1,0 +1,7 @@
+{
+	surfaceparm snow
+	{
+		map $texturename
+		rgbGen lightingDiffuse
+	}
+}

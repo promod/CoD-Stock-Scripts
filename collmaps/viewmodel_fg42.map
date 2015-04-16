@@ -1,0 +1,9 @@
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"model" "xmodel/viewmodel_fg42"
+"origin" "0 0 0"
+"classname" "misc_model"
+}

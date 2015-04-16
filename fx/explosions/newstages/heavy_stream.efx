@@ -1,0 +1,21 @@
+Emitter
+{
+	flags				emitFx
+
+	spawnFlags			orgOnSphere axisFromSphere
+
+	count				3
+
+	life				100
+
+	origin				376 22 33 32 -33 -22
+
+	velocity			3000 0 0
+
+	density				4
+
+	emitfx
+	[
+		fx/explosions/newstages/heavy
+	]
+}

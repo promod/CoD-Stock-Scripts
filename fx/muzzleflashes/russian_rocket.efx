@@ -1,0 +1,36 @@
+Particle
+{
+	count				5
+
+	life				100
+
+	delay				0 200
+
+	origin				84 84 34 -84 -84 -34
+
+	rotation			-360 360
+
+	rgb
+	{
+		start			0.9765 0.949 0.651
+		end				0.7608 0.4353 0.2392
+		flags			linear
+	}
+
+	alpha
+	{
+		flags			linear
+	}
+
+	size
+	{
+		end				3750 1000
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/cloudflash1a
+		gfx/effects/flash1
+	]
+}

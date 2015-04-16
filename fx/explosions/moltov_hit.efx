@@ -1,0 +1,45 @@
+Emitter
+{
+	flags				useModel usePhysics impactKills impactFx emitFx
+
+	spawnFlags			axisFromSphere
+
+	count				4 3
+
+	life				200
+
+	height				12 32
+
+	velocity			833 522 522 633 -522 -522
+
+	acceleration		-543 222 222 -673 -232 -232
+
+	gravity				-800
+
+	density				4
+
+	models
+	[
+		xmodel/gib_glass1
+	]
+
+	impactfx
+	[
+		fx/explosions/moltov_hit
+	]
+
+	emitfx
+	[
+		fx/fire/moltov1
+	]
+}
+
+FxRunner
+{
+	count				12
+
+	playfx
+	[
+		fx/fire/em_stage1
+	]
+}

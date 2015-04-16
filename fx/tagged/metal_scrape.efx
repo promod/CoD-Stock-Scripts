@@ -1,0 +1,11 @@
+FxRunner
+{
+	count				4
+
+	origin				0 22 0 4 -22 0
+
+	playfx
+	[
+		fx/tagged/metalonmetal
+	]
+}

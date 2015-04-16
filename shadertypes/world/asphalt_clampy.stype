@@ -1,0 +1,13 @@
+{
+	surfaceparm rock
+	{
+		map clampy $texturename
+		rgbGen exactVertex
+	}
+	{
+		map $lightmap
+		blendFunc filter
+	}
+}
+
+}

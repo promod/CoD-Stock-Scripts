@@ -1,0 +1,9 @@
+{
+	surfaceparm nonsolid
+	polygonOffset
+	{
+		map $texturename
+		rgbGen lightingDiffuse
+		blendFunc blend
+	}
+}

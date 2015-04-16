@@ -1,0 +1,49 @@
+Emitter
+{
+	flags				useModel usePhysics impactKills emitFx
+
+	life				8000
+
+	delay				100
+
+	radius				1 300
+
+	angle				90 0 0
+
+	velocity			4000 300 -233
+
+	density				4
+
+	variance			188
+
+	size
+	{
+		start			2
+		end				2
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/105
+	]
+
+	emitfx
+	[
+		fx/smoke/smoke_missile
+	]
+}
+
+FxRunner
+{
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				2
+
+	origin				23 324 324 0 -324 -324
+
+	playfx
+	[
+		fx/muzzleflashes/russian_rocket
+	]
+}

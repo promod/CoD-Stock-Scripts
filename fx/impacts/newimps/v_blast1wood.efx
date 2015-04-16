@@ -1,0 +1,318 @@
+Emitter
+{
+	flags				emitFx
+
+	count				3
+
+	life				100
+
+	delay				0 75
+
+	radius				33
+
+	velocity			723 1722 1722 2223 -1722 -1722
+
+	density				4
+
+	variance			15 35
+
+	emitfx
+	[
+		fx/smoke/low_drifting2a
+	]
+}
+
+Particle
+{
+	flags				useAlpha
+
+	count				3
+
+	life				4000
+
+	origin				33 0 0 175 0 0
+
+	rotation			360 -360
+
+	velocity			0 22 22 0 -22 -22
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			55
+		end				300
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/medium_smoke
+	]
+}
+
+Particle
+{
+	nonUniformScale		1
+
+	count				3
+
+	life				100
+
+	origin				0 0 0 24 0 0
+
+	rotation			33 -33
+
+	velocity			399 0 0 799 0 0
+
+	rgb
+	{
+		end				0.7608 0.4353 0.2392
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			55
+		end				183
+		flags			linear
+	}
+
+	size2
+	{
+		start			3
+		end				64
+		flags			linear
+	}
+
+	length
+	{
+		start			2333 3333
+		end				1333
+		parm			7 4
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/flash1
+	]
+}
+
+Emitter
+{
+	name				wood
+
+	flags				useModel usePhysics impactFx
+
+	count				1 2
+
+	life				5000 6000
+
+	bounce				0.3
+
+	angle				360 360 360 -360 -360 -360
+
+	angleDelta			53 3 3 66 3 3
+
+	velocity			500 341 341 600 -341 -341
+
+	gravity				-800 -900
+
+	size
+	{
+		start			0.3
+		end				0.3
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/gib_woodplank
+	]
+
+	impactfx
+	[
+		fx/smoke/residual1
+	]
+}
+
+Decal
+{
+	life				1e+004
+
+	rotation			360 -360
+
+	size
+	{
+		start			100 80
+	}
+
+	shaders
+	[
+		gfx/impact/cratered
+	]
+}
+
+Emitter
+{
+	name				Copy of wood
+
+	flags				useModel usePhysics impactFx
+
+	count				1 2
+
+	life				5000 6000
+
+	bounce				0.3
+
+	angle				360 360 360 -360 -360 -360
+
+	angleDelta			53 3 3 66 3 3
+
+	velocity			500 341 341 600 -341 -341
+
+	gravity				-800 -900
+
+	size
+	{
+		start			0.2
+		end				0.2
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/gib_woodplank
+	]
+
+	impactfx
+	[
+		fx/smoke/residual1
+	]
+}
+
+Emitter
+{
+	name				Copy of Copy of wood
+
+	flags				useModel usePhysics impactFx
+
+	life				5000 6000
+
+	bounce				0.3
+
+	angle				360 360 360 -360 -360 -360
+
+	angleDelta			53 3 3 66 3 3
+
+	velocity			400 341 341 900 -341 -341
+
+	gravity				-800 -900
+
+	size
+	{
+		start			0.4
+		end				0.2
+	}
+
+	models
+	[
+		xmodel/gib_woodplank
+	]
+
+	impactfx
+	[
+		fx/smoke/residual1
+	]
+}
+
+Line
+{
+	flags				useAlpha
+
+	count				3
+
+	life				550
+
+	origin2				44 222 222 344 -222 -222
+
+	rgb
+	{
+		start			0.6745 0.6784 0.5882
+		end				0.8039 0.8078 0.7569
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.7 0.6
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			53
+		end				55
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/explosion/dirtplume_model2
+		gfx/effects/explosion/dirtplume_modelf
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 1
+
+	flags				useAlpha
+
+	count				3
+
+	life				4000
+
+	origin				233 55 55 275 -55 -55
+
+	rotation			360 -360
+
+	velocity			2 22 22 3 -22 -22
+
+	rgb
+	{
+		start			0.8039 0.8078 0.7569
+		end				0.7569 0.7294 0.6667
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			75 55
+		end				300
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/medium_smoke
+	]
+}

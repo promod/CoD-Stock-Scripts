@@ -1,0 +1,7 @@
+FxRunner
+{
+	playfx
+	[
+		fx/fire/em_fire1extended
+	]
+}

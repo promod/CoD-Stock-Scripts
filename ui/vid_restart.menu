@@ -1,0 +1,343 @@
+#include "ui/menudef.h"
+
+{
+\\ VID_RESTART POPUP MENU \\
+
+	menuDef 
+	{
+		name "vid_restart_popmenu"
+    		fullscreen 0
+	    	//rect 217 200 210 85
+		rect 217.5 170 205 140
+		//outOfBoundsClick			// this closes the window if it gets a click out of the rectangle
+    		focusColor UI_FOCUS_COLOR
+	    	style WINDOW_STYLE_FILLED
+		backcolor 0 0 0 0.5
+		bordercolor 1 1 1 .5
+	    	border 1
+		popup
+		onESC 
+		{
+			close vid_restart_popmenu ; 
+			close options_menu;
+			open options_menu;  
+			open options_graphics;
+			show graphicsapply
+		}
+		onClose { show graphicsapply; }
+
+// VID_RESTART	//
+		itemDef 
+		{
+			name backimage2fade
+			style WINDOW_STYLE_SHADER
+			rect -219 -172 642 482
+	 		background "ui/assets/fadebox.tga"
+			forecolor 0 0 0 0.7
+			backcolor 0 0 0 0.7
+			visible 1
+			decoration
+		}
+		itemDef 
+		{
+			name confirm
+			text "@MENU_THIS_WILL_APPLY_VIDEO"
+			style 0
+			textscale .23 
+			textstyle 3
+			rect 0 25 110 20
+			textalign 1
+			textalignx 100
+			textaligny 15
+			decoration
+			forecolor 1 1 1 1
+			visible 1
+		}
+		itemDef 
+		{
+			name confirm
+			text "@MENU_SETTINGS_AND_RETURN"
+			style 0
+			textscale .23 
+			textstyle 3
+			rect 0 40 110 20
+			textalign 1
+			textalignx 100
+			textaligny 15
+			decoration
+			forecolor 1 1 1 1
+			visible 1
+		}
+		itemDef 
+		{
+			name confirm
+			text "@MENU_TO_THE_GAME" 
+			style 0
+			textscale .23 
+			textstyle 3
+			rect 0 55 110 20
+			textalign 1
+			textalignx 100
+			textaligny 15
+			decoration
+			forecolor 1 1 1 1
+			cvartest "cl_paused"
+			showCvar { "1" }
+			visible 1
+		}
+		itemDef 
+		{
+			name confirm
+			text "@MENU_TO_THE_MAIN_MENU" 
+			style 0
+			textscale .23 
+			textstyle 3
+			rect 0 55 110 20
+			textalign 1
+			textalignx 100
+			textaligny 15
+			decoration
+			forecolor 1 1 1 1
+			cvartest "cl_paused"
+			hideCvar { "1" }
+			visible 1
+		}
+
+		itemDef 
+		{
+			name yes
+			text "@MENU_YES"
+			type 1
+			textfont UI_FONT_NORMAL
+			textscale .25
+			style UI_BUTTON_STYLE
+			textstyle UI_BUTTON_TEXT_STYLE
+			rect 20 80 70 26
+			textalign 1
+			textalignx 32
+			textaligny 17
+			forecolor UI_BUTTON_TEXT_COLOR
+			backcolor  UI_BUTTON_BACK_COLOR  
+			visible 1
+			border UI_BUTTON_BORDER
+			bordercolor UI_BUTTON_BORDER_COLOR 
+			action { 
+				play "mouse_click";
+
+				exec "setfromcvar r_mode	ui_r_mode";
+				exec "setfromcvar r_fullscreen	ui_r_fullscreen";
+				exec "setfromcvar r_picmip2	ui_r_picmip2";
+				exec "setfromcvar r_picmip	ui_r_picmip";
+				exec "setfromcvar r_texturemode	ui_r_texturemode";
+				exec "setfromcvar r_texturebits	ui_r_texturebits";
+				exec "setfromcvar r_nv_fog_dist	ui_r_nv_fog_dist";
+
+				close vid_restart_popmenu ; 
+				exec "vid_restart" 
+			}
+			mouseEnter { play "mouse_over"; setitemcolor yes backcolor UI_BUTTON_BACK_COLOR_HOVER } 
+			mouseExit { setitemcolor yes backcolor  UI_BUTTON_BACK_COLOR  } 	
+		}
+	
+		itemDef 
+		{
+			name no
+			text "@MENU_NO"
+			type 1
+			textfont UI_FONT_NORMAL
+			textscale .25
+			style UI_BUTTON_STYLE
+			textstyle UI_BUTTON_TEXT_STYLE
+			rect 110 80 70 26
+			textalign 1
+			textalignx 35
+			textaligny 17
+			forecolor UI_BUTTON_TEXT_COLOR
+			backcolor  UI_BUTTON_BACK_COLOR  
+			visible 1
+			border UI_BUTTON_BORDER
+			bordercolor UI_BUTTON_BORDER_COLOR
+			action { 
+				play "mouse_click";
+				close vid_restart_popmenu ;  
+				close options_menu;
+				close options_graphics;
+				open options_menu;
+				open options_graphics;
+				show graphicsapply;
+			}
+			mouseEnter { play "mouse_over"; setitemcolor no backcolor UI_BUTTON_BACK_COLOR_HOVER } 
+			mouseExit { setitemcolor no backcolor  UI_BUTTON_BACK_COLOR  } 		
+		}
+	}
+menuDef 
+	{
+		name "vid_restart_popmenu_listen"
+	    	visible 0
+    		fullscreen 0
+	    	//rect 217 200 210 85
+		rect 217.5 170 205 140
+		//outOfBoundsClick			// this closes the window if it gets a click out of the rectangle
+    		focusColor UI_FOCUS_COLOR
+	    	style WINDOW_STYLE_FILLED
+		backcolor 0 0 0 0.5
+		bordercolor 1 1 1 .5
+	    	border 1
+		popup
+		onESC 
+		{
+			show graphicsapply;
+			close vid_restart_popmenu_listen ; 
+			close options_menu;
+			open options_menu;  
+			open options_graphics;
+			show graphicsapply
+		}
+		onClose { show graphicsapply; }
+
+// VID_RESTART	//
+		itemDef 
+		{
+			name backimage2fade
+			style WINDOW_STYLE_SHADER
+			rect -219 -172 642 482
+	 		background "ui/assets/fadebox.tga"
+			forecolor 0 0 0 0.7
+			backcolor 0 0 0 0.7
+			visible 1
+			decoration
+		}
+		itemDef 
+		{
+			name confirm
+			text "@MENU_THIS_WILL_APPLY_VIDEO"
+			style 0
+			textscale .23 
+			textstyle 3
+			rect 0 25 110 20
+			textalign 1
+			textalignx 100
+			textaligny 15
+			decoration
+			forecolor 1 1 1 1
+			visible 1
+		}
+		itemDef 
+		{
+			name confirm
+			text "@MENU_SETTINGS_AND_RETURN"
+			style 0
+			textscale .23 
+			textstyle 3
+			rect 0 40 110 20
+			textalign 1
+			textalignx 100
+			textaligny 15
+			decoration
+			forecolor 1 1 1 1
+			visible 1
+		}
+		itemDef 
+		{
+			name confirm
+			text "@MENU_TO_THE_GAME" 
+			style 0
+			textscale .23 
+			textstyle 3
+			rect 0 55 110 20
+			textalign 1
+			textalignx 100
+			textaligny 15
+			decoration
+			forecolor 1 1 1 1
+			cvartest "cl_paused"
+			showCvar { "1" }
+			visible 1
+		}
+		itemDef 
+		{
+			name confirm
+			text "@MENU_TO_THE_MAIN_MENU" 
+			style 0
+			textscale .23 
+			textstyle 3
+			rect 0 55 110 20
+			textalign 1
+			textalignx 100
+			textaligny 15
+			decoration
+			forecolor 1 1 1 1
+			cvartest "cl_paused"
+			hideCvar { "1" }
+			visible 1
+		}
+
+		itemDef 
+		{
+			name yes
+			text "@MENU_YES"
+			type 1
+			textfont UI_FONT_NORMAL
+			textscale .25
+			style UI_BUTTON_STYLE
+			textstyle UI_BUTTON_TEXT_STYLE
+			rect 20 80 70 26
+			textalign 1
+			textalignx 32
+			textaligny 17
+			forecolor UI_BUTTON_TEXT_COLOR
+			backcolor  UI_BUTTON_BACK_COLOR  
+			visible 1
+			border UI_BUTTON_BORDER
+			bordercolor UI_BUTTON_BORDER_COLOR 
+			action { 
+				play "mouse_click";
+
+				exec "setfromcvar r_mode	ui_r_mode";
+				exec "setfromcvar r_fullscreen	ui_r_fullscreen";
+				exec "setfromcvar r_picmip2	ui_r_picmip2";
+				exec "setfromcvar r_picmip	ui_r_picmip";
+				exec "setfromcvar r_texturemode	ui_r_texturemode";
+				exec "setfromcvar r_texturebits	ui_r_texturebits";
+				exec "setfromcvar r_nv_fog_dist	ui_r_nv_fog_dist";
+
+				close vid_restart_popmenu_listen ; 
+				exec "vid_restart" 
+			}
+			mouseEnter { play "mouse_over"; setitemcolor yes backcolor UI_BUTTON_BACK_COLOR_HOVER } 
+			mouseExit { setitemcolor yes backcolor  UI_BUTTON_BACK_COLOR  } 	
+		}
+	
+		itemDef 
+		{
+			name no
+			text "@MENU_NO"
+			type 1
+			textfont UI_FONT_NORMAL
+			textscale .25
+			style UI_BUTTON_STYLE
+			textstyle UI_BUTTON_TEXT_STYLE
+			rect 110 80 70 26
+			textalign 1
+			textalignx 35
+			textaligny 17
+			forecolor UI_BUTTON_TEXT_COLOR
+			backcolor  UI_BUTTON_BACK_COLOR  
+			visible 1
+			border UI_BUTTON_BORDER
+			bordercolor UI_BUTTON_BORDER_COLOR
+			action { 
+				show graphicsapply;
+				play "mouse_click";
+				close vid_restart_popmenu_listen ;  
+				close options_menu;
+				close options_graphics;
+				open options_menu;
+				open options_graphics;
+				show graphicsapply;
+			}
+			mouseEnter { play "mouse_over"; setitemcolor no backcolor UI_BUTTON_BACK_COLOR_HOVER } 
+			mouseExit { setitemcolor no backcolor  UI_BUTTON_BACK_COLOR  } 		
+		}
+	}
+}

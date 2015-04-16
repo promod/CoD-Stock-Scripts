@@ -1,0 +1,19 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 5 13 0 ) ( -4 13 0 ) ( -4 -13 0 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( -5 -11 48 ) ( -5 15 48 ) ( 4 15 48 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( -4 -12 35 ) ( 5 -12 35 ) ( 5 -12 -9 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( 2 -14 48 ) ( 2 12 48 ) ( 2 12 4 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( 7 12 47 ) ( -2 12 47 ) ( -2 12 3 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( -2 13 47 ) ( -2 -13 47 ) ( -2 -13 3 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+( 0 -22 56 ) ( 0 -20 64 ) ( 32 -22 56 ) common/clip_nosight_rock 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"model" "xmodel/tombstone8"
+"classname" "misc_model"
+"origin" "0 0 0"
+}

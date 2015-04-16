@@ -1,0 +1,27 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 8 18 0 ) ( -8 18 0 ) ( -8 -18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -8 -18 76 ) ( 8 -18 76 ) ( 8 -18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 10 -18 76 ) ( 10 18 76 ) ( 10 18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 8 18 76 ) ( -8 18 76 ) ( -8 18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -8 18 76 ) ( -8 -18 76 ) ( -8 -18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 4 0 30 ) ( -4 0 30 ) ( -4 32 30 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( -8 -18 84 ) ( -8 18 84 ) ( 8 18 84 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -8 -18 76 ) ( 8 -18 76 ) ( 8 -18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 10 -18 74 ) ( 10 18 74 ) ( 10 18 -2 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 8 18 76 ) ( -8 18 76 ) ( -8 18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -8 18 76 ) ( -8 -18 76 ) ( -8 -18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -4 0 30 ) ( 4 0 30 ) ( -4 32 30 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "xmodel/bookshelvetall"
+"origin" "0 0 0"
+}

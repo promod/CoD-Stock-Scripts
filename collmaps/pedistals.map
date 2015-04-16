@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 11 72 0 ) ( -13 72 0 ) ( -13 -8 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -13 2 43 ) ( -13 82 43 ) ( 11 82 43 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -13 -7 48 ) ( 11 -7 48 ) ( 11 -7 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 6 -8 48 ) ( 6 72 48 ) ( 6 72 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 11 7 45 ) ( -13 7 45 ) ( -13 7 -3 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -6 72 48 ) ( -6 -8 48 ) ( -6 -8 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/pedistals"
+"classname" "misc_model"
+}

@@ -1,0 +1,59 @@
+Emitter
+{
+	flags				useModel emitFx
+
+	life				4000
+
+	delay				100
+
+	radius				1 300
+
+	velocity			7000 45 45 7000 -45 -45
+
+	gravity				-900
+
+	density				4
+
+	size
+	{
+		start			2
+		end				2
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/shellcasing
+	]
+
+	emitfx
+	[
+		fx/smoke/rocketsmoke
+	]
+}
+
+FxRunner
+{
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				2
+
+	origin				23 324 324 0 -324 -324
+
+	playfx
+	[
+		fx/muzzleflashes/russian_rocket
+	]
+}
+
+FxRunner
+{
+	count				2
+
+	origin				7000 1000 2000 5000 -1000 -2000
+
+	playfx
+	[
+		fx/atmosphere/rockets_altocloud
+	]
+}

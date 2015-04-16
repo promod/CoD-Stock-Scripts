@@ -1,0 +1,39 @@
+Particle
+{
+	flags				useAlpha
+
+	life				1e+004
+
+	origin				13 0 0
+
+	rotation			360 -360
+
+	rotationDelta		2 -2
+
+	velocity			160 -22 -22 160 22 22
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			33
+		end				282 374
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smoke/ultra_smoke1
+		gfx/effects/smoke/ultra_smoke2
+	]
+}

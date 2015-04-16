@@ -1,0 +1,53 @@
+Particle
+{
+	name				Copy of Unnamed Particle 3
+
+	nonUniformScale		1
+
+	life				600
+
+	delay				200
+
+	origin				150 0 0
+
+	rotation			180
+
+	velocity			-15 0 0 -23 0 0
+
+	gravity				-400
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.2 0.3
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			23
+		end				51
+		flags			linear
+	}
+
+	size2
+	{
+		end				260
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/snowpuff1
+	]
+}

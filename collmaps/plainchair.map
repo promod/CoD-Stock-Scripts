@@ -1,0 +1,27 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 12 13 22 ) ( -16 13 22 ) ( -16 -14 22 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+( -21 -14 48 ) ( -21 13 48 ) ( 7 13 48 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+( -18 -14 48 ) ( -11 -14 48 ) ( -7 -14 22 ) common/clip_nosight 0 88 0 0.25 0.25 0 0 0 4
+( -11 -14 48 ) ( -11 13 48 ) ( -7 13 22 ) common/clip_nosight 0 88 0 0.25 0.25 0 0 0 4
+( -11 13 48 ) ( -18 13 48 ) ( -14 13 22 ) common/clip_nosight 0 88 0 0.25 0.25 0 0 0 4
+( -16 13 47 ) ( -16 -14 47 ) ( -12 -14 21 ) common/clip_nosight 0 88 0 0.25 0.25 0 0 0 4
+}
+// brush 1
+{
+( 12 13 0 ) ( -16 13 0 ) ( -16 -14 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+( -17 -14 22 ) ( -17 13 22 ) ( 11 13 22 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+( -16 -14 46 ) ( 12 -14 46 ) ( 12 -14 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+( 12 -14 46 ) ( 12 13 46 ) ( 12 13 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+( 12 13 46 ) ( -16 13 46 ) ( -16 13 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+( -12 13 46 ) ( -12 -14 46 ) ( -12 -14 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 4
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/plainchair"
+"classname" "misc_model"
+}

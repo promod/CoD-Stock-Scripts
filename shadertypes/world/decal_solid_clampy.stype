@@ -1,0 +1,12 @@
+{
+	polygonOffset
+        surfaceparm noncolliding
+	{
+		map clampy $texturename
+		depthwrite
+		rgbGen exactVertex
+		blendFunc blend
+	nextbundle
+		map $lightmap
+	}
+}

@@ -1,0 +1,49 @@
+Particle
+{
+	flags				useAlpha
+
+	life				2000
+
+	cullrange			750
+
+	origin				0 -10 -10 0 10 10
+
+	rotation			232 -364
+
+	rotationDelta		2 1
+
+	velocity			0 -10 -10 40 10 10
+
+	rgb
+	{
+		start			1 1 0 1 1 1
+		end				1 1 1 1 1 0
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0
+		end				0.25 0.5
+		parm			1
+		flags			wave
+	}
+
+	size
+	{
+		start			3 5
+		end				15 0
+		flags			linear
+	}
+
+	length
+	{
+		start			0.5
+		end				0.5
+	}
+
+	shaders
+	[
+		gfx/effects/whitesmoke
+	]
+}

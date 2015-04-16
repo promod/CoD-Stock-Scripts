@@ -1,0 +1,8 @@
+{
+	surfaceparm cloth
+	surfaceparm noshadow
+	{
+		map $texturename
+		rgbGen identityLighting
+	}
+}

@@ -1,0 +1,45 @@
+Particle
+{
+	flags				useAlpha
+
+	life				1000
+
+	origin				0 12 0 0 -24 0
+
+	rotation			232 -364
+
+	rotationDelta		2 1
+
+	velocity			120 0 0 112 0 0
+
+	rgb
+	{
+		start			0.7529 0.7529 0.7608
+		end				1 0.9843 0.9412
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.8
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			13 15
+		end				200 100
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/dustsheet1
+	]
+}

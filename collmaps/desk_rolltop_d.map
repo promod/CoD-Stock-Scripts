@@ -1,0 +1,37 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 12 28 0 ) ( -12 28 0 ) ( -12 9 0 ) common/clip_nosight 0 20 0 0.25 0.25 0 0 0 0
+( -12 9 21 ) ( -12 28 21 ) ( 12 28 21 ) common/clip_nosight 0 20 0 0.25 0.25 0 0 0 0
+( -12 9 21 ) ( 12 9 21 ) ( 12 9 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 12 9 21 ) ( 12 28 21 ) ( 12 28 0 ) common/clip_nosight -20 0 0 0.25 0.25 0 0 0 0
+( 12 28 21 ) ( -12 28 21 ) ( -12 28 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -12 28 21 ) ( -12 9 21 ) ( -12 9 0 ) common/clip_nosight -20 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 12 -9 0 ) ( -12 -9 0 ) ( -12 -28 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -12 -28 21 ) ( -12 -9 21 ) ( 12 -9 21 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -12 -28 21 ) ( 12 -28 21 ) ( 12 -28 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 12 -28 21 ) ( 12 -9 21 ) ( 12 -9 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 12 -9 21 ) ( -12 -9 21 ) ( -12 -9 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -12 -9 21 ) ( -12 -28 21 ) ( -12 -28 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 2
+{
+( 12 28 21 ) ( -12 28 21 ) ( -12 -28 21 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -12 -28 39 ) ( -12 28 39 ) ( 12 28 39 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -12 -28 39 ) ( 12 -28 39 ) ( 12 -28 25 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 12 -28 39 ) ( 12 28 39 ) ( 12 28 25 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 12 28 39 ) ( -12 28 39 ) ( -12 28 25 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -12 28 39 ) ( -12 -28 39 ) ( -12 -28 25 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 11 0 34 ) ( 5 0 37 ) ( 11 32 34 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"model" "xmodel/desk_rolltop_d"
+"origin" "0 0 0"
+"classname" "misc_model"
+}

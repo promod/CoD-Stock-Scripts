@@ -1,0 +1,18 @@
+Decal
+{
+	life				1e+004
+
+	cullrange			3200
+
+	rotation			360 -360
+
+	size
+	{
+		start			3 4
+	}
+
+	shaders
+	[
+		gfx/impact/bullethit_glass
+	]
+}

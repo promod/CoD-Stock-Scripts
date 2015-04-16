@@ -1,0 +1,158 @@
+Emitter
+{
+	flags				emitFx
+
+	spawnFlags			orgOnSphere axisFromSphere
+
+	count				2
+
+	life				100
+
+	origin				112 22 33 112 -33 -22
+
+	velocity			3000 3000 3000 3000 -3000 -3000
+
+	density				4
+
+	emitfx
+	[
+		fx/explosions/newstages/heavy
+	]
+}
+
+Emitter
+{
+	name				Copy of Unnamed Emitter 0
+
+	flags				emitFx
+
+	spawnFlags			axisFromSphere
+
+	count				2
+
+	life				100
+
+	delay				90
+
+	origin				272 22 33 272 -33 -22
+
+	velocity			3000 3000 0 3000 -3000 0
+
+	density				4
+
+	emitfx
+	[
+		fx/explosions/newstages/heavy
+	]
+}
+
+Particle
+{
+	flags				deathFx
+
+	life				200
+
+	origin				62 0 0 63 0 0
+
+	rotation			360 -360
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				200 300
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/hotspot
+	]
+
+	deathfx
+	[
+		fx/explosions/newmetal_c
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 2
+
+	flags				deathFx
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	life				200
+
+	delay				90
+
+	origin				332 0 0 343 0 0
+
+	rotation			360 -360
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				200 300
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/hotspot
+	]
+
+	deathfx
+	[
+		fx/explosions/newmetal_c
+	]
+}
+
+Particle
+{
+	name				Copy of Copy of Unnamed Particl
+
+	flags				deathFx
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	life				200
+
+	delay				190
+
+	origin				632 0 0 643 0 0
+
+	rotation			360 -360
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				200 300
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/fire/hotspot
+	]
+
+	deathfx
+	[
+		fx/explosions/newmetal_c
+	]
+}

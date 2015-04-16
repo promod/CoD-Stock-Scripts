@@ -1,0 +1,45 @@
+Particle
+{
+	flags				useAlpha
+
+	count				2
+
+	life				6000
+
+	origin				13 0 0
+
+	rotation			30 -30
+
+	rotationDelta		2 -2
+
+	velocity			0 -12 -12 60 12 12
+
+	acceleration		-5 0 -2 0 0 0
+
+	gravity				3 13
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			121 72
+		end				282 274
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smoke/smoke2
+		gfx/effects/whitesmoke
+	]
+}

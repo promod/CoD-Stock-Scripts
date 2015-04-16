@@ -1,0 +1,15 @@
+{
+	surfaceparm snow
+	surfaceparm trans
+	surfaceparm alphashadow
+	surfaceparm nomarks
+	//cull disable
+	{
+		map clamp $texturename
+		rgbGen exactVertex
+		alphaFunc GE128
+		depthWrite
+	nextbundle
+		map $lightmap
+	}
+}

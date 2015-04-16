@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 7 8 0 ) ( -6 8 0 ) ( -6 -8 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -8 -8 6 ) ( -8 8 6 ) ( 5 8 6 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -8 -5 13 ) ( 5 -5 13 ) ( 5 -5 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 5 -5 13 ) ( 5 11 13 ) ( 5 11 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( 6 5 13 ) ( -7 5 13 ) ( -7 5 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+( -5 9 13 ) ( -5 -7 13 ) ( -5 -7 0 ) common/clip_nosight_metal 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"origin" "0 0 0"
+"model" "xmodel/potmedium"
+}

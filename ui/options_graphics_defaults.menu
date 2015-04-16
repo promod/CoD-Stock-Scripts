@@ -1,0 +1,265 @@
+#include "ui/menudef.h"
+{
+menuDef 
+{
+	name options_graphics_defaults
+	fullScreen 0				
+	rect OPTIONS_WINDOW_POS OPTIONS_WINDOW_SIZE				// Size and position of the menu
+	focusColor UI_FOCUS_COLOR			// Menu focus color for text and items
+	soundloop ""
+	onOpen
+	{
+		show grpdefault; 
+		hide grpfinish; 
+		uiScript loadControls
+	}
+	onESC 
+	{ 
+		open main;
+		close options_menu;		
+	}
+/*
+	itemDef 
+	{
+		name keyBindStatus
+		rect 0 322 640 30 
+		ownerdraw UI_KEYBINDSTATUS
+		text "-"      
+		forecolor 1 .75 0 1
+		textscale .23
+		textalignx 221
+		textalign 1
+		textaligny 20
+		visible 1
+		decoration 
+	}
+*/
+	itemDef 
+	{
+		name look_back
+		rect 0 0 OPTIONS_WINDOW_SIZE	
+		style WINDOW_STYLE_FILLED
+		border 1
+		bordercolor .5 .5 .5 .5
+		forecolor 1 1 1 1
+		backcolor OPTIONS_WINDOW_BACKCOLOR
+		visible 1
+		decoration
+	}
+	itemDef 
+	{
+		name look_back
+		rect 0 0 OPTIONS_WINDOW_SIZE	
+		style WINDOW_STYLE_FILLED
+		border 1
+		bordercolor .5 .5 .5 .5
+		forecolor 1 1 1 1
+		backcolor OPTIONS_WINDOW_BACKCOLOR
+		visible 1
+		decoration
+	}
+	itemDef 
+	{
+		name header_back
+		rect 100 2 175 32	
+		style WINDOW_STYLE_FILLED
+		border 0
+		backcolor OPTIONS_CONTROL_BACKCOLOR
+		visible 0
+		decoration
+	}
+	itemDef 
+	{
+		name ctr_look
+		text "@MENU_RESET_TO"
+		textscale .23
+		group grpControlbutton
+		type ITEM_TYPE_BUTTON
+		style 0
+		rect 122.5 5 120 10
+		textalign 1
+		textalignx 60
+		textaligny 10
+		forecolor 0.75 0.75 0.75 1
+		visible 1
+		decoration 
+	}
+	itemDef 
+	{
+		name ctr_look
+		text "@MENU_RESET_SYSTEM_DEFAULTS"
+		textscale .23
+		group grpControlbutton
+		type ITEM_TYPE_BUTTON
+		style 0
+		rect 122.5 20 120 10
+		textalign 1
+		textalignx 60
+		textaligny 10
+		forecolor 0.75 0.75 0.75 1
+		visible 1
+		decoration 
+	}
+/*
+	itemDef 
+	{
+		name look
+		group grpControls
+		text "Reset Defaults"
+		type 1
+		textscale .23
+		group grpControls
+		rect 145 20 35 10
+		textalign 1
+		textalignx 17
+		textaligny 10
+		forecolor 1 1 1 .9
+		visible 1
+		decoration
+	}
+*/
+	itemDef 
+	{
+		name look
+		group grpControls
+		text "@MENU_THIS_WILL_RESTORE_ALL_SETTINGS"
+		type 1
+		textscale .23
+		group grpControls
+		rect 165 40 35 10
+		textalign 1
+		textalignx 17
+		textaligny 10
+		forecolor 1 1 1 .9
+		visible 1
+		decoration
+	}
+	itemDef 
+	{
+		name look
+		group grpControls
+		text "@MENU_TO_ITS_OPTIMAL_VALUE"
+		type 1
+		textscale .23
+		group grpControls
+		rect 165 55 35 10
+		textalign 1
+		textalignx 17
+		textaligny 10
+		forecolor 1 1 1 .9
+		visible 1
+		decoration
+	}
+	itemDef 
+	{
+		name look
+		group grpControls
+		text "@MENU_ARE_YOU_SURE"
+		type 1
+		textscale .3
+		group grpControls
+		rect 165 80 35 10
+		textalign 1
+		textalignx 17
+		textaligny 10
+		forecolor 1 1 1 .9
+		visible 1
+		decoration
+	}
+		itemDef 
+		{
+			name yes
+			text "@MENU_YES"
+			group grpdefault
+			type 1
+			textfont UI_FONT_NORMAL
+			textscale .3
+			style UI_BUTTON_STYLE
+			textstyle UI_BUTTON_TEXT_STYLE
+			rect 97.5 105 70 26
+			textalign 1
+			textalignx 35
+			textaligny 18
+			forecolor UI_BUTTON_TEXT_COLOR
+			backcolor UI_BUTTON_BACK_COLOR 
+			visible 1
+			border UI_BUTTON_BORDER
+			bordercolor UI_BUTTON_BORDER_COLOR 
+			action 
+			{ 
+				play "mouse_click"; 
+				hide grpdefault; 
+				show grpfinish; 
+				exec "setRecommended"
+			}
+
+			mouseEnter { setitemcolor yes backcolor UI_BUTTON_BACK_COLOR_HOVER 
+			play "mouse_over"} 
+			mouseExit { setitemcolor yes backcolor UI_BUTTON_BACK_COLOR } 	
+		}
+
+		itemDef 
+		{
+			name no
+			text "@MENU_NO"
+			group grpdefault
+			type 1
+			textfont UI_FONT_NORMAL
+			textscale .3
+			style UI_BUTTON_STYLE
+			textstyle UI_BUTTON_TEXT_STYLE
+			rect 197.5 105 70 26
+			textalign 1
+			textalignx 35
+			textaligny 18
+			forecolor UI_BUTTON_TEXT_COLOR
+			backcolor UI_BUTTON_BACK_COLOR
+			border UI_BUTTON_BORDER
+			bordercolor UI_BUTTON_BORDER_COLOR 
+			visible 1
+			action { 
+				close options_menu; 
+				open options_menu;
+				open options_look;
+				play "mouse_click"; 
+			}
+			mouseEnter { setitemcolor no backcolor UI_BUTTON_BACK_COLOR_HOVER 
+			play "mouse_over"} 
+			mouseExit { setitemcolor no backcolor UI_BUTTON_BACK_COLOR } 	
+		}
+
+		itemDef 
+		{
+			name finish_message 
+			group grpfinish
+			style 0
+			text "@MENU_YOUR_SETTINGS_ARE_NOW_SET"
+			rect 112.5 160 443 20
+			textalign ITEM_ALIGN_CENTER
+			textalignx 70
+			textaligny 20
+			textscale .333        
+			forecolor 1 1 1 1
+			visible 0 
+			decoration
+		}
+		itemDef 
+		{
+			name finish_message 
+			group grpfinish
+			style 0
+			text "@MENU_TO_THEIR_ORIGINAL_DEFAULT_VALUES"
+			rect 112.5 180 443 20
+			textalign ITEM_ALIGN_CENTER
+			textalignx 70
+			textaligny 20
+			textscale .333        
+			forecolor 1 1 1 1
+			visible 0 
+			decoration
+		}
+
+
+}
+
+}//

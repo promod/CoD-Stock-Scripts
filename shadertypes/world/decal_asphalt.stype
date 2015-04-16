@@ -1,0 +1,14 @@
+{
+	surfaceparm asphalt
+        surfaceparm noncolliding
+	//surfaceparm nonsolid
+	//surfaceparm trans
+	polygonOffset
+	{
+		map $texturename
+		rgbGen exactVertex
+		//blendFunc blend
+	nextbundle
+		map $lightmap
+	}
+}

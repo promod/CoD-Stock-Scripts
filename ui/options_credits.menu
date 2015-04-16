@@ -1,0 +1,202 @@
+#include "ui/menudef.h"
+{
+menuDef 
+{
+	name options_credits
+	fullScreen 0				
+	rect OPTIONS_WINDOW_POS OPTIONS_WINDOW_SIZE				// Size and position of the menu
+	focusColor UI_FOCUS_COLOR			// Menu focus color for text and items
+	soundloop ""
+
+	onESC 
+	{ 
+		open main;
+		close options_menu;		
+	}
+
+/*
+	itemDef 
+	{
+		name keyBindStatus
+		rect 0 322 640 30 
+		ownerdraw UI_KEYBINDSTATUS
+		text "-"      
+		forecolor 1 .75 0 1
+		textscale .23
+		textalignx 221
+		textalign 1
+		textaligny 20
+		visible 1
+		decoration 
+	}
+*/
+	itemDef 
+	{
+		name credit_back
+		rect 0 0 OPTIONS_WINDOW_SIZE	
+		style WINDOW_STYLE_FILLED
+		border 1
+		bordercolor .5 .5 .5 .5
+		forecolor 1 1 1 1
+		backcolor OPTIONS_WINDOW_BACKCOLOR
+		visible 1
+		decoration
+	}
+	
+	itemDef 
+	{
+		name credits_look
+		text "@MENU_CREDITS"
+		textscale .23
+		group grpControlbutton
+		type ITEM_TYPE_BUTTON
+		style 0
+		rect 102.5 7 120 10
+		textalign 1
+		textalignx 60
+		textaligny 10
+		forecolor 0.75 0.75 0.75 1
+		visible 1
+		decoration 
+	}
+/*
+		itemDef 
+		{
+			name adsf
+			rect 0 12 254 456
+			textfile "ui/credits.txt"
+			textfont UI_FONT_SMALL
+			textscale .2
+			forecolor .1 .1 .1 1
+			visible 1
+			autowrapped
+			decoration
+		}
+*/
+/*
+	itemDef 
+	{
+		name adff
+		rect 10 32 175 300
+		textfile "ui/credits1.txt"
+//		textfont UI_FONT_HANDWRITING
+		textscale .2
+		forecolor 1 1 1 1
+		backcolor 1 1 1 1
+		visible 0
+		autowrapped
+		decoration
+	}
+	itemDef 
+	{
+		name adff
+		rect 190 32 175 300
+		textfile "ui/credits2.txt"
+//		textfont UI_FONT_HANDWRITING
+		textscale .2
+		forecolor 1 1 1 1
+		backcolor 1 1 1 1
+		visible 0
+		autowrapped
+		decoration
+	}
+*/
+	itemDef 
+	{
+		name producer
+		text "Producer\nVince Zampella"
+		rect 10 30 175 300
+		textscale .2
+		forecolor 1 1 1 1
+		backcolor 1 1 1 1
+		visible 1
+		autowrapped
+		decoration
+	}
+	itemDef 
+	{
+		name engineering
+		text "Engineering\nJason West, Engineering Lead\nEarl Hammon\nRobert Field\nFrank Gigliotti\nCarl Glave"
+		rect 10 65 175 300
+		textscale .2
+		forecolor 1 1 1 1
+		backcolor 1 1 1 1
+		visible 1
+		autowrapped
+		decoration
+	}
+	itemDef 
+	{
+		name lds
+		text "Level Design & Gameplay\nZied Rieke, Design Lead\nSteve Fukuda\nMackey McCandlish\nPreston Glenn\nKeith Bell\nTodd Alderman\nNate Silvers\nChad Grenier"
+		rect 190 30 175 300
+		textscale .2
+		forecolor 1 1 1 1
+		backcolor 1 1 1 1
+		visible 1
+		autowrapped
+		decoration
+	}
+	itemDef 
+	{
+		name art
+		text "Art\nJustin Thomas, Art Lead\nBrad Allen\nChris Hassell\nJeff Heath\nPaul Jury, Lead 2D\nKevin Chen, Concept Art"
+		rect 10 150 175 300
+		textscale .2
+		forecolor 1 1 1 1
+		backcolor 1 1 1 1
+		visible 1
+		autowrapped
+		decoration
+	}
+	itemDef 
+	{
+		name animation
+		text "Animation\nMichael Boon, Animation Lead\nPaul Messerly\nChance Glasco\nUrsula Escher"
+		rect 190 155 175 300
+		textscale .2
+		forecolor 1 1 1 1
+		backcolor 1 1 1 1
+		visible 1
+		autowrapped
+		decoration
+	}
+	itemDef 
+	{
+		name animation
+		text "Additional Animation\nShadows in Darkness"
+		rect 10 250 175 300
+		textscale .2
+		forecolor 1 1 1 1
+		backcolor 1 1 1 1
+		visible 1
+		autowrapped
+		decoration
+	}
+	itemDef 
+	{
+		name me
+		text "Sys Admin/Menus/Etc.\nBryan Kuhn"
+		rect 10 290 175 300
+		textscale .2
+		forecolor 1 1 1 1
+		backcolor 1 1 1 1
+		visible 1
+		autowrapped
+		decoration
+	}
+	itemDef 
+	{
+		name management
+		text "Management\nGrant Collier, CEO\nVince Zampella, CCO\nJason West, CTO\nKen Turner, Development Director\nJanice Turner, Office Manager"
+		rect 190 230 175 300
+		textscale .2
+		forecolor 1 1 1 1
+		backcolor 1 1 1 1
+		visible 1
+		autowrapped
+		decoration
+	}
+}
+
+}//

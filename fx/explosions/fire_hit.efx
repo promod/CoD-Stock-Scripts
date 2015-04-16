@@ -1,0 +1,19 @@
+Emitter
+{
+	flags				emitFx
+
+	life				100
+
+	velocity			1700 123 123 1720 -123 -123
+
+	gravity				-600
+
+	density				4
+
+	variance			13 122
+
+	emitfx
+	[
+		fx/explosions/explosive_fire1
+	]
+}

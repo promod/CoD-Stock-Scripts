@@ -1,0 +1,36 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 12 4 0 ) ( -12 4 0 ) ( -12 -30 0 ) common/clip_nosight 0 -48 0 0.25 0.25 0 0 0 0
+( 12 -30 2 ) ( -12 -30 2 ) ( -12 -18 12 ) common/clip_nosight 0 -48 0 0.25 0.25 0 0 0 0
+( -12 -30 2 ) ( 12 -30 2 ) ( 12 -30 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 12 -30 14 ) ( 12 4 14 ) ( 12 4 0 ) common/clip_nosight 48 0 0 0.25 0.25 0 0 0 0
+( 12 -18 14 ) ( -12 -18 14 ) ( -12 -18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -12 4 14 ) ( -12 -30 14 ) ( -12 -30 0 ) common/clip_nosight 48 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 29 16 0 ) ( 5 16 0 ) ( 5 -18 0 ) common/clip_nosight -68 0 0 0.25 0.25 0 0 0 0
+( 5 -18 12 ) ( 5 16 12 ) ( 29 16 12 ) common/clip_nosight -68 0 0 0.25 0.25 0 0 0 0
+( 5 -18 14 ) ( 29 -18 14 ) ( 29 -18 0 ) common/clip_nosight -68 0 0 0.25 0.25 0 0 0 0
+( 29 -18 14 ) ( 29 16 14 ) ( 29 16 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 29 -2 14 ) ( 5 -2 14 ) ( 5 -2 0 ) common/clip_nosight -68 0 0 0.25 0.25 0 0 0 0
+( 12 16 14 ) ( 12 -18 14 ) ( 12 -18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 2
+{
+( 12 16 0 ) ( -12 16 0 ) ( -12 -18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -12 -18 12 ) ( -12 16 12 ) ( 12 16 12 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -12 -18 14 ) ( 12 -18 14 ) ( 12 -18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 12 -18 14 ) ( 12 16 14 ) ( 12 16 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 12 17 14 ) ( -12 17 14 ) ( -12 17 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -12 16 14 ) ( -12 -18 14 ) ( -12 -18 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/ship_wallboxes1"
+"classname" "misc_model"
+}

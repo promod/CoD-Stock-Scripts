@@ -1,0 +1,44 @@
+Particle
+{
+	flags				useAlpha
+
+	count				2
+
+	life				800 1200
+
+	delay				0 120
+
+	origin				4 -6 -6 4 6 6
+
+	rotation			60 -60
+
+	rotationDelta		2 -4
+
+	velocity			15 -12 -12 20 12 12
+
+	gravity				12 32
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.7
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			6 14
+		end				52 74
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/smoke/smoke2
+	]
+}

@@ -1,0 +1,112 @@
+Tail
+{
+	spawnFlags			orgOnCylinder
+
+	count				4
+
+	life				100
+
+	velocity			400 400 400 0 -400 -400
+
+	acceleration		0 0 -222
+
+	gravity				-400
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			12
+		end				18
+		flags			linear
+	}
+
+	length
+	{
+		end				100
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/impact/sparktrail
+	]
+}
+
+Particle
+{
+	count				2
+
+	life				100
+
+	origin				4 4 4 -4 -4 -4
+
+	rotation			360 -360
+
+	velocity			22 22 22 -22 -22 -22
+
+	rgb
+	{
+		start			0.9765 0.949 0.651
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				32 84
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/impact/metal_spark1
+	]
+}
+
+Tail
+{
+	name				Copy of Unnamed Tail 0
+
+	spawnFlags			orgOnCylinder
+
+	count				3
+
+	life				200 100
+
+	velocity			1000 1333 1333 1000 -1333 -1333
+
+	gravity				-800
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				18
+		flags			linear
+	}
+
+	length
+	{
+		end				100 200
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/impact/sparktrail
+	]
+}

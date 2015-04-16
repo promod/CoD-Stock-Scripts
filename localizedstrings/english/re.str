@@ -1,0 +1,115 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\trees\mk\source_data\string_resources\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           PICKUP_AXIS_ONLY_GENERIC
+LANG_ENGLISH        "This objective can only be picked up by the Axis. Defend it!"
+
+REFERENCE           PICKUP_ALLIES_ONLY_GENERIC
+LANG_ENGLISH        "This objective can only be picked up by the Allies. Defend it!"
+
+REFERENCE           PICKUP_AXIS_ONLY
+LANG_ENGLISH        "The %s can only be picked up by the Axis. Defend it!"
+
+REFERENCE           PICKUP_ALLIES_ONLY
+LANG_ENGLISH        "The %s can only be picked up by the Allies. Defend it!"
+
+REFERENCE           OBJ_PICKED_UP_GENERIC
+LANG_ENGLISH        "A player has picked up an objective\nLook for the Yellow Star!"
+
+REFERENCE           OBJ_PICKED_UP
+LANG_ENGLISH        "A player has picked up the %s\nLook for the Yellow Star!"
+
+REFERENCE           OBJ_PICKED_UP_GENERIC_NOSTARS
+LANG_ENGLISH        "A player has picked up an objective"
+
+REFERENCE           OBJ_PICKED_UP_NOSTARS
+LANG_ENGLISH        "A player has picked up the %s"
+
+REFERENCE           U_R_CARRYING
+LANG_ENGLISH        "You are carrying the %s"
+
+REFERENCE           U_R_CARRYING_GENERIC
+LANG_ENGLISH        "You are carrying an objective"
+
+REFERENCE           OBJ_TIMEOUT_RETURNING
+LANG_ENGLISH        "An objective sat on the ground for %s seconds: returning it to its original location"
+
+REFERENCE           OBJ_DROPPED
+LANG_ENGLISH        "%s has been dropped!"
+
+REFERENCE           OBJ_DROPPED_DEFAULT
+LANG_ENGLISH        "An objective has been dropped!"
+
+REFERENCE           OBJ_INMINES_MULTIPLE
+LANG_ENGLISH        "Multiple objectives were lost in a minefield: moving them to their original positions."
+
+REFERENCE           OBJ_INMINES_GENERIC
+LANG_ENGLISH        "An objective was lost in a minefield: moving it to its original position."
+
+REFERENCE           OBJ_INMINES
+LANG_ENGLISH        "%s was lost in a minefield: moving it to its original position."
+
+REFERENCE           ATTACKERS_OBJ_TEXT_GENERIC
+LANG_ENGLISH        "Retrieve the objectives (Yellow Stars) and take them to the goal (Blue Box)"
+
+REFERENCE           DEFENDERS_OBJ_TEXT_GENERIC
+LANG_ENGLISH        "Prevent the objectives (Yellow Stars) from being taken to the goal (Blue Box)"
+
+REFERENCE           ROUND_DRAW
+LANG_ENGLISH        "Round draw"
+
+REFERENCE           MATCHSTARTING
+LANG_ENGLISH        "Match starting"
+
+REFERENCE           MATCHRESUMING
+LANG_ENGLISH        "Match resuming"
+
+REFERENCE           TIMEEXPIRED
+LANG_ENGLISH        "Time has expired"
+
+REFERENCE           ELIMINATED_ALLIES
+LANG_ENGLISH        "Allies have been eliminated"
+
+REFERENCE           ELIMINATED_AXIS
+LANG_ENGLISH        "Axis have been eliminated"
+
+REFERENCE           OBJ_CAPTURED_GENERIC
+LANG_ENGLISH        "An objective has been captured!"
+
+REFERENCE           OBJ_CAPTURED_ALL
+LANG_ENGLISH        "All objectives have been captured!"
+
+REFERENCE           OBJ_CAPTURED
+LANG_ENGLISH        "%s has been captured!"
+
+REFERENCE           RETRIEVAL
+LANG_ENGLISH        "Retrieval"
+
+REFERENCE           ALLIES
+LANG_ENGLISH        "Allies: %s"
+
+REFERENCE           AXIS
+LANG_ENGLISH        "Axis: %s"
+
+REFERENCE           PRESS_TO_PICKUP
+LANG_ENGLISH        "Press [{+activate}] to pick up the %s"
+
+REFERENCE           PRESS_TO_PICKUP_GENERIC
+LANG_ENGLISH        "Press [{+activate}] to pick up the objective"
+
+
+ENDMARKER
+
+

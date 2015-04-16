@@ -1,0 +1,27 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -9 -10 16 ) ( -9 10 16 ) ( -3 -5 26 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -10 9 16 ) ( 10 9 16 ) ( 4 3 26 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 9 10 16 ) ( 9 -9 16 ) ( 3 -4 26 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 10 -9 16 ) ( -10 -9 16 ) ( -4 -3 26 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -10 -10 26 ) ( -10 10 26 ) ( 10 10 26 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 10 10 16 ) ( -10 10 16 ) ( -10 -10 16 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+// brush 1
+{
+( 1 1 0 ) ( -1 1 0 ) ( -1 -1 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -1 -1 16 ) ( -1 1 16 ) ( 1 1 16 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -1 -1 16 ) ( 1 -1 16 ) ( 1 -1 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 1 -1 16 ) ( 1 1 16 ) ( 1 1 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( 1 1 16 ) ( -1 1 16 ) ( -1 1 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+( -1 1 16 ) ( -1 -1 16 ) ( -1 -1 0 ) common/clip_nosight 0 0 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"model" "xmodel/lamp_ornate_on"
+"origin" "0 0 0"
+"classname" "misc_model"
+}

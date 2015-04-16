@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 17 42 0 ) ( -17 42 0 ) ( -17 -42 0 ) common/clip_nosight 28 0 0 0.25 0.25 0 0 0 0
+( -12 -42 23 ) ( -12 42 23 ) ( 22 42 23 ) common/clip_nosight 28 0 0 0.25 0.25 0 0 0 0
+( -7 -5 49 ) ( 27 -5 49 ) ( 27 -5 14 ) common/clip_nosight 28 48 0 0.25 0.25 0 0 0 0
+( 6 -75 49 ) ( 6 9 49 ) ( 6 9 14 ) common/clip_nosight 0 48 0 0.25 0.25 0 0 0 0
+( 10 4 49 ) ( -24 4 49 ) ( -24 4 14 ) common/clip_nosight 28 48 0 0.25 0.25 0 0 0 0
+( -6 50 49 ) ( -6 -34 49 ) ( -6 -34 14 ) common/clip_nosight 0 48 0 0.25 0.25 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0 0 0"
+"model" "xmodel/femalebuststatue"
+"classname" "misc_model"
+}
